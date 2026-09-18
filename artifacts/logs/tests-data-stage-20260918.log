@@ -1,0 +1,41 @@
+test_cli_and_metadata_mismatch (test_bootstrap_session_ci.BootstrapTests) ... ok
+test_constant_paired_effect_has_constant_interval (test_bootstrap_session_ci.BootstrapTests) ... ok
+test_invalid_pairing_fails (test_bootstrap_session_ci.BootstrapTests) ... ok
+test_no_single_speaker_interval (test_bootstrap_session_ci.BootstrapTests) ... ok
+test_order_invariance (test_bootstrap_session_ci.BootstrapTests) ... ok
+test_random_draw_mismatch_fails (test_bootstrap_session_ci.BootstrapTests) ... ok
+test_unequal_session_counts_match_cluster_resampling (test_bootstrap_session_ci.BootstrapTests) ... ok
+test_absolute_path_is_rejected (test_corpus_archive.CorpusArchiveTests) ... ok
+test_bad_checksum_does_not_extract (test_corpus_archive.CorpusArchiveTests) ... ok
+test_tar_root_layout (test_corpus_archive.CorpusArchiveTests) ... [archive] verified /root/autodl-tmp/tmp/tmp511cfz59/data.tar.gz, sha256=00f91c8d6b62debacb61561c83881589330ed109fe8af565ff2944613800e867
+[archive] extracted /root/autodl-tmp/tmp/tmp511cfz59/LibriSpeech
+ok
+test_verified_zip_and_repeat (test_corpus_archive.CorpusArchiveTests) ... [archive] verified /root/autodl-tmp/tmp/tmp8_ui3g2b/data.zip, sha256=76974c60fa678c4a1761e7784936b8c70a0600d6582d1e9943abc3a6218a5534
+[archive] extracted /root/autodl-tmp/tmp/tmp8_ui3g2b/VCTK-Corpus-0.92
+[archive] verified /root/autodl-tmp/tmp/tmp8_ui3g2b/data.zip, sha256=76974c60fa678c4a1761e7784936b8c70a0600d6582d1e9943abc3a6218a5534
+[archive] already extracted: /root/autodl-tmp/tmp/tmp8_ui3g2b/VCTK-Corpus-0.92
+ok
+test_zip_escape_is_rejected (test_corpus_archive.CorpusArchiveTests) ... [archive] verified /root/autodl-tmp/tmp/tmp95iywpek/data.zip, sha256=08f5520e047254a9586a071a4107968b479140bea4a9db0766a1ae31e49db94e
+ok
+test_crop_roundtrip_and_audit (test_data_provenance.DataProvenanceTests) ... ok
+test_invalid_crop_durations_fail_before_io (test_data_provenance.DataProvenanceTests) ... ok
+test_microphone_selection_is_explicit (test_data_provenance.DataProvenanceTests) ... ok
+test_invalid_strategy_and_k_fail (test_session_attack.SessionAttackTests) ... ok
+test_legacy_observed_centroid_selection_is_preserved (test_session_attack.SessionAttackTests) ... ok
+test_protocol_labels_reflect_information_access (test_session_attack.SessionAttackTests) ... ok
+test_realistic_selection_does_not_depend_on_clean_values (test_session_attack.SessionAttackTests) ... ok
+test_realistic_selection_rejects_duplicate_enrollment (test_session_attack.SessionAttackTests) ... ok
+test_realistic_selection_requires_observations (test_session_attack.SessionAttackTests) ... ok
+test_dataset_outputs_do_not_replace_legacy_outputs (test_session_pool_isolation.SessionPoolIsolationTests) ... ok
+test_complete_run (test_training_run_check.TrainingRunCheckTests) ... ok
+test_incomplete_run (test_training_run_check.TrainingRunCheckTests) ... ok
+test_nonfinite_loss (test_training_run_check.TrainingRunCheckTests) ... ok
+test_nonfinite_weights (test_training_run_check.TrainingRunCheckTests) ... ok
+
+----------------------------------------------------------------------
+Ran 26 tests in 1.736s
+
+OK
+[train] sessions=1 windows_total=9 windows/session(min,mean,max)=(9,9.00,9)
+[val] sessions=1 windows_total=9 windows/session(min,mean,max)=(9,9.00,9)
+[test] sessions=1 windows_total=9 windows/session(min,mean,max)=(9,9.00,9)

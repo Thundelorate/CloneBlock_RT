@@ -1,0 +1,38 @@
+{
+  "dataset": "vctk",
+  "split": "test",
+  "seed": 42,
+  "telephony_pair": "tele_clean vs tele_defended with shared parameters",
+  "summary_csv": "artifacts/tables/vctk_test_budget_20260919_summary.csv",
+  "per_utterance_csv": "artifacts/tables/vctk_test_budget_20260919_per_utterance.csv",
+  "summary": [
+    {
+      "method": "reference_v0p2",
+      "n_utterances": 200,
+      "perturb_rms_mean": 0.006551252544283125,
+      "perturb_rms_std": 0.002765169059642764,
+      "snr_db_mean": 16.957053785438074,
+      "snr_db_std": 0.5389212758782456,
+      "relative_l2_mean": 0.14222410117021453,
+      "relative_l2_std": 0.008675731312249097,
+      "linf_mean": 0.05526161217596382,
+      "linf_std": 0.025777685444585523,
+      "stoi_tele_clean_vs_tele_defended_mean": 0.9905108189041947,
+      "stoi_tele_clean_vs_tele_defended_std": 0.0027627383986827464
+    },
+    {
+      "method": "realistic_selected",
+      "n_utterances": 200,
+      "perturb_rms_mean": 0.008843622132618092,
+      "perturb_rms_std": 0.003689885794037605,
+      "snr_db_mean": 14.323316459181797,
+      "snr_db_std": 0.4549627021598521,
+      "relative_l2_mean": 0.19249752864654623,
+      "relative_l2_std": 0.009970654370615667,
+      "linf_mean": 0.07461762680672109,
+      "linf_std": 0.0347941388882922,
+      "stoi_tele_clean_vs_tele_defended_mean": 0.9845746214832102,
+      "stoi_tele_clean_vs_tele_defended_std": 0.004222596177870017
+    }
+  ]
+}

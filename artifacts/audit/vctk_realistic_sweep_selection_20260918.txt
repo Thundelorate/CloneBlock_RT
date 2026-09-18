@@ -1,0 +1,1 @@
+0.24 checkpoints/defense/realistic_a0p24_best.pt

@@ -1,0 +1,15 @@
+{
+  "protocol": "cloneblock-defense-checkpoints-v1",
+  "created": "2026-09-19T03:28:00+08:00",
+  "files": {
+    "checkpoints/defense/pilot_librispeech_seed42_20260918_best.pt": {"size_bytes": 734922, "sha256": "9c8bffeee7a993e36f4ab7ddb656387f3d863470199b1b28f222ae1078c5e87f"},
+    "checkpoints/defense/pilot_vctk_seed42_20260918_best.pt": {"size_bytes": 734768, "sha256": "b38b0637c4688ec9e2180c80c17ee0e0b80e28e3cf0c38c737b02921c7e3c599"},
+    "checkpoints/defense/realistic_a0p12_best.pt": {"size_bytes": 734398, "sha256": "c0e4177b19dd721dd44867744adb9673d8fde41609a3dc593fa3704ed610fa44"},
+    "checkpoints/defense/realistic_a0p18_best.pt": {"size_bytes": 734398, "sha256": "f31b6850d59d042dea602ef34b691f1a770ee807d01b02022aa439bd3a2fdd4e"},
+    "checkpoints/defense/realistic_a0p24_best.pt": {"size_bytes": 734398, "sha256": "7775ca8444f8135dcbbd78dbc7a5323fb146ed997de323071feab561c73e1d12"},
+    "checkpoints/defense/realistic_vctk_selected_seed42_20260918_best.pt": {"size_bytes": 735054, "sha256": "ac8aab10681c8c64f663e1c7dc8d9864e939e492dd5abc58a2465b8190ae3379"},
+    "checkpoints/defense/reference_librispeech_v0p2_seed42_20260918_best.pt": {"size_bytes": 735120, "sha256": "c58fcc07d5d4c3eb9f896031a54b476924c284b434f3dde3d55342e1575dde10"},
+    "checkpoints/defense/reference_vctk_v0p2_seed42_20260918_best.pt": {"size_bytes": 734966, "sha256": "3436db2a88e8d1c35336588225648ad1af9cd314fc67b953abe8e460ad686986"},
+    "checkpoints/defense/smoke_realistic_libri_20260918_best.pt": {"size_bytes": 734856, "sha256": "d17f4da73868bb6bd22547a8bedc9ea8eea227b635c8109e5acabfaf76ed12e7"}
+  }
+}

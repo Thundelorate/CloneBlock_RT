@@ -1,0 +1,14 @@
+.venv-main/
+.venv-xtts/
+__pycache__/
+*.py[cod]
+/data/
+/checkpoints/*
+!/checkpoints/defense/
+!/checkpoints/defense/*.pt
+/checkpoints/autodl4090/
+/checkpoints/speaker_encoders/
+/artifacts/xtts/
+/artifacts/tmp/
+/artifacts/env/server_snapshot_20260919/data-inventory.txt
+/.server-backups/

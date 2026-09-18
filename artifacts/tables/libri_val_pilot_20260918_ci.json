@@ -1,0 +1,55 @@
+{
+  "inputs": [
+    {
+      "metadata": "artifacts/tables/session_attack_eval_no_defense_libri_val_pilot_20260918.json",
+      "csv": "artifacts/tables/session_attack_per_session_no_defense_libri_val_pilot_20260918.csv",
+      "metadata_sha256": "35a3acb47177c74e62e103122fb5c733ed609f391863a3a642b38d0be3cbcac0",
+      "csv_sha256": "e9dc6b178fce033243d651c9b311e59868d86324deb981791a1591cff56d943e"
+    },
+    {
+      "metadata": "artifacts/tables/session_attack_eval_reference_v0p2_libri_val_pilot_20260918.json",
+      "csv": "artifacts/tables/session_attack_per_session_reference_v0p2_libri_val_pilot_20260918.csv",
+      "metadata_sha256": "98bfcaaa6e051ea24348e82b2bf41382558e137cccab4d8860226b9d5d3f2b29",
+      "csv_sha256": "7cee72437e928af3db71f7b6ccf34eb3b09eb1b6bce8878e676f686dc73114af"
+    }
+  ],
+  "evaluation_metadata": {
+    "protocol_version": "realistic_v1",
+    "k_list": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "seed": 42,
+    "speaker_encoder_name": "speechbrain_ecapa",
+    "telephony_codec": "none",
+    "telephony_codec_bitrate": "16k",
+    "selection_protocols": {
+      "random_K": {
+        "attacker_view": "realistic",
+        "selection_source": "none"
+      },
+      "bestK_by_self_consistency": {
+        "attacker_view": "realistic",
+        "selection_source": "tele_defended"
+      }
+    },
+    "session_pool_sha256": "fe96a98b08ad2f19bf204ca39bcf03e6f1b71a885be74c0e2f635301b37197d1",
+    "eval_config_sha256": "a8864c0a2db64051e81bdc0ab216a1e5efc0362b6b83277724c09fbbb8724338",
+    "telephony_config_sha256": "5f0fc5f62c738e0d5d8289b49b830279776b56087a6ef46c1e8b3b5c6be7864f"
+  },
+  "bootstrap": {
+    "unit": "speaker",
+    "interval": "percentile",
+    "confidence": 0.95,
+    "draws": 2000,
+    "seed": 42,
+    "paired": true
+  },
+  "estimand": "Session-weighted mean; resample speakers with all their sessions",
+  "AUCK": "Equal-weight mean on exactly the recorded K grid",
+  "delta": "method minus reference; negative recovery similarity means less identity recovery",
+  "limitation": "Conditional on fitted models and fixed evaluation trials; not training-seed uncertainty. Few speakers can give unstable intervals."
+}

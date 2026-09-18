@@ -1,0 +1,4 @@
+encoder,method,margin_mean,n_target,n_impostor
+speechbrain_xvector,no_defense,0.007052,22,220
+speechbrain_xvector,reference_v0p2,0.006522,22,220
+speechbrain_xvector,realistic_selected,0.006376,22,220

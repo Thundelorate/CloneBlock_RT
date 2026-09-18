@@ -1,0 +1,308 @@
+Traceback (most recent call last):
+  File "/root/autodl-tmp/projects/CloneBlock_RT/scripts/verify_extract_corpus.py", line 99, in <module>
+    main()
+  File "/root/autodl-tmp/projects/CloneBlock_RT/scripts/verify_extract_corpus.py", line 49, in main
+    raise ValueError(f"Incomplete archive: {candidate}")
+ValueError: Incomplete archive: data/raw/VCTK-Corpus-0.92.zip.part
+[archive] verified data/raw/VCTK-Corpus-0.92.zip, sha256=f96258be9fdc2cbff6559541aae7ea4f59df3fcaf5cf963aae5ca647357e359c
+[archive] extracted data/raw/VCTK-Corpus-0.92
+[prepare_data] 共 108 个 speaker，原始文件数 43873
+[prepare_data] 已写 /root/autodl-tmp/projects/CloneBlock_RT/data/processed/vctk/metadata.csv，片段数 12201
+[prepare_data] 已写 /root/autodl-tmp/projects/CloneBlock_RT/data/splits/vctk/train.csv (9717 条)
+[prepare_data] 已写 /root/autodl-tmp/projects/CloneBlock_RT/data/splits/vctk/val.csv (1209 条)
+[prepare_data] 已写 /root/autodl-tmp/projects/CloneBlock_RT/data/splits/vctk/test.csv (1275 条)
+[prepare_data] 已写 /root/autodl-tmp/projects/CloneBlock_RT/data/splits/vctk/split_stats.csv
+
+========== 数据规模 ==========
+  speaker 数:     108
+  片段数:        12201
+  总时长 (s):    32547.55
+
+========== split 统计表 ==========
+  train  speakers=  86  utterances= 9717  duration_sec=25920.18
+  val    speakers=  11  utterances= 1209  duration_sec=3315.62
+  test   speakers=  11  utterances= 1275  duration_sec=3311.75
+{"ok": true, "error_count": 0, "output": "artifacts/audit/vctk_data_audit.json"}
+/root/autodl-tmp/projects/CloneBlock_RT/.venv-main/lib/python3.10/site-packages/speechbrain/utils/autocast.py:188: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  wrapped_fwd = torch.cuda.amp.custom_fwd(fwd, cast_inputs=cast_inputs)
+/root/autodl-tmp/projects/CloneBlock_RT/.venv-main/lib/python3.10/site-packages/speechbrain/utils/checkpoints.py:200: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state_dict = torch.load(path, map_location=device)
+/root/autodl-tmp/projects/CloneBlock_RT/.venv-main/lib/python3.10/site-packages/speechbrain/processing/features.py:1529: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  stats = torch.load(path, map_location=device)
+step=1 loss=0.0055 L_spk=0.9979 L_intra=0.5753 L_rank=0.9172 L_ceiling=0.1989 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000 L_rec=0.0054 L_energy=0.0017 w_spk=0.000 w_intra=0.000 w_rank=0.000 w_ceiling=0.000 w_kagg=0.000 w_tgt=0.000 w_away=0.000 cos_tel=0.9979 nwin=8 rank_k=2
+[pair_check] step=1 utter_id=p263_0019 spk_id=p263 cos_tel=0.9982
+[pair_check] step=1 utter_id=p305_0029 spk_id=p305 cos_tel=0.9975
+[pair_check] step=1 utter_id=p341_0044 spk_id=p341 cos_tel=0.9979
+[pair_check] step=1 utter_id=p300_0023 spk_id=p300 cos_tel=0.9974
+[pair_check] step=1 utter_id=p231_0026 spk_id=p231 cos_tel=0.9986
+step=10 loss=0.0017 L_spk=0.9997 L_intra=0.5631 L_rank=0.7278 L_ceiling=0.1998 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=20 loss=0.7804 L_spk=0.9999 L_intra=0.6187 L_rank=0.8242 L_ceiling=0.1999 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+[val] step=25 speaker_sim_tel=0.9999
+[ckpt] saved best checkpoint at step=25 to /root/autodl-tmp/projects/CloneBlock_RT/checkpoints/defense/pilot_vctk_seed42_20260918_best.pt
+step=30 loss=1.5351 L_spk=0.9999 L_intra=0.5694 L_rank=0.9469 L_ceiling=0.1999 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=40 loss=2.3302 L_spk=0.9993 L_intra=0.6073 L_rank=0.7581 L_ceiling=0.1991 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=50 loss=3.1389 L_spk=0.9947 L_intra=0.6479 L_rank=0.9114 L_ceiling=0.1966 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000 L_rec=0.0041 L_energy=0.0005 w_spk=2.500 w_intra=1.000 w_rank=0.000 w_ceiling=0.000 w_kagg=0.000 w_tgt=0.000 w_away=0.000 cos_tel=0.9947 nwin=8 rank_k=16
+[pair_check] step=50 utter_id=p347_0090 spk_id=p347 cos_tel=0.9924
+[pair_check] step=50 utter_id=p241_0035 spk_id=p241 cos_tel=0.9964
+[pair_check] step=50 utter_id=p263_0060 spk_id=p263 cos_tel=0.9957
+[pair_check] step=50 utter_id=p230_0034 spk_id=p230 cos_tel=0.9927
+[pair_check] step=50 utter_id=p264_0011 spk_id=p264 cos_tel=0.9934
+[val] step=50 speaker_sim_tel=0.9943
+[ckpt] saved best checkpoint at step=50 to /root/autodl-tmp/projects/CloneBlock_RT/checkpoints/defense/pilot_vctk_seed42_20260918_best.pt
+{
+  "dataset": "vctk",
+  "steps": 50,
+  "batch_size": 8,
+  "train_rows": 256,
+  "val_rows": 32,
+  "run_name": "pilot_vctk_seed42_20260918",
+  "best_step": 50,
+  "best_val_speaker_sim_tel": 0.9943006634712219,
+  "best_val_k16_proxy": Infinity,
+  "best_metric": "speaker_sim_tel",
+  "best_metric_value": 0.9943006634712219,
+  "elapsed_sec": 15.1163969039917,
+  "device": "cuda",
+  "peak_gpu_mem_mb": 4009.556640625,
+  "outputs": {
+    "checkpoint": "/root/autodl-tmp/projects/CloneBlock_RT/checkpoints/defense/pilot_vctk_seed42_20260918_best.pt",
+    "curve_csv": "/root/autodl-tmp/projects/CloneBlock_RT/artifacts/tables/train_pilot_vctk_seed42_20260918_curve.csv",
+    "log_file": "/root/autodl-tmp/projects/CloneBlock_RT/artifacts/logs/train_pilot_vctk_seed42_20260918.log"
+  }
+}
+{
+  "ok": true,
+  "run_name": "pilot_vctk_seed42_20260918",
+  "steps": 50,
+  "dataset": "vctk",
+  "best_step": 50,
+  "best_val_speaker_sim_tel": 0.9943006634712219,
+  "final_loss": 3.138920307159424,
+  "checkpoint": "/root/autodl-tmp/projects/CloneBlock_RT/checkpoints/defense/pilot_vctk_seed42_20260918_best.pt",
+  "scope": "Numerical and artifact integrity only; not a defense-efficacy claim."
+}
+/root/autodl-tmp/projects/CloneBlock_RT/.venv-main/lib/python3.10/site-packages/speechbrain/utils/autocast.py:188: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  wrapped_fwd = torch.cuda.amp.custom_fwd(fwd, cast_inputs=cast_inputs)
+/root/autodl-tmp/projects/CloneBlock_RT/.venv-main/lib/python3.10/site-packages/speechbrain/utils/checkpoints.py:200: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state_dict = torch.load(path, map_location=device)
+/root/autodl-tmp/projects/CloneBlock_RT/.venv-main/lib/python3.10/site-packages/speechbrain/processing/features.py:1529: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  stats = torch.load(path, map_location=device)
+step=1 loss=0.0053 L_spk=0.9975 L_intra=0.6296 L_rank=0.7606 L_ceiling=0.1982 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000 L_rec=0.0051 L_energy=0.0021 w_spk=0.000 w_intra=0.000 w_rank=0.000 w_ceiling=0.000 w_kagg=0.000 w_tgt=0.000 w_away=0.000 cos_tel=0.9975 nwin=8 rank_k=1
+[pair_check] step=1 utter_id=p347_0010 spk_id=p347 cos_tel=0.9983
+[pair_check] step=1 utter_id=p238_0071 spk_id=p238 cos_tel=0.9980
+[pair_check] step=1 utter_id=p281_0057 spk_id=p281 cos_tel=0.9975
+[pair_check] step=1 utter_id=p288_0063 spk_id=p288 cos_tel=0.9977
+[pair_check] step=1 utter_id=p304_0013 spk_id=p304 cos_tel=0.9970
+step=20 loss=0.0006 L_spk=1.0000 L_intra=0.6342 L_rank=0.7303 L_ceiling=0.1999 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=40 loss=0.0002 L_spk=1.0000 L_intra=0.5430 L_rank=0.8836 L_ceiling=0.2000 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=50 loss=0.0002 L_spk=1.0000 L_intra=0.5963 L_rank=0.9345 L_ceiling=0.2000 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000 L_rec=0.0002 L_energy=0.0000 w_spk=0.000 w_intra=0.000 w_rank=0.000 w_ceiling=0.000 w_kagg=0.000 w_tgt=0.000 w_away=0.000 cos_tel=1.0000 nwin=7 rank_k=8
+[pair_check] step=50 utter_id=p300_0071 spk_id=p300 cos_tel=1.0000
+[pair_check] step=50 utter_id=p339_0042 spk_id=p339 cos_tel=1.0000
+[pair_check] step=50 utter_id=p334_0055 spk_id=p334 cos_tel=1.0000
+[pair_check] step=50 utter_id=p231_0042 spk_id=p231 cos_tel=1.0000
+[pair_check] step=50 utter_id=p232_0073 spk_id=p232 cos_tel=1.0000
+step=60 loss=0.0001 L_spk=1.0000 L_intra=0.6102 L_rank=0.8791 L_ceiling=0.2000 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=80 loss=0.0001 L_spk=1.0000 L_intra=0.5908 L_rank=0.8997 L_ceiling=0.2000 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=100 loss=0.0002 L_spk=1.0000 L_intra=0.6089 L_rank=0.8299 L_ceiling=0.2000 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000 L_rec=0.0002 L_energy=0.0001 w_spk=0.000 w_intra=0.000 w_rank=0.000 w_ceiling=0.000 w_kagg=0.000 w_tgt=0.000 w_away=0.000 cos_tel=1.0000 nwin=8 rank_k=8
+[pair_check] step=100 utter_id=p329_0109 spk_id=p329 cos_tel=1.0000
+[pair_check] step=100 utter_id=p253_0068 spk_id=p253 cos_tel=1.0000
+[pair_check] step=100 utter_id=p241_0101 spk_id=p241 cos_tel=1.0000
+[pair_check] step=100 utter_id=p248_0108 spk_id=p248 cos_tel=1.0000
+[pair_check] step=100 utter_id=p233_0093 spk_id=p233 cos_tel=1.0000
+[val] step=100 speaker_sim_tel=1.0000
+[ckpt] saved best checkpoint at step=100 to /root/autodl-tmp/projects/CloneBlock_RT/checkpoints/defense/reference_vctk_v0p2_seed42_20260918_best.pt
+step=120 loss=0.0001 L_spk=1.0000 L_intra=0.5997 L_rank=0.8417 L_ceiling=0.2000 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=140 loss=0.0001 L_spk=1.0000 L_intra=0.6120 L_rank=0.9152 L_ceiling=0.2000 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=150 loss=0.0001 L_spk=1.0000 L_intra=0.5955 L_rank=0.9454 L_ceiling=0.2000 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000 L_rec=0.0001 L_energy=0.0000 w_spk=0.000 w_intra=0.000 w_rank=0.000 w_ceiling=0.000 w_kagg=0.000 w_tgt=0.000 w_away=0.000 cos_tel=1.0000 nwin=7 rank_k=8
+[pair_check] step=150 utter_id=p281_0007 spk_id=p281 cos_tel=1.0000
+[pair_check] step=150 utter_id=p294_0087 spk_id=p294 cos_tel=1.0000
+[pair_check] step=150 utter_id=p334_0120 spk_id=p334 cos_tel=1.0000
+[pair_check] step=150 utter_id=p362_0041 spk_id=p362 cos_tel=1.0000
+[pair_check] step=150 utter_id=p230_0085 spk_id=p230 cos_tel=1.0000
+step=160 loss=0.0001 L_spk=1.0000 L_intra=0.6043 L_rank=0.8016 L_ceiling=0.2000 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=180 loss=0.0001 L_spk=1.0000 L_intra=0.5923 L_rank=0.8166 L_ceiling=0.2000 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=200 loss=0.0001 L_spk=1.0000 L_intra=0.6273 L_rank=0.7088 L_ceiling=0.2000 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000 L_rec=0.0001 L_energy=0.0000 w_spk=0.000 w_intra=0.000 w_rank=0.000 w_ceiling=0.000 w_kagg=0.000 w_tgt=0.000 w_away=0.000 cos_tel=1.0000 nwin=8 rank_k=16
+[pair_check] step=200 utter_id=p226_0086 spk_id=p226 cos_tel=1.0000
+[pair_check] step=200 utter_id=p311_0113 spk_id=p311 cos_tel=1.0000
+[pair_check] step=200 utter_id=p230_0068 spk_id=p230 cos_tel=1.0000
+[pair_check] step=200 utter_id=p297_0083 spk_id=p297 cos_tel=1.0000
+[pair_check] step=200 utter_id=p264_0051 spk_id=p264 cos_tel=1.0000
+[rank_k_hist] step=200 K1:9 K2:29 K4:36 K8:38 K16:88
+[val] step=200 speaker_sim_tel=1.0000
+step=220 loss=0.0769 L_spk=1.0000 L_intra=0.5730 L_rank=0.8602 L_ceiling=0.2000 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=240 loss=0.1543 L_spk=1.0000 L_intra=0.5854 L_rank=0.7990 L_ceiling=0.2000 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=250 loss=0.1927 L_spk=1.0000 L_intra=0.5822 L_rank=0.8499 L_ceiling=0.2000 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000 L_rec=0.0001 L_energy=0.0000 w_spk=0.156 w_intra=0.062 w_rank=0.000 w_ceiling=0.000 w_kagg=0.000 w_tgt=0.000 w_away=0.000 cos_tel=1.0000 nwin=7 rank_k=8
+[pair_check] step=250 utter_id=p316_0082 spk_id=p316 cos_tel=1.0000
+[pair_check] step=250 utter_id=p363_0059 spk_id=p363 cos_tel=1.0000
+[pair_check] step=250 utter_id=p268_0031 spk_id=p268 cos_tel=1.0000
+[pair_check] step=250 utter_id=p299_0064 spk_id=p299 cos_tel=1.0000
+[pair_check] step=250 utter_id=p311_0020 spk_id=p311 cos_tel=1.0000
+step=260 loss=0.2332 L_spk=1.0000 L_intra=0.6089 L_rank=0.8153 L_ceiling=0.2000 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=280 loss=0.3124 L_spk=1.0000 L_intra=0.6230 L_rank=0.9674 L_ceiling=0.2000 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=300 loss=0.3841 L_spk=1.0000 L_intra=0.5714 L_rank=0.8351 L_ceiling=0.2000 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000 L_rec=0.0001 L_energy=0.0000 w_spk=0.312 w_intra=0.125 w_rank=0.000 w_ceiling=0.000 w_kagg=0.000 w_tgt=0.000 w_away=0.000 cos_tel=1.0000 nwin=8 rank_k=16
+[pair_check] step=300 utter_id=p226_0042 spk_id=p226 cos_tel=1.0000
+[pair_check] step=300 utter_id=p266_0050 spk_id=p266 cos_tel=1.0000
+[pair_check] step=300 utter_id=p232_0032 spk_id=p232 cos_tel=1.0000
+[pair_check] step=300 utter_id=p363_0059 spk_id=p363 cos_tel=1.0000
+[pair_check] step=300 utter_id=p251_0057 spk_id=p251 cos_tel=1.0000
+[val] step=300 speaker_sim_tel=1.0000
+[ckpt] saved best checkpoint at step=300 to /root/autodl-tmp/projects/CloneBlock_RT/checkpoints/defense/reference_vctk_v0p2_seed42_20260918_best.pt
+step=320 loss=0.4657 L_spk=1.0000 L_intra=0.6035 L_rank=0.9492 L_ceiling=0.2000 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=340 loss=0.5479 L_spk=1.0000 L_intra=0.6296 L_rank=0.7638 L_ceiling=0.2000 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=350 loss=0.5786 L_spk=1.0000 L_intra=0.5848 L_rank=0.9908 L_ceiling=0.2000 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000 L_rec=0.0002 L_energy=0.0000 w_spk=0.469 w_intra=0.188 w_rank=0.000 w_ceiling=0.000 w_kagg=0.000 w_tgt=0.000 w_away=0.000 cos_tel=1.0000 nwin=8 rank_k=8
+[pair_check] step=350 utter_id=p271_0048 spk_id=p271 cos_tel=1.0000
+[pair_check] step=350 utter_id=p274_0039 spk_id=p274 cos_tel=1.0000
+[pair_check] step=350 utter_id=p281_0096 spk_id=p281 cos_tel=1.0000
+[pair_check] step=350 utter_id=p268_0089 spk_id=p268 cos_tel=1.0000
+[pair_check] step=350 utter_id=p313_0058 spk_id=p313 cos_tel=0.9999
+step=360 loss=0.6154 L_spk=1.0000 L_intra=0.5758 L_rank=0.8426 L_ceiling=0.2000 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=380 loss=0.6929 L_spk=0.9999 L_intra=0.5787 L_rank=0.8474 L_ceiling=0.1999 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=400 loss=0.7734 L_spk=0.9994 L_intra=0.5924 L_rank=1.0086 L_ceiling=0.1989 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000 L_rec=0.0006 L_energy=0.0000 w_spk=0.625 w_intra=0.250 w_rank=0.000 w_ceiling=0.000 w_kagg=0.000 w_tgt=0.000 w_away=0.000 cos_tel=0.9994 nwin=8 rank_k=2
+[pair_check] step=400 utter_id=p231_0102 spk_id=p231 cos_tel=0.9994
+[pair_check] step=400 utter_id=p276_0049 spk_id=p276 cos_tel=0.9997
+[pair_check] step=400 utter_id=p335_0001 spk_id=p335 cos_tel=0.9996
+[pair_check] step=400 utter_id=p227_0049 spk_id=p227 cos_tel=0.9996
+[pair_check] step=400 utter_id=p292_0098 spk_id=p292 cos_tel=0.9994
+[rank_k_hist] step=400 K1:10 K2:14 K4:38 K8:45 K16:93
+[val] step=400 speaker_sim_tel=0.9993
+[ckpt] saved best checkpoint at step=400 to /root/autodl-tmp/projects/CloneBlock_RT/checkpoints/defense/reference_vctk_v0p2_seed42_20260918_best.pt
+step=420 loss=0.8546 L_spk=0.9976 L_intra=0.6096 L_rank=0.7609 L_ceiling=0.1963 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=440 loss=0.9392 L_spk=0.9877 L_intra=0.6504 L_rank=0.8647 L_ceiling=0.1905 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=450 loss=0.9756 L_spk=0.9856 L_intra=0.6372 L_rank=0.8899 L_ceiling=0.1776 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000 L_rec=0.0064 L_energy=0.0002 w_spk=0.781 w_intra=0.312 w_rank=0.000 w_ceiling=0.000 w_kagg=0.000 w_tgt=0.000 w_away=0.000 cos_tel=0.9856 nwin=8 rank_k=16
+[pair_check] step=450 utter_id=p286_0096 spk_id=p286 cos_tel=0.9866
+[pair_check] step=450 utter_id=p236_0032 spk_id=p236 cos_tel=0.9903
+[pair_check] step=450 utter_id=s5_0081 spk_id=s5 cos_tel=0.9897
+[pair_check] step=450 utter_id=p304_0057 spk_id=p304 cos_tel=0.9923
+[pair_check] step=450 utter_id=p294_0099 spk_id=p294 cos_tel=0.9908
+step=460 loss=1.0138 L_spk=0.9849 L_intra=0.6390 L_rank=0.7504 L_ceiling=0.1699 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=480 loss=1.0731 L_spk=0.9814 L_intra=0.5962 L_rank=0.8546 L_ceiling=0.1850 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=500 loss=1.1348 L_spk=0.9715 L_intra=0.5733 L_rank=0.7793 L_ceiling=0.1804 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000 L_rec=0.0089 L_energy=0.0007 w_spk=0.938 w_intra=0.375 w_rank=0.000 w_ceiling=0.000 w_kagg=0.000 w_tgt=0.000 w_away=0.000 cos_tel=0.9715 nwin=8 rank_k=16
+[pair_check] step=500 utter_id=p347_0100 spk_id=p347 cos_tel=0.9648
+[pair_check] step=500 utter_id=p225_0007 spk_id=p225 cos_tel=0.9777
+[pair_check] step=500 utter_id=p304_0049 spk_id=p304 cos_tel=0.9855
+[pair_check] step=500 utter_id=p246_0098 spk_id=p246 cos_tel=0.9805
+[pair_check] step=500 utter_id=p335_0064 spk_id=p335 cos_tel=0.9715
+[val] step=500 speaker_sim_tel=0.9744
+[ckpt] saved best checkpoint at step=500 to /root/autodl-tmp/projects/CloneBlock_RT/checkpoints/defense/reference_vctk_v0p2_seed42_20260918_best.pt
+step=520 loss=1.2279 L_spk=0.9728 L_intra=0.6158 L_rank=0.9282 L_ceiling=0.1653 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=540 loss=1.3048 L_spk=0.9728 L_intra=0.6218 L_rank=0.7130 L_ceiling=0.1685 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=550 loss=1.3321 L_spk=0.9664 L_intra=0.5932 L_rank=0.7965 L_ceiling=0.1451 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000 L_rec=0.0154 L_energy=0.0015 w_spk=1.094 w_intra=0.438 w_rank=0.000 w_ceiling=0.000 w_kagg=0.000 w_tgt=0.000 w_away=0.000 cos_tel=0.9664 nwin=8 rank_k=8
+[pair_check] step=550 utter_id=p253_0067 spk_id=p253 cos_tel=0.9522
+[pair_check] step=550 utter_id=p273_0013 spk_id=p273 cos_tel=0.9662
+[pair_check] step=550 utter_id=p274_0006 spk_id=p274 cos_tel=0.9680
+[pair_check] step=550 utter_id=p278_0009 spk_id=p278 cos_tel=0.9768
+[pair_check] step=550 utter_id=p251_0075 spk_id=p251 cos_tel=0.9577
+step=560 loss=1.3598 L_spk=0.9657 L_intra=0.5866 L_rank=0.7722 L_ceiling=0.1612 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=580 loss=1.4032 L_spk=0.9473 L_intra=0.5637 L_rank=0.8329 L_ceiling=0.1646 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=600 loss=1.5088 L_spk=0.9540 L_intra=0.6102 L_rank=0.9116 L_ceiling=0.1617 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000 L_rec=0.0111 L_energy=0.0009 w_spk=1.250 w_intra=0.500 w_rank=0.000 w_ceiling=0.000 w_kagg=0.000 w_tgt=0.000 w_away=0.000 cos_tel=0.9540 nwin=7 rank_k=16
+[pair_check] step=600 utter_id=p260_0076 spk_id=p260 cos_tel=0.9645
+[pair_check] step=600 utter_id=p300_0069 spk_id=p300 cos_tel=0.9536
+[pair_check] step=600 utter_id=p267_0017 spk_id=p267 cos_tel=0.9475
+[pair_check] step=600 utter_id=p330_0041 spk_id=p330 cos_tel=0.9464
+[pair_check] step=600 utter_id=p281_0016 spk_id=p281 cos_tel=0.9504
+[rank_k_hist] step=600 K1:10 K2:16 K4:53 K8:44 K16:77
+[val] step=600 speaker_sim_tel=0.9534
+[ckpt] saved best checkpoint at step=600 to /root/autodl-tmp/projects/CloneBlock_RT/checkpoints/defense/reference_vctk_v0p2_seed42_20260918_best.pt
+step=620 loss=1.5778 L_spk=0.9474 L_intra=0.5997 L_rank=0.8763 L_ceiling=0.1538 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=640 loss=1.6649 L_spk=0.9523 L_intra=0.6292 L_rank=0.6395 L_ceiling=0.1671 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=650 loss=1.7108 L_spk=0.9546 L_intra=0.6338 L_rank=0.8515 L_ceiling=0.1491 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000 L_rec=0.0119 L_energy=0.0006 w_spk=1.406 w_intra=0.562 w_rank=0.000 w_ceiling=0.000 w_kagg=0.000 w_tgt=0.000 w_away=0.000 cos_tel=0.9546 nwin=8 rank_k=16
+[pair_check] step=650 utter_id=p234_0091 spk_id=p234 cos_tel=0.9515
+[pair_check] step=650 utter_id=p334_0090 spk_id=p334 cos_tel=0.9343
+[pair_check] step=650 utter_id=p263_0060 spk_id=p263 cos_tel=0.9454
+[pair_check] step=650 utter_id=p306_0036 spk_id=p306 cos_tel=0.9589
+[pair_check] step=650 utter_id=p311_0019 spk_id=p311 cos_tel=0.9658
+step=660 loss=1.7197 L_spk=0.9392 L_intra=0.6192 L_rank=0.7239 L_ceiling=0.1146 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=680 loss=1.8083 L_spk=0.9446 L_intra=0.6284 L_rank=0.7780 L_ceiling=0.1558 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=700 loss=1.8701 L_spk=0.9502 L_intra=0.5946 L_rank=0.7851 L_ceiling=0.1594 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000 L_rec=0.0137 L_energy=0.0012 w_spk=1.562 w_intra=0.625 w_rank=0.000 w_ceiling=0.000 w_kagg=0.000 w_tgt=0.000 w_away=0.000 cos_tel=0.9502 nwin=8 rank_k=16
+[pair_check] step=700 utter_id=p294_0093 spk_id=p294 cos_tel=0.9442
+[pair_check] step=700 utter_id=p333_0045 spk_id=p333 cos_tel=0.9459
+[pair_check] step=700 utter_id=p285_0077 spk_id=p285 cos_tel=0.9387
+[pair_check] step=700 utter_id=p269_0089 spk_id=p269 cos_tel=0.9339
+[pair_check] step=700 utter_id=p284_0052 spk_id=p284 cos_tel=0.9640
+[val] step=700 speaker_sim_tel=0.9553
+step=720 loss=1.9669 L_spk=0.9497 L_intra=0.6285 L_rank=0.8683 L_ceiling=0.1564 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=740 loss=2.0438 L_spk=0.9513 L_intra=0.6221 L_rank=0.8346 L_ceiling=0.1695 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=750 loss=2.0712 L_spk=0.9528 L_intra=0.6137 L_rank=0.9705 L_ceiling=0.1531 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000 L_rec=0.0115 L_energy=0.0008 w_spk=1.719 w_intra=0.688 w_rank=0.000 w_ceiling=0.000 w_kagg=0.000 w_tgt=0.000 w_away=0.000 cos_tel=0.9528 nwin=6 rank_k=2
+[pair_check] step=750 utter_id=p268_0100 spk_id=p268 cos_tel=0.9560
+[pair_check] step=750 utter_id=p269_0010 spk_id=p269 cos_tel=0.9423
+[pair_check] step=750 utter_id=p308_0079 spk_id=p308 cos_tel=0.9667
+[pair_check] step=750 utter_id=p248_0070 spk_id=p248 cos_tel=0.9720
+[pair_check] step=750 utter_id=p261_0010 spk_id=p261 cos_tel=0.9499
+step=760 loss=2.1292 L_spk=0.9525 L_intra=0.6407 L_rank=0.9076 L_ceiling=0.1620 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=780 loss=2.1985 L_spk=0.9430 L_intra=0.6549 L_rank=0.7657 L_ceiling=0.1423 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=800 loss=2.2542 L_spk=0.9369 L_intra=0.6380 L_rank=0.8535 L_ceiling=0.1396 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000 L_rec=0.0190 L_energy=0.0012 w_spk=1.875 w_intra=0.750 w_rank=0.000 w_ceiling=0.000 w_kagg=0.000 w_tgt=0.000 w_away=0.000 cos_tel=0.9369 nwin=7 rank_k=16
+[pair_check] step=800 utter_id=p333_0107 spk_id=p333 cos_tel=0.9418
+[pair_check] step=800 utter_id=p305_0022 spk_id=p305 cos_tel=0.9540
+[pair_check] step=800 utter_id=p266_0031 spk_id=p266 cos_tel=0.9529
+[pair_check] step=800 utter_id=p225_0045 spk_id=p225 cos_tel=0.9190
+[pair_check] step=800 utter_id=p285_0066 spk_id=p285 cos_tel=0.9098
+[rank_k_hist] step=800 K1:15 K2:17 K4:37 K8:46 K16:85
+[val] step=800 speaker_sim_tel=0.9489
+[ckpt] saved best checkpoint at step=800 to /root/autodl-tmp/projects/CloneBlock_RT/checkpoints/defense/reference_vctk_v0p2_seed42_20260918_best.pt
+step=820 loss=2.2517 L_spk=0.9393 L_intra=0.5346 L_rank=0.8198 L_ceiling=0.1489 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=840 loss=2.3982 L_spk=0.9463 L_intra=0.6166 L_rank=0.7329 L_ceiling=0.1544 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=850 loss=2.4549 L_spk=0.9540 L_intra=0.6186 L_rank=0.9459 L_ceiling=0.1432 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000 L_rec=0.0143 L_energy=0.0014 w_spk=2.031 w_intra=0.812 w_rank=0.000 w_ceiling=0.000 w_kagg=0.000 w_tgt=0.000 w_away=0.000 cos_tel=0.9540 nwin=8 rank_k=4
+[pair_check] step=850 utter_id=p268_0089 spk_id=p268 cos_tel=0.9700
+[pair_check] step=850 utter_id=p361_0057 spk_id=p361 cos_tel=0.9658
+[pair_check] step=850 utter_id=p252_0014 spk_id=p252 cos_tel=0.9450
+[pair_check] step=850 utter_id=p311_0019 spk_id=p311 cos_tel=0.9754
+[pair_check] step=850 utter_id=p251_0071 spk_id=p251 cos_tel=0.9476
+step=860 loss=2.4578 L_spk=0.9432 L_intra=0.6089 L_rank=0.6659 L_ceiling=0.1485 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=880 loss=2.5294 L_spk=0.9443 L_intra=0.6000 L_rank=0.7110 L_ceiling=0.1519 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=900 loss=2.6118 L_spk=0.9504 L_intra=0.5937 L_rank=0.8700 L_ceiling=0.1437 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000 L_rec=0.0131 L_energy=0.0010 w_spk=2.188 w_intra=0.875 w_rank=0.000 w_ceiling=0.000 w_kagg=0.000 w_tgt=0.000 w_away=0.000 cos_tel=0.9504 nwin=5 rank_k=16
+[pair_check] step=900 utter_id=p241_0028 spk_id=p241 cos_tel=0.9447
+[pair_check] step=900 utter_id=p300_0068 spk_id=p300 cos_tel=0.9629
+[pair_check] step=900 utter_id=p302_0093 spk_id=p302 cos_tel=0.9708
+[pair_check] step=900 utter_id=p287_0109 spk_id=p287 cos_tel=0.9409
+[pair_check] step=900 utter_id=p294_0038 spk_id=p294 cos_tel=0.9617
+[val] step=900 speaker_sim_tel=0.9508
+step=920 loss=2.6849 L_spk=0.9486 L_intra=0.5954 L_rank=0.7692 L_ceiling=0.1714 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=940 loss=2.7631 L_spk=0.9411 L_intra=0.6178 L_rank=0.7551 L_ceiling=0.1228 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=950 loss=2.8239 L_spk=0.9467 L_intra=0.6311 L_rank=0.7810 L_ceiling=0.1356 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000 L_rec=0.0133 L_energy=0.0011 w_spk=2.344 w_intra=0.938 w_rank=0.000 w_ceiling=0.000 w_kagg=0.000 w_tgt=0.000 w_away=0.000 cos_tel=0.9467 nwin=8 rank_k=16
+[pair_check] step=950 utter_id=p293_0022 spk_id=p293 cos_tel=0.9309
+[pair_check] step=950 utter_id=p246_0089 spk_id=p246 cos_tel=0.9653
+[pair_check] step=950 utter_id=p248_0082 spk_id=p248 cos_tel=0.9635
+[pair_check] step=950 utter_id=p283_0038 spk_id=p283 cos_tel=0.9531
+[pair_check] step=950 utter_id=p286_0085 spk_id=p286 cos_tel=0.9545
+step=960 loss=2.7415 L_spk=0.9401 L_intra=0.5178 L_rank=0.7509 L_ceiling=0.1557 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=980 loss=2.8976 L_spk=0.9438 L_intra=0.6013 L_rank=0.8019 L_ceiling=0.1329 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=1000 loss=3.0050 L_spk=0.9439 L_intra=0.6326 L_rank=0.6668 L_ceiling=0.1413 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000 L_rec=0.0126 L_energy=0.0009 w_spk=2.500 w_intra=1.000 w_rank=0.000 w_ceiling=0.000 w_kagg=0.000 w_tgt=0.000 w_away=0.000 cos_tel=0.9439 nwin=7 rank_k=4
+[pair_check] step=1000 utter_id=p360_0094 spk_id=p360 cos_tel=0.9449
+[pair_check] step=1000 utter_id=p336_0031 spk_id=p336 cos_tel=0.9443
+[pair_check] step=1000 utter_id=p318_0075 spk_id=p318 cos_tel=0.9629
+[pair_check] step=1000 utter_id=s5_0040 spk_id=s5 cos_tel=0.9656
+[pair_check] step=1000 utter_id=p302_0042 spk_id=p302 cos_tel=0.9482
+[rank_k_hist] step=1000 K1:12 K2:13 K4:42 K8:53 K16:80
+[val] step=1000 speaker_sim_tel=0.9496
+{
+  "dataset": "vctk",
+  "steps": 1000,
+  "batch_size": 8,
+  "train_rows": 2000,
+  "val_rows": 400,
+  "run_name": "reference_vctk_v0p2_seed42_20260918",
+  "best_step": 800,
+  "best_val_speaker_sim_tel": 0.9489393591880798,
+  "best_val_k16_proxy": Infinity,
+  "best_metric": "speaker_sim_tel",
+  "best_metric_value": 0.9489393591880798,
+  "elapsed_sec": 251.44475960731506,
+  "device": "cuda",
+  "peak_gpu_mem_mb": 5607.62109375,
+  "outputs": {
+    "checkpoint": "/root/autodl-tmp/projects/CloneBlock_RT/checkpoints/defense/reference_vctk_v0p2_seed42_20260918_best.pt",
+    "curve_csv": "/root/autodl-tmp/projects/CloneBlock_RT/artifacts/tables/train_reference_vctk_v0p2_seed42_20260918_curve.csv",
+    "log_file": "/root/autodl-tmp/projects/CloneBlock_RT/artifacts/logs/train_reference_vctk_v0p2_seed42_20260918.log"
+  }
+}
+{
+  "ok": true,
+  "run_name": "reference_vctk_v0p2_seed42_20260918",
+  "steps": 1000,
+  "dataset": "vctk",
+  "best_step": 800,
+  "best_val_speaker_sim_tel": 0.9489393591880798,
+  "final_loss": 3.004964828491211,
+  "checkpoint": "/root/autodl-tmp/projects/CloneBlock_RT/checkpoints/defense/reference_vctk_v0p2_seed42_20260918_best.pt",
+  "scope": "Numerical and artifact integrity only; not a defense-efficacy claim."
+}

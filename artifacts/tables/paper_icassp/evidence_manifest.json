@@ -1,0 +1,115 @@
+{
+  "protocol": "icassp_evidence_export_v1",
+  "sources": {
+    "artifacts/tables/bootstrap_ci_vctk_ablation_ecapa_defended_20260919.csv": {
+      "size_bytes": 17386,
+      "sha256": "80c76910c329edb271cc6817f02cf22acb706155420bca3240cd259d36347b51"
+    },
+    "artifacts/tables/bootstrap_ci_vctk_ablation_xvector_defended_20260919.csv": {
+      "size_bytes": 17562,
+      "sha256": "13479ebdd7d1e4aa5589aa01a45404c8f8d13e599286d263e585e37037736f80"
+    },
+    "artifacts/tables/bootstrap_ci_vctk_test_ecapa_g711_20260919.csv": {
+      "size_bytes": 17167,
+      "sha256": "d5f694580bc5c1ae6857d8f10a10b4c36f2319c5ccdbc022e06e5320a042f81c"
+    },
+    "artifacts/tables/bootstrap_ci_vctk_test_ecapa_none_20260919.csv": {
+      "size_bytes": 17178,
+      "sha256": "cdb10d5653b2058c31efa8d418ac145b75b263498b1e864ae7d0a0b8f96b8cd6"
+    },
+    "artifacts/tables/bootstrap_ci_vctk_test_ecapa_opus16k_20260919.csv": {
+      "size_bytes": 17150,
+      "sha256": "2fbb2b00737ffb234e0a8dba639fc0ac17e8450a4de00e131e4be4141f6e9fa4"
+    },
+    "artifacts/tables/bootstrap_ci_vctk_test_xvector_none_20260919.csv": {
+      "size_bytes": 17365,
+      "sha256": "ae693502b2280ce5087919b1b3aabb596e69ca33f2128143877851bc2831be35"
+    },
+    "artifacts/tables/latency_v0p1_B_v2.csv": {
+      "size_bytes": 458,
+      "sha256": "6d8ed04194960009f7f4b95b24e4711f7db0545285c2c3a5953ba1accb3a0a5e"
+    },
+    "artifacts/tables/paper_icassp/quality_official_bootstrap.csv": {
+      "size_bytes": 2590,
+      "sha256": "24ee218bd2666c88c1c8ade0e289cab504514a107c5afbd7ca697273345e386a"
+    },
+    "artifacts/tables/vctk_oracle_ecapa_none_20260919_eer.csv": {
+      "size_bytes": 190,
+      "sha256": "9c1998963af83e73920fcd3772500489b4f17050155e4adbb3fc874670623ee3"
+    },
+    "artifacts/tables/vctk_oracle_ecapa_none_20260919_margin.csv": {
+      "size_bytes": 198,
+      "sha256": "4febd000b734877aeb8d8b97c7fd0155e4aa0651d1ac0004d2129f744291df24"
+    },
+    "artifacts/tables/vctk_oracle_xvector_none_20260919_eer.csv": {
+      "size_bytes": 196,
+      "sha256": "51b2feb0b7f46eeffed2bf2d120441a3daaab3466760d0ecabb4d8e73ed0dbe6"
+    },
+    "artifacts/tables/vctk_oracle_xvector_none_20260919_margin.csv": {
+      "size_bytes": 204,
+      "sha256": "b01a6dd14187ca930d3baec599051d2cd7e79e85f8323d7967578df24bf0575b"
+    },
+    "artifacts/tables/vctk_test_budget_20260919_summary.csv": {
+      "size_bytes": 651,
+      "sha256": "37fcccbb608f9971a4a4e19be23848257a02dd2dc01622c6c09a80fc11620366"
+    },
+    "artifacts/tables/vctk_test_ecapa_none_20260919_eer.csv": {
+      "size_bytes": 190,
+      "sha256": "9c1998963af83e73920fcd3772500489b4f17050155e4adbb3fc874670623ee3"
+    },
+    "artifacts/tables/vctk_test_ecapa_none_20260919_margin.csv": {
+      "size_bytes": 198,
+      "sha256": "2d5a68a60e9389bd2e97efa2997c003f5acc7fa84e933efb3c4c6eff190d5c87"
+    },
+    "artifacts/tables/vctk_test_xvector_none_20260919_eer.csv": {
+      "size_bytes": 196,
+      "sha256": "b384b239b7709da8c01984c764e4e4ca337489e52b869c97b8ed54bfc917606e"
+    },
+    "artifacts/tables/vctk_test_xvector_none_20260919_margin.csv": {
+      "size_bytes": 204,
+      "sha256": "f7c426bf7b97f7cd08802a1a5a7bc4b03fe7028b5fba3e748b8ff38d59a53e8e"
+    },
+    "artifacts/tables/vctk_xtts_summary_20260919.csv": {
+      "size_bytes": 4269,
+      "sha256": "af3f4472974c89287e642e0d24e888adafe2c99a551fc0337ea35567574bc144"
+    }
+  },
+  "outputs": {
+    "artifacts/tables/paper_icassp/codec_security_ecapa.csv": {
+      "size_bytes": 1701,
+      "sha256": "92105e8468a6b1f84d7f0b958d0e39adcd9b938f56b9511b887f44e71bf30a37"
+    },
+    "artifacts/tables/paper_icassp/main_security_ecapa.csv": {
+      "size_bytes": 2163,
+      "sha256": "57aa4b35980faedab5317097cd6507b4fc31b19c35af3d88b885178fb290f5b3"
+    },
+    "artifacts/tables/paper_icassp/perturbation_budget.csv": {
+      "size_bytes": 651,
+      "sha256": "37fcccbb608f9971a4a4e19be23848257a02dd2dc01622c6c09a80fc11620366"
+    },
+    "artifacts/tables/paper_icassp/quality_summary.csv": {
+      "size_bytes": 2590,
+      "sha256": "24ee218bd2666c88c1c8ade0e289cab504514a107c5afbd7ca697273345e386a"
+    },
+    "artifacts/tables/paper_icassp/selection_source_ablation.csv": {
+      "size_bytes": 816,
+      "sha256": "ebd7d227740b912e6219a127f6b95863d061a1bc2245ab34eb957134cbded279"
+    },
+    "artifacts/tables/paper_icassp/streaming_latency.csv": {
+      "size_bytes": 458,
+      "sha256": "6d8ed04194960009f7f4b95b24e4711f7db0545285c2c3a5953ba1accb3a0a5e"
+    },
+    "artifacts/tables/paper_icassp/vctk_oracle_none_20260919_asv.csv": {
+      "size_bytes": 423,
+      "sha256": "b58edbb1d9cccbf89534c888030c8403c2cae63d92c21ac4acf4b9781b3d7b6d"
+    },
+    "artifacts/tables/paper_icassp/vctk_test_none_20260919_asv.csv": {
+      "size_bytes": 423,
+      "sha256": "2a7c69f98af50665bcce25156ccca259f0492bc79300d28bf9f44b3aa4fd9ef4"
+    },
+    "artifacts/tables/paper_icassp/xtts_summary.csv": {
+      "size_bytes": 3263,
+      "sha256": "7415c9b9e37a6d7f6726887e6d2a6668905dd692453e2ccf9276b245eb7eb29f"
+    }
+  }
+}

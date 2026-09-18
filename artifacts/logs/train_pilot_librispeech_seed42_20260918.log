@@ -1,0 +1,20 @@
+step=1 loss=0.0065 L_spk=0.9980 L_intra=0.5116 L_rank=0.8043 L_ceiling=0.1987 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000 L_rec=0.0063 L_energy=0.0017 w_spk=0.000 w_intra=0.000 w_rank=0.000 w_ceiling=0.000 w_kagg=0.000 w_tgt=0.000 w_away=0.000 cos_tel=0.9980 nwin=8 rank_k=16
+[pair_check] step=1 utter_id=7850_0061 spk_id=7850 cos_tel=0.9973
+[pair_check] step=1 utter_id=6319_0075 spk_id=6319 cos_tel=0.9970
+[pair_check] step=1 utter_id=1272_0036 spk_id=1272 cos_tel=0.9986
+[pair_check] step=1 utter_id=3000_0074 spk_id=3000 cos_tel=0.9983
+[pair_check] step=1 utter_id=251_0026 spk_id=251 cos_tel=0.9975
+step=10 loss=0.0026 L_spk=0.9998 L_intra=0.6175 L_rank=0.7111 L_ceiling=0.1999 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=20 loss=0.7680 L_spk=1.0000 L_intra=0.5675 L_rank=0.9500 L_ceiling=0.2000 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+[val] step=25 speaker_sim_tel=1.0000
+[ckpt] saved best checkpoint at step=25 to /root/autodl-tmp/projects/CloneBlock_RT/checkpoints/defense/pilot_librispeech_seed42_20260918_best.pt
+step=30 loss=1.5517 L_spk=1.0000 L_intra=0.6017 L_rank=0.7891 L_ceiling=0.2000 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=40 loss=2.3406 L_spk=0.9997 L_intra=0.6203 L_rank=0.7336 L_ceiling=0.1997 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=50 loss=3.1394 L_spk=0.9992 L_intra=0.6383 L_rank=0.8375 L_ceiling=0.1991 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000 L_rec=0.0030 L_energy=0.0002 w_spk=2.500 w_intra=1.000 w_rank=0.000 w_ceiling=0.000 w_kagg=0.000 w_tgt=0.000 w_away=0.000 cos_tel=0.9992 nwin=8 rank_k=2
+[pair_check] step=50 utter_id=84_0041 spk_id=84 cos_tel=0.9993
+[pair_check] step=50 utter_id=3752_0086 spk_id=3752 cos_tel=0.9993
+[pair_check] step=50 utter_id=84_0080 spk_id=84 cos_tel=0.9993
+[pair_check] step=50 utter_id=5895_0064 spk_id=5895 cos_tel=0.9994
+[pair_check] step=50 utter_id=5338_0038 spk_id=5338 cos_tel=0.9994
+[val] step=50 speaker_sim_tel=0.9985
+[ckpt] saved best checkpoint at step=50 to /root/autodl-tmp/projects/CloneBlock_RT/checkpoints/defense/pilot_librispeech_seed42_20260918_best.pt

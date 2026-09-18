@@ -1,0 +1,8 @@
+{
+  "ok": true,
+  "csv": "data/splits/vctk/session_pool_v3_val.csv",
+  "rows": 2724,
+  "speakers": 11,
+  "sessions": 33,
+  "errors": []
+}

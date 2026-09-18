@@ -1,0 +1,4 @@
+encoder,method,margin_mean,n_target,n_impostor
+speechbrain_ecapa,no_defense,0.235195,22,220
+speechbrain_ecapa,reference_v0p2,0.219496,22,220
+speechbrain_ecapa,realistic_selected,0.216299,22,220

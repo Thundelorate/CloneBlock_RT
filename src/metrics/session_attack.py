@@ -11,6 +11,34 @@ import torch
 import torch.nn.functional as F
 
 
+SELECTION_STRATEGIES = (
+    "random_K",
+    "bestK_by_self_consistency",
+    "bestK_by_clean_consistency",
+    "bestK_by_ref_similarity",
+)
+
+
+def selection_protocol(strategy: str, selection_source: str) -> Dict[str, str]:
+    """Describe attacker access separately from the evaluator's clean reference."""
+    if strategy not in SELECTION_STRATEGIES:
+        raise ValueError(f"Unknown selection strategy: {strategy}")
+    if selection_source not in ("clean", "defended", "tele_defended"):
+        raise ValueError(f"Unknown selection source: {selection_source}")
+    if strategy == "random_K":
+        return {"attacker_view": "realistic", "selection_source": "none"}
+    if strategy == "bestK_by_clean_consistency":
+        return {"attacker_view": "oracle_reference", "selection_source": "clean"}
+    if strategy == "bestK_by_self_consistency" and selection_source == "clean":
+        raise ValueError("Self-consistency requires defended or tele_defended observations.")
+    view = {
+        "clean": "oracle_reference",
+        "defended": "pre_channel_ablation",
+        "tele_defended": "realistic",
+    }[selection_source]
+    return {"attacker_view": view, "selection_source": selection_source}
+
+
 def pick_random_k(n: int, k: int, rng: random.Random) -> List[int]:
     if n <= 0:
         return []
@@ -80,7 +108,7 @@ def _greedy_bestk_by_ref_similarity(
     return_debug: bool = False,
     debug_topn: int = 5,
 ) -> List[int] | Tuple[List[int], List[Dict[str, float]]]:
-    """Greedy targeted attack: maximize cos(mean(selected), clean-ref-mean)."""
+    """Greedy selection towards the supplied pool's centroid, not an external target."""
     n = int(clean_z.size(0))
     if n <= 0:
         return ([], []) if return_debug else []
@@ -128,6 +156,18 @@ def pick_indices(
     rng: random.Random,
     selection_z: torch.Tensor | None = None,
 ) -> List[int]:
+    if strategy not in SELECTION_STRATEGIES:
+        raise ValueError(f"Unknown selection strategy: {strategy}")
+    if k < 1:
+        raise ValueError("k must be positive")
+    if strategy == "bestK_by_self_consistency":
+        if selection_z is None:
+            raise ValueError("Self-consistency requires explicit attacker-visible selection_z.")
+        if selection_z.ndim != 2 or selection_z.size(0) != clean_z.size(0):
+            raise ValueError("selection_z must have one embedding per candidate window.")
+        if k > selection_z.size(0):
+            raise ValueError("Self-consistency requires at least k distinct candidate windows.")
+        return _greedy_bestk_by_ref_similarity(selection_z, k)
     n = int(clean_z.size(0))
     if strategy == 'bestK_by_clean_consistency':
         return _greedy_bestk_by_clean(clean_z, k)

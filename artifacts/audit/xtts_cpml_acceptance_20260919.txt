@@ -1,0 +1,5 @@
+model=tts_models/multilingual/multi-dataset/xtts_v2
+license=CPML
+scope=non-commercial academic research
+accepted_by=user
+user_statement=我已阅读并同意 CPML，用于本项目的非商业学术研究

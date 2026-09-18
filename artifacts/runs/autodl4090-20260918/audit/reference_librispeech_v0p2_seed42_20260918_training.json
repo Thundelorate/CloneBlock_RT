@@ -1,0 +1,11 @@
+{
+  "ok": true,
+  "run_name": "reference_librispeech_v0p2_seed42_20260918",
+  "steps": 1000,
+  "dataset": "librispeech",
+  "best_step": 1000,
+  "best_val_speaker_sim_tel": 0.9528370261192322,
+  "final_loss": 2.962273359298706,
+  "checkpoint": "/root/autodl-tmp/projects/CloneBlock_RT/checkpoints/defense/reference_librispeech_v0p2_seed42_20260918_best.pt",
+  "scope": "Numerical and artifact integrity only; not a defense-efficacy claim."
+}

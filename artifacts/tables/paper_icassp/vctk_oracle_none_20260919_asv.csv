@@ -1,0 +1,7 @@
+encoder,method,eer,target_impostor_margin,n_target,n_impostor
+speechbrain_ecapa,no_defense,0.000000,0.262486,22,220
+speechbrain_ecapa,reference_v0p2,0.000000,0.246570,22,220
+speechbrain_ecapa,realistic_selected,0.000000,0.236364,22,220
+speechbrain_xvector,no_defense,0.090909,0.008248,22,220
+speechbrain_xvector,reference_v0p2,0.090909,0.007719,22,220
+speechbrain_xvector,realistic_selected,0.090909,0.007337,22,220

@@ -1,0 +1,7 @@
+telephony,defense,wer_mean,wer_std,stoi_mean,stoi_std,n_utts
+g711,baseline,0.5778,0.2770,1.0000,0.0000,200
+g711,realistic_selected,0.5909,0.2762,0.9775,0.0100,200
+none,baseline,0.5751,0.2689,1.0000,0.0000,200
+none,realistic_selected,0.5941,0.2827,0.9846,0.0042,200
+opus16k,baseline,0.5902,0.2873,1.0000,0.0000,200
+opus16k,realistic_selected,0.6198,0.2967,0.9120,0.0482,200

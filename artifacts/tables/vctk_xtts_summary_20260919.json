@@ -1,0 +1,11 @@
+{
+  "protocol": "xtts_independent_enrollment_operating_point_v1",
+  "syntheses_sha256": "4de3d93b19e06a3187bf44ad459b4e947535d07abe7450d69cf8faaa4842dbd3",
+  "thresholds_sha256": "1de78599653b77a3c658706575a91b1035dcf70305ff8bfeeaf9101876586b62",
+  "bootstrap": {
+    "unit": "speaker",
+    "draws": 2000,
+    "seed": 42,
+    "confidence": 0.95
+  }
+}

@@ -33,6 +33,12 @@ def parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(description="Build session_pool_v3 by session concatenation.")
     p.add_argument("--dataset", type=str, default="vctk", choices=["vctk", "librispeech"])
     p.add_argument("--seed", type=int, default=42)
+    p.add_argument("--isolate_dataset", action="store_true", help="Keep session outputs in dataset-specific directories.")
+    p.add_argument(
+        "--disjoint_source_utterances",
+        action="store_true",
+        help="Assign every original source utterance to at most one session per speaker.",
+    )
     p.add_argument("--sessions_per_speaker", type=int, default=3)
     p.add_argument("--window_sec", type=float, default=1.0)
     p.add_argument("--hop_sec", type=float, default=0.25)
@@ -104,10 +110,14 @@ def main() -> int:
     split_dir = REPO_ROOT / "data" / "splits" / args.dataset
     wav_root = REPO_ROOT / "data" / "processed" / args.dataset / "wav16k"
     out_split_dir = REPO_ROOT / "data" / "splits"
+    if args.isolate_dataset:
+        out_split_dir = out_split_dir / args.dataset
     out_split_dir.mkdir(parents=True, exist_ok=True)
     out_tables = REPO_ROOT / "artifacts" / "tables"
     out_tables.mkdir(parents=True, exist_ok=True)
     out_sess_root = REPO_ROOT / "data" / "processed" / "sessions_v3"
+    if args.isolate_dataset:
+        out_sess_root = out_sess_root / args.dataset
     out_sess_root.mkdir(parents=True, exist_ok=True)
 
     fieldnames = [
@@ -123,7 +133,8 @@ def main() -> int:
 
     stats_lines: List[str] = []
     for split in ["train", "val", "test"]:
-        rows = list(csv.DictReader((split_dir / f"{split}.csv").open("r", encoding="utf-8")))
+        with (split_dir / f"{split}.csv").open("r", encoding="utf-8", newline="") as handle:
+            rows = list(csv.DictReader(handle))
         by_spk: Dict[str, List[Dict[str, str]]] = {}
         for r in rows:
             by_spk.setdefault(r["speaker_id"], []).append(r)
@@ -134,14 +145,29 @@ def main() -> int:
 
         for spk in sorted(by_spk.keys()):
             spk_rows = by_spk[spk]
+            session_row_sets = [spk_rows for _ in range(int(args.sessions_per_speaker))]
+            if bool(getattr(args, "disjoint_source_utterances", False)):
+                by_source: Dict[str, List[Dict[str, str]]] = {}
+                for row in spk_rows:
+                    source_id = str(row.get("source_utter_id") or row["path"])
+                    by_source.setdefault(source_id, []).append(row)
+                source_ids = sorted(by_source)
+                rng.shuffle(source_ids)
+                source_buckets = [[] for _ in range(int(args.sessions_per_speaker))]
+                for source_index, source_id in enumerate(source_ids):
+                    source_buckets[source_index % len(source_buckets)].extend(by_source[source_id])
+                session_row_sets = source_buckets
             for sid in range(int(args.sessions_per_speaker)):
+                session_source_rows = session_row_sets[sid]
+                if not session_source_rows:
+                    continue
                 accepted = False
                 wav = np.zeros(1, dtype=np.float32)
                 used_paths: List[str] = []
                 windows: List[Tuple[int, int]] = []
                 for _ in range(int(args.max_build_tries)):
                     wav, used_paths = build_one_session(
-                        rows=spk_rows,
+                        rows=session_source_rows,
                         wav_root=wav_root,
                         rng=rng,
                         target_session_sec=float(args.target_session_sec),
@@ -161,9 +187,14 @@ def main() -> int:
                     continue
 
                 session_id = f"{spk}_s{sid:03d}"
-                rel_path = Path("data") / "processed" / "sessions_v3" / split / f"session_{session_id}.wav"
+                rel_path = (out_sess_root / split / f"session_{session_id}.wav").relative_to(REPO_ROOT)
                 abs_path = REPO_ROOT / rel_path
                 sf.write(str(abs_path), wav, 16000)
+                path_to_source = {
+                    row["path"]: str(row.get("source_utter_id") or row["path"])
+                    for row in session_source_rows
+                }
+                used_source_ids = sorted({path_to_source[path] for path in used_paths})
 
                 for i, (s, d) in enumerate(windows):
                     split_rows.append(
@@ -175,7 +206,7 @@ def main() -> int:
                             "path": str(rel_path),
                             "start_sec": f"{s / 16000.0:.3f}",
                             "dur_sec": f"{d / 16000.0:.3f}",
-                            "source_utter_ids": json.dumps(used_paths, ensure_ascii=False),
+                            "source_utter_ids": json.dumps(used_source_ids, ensure_ascii=False),
                         }
                     )
                 session_window_counts.append(len(windows))
@@ -200,7 +231,8 @@ def main() -> int:
         print(line)
         stats_lines.append(line)
 
-    (out_tables / "session_pool_v3_stats.txt").write_text("\n".join(stats_lines) + "\n", encoding="utf-8")
+    stats_name = f"session_pool_v3_{args.dataset}_stats.txt" if args.isolate_dataset else "session_pool_v3_stats.txt"
+    (out_tables / stats_name).write_text("\n".join(stats_lines) + "\n", encoding="utf-8")
     return 0
 
 

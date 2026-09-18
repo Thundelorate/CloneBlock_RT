@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import hashlib
 import json
 import random
 import sys
@@ -28,6 +29,7 @@ from src.metrics.session_attack import (
     pick_indices,
     sanity_compare_k,
     sanity_debug_topk,
+    selection_protocol,
 )
 from src.models.defense_stftmask import STFTMaskDefense
 from src.transforms.telephony import TelephonyTransform
@@ -97,15 +99,15 @@ def parse_args() -> argparse.Namespace:
     p.add_argument(
         '--strategies',
         type=str,
-        default='random_K,bestK_by_clean_consistency',
-        help='Comma-separated strategies, e.g. random_K,bestK_by_clean_consistency,bestK_by_ref_similarity',
+        default='random_K,bestK_by_self_consistency',
+        help='Main: random_K,bestK_by_self_consistency. Legacy oracle: bestK_by_clean_consistency,bestK_by_ref_similarity with source clean.',
     )
     p.add_argument(
         '--targeted_selection_source',
         type=str,
-        default='clean',
+        default='tele_defended',
         choices=['clean', 'defended', 'tele_defended'],
-        help='Window source for targeted bestK selection.',
+        help='Selection observations: tele_defended (main), defended (pre-channel ablation), clean (oracle reference). Also applies to self-consistency.',
     )
     p.add_argument('--telephony_config', type=str, default=str(REPO_ROOT / 'configs' / 'telephony.yaml'))
     p.add_argument('--eval_config', type=str, default=str(REPO_ROOT / 'configs' / 'eval.yaml'))
@@ -122,16 +124,24 @@ def main() -> int:
     args = parse_args()
     rng = random.Random(args.seed)
     ks = [int(x) for x in args.k_list.split(',') if x.strip()]
+    if not ks or any(k < 1 for k in ks) or len(ks) != len(set(ks)):
+        raise ValueError('k_list must contain distinct positive integers.')
+    ks = sorted(ks)
     strategies = [x.strip() for x in str(args.strategies).split(",") if x.strip()]
     if not strategies:
-        strategies = ["random_K", "bestK_by_clean_consistency"]
+        strategies = ["random_K", "bestK_by_self_consistency"]
+    protocols = {st: selection_protocol(st, args.targeted_selection_source) for st in strategies}
+    torch.manual_seed(args.seed)
+    np.random.seed(args.seed)
+    sanity_rng = random.Random(args.seed)
 
     with open(args.eval_config, 'r', encoding='utf-8') as f:
         import yaml
         eval_cfg = yaml.safe_load(f) or {}
     with open(args.telephony_config, 'r', encoding='utf-8') as f:
         import yaml
-        tp_cfg = yaml.safe_load(f) or {}
+        raw_tp_cfg = yaml.safe_load(f) or {}
+    tp_cfg = raw_tp_cfg.get('telephony', raw_tp_cfg)
 
     if args.telephony_codec != 'none':
         tp_cfg.setdefault('codec', {})
@@ -157,7 +167,7 @@ def main() -> int:
     if bool(args.compute_quality):
         from src.metrics.asr import ASRMetric
         asr_metric = ASRMetric(eval_cfg.get('asr', {}))
-    telephony = TelephonyTransform(tp_cfg)
+    telephony = TelephonyTransform(tp_cfg, seed=args.seed)
 
     defense_model = None
     if args.defense_checkpoint:
@@ -189,9 +199,11 @@ def main() -> int:
     if args.max_utters > 0:
         utter_keys = utter_keys[: args.max_utters]
     sanity_n = max(0, int(args.sanity_n_sessions))
-    sanity_pick = set(rng.sample(range(len(utter_keys)), k=min(len(utter_keys), sanity_n))) if utter_keys else set()
+    sanity_pick = set(sanity_rng.sample(range(len(utter_keys)), k=min(len(utter_keys), sanity_n))) if utter_keys else set()
 
     curve = {(st, k): [] for st in strategies for k in ks}
+    session_rows = []
+    skipped_short = 0
     stoi_abs = []
     wer_abs = []
 
@@ -236,7 +248,8 @@ def main() -> int:
                     pre = speaker_metric.embed(torch.from_numpy(pseg_raw), sr)
                     proc_ws_raw.append(F.normalize(pre, dim=0))
 
-        if len(clean_ws) < 2 or len(proc_ws) < 2:
+        if len(clean_ws) < max(2, max(ks)) or len(proc_ws) < max(2, max(ks)):
+            skipped_short += 1
             continue
 
         clean_z = torch.stack(clean_ws, dim=0)
@@ -245,22 +258,31 @@ def main() -> int:
 
         for st in strategies:
             for k in ks:
-                idx = pick_indices(st, clean_z, k, rng)
-                if st == "bestK_by_ref_similarity":
-                    if args.targeted_selection_source == "defended" and def_raw_z is not None:
-                        idx = pick_indices(st, clean_z, k, rng, selection_z=def_raw_z)
+                selection_z = None
+                if st in ("bestK_by_ref_similarity", "bestK_by_self_consistency"):
+                    if args.targeted_selection_source == "defended":
+                        if def_raw_z is None:
+                            raise ValueError(f'Missing pre-channel candidate embeddings for {spk}/{utt}')
+                        selection_z = def_raw_z
                     elif args.targeted_selection_source == "tele_defended":
-                        idx = pick_indices(st, clean_z, k, rng, selection_z=def_z)
+                        selection_z = def_z
                     else:
-                        idx = pick_indices(st, clean_z, k, rng, selection_z=clean_z)
+                        selection_z = clean_z
+                idx = pick_indices(st, clean_z, k, rng, selection_z=selection_z)
                 cos = aggregate_cos_to_ref(def_z, clean_z, idx)
                 curve[(st, k)].append(cos)
+                session_rows.append({
+                    'method': args.method_name, 'speaker_id': spk, 'session_id': utt,
+                    'path': rel_path, 'strategy': st, **protocols[st], 'K': k,
+                    'cos': cos, 'candidate_count': int(clean_z.size(0)),
+                    'selected_indices': json.dumps(idx), 'seed': args.seed,
+                })
 
         if uidx in sanity_pick:
             vv = sanity_compare_k(
                 def_z=def_z,
                 clean_z=clean_z,
-                rng=rng,
+                rng=sanity_rng,
                 n_random_trials=max(1, int(args.sanity_random_trials)),
             )
             idx_cons = pick_indices("bestK_by_clean_consistency", clean_z, 16, rng)
@@ -326,9 +348,18 @@ def main() -> int:
     out_dir = REPO_ROOT / 'artifacts' / 'tables'
     out_dir.mkdir(parents=True, exist_ok=True)
     suffix = f"_{args.output_tag}" if str(args.output_tag).strip() else ""
+    session_out = out_dir / f'session_attack_per_session_{args.method_name}{suffix}.csv'
+    with open(session_out, 'w', newline='', encoding='utf-8') as f:
+        w = csv.DictWriter(f, fieldnames=[
+            'method', 'speaker_id', 'session_id', 'path', 'strategy',
+            'attacker_view', 'selection_source', 'K', 'cos', 'candidate_count',
+            'selected_indices', 'seed',
+        ])
+        w.writeheader()
+        w.writerows(session_rows)
     curve_out = out_dir / f'session_attack_curve_abs_{args.method_name}{suffix}.csv'
     with open(curve_out, 'w', newline='', encoding='utf-8') as f:
-        w = csv.DictWriter(f, fieldnames=['model', 'method', 'strategy', 'K', 'cos_mean', 'cos_std', 'count'])
+        w = csv.DictWriter(f, fieldnames=['model', 'method', 'strategy', 'attacker_view', 'selection_source', 'K', 'cos_mean', 'cos_std', 'count'])
         w.writeheader()
         for st in strategies:
             for k in ks:
@@ -337,6 +368,7 @@ def main() -> int:
                     'model': args.method_name,
                     'method': args.method_name,
                     'strategy': st,
+                    **protocols[st],
                     'K': k,
                     'cos_mean': finite_mean(vals),
                     'cos_std': finite_std(vals),
@@ -350,6 +382,9 @@ def main() -> int:
         'stoi_abs': finite_mean(stoi_abs),
         'wer_abs': finite_mean(wer_abs),
         'curve_csv': str(curve_out),
+        'per_session_csv': str(session_out),
+        'n_skipped_insufficient_windows': skipped_short,
+        'n_evaluated': len(curve[(strategies[0], ks[0])]),
     }
     strat_rows: List[dict] = []
     for st in strategies:
@@ -361,9 +396,11 @@ def main() -> int:
             {
                 "method": args.method_name,
                 "strategy": st,
+                **protocols[st],
                 "K1_mean": by_k.get(1, float('nan')),
                 "K16_mean": by_k.get(16, float('nan')),
                 "AUC": auc,
+                "AUCK": auc,
                 "slope_16_1": slope,
                 "count": len(curve[(st, ks[0])]) if ks else 0,
             }
@@ -372,12 +409,22 @@ def main() -> int:
     with open(summary_csv, "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(
             f,
-            fieldnames=["method", "strategy", "K1_mean", "K16_mean", "AUC", "slope_16_1", "count"],
+            fieldnames=["method", "strategy", "attacker_view", "selection_source", "K1_mean", "K16_mean", "AUC", "AUCK", "slope_16_1", "count"],
         )
         w.writeheader()
         w.writerows(strat_rows)
     summary["summary_csv"] = str(summary_csv)
     summary["metadata"] = {
+        "protocol_version": "realistic_v1",
+        "session_pool_sha256": hashlib.sha256(Path(args.session_pool_csv).read_bytes()).hexdigest(),
+        "eval_config_sha256": hashlib.sha256(Path(args.eval_config).read_bytes()).hexdigest(),
+        "telephony_config_sha256": hashlib.sha256(Path(args.telephony_config).read_bytes()).hexdigest(),
+        "selection_protocols": protocols,
+        "k_list": ks,
+        "seed": args.seed,
+        "AUCK_definition": "Equal-weight arithmetic mean of MeanSim@K over the listed K values; not linear-K trapezoidal area. AUC is a legacy alias.",
+        "reference_role": "Clean session centroid is evaluator-only for realistic strategies; this is a same-session recovery metric, not independent ASV enrollment.",
+        "oracle_caveat": "Legacy clean-reference greedy selection is an oracle reference, not a certified numerical upper bound.",
         "speaker_encoder_name": spk_cfg.get("encoder_name", ""),
         "targeted_selection_source": str(args.targeted_selection_source),
         "telephony_codec": str(args.telephony_codec),

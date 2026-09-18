@@ -1,0 +1,16 @@
+model,method,strategy,attacker_view,selection_source,K,cos_mean,cos_std,count
+realistic_selected,realistic_selected,random_K,realistic,none,1,0.5287848114967346,0.10820271074771881,33
+realistic_selected,realistic_selected,random_K,realistic,none,2,0.6583296656608582,0.06967926770448685,33
+realistic_selected,realistic_selected,random_K,realistic,none,4,0.7548021674156189,0.05311787500977516,33
+realistic_selected,realistic_selected,random_K,realistic,none,8,0.8211144208908081,0.04788925498723984,33
+realistic_selected,realistic_selected,random_K,realistic,none,16,0.8746501803398132,0.02933952584862709,33
+realistic_selected,realistic_selected,bestK_by_self_consistency,realistic,tele_defended,1,0.6605339646339417,0.04982705041766167,33
+realistic_selected,realistic_selected,bestK_by_self_consistency,realistic,tele_defended,2,0.7691757678985596,0.035165440291166306,33
+realistic_selected,realistic_selected,bestK_by_self_consistency,realistic,tele_defended,4,0.8437119126319885,0.03033955954015255,33
+realistic_selected,realistic_selected,bestK_by_self_consistency,realistic,tele_defended,8,0.8882218599319458,0.02501644566655159,33
+realistic_selected,realistic_selected,bestK_by_self_consistency,realistic,tele_defended,16,0.9096440076828003,0.02078639157116413,33
+realistic_selected,realistic_selected,bestK_by_clean_consistency,oracle_reference,clean,1,0.6402116417884827,0.06571204215288162,33
+realistic_selected,realistic_selected,bestK_by_clean_consistency,oracle_reference,clean,2,0.741945743560791,0.05134303495287895,33
+realistic_selected,realistic_selected,bestK_by_clean_consistency,oracle_reference,clean,4,0.824053943157196,0.03599264845252037,33
+realistic_selected,realistic_selected,bestK_by_clean_consistency,oracle_reference,clean,8,0.8766793608665466,0.02560175023972988,33
+realistic_selected,realistic_selected,bestK_by_clean_consistency,oracle_reference,clean,16,0.900721549987793,0.02297300286591053,33

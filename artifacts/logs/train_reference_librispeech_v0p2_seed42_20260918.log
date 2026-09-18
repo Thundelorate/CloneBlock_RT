@@ -1,0 +1,189 @@
+step=1 loss=0.0071 L_spk=0.9981 L_intra=0.5773 L_rank=0.9024 L_ceiling=0.1989 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000 L_rec=0.0070 L_energy=0.0012 w_spk=0.000 w_intra=0.000 w_rank=0.000 w_ceiling=0.000 w_kagg=0.000 w_tgt=0.000 w_away=0.000 cos_tel=0.9981 nwin=8 rank_k=1
+[pair_check] step=1 utter_id=3170_0024 spk_id=3170 cos_tel=0.9987
+[pair_check] step=1 utter_id=5895_0038 spk_id=5895 cos_tel=0.9984
+[pair_check] step=1 utter_id=1919_0071 spk_id=1919 cos_tel=0.9980
+[pair_check] step=1 utter_id=84_0048 spk_id=84 cos_tel=0.9985
+[pair_check] step=1 utter_id=3536_0074 spk_id=3536 cos_tel=0.9979
+step=20 loss=0.0007 L_spk=1.0000 L_intra=0.6002 L_rank=0.8290 L_ceiling=0.2000 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=40 loss=0.0005 L_spk=1.0000 L_intra=0.6047 L_rank=0.7121 L_ceiling=0.2000 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=50 loss=0.0003 L_spk=1.0000 L_intra=0.6079 L_rank=0.7991 L_ceiling=0.2000 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000 L_rec=0.0003 L_energy=0.0001 w_spk=0.000 w_intra=0.000 w_rank=0.000 w_ceiling=0.000 w_kagg=0.000 w_tgt=0.000 w_away=0.000 cos_tel=1.0000 nwin=8 rank_k=4
+[pair_check] step=50 utter_id=7976_0016 spk_id=7976 cos_tel=1.0000
+[pair_check] step=50 utter_id=6241_0080 spk_id=6241 cos_tel=1.0000
+[pair_check] step=50 utter_id=84_0033 spk_id=84 cos_tel=1.0000
+[pair_check] step=50 utter_id=1919_0048 spk_id=1919 cos_tel=1.0000
+[pair_check] step=50 utter_id=777_0021 spk_id=777 cos_tel=1.0000
+step=60 loss=0.0002 L_spk=1.0000 L_intra=0.6067 L_rank=0.7776 L_ceiling=0.2000 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=80 loss=0.0004 L_spk=1.0000 L_intra=0.6170 L_rank=0.8030 L_ceiling=0.2000 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=100 loss=0.0002 L_spk=1.0000 L_intra=0.6049 L_rank=0.8839 L_ceiling=0.2000 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000 L_rec=0.0002 L_energy=0.0001 w_spk=0.000 w_intra=0.000 w_rank=0.000 w_ceiling=0.000 w_kagg=0.000 w_tgt=0.000 w_away=0.000 cos_tel=1.0000 nwin=8 rank_k=1
+[pair_check] step=100 utter_id=3536_0081 spk_id=3536 cos_tel=1.0000
+[pair_check] step=100 utter_id=251_0004 spk_id=251 cos_tel=1.0000
+[pair_check] step=100 utter_id=3576_0068 spk_id=3576 cos_tel=1.0000
+[pair_check] step=100 utter_id=5536_0052 spk_id=5536 cos_tel=1.0000
+[pair_check] step=100 utter_id=5338_0044 spk_id=5338 cos_tel=1.0000
+[val] step=100 speaker_sim_tel=1.0000
+[ckpt] saved best checkpoint at step=100 to /root/autodl-tmp/projects/CloneBlock_RT/checkpoints/defense/reference_librispeech_v0p2_seed42_20260918_best.pt
+step=120 loss=0.0001 L_spk=1.0000 L_intra=0.6088 L_rank=0.9533 L_ceiling=0.2000 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=140 loss=0.0002 L_spk=1.0000 L_intra=0.5954 L_rank=0.7621 L_ceiling=0.2000 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=150 loss=0.0003 L_spk=1.0000 L_intra=0.6139 L_rank=0.8341 L_ceiling=0.2000 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000 L_rec=0.0003 L_energy=0.0000 w_spk=0.000 w_intra=0.000 w_rank=0.000 w_ceiling=0.000 w_kagg=0.000 w_tgt=0.000 w_away=0.000 cos_tel=1.0000 nwin=8 rank_k=4
+[pair_check] step=150 utter_id=6319_0022 spk_id=6319 cos_tel=1.0000
+[pair_check] step=150 utter_id=6295_0012 spk_id=6295 cos_tel=1.0000
+[pair_check] step=150 utter_id=5536_0018 spk_id=5536 cos_tel=1.0000
+[pair_check] step=150 utter_id=5694_0040 spk_id=5694 cos_tel=1.0000
+[pair_check] step=150 utter_id=1673_0024 spk_id=1673 cos_tel=1.0000
+step=160 loss=0.0003 L_spk=1.0000 L_intra=0.6041 L_rank=0.8884 L_ceiling=0.2000 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=180 loss=0.0002 L_spk=1.0000 L_intra=0.6609 L_rank=0.8540 L_ceiling=0.2000 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=200 loss=0.0001 L_spk=1.0000 L_intra=0.5600 L_rank=0.9000 L_ceiling=0.2000 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000 L_rec=0.0001 L_energy=0.0000 w_spk=0.000 w_intra=0.000 w_rank=0.000 w_ceiling=0.000 w_kagg=0.000 w_tgt=0.000 w_away=0.000 cos_tel=1.0000 nwin=8 rank_k=2
+[pair_check] step=200 utter_id=5694_0012 spk_id=5694 cos_tel=1.0000
+[pair_check] step=200 utter_id=3170_0070 spk_id=3170 cos_tel=1.0000
+[pair_check] step=200 utter_id=3752_0051 spk_id=3752 cos_tel=1.0000
+[pair_check] step=200 utter_id=6295_0021 spk_id=6295 cos_tel=1.0000
+[pair_check] step=200 utter_id=6319_0072 spk_id=6319 cos_tel=1.0000
+[rank_k_hist] step=200 K1:13 K2:23 K4:37 K8:52 K16:75
+[val] step=200 speaker_sim_tel=1.0000
+step=220 loss=0.0782 L_spk=1.0000 L_intra=0.6265 L_rank=0.8759 L_ceiling=0.2000 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=240 loss=0.1552 L_spk=1.0000 L_intra=0.6022 L_rank=0.8144 L_ceiling=0.2000 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=250 loss=0.1921 L_spk=1.0000 L_intra=0.5719 L_rank=0.8415 L_ceiling=0.2000 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000 L_rec=0.0001 L_energy=0.0000 w_spk=0.156 w_intra=0.062 w_rank=0.000 w_ceiling=0.000 w_kagg=0.000 w_tgt=0.000 w_away=0.000 cos_tel=1.0000 nwin=8 rank_k=16
+[pair_check] step=250 utter_id=7850_0074 spk_id=7850 cos_tel=1.0000
+[pair_check] step=250 utter_id=5895_0052 spk_id=5895 cos_tel=1.0000
+[pair_check] step=250 utter_id=3000_0006 spk_id=3000 cos_tel=1.0000
+[pair_check] step=250 utter_id=7976_0014 spk_id=7976 cos_tel=1.0000
+[pair_check] step=250 utter_id=5536_0036 spk_id=5536 cos_tel=1.0000
+step=260 loss=0.2311 L_spk=1.0000 L_intra=0.5791 L_rank=0.8865 L_ceiling=0.2000 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=280 loss=0.3086 L_spk=1.0000 L_intra=0.5846 L_rank=0.8378 L_ceiling=0.2000 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=300 loss=0.3863 L_spk=1.0000 L_intra=0.5896 L_rank=0.7679 L_ceiling=0.2000 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000 L_rec=0.0001 L_energy=0.0000 w_spk=0.312 w_intra=0.125 w_rank=0.000 w_ceiling=0.000 w_kagg=0.000 w_tgt=0.000 w_away=0.000 cos_tel=1.0000 nwin=8 rank_k=4
+[pair_check] step=300 utter_id=8842_0074 spk_id=8842 cos_tel=1.0000
+[pair_check] step=300 utter_id=8842_0048 spk_id=8842 cos_tel=1.0000
+[pair_check] step=300 utter_id=5895_0059 spk_id=5895 cos_tel=1.0000
+[pair_check] step=300 utter_id=7976_0081 spk_id=7976 cos_tel=1.0000
+[pair_check] step=300 utter_id=84_0007 spk_id=84 cos_tel=1.0000
+[val] step=300 speaker_sim_tel=1.0000
+step=320 loss=0.4671 L_spk=1.0000 L_intra=0.6134 L_rank=0.8035 L_ceiling=0.2000 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=340 loss=0.5438 L_spk=1.0000 L_intra=0.6069 L_rank=0.8358 L_ceiling=0.2000 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=350 loss=0.5856 L_spk=1.0000 L_intra=0.6224 L_rank=0.8629 L_ceiling=0.2000 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000 L_rec=0.0001 L_energy=0.0000 w_spk=0.469 w_intra=0.188 w_rank=0.000 w_ceiling=0.000 w_kagg=0.000 w_tgt=0.000 w_away=0.000 cos_tel=1.0000 nwin=8 rank_k=4
+[pair_check] step=350 utter_id=3752_0037 spk_id=3752 cos_tel=1.0000
+[pair_check] step=350 utter_id=422_0048 spk_id=422 cos_tel=1.0000
+[pair_check] step=350 utter_id=422_0086 spk_id=422 cos_tel=1.0000
+[pair_check] step=350 utter_id=3853_0055 spk_id=3853 cos_tel=1.0000
+[pair_check] step=350 utter_id=8297_0069 spk_id=8297 cos_tel=1.0000
+step=360 loss=0.6184 L_spk=1.0000 L_intra=0.5913 L_rank=0.8372 L_ceiling=0.2000 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=380 loss=0.6876 L_spk=1.0000 L_intra=0.5555 L_rank=0.8296 L_ceiling=0.2000 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=400 loss=0.7702 L_spk=1.0000 L_intra=0.5805 L_rank=0.9838 L_ceiling=0.2000 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000 L_rec=0.0001 L_energy=0.0000 w_spk=0.625 w_intra=0.250 w_rank=0.000 w_ceiling=0.000 w_kagg=0.000 w_tgt=0.000 w_away=0.000 cos_tel=1.0000 nwin=8 rank_k=8
+[pair_check] step=400 utter_id=2277_0007 spk_id=2277 cos_tel=1.0000
+[pair_check] step=400 utter_id=6345_0084 spk_id=6345 cos_tel=1.0000
+[pair_check] step=400 utter_id=84_0037 spk_id=84 cos_tel=1.0000
+[pair_check] step=400 utter_id=6313_0090 spk_id=6313 cos_tel=1.0000
+[pair_check] step=400 utter_id=8297_0012 spk_id=8297 cos_tel=1.0000
+[rank_k_hist] step=400 K1:10 K2:18 K4:40 K8:51 K16:81
+[val] step=400 speaker_sim_tel=1.0000
+[ckpt] saved best checkpoint at step=400 to /root/autodl-tmp/projects/CloneBlock_RT/checkpoints/defense/reference_librispeech_v0p2_seed42_20260918_best.pt
+step=420 loss=0.8426 L_spk=0.9999 L_intra=0.5636 L_rank=0.8129 L_ceiling=0.2000 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=440 loss=0.9356 L_spk=0.9999 L_intra=0.6179 L_rank=0.8661 L_ceiling=0.2000 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=450 loss=0.9748 L_spk=0.9998 L_intra=0.6188 L_rank=0.8668 L_ceiling=0.2000 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000 L_rec=0.0003 L_energy=0.0000 w_spk=0.781 w_intra=0.312 w_rank=0.000 w_ceiling=0.000 w_kagg=0.000 w_tgt=0.000 w_away=0.000 cos_tel=0.9998 nwin=8 rank_k=16
+[pair_check] step=450 utter_id=5536_0077 spk_id=5536 cos_tel=0.9999
+[pair_check] step=450 utter_id=7850_0025 spk_id=7850 cos_tel=0.9999
+[pair_check] step=450 utter_id=6241_0003 spk_id=6241 cos_tel=0.9999
+[pair_check] step=450 utter_id=1673_0044 spk_id=1673 cos_tel=0.9999
+[pair_check] step=450 utter_id=3170_0072 spk_id=3170 cos_tel=0.9995
+step=460 loss=1.0076 L_spk=0.9997 L_intra=0.6000 L_rank=0.7536 L_ceiling=0.1998 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=480 loss=1.1062 L_spk=0.9980 L_intra=0.6613 L_rank=0.8926 L_ceiling=0.1986 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=500 loss=1.1533 L_spk=0.9964 L_intra=0.5772 L_rank=0.7474 L_ceiling=0.1965 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000 L_rec=0.0028 L_energy=0.0001 w_spk=0.938 w_intra=0.375 w_rank=0.000 w_ceiling=0.000 w_kagg=0.000 w_tgt=0.000 w_away=0.000 cos_tel=0.9964 nwin=8 rank_k=16
+[pair_check] step=500 utter_id=3170_0013 spk_id=3170 cos_tel=0.9968
+[pair_check] step=500 utter_id=2086_0061 spk_id=2086 cos_tel=0.9951
+[pair_check] step=500 utter_id=422_0054 spk_id=422 cos_tel=0.9971
+[pair_check] step=500 utter_id=5895_0054 spk_id=5895 cos_tel=0.9927
+[pair_check] step=500 utter_id=6295_0029 spk_id=6295 cos_tel=0.9984
+[val] step=500 speaker_sim_tel=0.9966
+[ckpt] saved best checkpoint at step=500 to /root/autodl-tmp/projects/CloneBlock_RT/checkpoints/defense/reference_librispeech_v0p2_seed42_20260918_best.pt
+step=520 loss=1.2588 L_spk=0.9949 L_intra=0.6530 L_rank=0.9098 L_ceiling=0.1965 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=540 loss=1.3221 L_spk=0.9841 L_intra=0.6255 L_rank=0.9444 L_ceiling=0.1750 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=550 loss=1.3534 L_spk=0.9787 L_intra=0.6188 L_rank=0.6157 L_ceiling=0.1701 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000 L_rec=0.0121 L_energy=0.0010 w_spk=1.094 w_intra=0.438 w_rank=0.000 w_ceiling=0.000 w_kagg=0.000 w_tgt=0.000 w_away=0.000 cos_tel=0.9787 nwin=8 rank_k=16
+[pair_check] step=550 utter_id=3170_0052 spk_id=3170 cos_tel=0.9754
+[pair_check] step=550 utter_id=1272_0016 spk_id=1272 cos_tel=0.9881
+[pair_check] step=550 utter_id=652_0014 spk_id=652 cos_tel=0.9903
+[pair_check] step=550 utter_id=1673_0025 spk_id=1673 cos_tel=0.9769
+[pair_check] step=550 utter_id=7976_0057 spk_id=7976 cos_tel=0.9816
+step=560 loss=1.3709 L_spk=0.9711 L_intra=0.5912 L_rank=0.8927 L_ceiling=0.1683 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=580 loss=1.4222 L_spk=0.9704 L_intra=0.5362 L_rank=0.8422 L_ceiling=0.1730 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=600 loss=1.5522 L_spk=0.9750 L_intra=0.6336 L_rank=0.6691 L_ceiling=0.1644 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000 L_rec=0.0165 L_energy=0.0009 w_spk=1.250 w_intra=0.500 w_rank=0.000 w_ceiling=0.000 w_kagg=0.000 w_tgt=0.000 w_away=0.000 cos_tel=0.9750 nwin=8 rank_k=16
+[pair_check] step=600 utter_id=652_0029 spk_id=652 cos_tel=0.9768
+[pair_check] step=600 utter_id=6313_0045 spk_id=6313 cos_tel=0.9548
+[pair_check] step=600 utter_id=1272_0052 spk_id=1272 cos_tel=0.9835
+[pair_check] step=600 utter_id=6313_0028 spk_id=6313 cos_tel=0.9857
+[pair_check] step=600 utter_id=8297_0055 spk_id=8297 cos_tel=0.9820
+[rank_k_hist] step=600 K1:16 K2:16 K4:38 K8:47 K16:83
+[val] step=600 speaker_sim_tel=0.9736
+[ckpt] saved best checkpoint at step=600 to /root/autodl-tmp/projects/CloneBlock_RT/checkpoints/defense/reference_librispeech_v0p2_seed42_20260918_best.pt
+step=620 loss=1.6202 L_spk=0.9649 L_intra=0.6120 L_rank=0.8155 L_ceiling=0.1758 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=640 loss=1.6763 L_spk=0.9598 L_intra=0.6029 L_rank=0.7987 L_ceiling=0.1810 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=650 loss=1.7401 L_spk=0.9714 L_intra=0.6298 L_rank=0.8499 L_ceiling=0.1683 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000 L_rec=0.0197 L_energy=0.0011 w_spk=1.406 w_intra=0.562 w_rank=0.000 w_ceiling=0.000 w_kagg=0.000 w_tgt=0.000 w_away=0.000 cos_tel=0.9714 nwin=8 rank_k=16
+[pair_check] step=650 utter_id=6313_0019 spk_id=6313 cos_tel=0.9591
+[pair_check] step=650 utter_id=6241_0079 spk_id=6241 cos_tel=0.9816
+[pair_check] step=650 utter_id=7850_0071 spk_id=7850 cos_tel=0.9710
+[pair_check] step=650 utter_id=5536_0023 spk_id=5536 cos_tel=0.9779
+[pair_check] step=650 utter_id=2428_0084 spk_id=2428 cos_tel=0.9783
+step=660 loss=1.7647 L_spk=0.9704 L_intra=0.6199 L_rank=0.6582 L_ceiling=0.1198 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=680 loss=1.8366 L_spk=0.9636 L_intra=0.6228 L_rank=0.9608 L_ceiling=0.1525 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=700 loss=1.8450 L_spk=0.9450 L_intra=0.5517 L_rank=0.8911 L_ceiling=0.1048 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000 L_rec=0.0235 L_energy=0.0012 w_spk=1.562 w_intra=0.625 w_rank=0.000 w_ceiling=0.000 w_kagg=0.000 w_tgt=0.000 w_away=0.000 cos_tel=0.9450 nwin=8 rank_k=16
+[pair_check] step=700 utter_id=7850_0065 spk_id=7850 cos_tel=0.9676
+[pair_check] step=700 utter_id=7976_0075 spk_id=7976 cos_tel=0.9454
+[pair_check] step=700 utter_id=6313_0020 spk_id=6313 cos_tel=0.9221
+[pair_check] step=700 utter_id=2277_0058 spk_id=2277 cos_tel=0.9488
+[pair_check] step=700 utter_id=3576_0049 spk_id=3576 cos_tel=0.9403
+[val] step=700 speaker_sim_tel=0.9670
+[ckpt] saved best checkpoint at step=700 to /root/autodl-tmp/projects/CloneBlock_RT/checkpoints/defense/reference_librispeech_v0p2_seed42_20260918_best.pt
+step=720 loss=1.9770 L_spk=0.9650 L_intra=0.5973 L_rank=0.8245 L_ceiling=0.1400 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=740 loss=2.0471 L_spk=0.9638 L_intra=0.6028 L_rank=0.9104 L_ceiling=0.1298 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=750 loss=2.0681 L_spk=0.9598 L_intra=0.5755 L_rank=0.9440 L_ceiling=0.1588 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000 L_rec=0.0226 L_energy=0.0016 w_spk=1.719 w_intra=0.688 w_rank=0.000 w_ceiling=0.000 w_kagg=0.000 w_tgt=0.000 w_away=0.000 cos_tel=0.9598 nwin=8 rank_k=16
+[pair_check] step=750 utter_id=1272_0063 spk_id=1272 cos_tel=0.9748
+[pair_check] step=750 utter_id=6319_0071 spk_id=6319 cos_tel=0.9267
+[pair_check] step=750 utter_id=422_0064 spk_id=422 cos_tel=0.9522
+[pair_check] step=750 utter_id=3752_0014 spk_id=3752 cos_tel=0.9788
+[pair_check] step=750 utter_id=5536_0040 spk_id=5536 cos_tel=0.9694
+step=760 loss=2.1329 L_spk=0.9661 L_intra=0.6076 L_rank=0.8490 L_ceiling=0.1403 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=780 loss=2.1887 L_spk=0.9562 L_intra=0.5996 L_rank=0.8021 L_ceiling=0.1346 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=800 loss=2.2369 L_spk=0.9510 L_intra=0.5789 L_rank=0.8025 L_ceiling=0.1580 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000 L_rec=0.0194 L_energy=0.0019 w_spk=1.875 w_intra=0.750 w_rank=0.000 w_ceiling=0.000 w_kagg=0.000 w_tgt=0.000 w_away=0.000 cos_tel=0.9510 nwin=8 rank_k=2
+[pair_check] step=800 utter_id=7850_0081 spk_id=7850 cos_tel=0.9525
+[pair_check] step=800 utter_id=1272_0056 spk_id=1272 cos_tel=0.9680
+[pair_check] step=800 utter_id=1272_0011 spk_id=1272 cos_tel=0.9639
+[pair_check] step=800 utter_id=3000_0017 spk_id=3000 cos_tel=0.9445
+[pair_check] step=800 utter_id=2412_0008 spk_id=2412 cos_tel=0.9372
+[rank_k_hist] step=800 K1:7 K2:22 K4:36 K8:47 K16:88
+[val] step=800 speaker_sim_tel=0.9583
+[ckpt] saved best checkpoint at step=800 to /root/autodl-tmp/projects/CloneBlock_RT/checkpoints/defense/reference_librispeech_v0p2_seed42_20260918_best.pt
+step=820 loss=2.3000 L_spk=0.9460 L_intra=0.5774 L_rank=0.8508 L_ceiling=0.1339 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=840 loss=2.4334 L_spk=0.9549 L_intra=0.6324 L_rank=0.8154 L_ceiling=0.1542 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=850 loss=2.4041 L_spk=0.9543 L_intra=0.5491 L_rank=0.7190 L_ceiling=0.1014 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000 L_rec=0.0194 L_energy=0.0008 w_spk=2.031 w_intra=0.812 w_rank=0.000 w_ceiling=0.000 w_kagg=0.000 w_tgt=0.000 w_away=0.000 cos_tel=0.9543 nwin=8 rank_k=8
+[pair_check] step=850 utter_id=3170_0037 spk_id=3170 cos_tel=0.9701
+[pair_check] step=850 utter_id=7850_0059 spk_id=7850 cos_tel=0.9579
+[pair_check] step=850 utter_id=3853_0051 spk_id=3853 cos_tel=0.9717
+[pair_check] step=850 utter_id=5895_0033 spk_id=5895 cos_tel=0.9334
+[pair_check] step=850 utter_id=6295_0039 spk_id=6295 cos_tel=0.9805
+step=860 loss=2.5040 L_spk=0.9555 L_intra=0.6267 L_rank=0.8495 L_ceiling=0.1494 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=880 loss=2.5699 L_spk=0.9514 L_intra=0.6162 L_rank=0.9349 L_ceiling=0.1518 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=900 loss=2.6005 L_spk=0.9327 L_intra=0.6136 L_rank=0.7925 L_ceiling=0.1404 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000 L_rec=0.0232 L_energy=0.0013 w_spk=2.188 w_intra=0.875 w_rank=0.000 w_ceiling=0.000 w_kagg=0.000 w_tgt=0.000 w_away=0.000 cos_tel=0.9327 nwin=8 rank_k=8
+[pair_check] step=900 utter_id=5895_0002 spk_id=5895 cos_tel=0.9052
+[pair_check] step=900 utter_id=7976_0073 spk_id=7976 cos_tel=0.9504
+[pair_check] step=900 utter_id=2086_0075 spk_id=2086 cos_tel=0.9555
+[pair_check] step=900 utter_id=3853_0014 spk_id=3853 cos_tel=0.9040
+[pair_check] step=900 utter_id=5895_0084 spk_id=5895 cos_tel=0.9175
+[val] step=900 speaker_sim_tel=0.9572
+[ckpt] saved best checkpoint at step=900 to /root/autodl-tmp/projects/CloneBlock_RT/checkpoints/defense/reference_librispeech_v0p2_seed42_20260918_best.pt
+step=920 loss=2.6527 L_spk=0.9555 L_intra=0.5387 L_rank=0.8698 L_ceiling=0.1650 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=940 loss=2.6927 L_spk=0.9438 L_intra=0.5300 L_rank=0.9228 L_ceiling=0.1454 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=950 loss=2.7827 L_spk=0.9440 L_intra=0.5864 L_rank=0.8721 L_ceiling=0.1599 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000 L_rec=0.0202 L_energy=0.0011 w_spk=2.344 w_intra=0.938 w_rank=0.000 w_ceiling=0.000 w_kagg=0.000 w_tgt=0.000 w_away=0.000 cos_tel=0.9440 nwin=8 rank_k=16
+[pair_check] step=950 utter_id=2086_0023 spk_id=2086 cos_tel=0.9293
+[pair_check] step=950 utter_id=6241_0057 spk_id=6241 cos_tel=0.9612
+[pair_check] step=950 utter_id=5536_0033 spk_id=5536 cos_tel=0.9426
+[pair_check] step=950 utter_id=6313_0065 spk_id=6313 cos_tel=0.9367
+[pair_check] step=950 utter_id=1673_0056 spk_id=1673 cos_tel=0.9412
+step=960 loss=2.8756 L_spk=0.9474 L_intra=0.6356 L_rank=0.7840 L_ceiling=0.1541 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=980 loss=2.8829 L_spk=0.9398 L_intra=0.5901 L_rank=0.7178 L_ceiling=0.1330 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=1000 loss=2.9623 L_spk=0.9411 L_intra=0.5942 L_rank=0.8833 L_ceiling=0.0811 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000 L_rec=0.0154 L_energy=0.0004 w_spk=2.500 w_intra=1.000 w_rank=0.000 w_ceiling=0.000 w_kagg=0.000 w_tgt=0.000 w_away=0.000 cos_tel=0.9411 nwin=8 rank_k=8
+[pair_check] step=1000 utter_id=6241_0049 spk_id=6241 cos_tel=0.9505
+[pair_check] step=1000 utter_id=251_0077 spk_id=251 cos_tel=0.9520
+[pair_check] step=1000 utter_id=3576_0041 spk_id=3576 cos_tel=0.9407
+[pair_check] step=1000 utter_id=6241_0014 spk_id=6241 cos_tel=0.9408
+[pair_check] step=1000 utter_id=8842_0006 spk_id=8842 cos_tel=0.9164
+[rank_k_hist] step=1000 K1:5 K2:17 K4:41 K8:62 K16:75
+[val] step=1000 speaker_sim_tel=0.9528
+[ckpt] saved best checkpoint at step=1000 to /root/autodl-tmp/projects/CloneBlock_RT/checkpoints/defense/reference_librispeech_v0p2_seed42_20260918_best.pt

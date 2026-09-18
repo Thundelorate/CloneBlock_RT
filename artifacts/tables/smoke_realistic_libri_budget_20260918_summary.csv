@@ -1,0 +1,2 @@
+method,n_utterances,perturb_rms_mean,perturb_rms_std,snr_db_mean,snr_db_std,relative_l2_mean,relative_l2_std,linf_mean,linf_std,stoi_tele_clean_vs_tele_defended_mean,stoi_tele_clean_vs_tele_defended_std
+smoke_realistic,10,0.005954789152807463,0.004164771224319234,16.81259413924108,0.32135645886886477,0.144434028656437,0.005388996636309163,0.04736858122050762,0.03496548364427077,0.9890221351186701,0.0032646102021398693

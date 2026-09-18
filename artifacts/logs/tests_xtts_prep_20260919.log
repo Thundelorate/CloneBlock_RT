@@ -1,0 +1,53 @@
+test_g711_enables_named_codec (test_asv_eer_codec.AsvEerCodecTests) ... ok
+test_none_disables_codec_without_mutating_input (test_asv_eer_codec.AsvEerCodecTests) ... ok
+test_opus_sets_bitrate (test_asv_eer_codec.AsvEerCodecTests) ... ok
+test_cli_and_metadata_mismatch (test_bootstrap_session_ci.BootstrapTests) ... ok
+test_constant_paired_effect_has_constant_interval (test_bootstrap_session_ci.BootstrapTests) ... ok
+test_invalid_pairing_fails (test_bootstrap_session_ci.BootstrapTests) ... ok
+test_no_single_speaker_interval (test_bootstrap_session_ci.BootstrapTests) ... ok
+test_order_invariance (test_bootstrap_session_ci.BootstrapTests) ... ok
+test_random_draw_mismatch_fails (test_bootstrap_session_ci.BootstrapTests) ... ok
+test_unequal_session_counts_match_cluster_resampling (test_bootstrap_session_ci.BootstrapTests) ... ok
+test_absolute_path_is_rejected (test_corpus_archive.CorpusArchiveTests) ... ok
+test_bad_checksum_does_not_extract (test_corpus_archive.CorpusArchiveTests) ... ok
+test_tar_root_layout (test_corpus_archive.CorpusArchiveTests) ... [archive] verified /root/autodl-tmp/tmp/tmpinriqoz_/data.tar.gz, sha256=0627203ac1e1a98bf8b3a8c77363fc07301d56ff0c2f46544b2c66ad90d70d8b
+[archive] extracted /root/autodl-tmp/tmp/tmpinriqoz_/LibriSpeech
+ok
+test_verified_zip_and_repeat (test_corpus_archive.CorpusArchiveTests) ... [archive] verified /root/autodl-tmp/tmp/tmpil6qh7fm/data.zip, sha256=fe574735be06bd00ac11f730aceb486bdeeddc721aa9913d97f142bd3cf52e81
+[archive] extracted /root/autodl-tmp/tmp/tmpil6qh7fm/VCTK-Corpus-0.92
+[archive] verified /root/autodl-tmp/tmp/tmpil6qh7fm/data.zip, sha256=fe574735be06bd00ac11f730aceb486bdeeddc721aa9913d97f142bd3cf52e81
+[archive] already extracted: /root/autodl-tmp/tmp/tmpil6qh7fm/VCTK-Corpus-0.92
+ok
+test_zip_escape_is_rejected (test_corpus_archive.CorpusArchiveTests) ... [archive] verified /root/autodl-tmp/tmp/tmp2yyjfheh/data.zip, sha256=8ea6181c09191efb31497838bc03febb0a79e5bed1b228dccbf10952aa924af5
+ok
+test_crop_roundtrip_and_audit (test_data_provenance.DataProvenanceTests) ... ok
+test_invalid_crop_durations_fail_before_io (test_data_provenance.DataProvenanceTests) ... ok
+test_microphone_selection_is_explicit (test_data_provenance.DataProvenanceTests) ... ok
+test_budget_reader (test_realistic_sweep_selection.RealisticSweepSelectionTests) ... ok
+test_security_reader_keeps_only_realistic_strategy (test_realistic_sweep_selection.RealisticSweepSelectionTests) ... ok
+test_invalid_strategy_and_k_fail (test_session_attack.SessionAttackTests) ... ok
+test_legacy_observed_centroid_selection_is_preserved (test_session_attack.SessionAttackTests) ... ok
+test_protocol_labels_reflect_information_access (test_session_attack.SessionAttackTests) ... ok
+test_realistic_selection_does_not_depend_on_clean_values (test_session_attack.SessionAttackTests) ... ok
+test_realistic_selection_rejects_duplicate_enrollment (test_session_attack.SessionAttackTests) ... ok
+test_realistic_selection_requires_observations (test_session_attack.SessionAttackTests) ... ok
+test_disjoint_sessions_pass (test_session_pool_audit.SessionPoolAuditTests) ... ok
+test_source_overlap_fails (test_session_pool_audit.SessionPoolAuditTests) ... ok
+test_dataset_outputs_do_not_replace_legacy_outputs (test_session_pool_isolation.SessionPoolIsolationTests) ... ok
+test_complete_run (test_training_run_check.TrainingRunCheckTests) ... ok
+test_incomplete_run (test_training_run_check.TrainingRunCheckTests) ... ok
+test_nonfinite_loss (test_training_run_check.TrainingRunCheckTests) ... ok
+test_nonfinite_weights (test_training_run_check.TrainingRunCheckTests) ... ok
+test_manifest_is_deterministic_stratified_and_disjoint (test_xtts_protocol.XttsProtocolTests) ... ok
+test_manifest_rejects_single_session_speaker (test_xtts_protocol.XttsProtocolTests) ... ok
+test_threshold_respects_discrete_far (test_xtts_protocol.XttsProtocolTests) ... ok
+test_constant_value_has_constant_interval (test_xtts_scoring.XttsScoringTests) ... ok
+test_requires_multiple_speakers (test_xtts_scoring.XttsScoringTests) ... ok
+
+----------------------------------------------------------------------
+Ran 38 tests in 1.479s
+
+OK
+[train] sessions=1 windows_total=9 windows/session(min,mean,max)=(9,9.00,9)
+[val] sessions=1 windows_total=9 windows/session(min,mean,max)=(9,9.00,9)
+[test] sessions=1 windows_total=9 windows/session(min,mean,max)=(9,9.00,9)

@@ -1,0 +1,88 @@
+step=1 loss=0.0116 L_spk=0.9433 L_intra=0.6234 L_rank=0.0000 L_ceiling=0.0000 L_kagg=0.0954 L_tgt=0.0000 L_away=0.0000 L_rec=0.0114 L_energy=0.0014 w_spk=0.000 w_intra=0.000 w_rank=0.000 w_ceiling=0.000 w_kagg=0.000 w_tgt=0.000 w_away=0.000 cos_tel=0.9433 nwin=8 rank_k=16
+[pair_check] step=1 utter_id=p347_0010 spk_id=p347 cos_tel=0.9152
+[pair_check] step=1 utter_id=p238_0071 spk_id=p238 cos_tel=0.9457
+[pair_check] step=1 utter_id=p281_0057 spk_id=p281 cos_tel=0.9332
+[pair_check] step=1 utter_id=p288_0063 spk_id=p288 cos_tel=0.9516
+[pair_check] step=1 utter_id=p304_0013 spk_id=p304 cos_tel=0.9679
+step=10 loss=0.0123 L_spk=0.9748 L_intra=0.6178 L_rank=0.0000 L_ceiling=0.0000 L_kagg=0.1111 L_tgt=0.0000 L_away=0.0000
+step=20 loss=0.0090 L_spk=0.9753 L_intra=0.6381 L_rank=0.0000 L_ceiling=0.0000 L_kagg=0.1120 L_tgt=0.0000 L_away=0.0000
+[att_diag] step=25 cos_k16=0.9629 L_att=0.1129 w_att=0.000
+step=30 loss=0.0115 L_spk=0.9844 L_intra=0.6389 L_rank=0.0000 L_ceiling=0.0000 L_kagg=0.1124 L_tgt=0.0000 L_away=0.0000
+step=40 loss=0.0184 L_spk=0.9923 L_intra=0.6113 L_rank=0.0000 L_ceiling=0.0000 L_kagg=0.1122 L_tgt=0.0000 L_away=0.0000
+step=50 loss=0.0292 L_spk=0.9933 L_intra=0.6386 L_rank=0.0000 L_ceiling=0.0000 L_kagg=0.1190 L_tgt=0.0000 L_away=0.0000 L_rec=0.0021 L_energy=0.0001 w_spk=0.000 w_intra=0.000 w_rank=0.000 w_ceiling=0.000 w_kagg=0.227 w_tgt=0.000 w_away=0.000 cos_tel=0.9933 nwin=7 rank_k=16
+[pair_check] step=50 utter_id=p265_0054 spk_id=p265 cos_tel=0.9973
+[pair_check] step=50 utter_id=p303_0020 spk_id=p303 cos_tel=0.9908
+[pair_check] step=50 utter_id=p265_0022 spk_id=p265 cos_tel=0.9942
+[pair_check] step=50 utter_id=p283_0087 spk_id=p283 cos_tel=0.9939
+[pair_check] step=50 utter_id=p293_0020 spk_id=p293 cos_tel=0.9926
+[att_diag] step=50 cos_k16=0.9690 L_att=0.1190 w_att=0.227
+step=60 loss=0.0368 L_spk=0.9956 L_intra=0.6588 L_rank=0.0000 L_ceiling=0.0000 L_kagg=0.1111 L_tgt=0.0000 L_away=0.0000
+step=70 loss=0.0380 L_spk=0.9944 L_intra=0.6403 L_rank=0.0000 L_ceiling=0.0000 L_kagg=0.0851 L_tgt=0.0000 L_away=0.0000
+[att_diag] step=75 cos_k16=0.9341 L_att=0.0841 w_att=0.455
+step=80 loss=0.0561 L_spk=0.9501 L_intra=0.5973 L_rank=0.0000 L_ceiling=0.0000 L_kagg=0.0796 L_tgt=0.0000 L_away=0.0000
+step=90 loss=0.0546 L_spk=0.9539 L_intra=0.6123 L_rank=0.0000 L_ceiling=0.0000 L_kagg=0.0726 L_tgt=0.0000 L_away=0.0000
+step=100 loss=0.0606 L_spk=0.9463 L_intra=0.5680 L_rank=0.0000 L_ceiling=0.0000 L_kagg=0.0655 L_tgt=0.0000 L_away=0.0000 L_rec=0.0158 L_energy=0.0019 w_spk=0.000 w_intra=0.000 w_rank=0.000 w_ceiling=0.000 w_kagg=0.682 w_tgt=0.000 w_away=0.000 cos_tel=0.9463 nwin=8 rank_k=16
+[pair_check] step=100 utter_id=p268_0101 spk_id=p268 cos_tel=0.9530
+[pair_check] step=100 utter_id=p274_0087 spk_id=p274 cos_tel=0.9556
+[pair_check] step=100 utter_id=p334_0119 spk_id=p334 cos_tel=0.9289
+[pair_check] step=100 utter_id=p261_0028 spk_id=p261 cos_tel=0.9349
+[pair_check] step=100 utter_id=p312_0068 spk_id=p312 cos_tel=0.9382
+[att_diag] step=100 cos_k16=0.9155 L_att=0.0655 w_att=0.682
+[val] step=100 speaker_sim_tel=0.9483
+[val_proxy] step=100 k16_proxy=0.9192
+[ckpt] saved best checkpoint at step=100 to /root/autodl-tmp/projects/CloneBlock_RT/checkpoints/defense/realistic_a0p18_best.pt
+step=110 loss=0.0464 L_spk=0.9409 L_intra=0.5713 L_rank=0.0000 L_ceiling=0.0000 L_kagg=0.0371 L_tgt=0.0000 L_away=0.0000
+step=120 loss=0.0635 L_spk=0.9567 L_intra=0.5893 L_rank=0.0000 L_ceiling=0.0000 L_kagg=0.0653 L_tgt=0.0000 L_away=0.0000
+[att_diag] step=125 cos_k16=0.9301 L_att=0.0801 w_att=0.909
+step=130 loss=0.0816 L_spk=0.9576 L_intra=0.5776 L_rank=0.0000 L_ceiling=0.0000 L_kagg=0.0768 L_tgt=0.0000 L_away=0.0000
+step=140 loss=0.0672 L_spk=0.9511 L_intra=0.6039 L_rank=0.0000 L_ceiling=0.0000 L_kagg=0.0522 L_tgt=0.0000 L_away=0.0000
+step=150 loss=0.0716 L_spk=0.9556 L_intra=0.6765 L_rank=0.0000 L_ceiling=0.0000 L_kagg=0.0559 L_tgt=0.0000 L_away=0.0000 L_rec=0.0080 L_energy=0.0011 w_spk=0.000 w_intra=0.000 w_rank=0.000 w_ceiling=0.000 w_kagg=1.136 w_tgt=0.000 w_away=0.000 cos_tel=0.9556 nwin=5 rank_k=16
+[pair_check] step=150 utter_id=p316_0057 spk_id=p316 cos_tel=0.9530
+[pair_check] step=150 utter_id=p336_0094 spk_id=p336 cos_tel=0.9554
+[pair_check] step=150 utter_id=p253_0058 spk_id=p253 cos_tel=0.9594
+[pair_check] step=150 utter_id=p293_0085 spk_id=p293 cos_tel=0.9609
+[pair_check] step=150 utter_id=p281_0007 spk_id=p281 cos_tel=0.9452
+[att_diag] step=150 cos_k16=0.9059 L_att=0.0559 w_att=1.136
+step=160 loss=0.0896 L_spk=0.9482 L_intra=0.6415 L_rank=0.0000 L_ceiling=0.0000 L_kagg=0.0630 L_tgt=0.0000 L_away=0.0000
+step=170 loss=0.1204 L_spk=0.9534 L_intra=0.6247 L_rank=0.0000 L_ceiling=0.0000 L_kagg=0.0784 L_tgt=0.0000 L_away=0.0000
+[att_diag] step=175 cos_k16=0.9301 L_att=0.0801 w_att=1.364
+step=180 loss=0.0632 L_spk=0.9573 L_intra=0.6117 L_rank=0.0000 L_ceiling=0.0000 L_kagg=0.0371 L_tgt=0.0000 L_away=0.0000
+step=190 loss=0.0587 L_spk=0.9533 L_intra=0.5732 L_rank=0.0000 L_ceiling=0.0000 L_kagg=0.0321 L_tgt=0.0000 L_away=0.0000
+step=200 loss=0.1359 L_spk=0.9546 L_intra=0.6075 L_rank=0.0000 L_ceiling=0.0000 L_kagg=0.0784 L_tgt=0.0000 L_away=0.0000 L_rec=0.0110 L_energy=0.0015 w_spk=0.000 w_intra=0.000 w_rank=0.000 w_ceiling=0.000 w_kagg=1.591 w_tgt=0.000 w_away=0.000 cos_tel=0.9546 nwin=5 rank_k=16
+[pair_check] step=200 utter_id=p306_0088 spk_id=p306 cos_tel=0.9383
+[pair_check] step=200 utter_id=p318_0001 spk_id=p318 cos_tel=0.9656
+[pair_check] step=200 utter_id=p300_0053 spk_id=p300 cos_tel=0.9565
+[pair_check] step=200 utter_id=p336_0069 spk_id=p336 cos_tel=0.9567
+[pair_check] step=200 utter_id=p302_0052 spk_id=p302 cos_tel=0.9578
+[att_diag] step=200 cos_k16=0.9284 L_att=0.0784 w_att=1.591
+[rank_k_hist] step=200 K1:0 K2:0 K4:0 K8:0 K16:200
+[val] step=200 speaker_sim_tel=0.9444
+[val_proxy] step=200 k16_proxy=0.9096
+[ckpt] saved best checkpoint at step=200 to /root/autodl-tmp/projects/CloneBlock_RT/checkpoints/defense/realistic_a0p18_best.pt
+step=210 loss=0.1725 L_spk=0.9523 L_intra=0.6312 L_rank=0.0000 L_ceiling=0.0000 L_kagg=0.0916 L_tgt=0.0000 L_away=0.0000
+step=220 loss=0.0991 L_spk=0.9449 L_intra=0.5886 L_rank=0.0000 L_ceiling=0.0000 L_kagg=0.0480 L_tgt=0.0000 L_away=0.0000
+[att_diag] step=225 cos_k16=0.9260 L_att=0.0760 w_att=1.818
+step=230 loss=0.1063 L_spk=0.9449 L_intra=0.6090 L_rank=0.0000 L_ceiling=0.0000 L_kagg=0.0508 L_tgt=0.0000 L_away=0.0000
+step=240 loss=0.1632 L_spk=0.9423 L_intra=0.6148 L_rank=0.0000 L_ceiling=0.0000 L_kagg=0.0768 L_tgt=0.0000 L_away=0.0000
+step=250 loss=0.1738 L_spk=0.9376 L_intra=0.6098 L_rank=0.0000 L_ceiling=0.0000 L_kagg=0.0774 L_tgt=0.0000 L_away=0.0000 L_rec=0.0153 L_energy=0.0015 w_spk=0.000 w_intra=0.000 w_rank=0.000 w_ceiling=0.000 w_kagg=2.045 w_tgt=0.000 w_away=0.000 cos_tel=0.9376 nwin=8 rank_k=16
+[pair_check] step=250 utter_id=p226_0000 spk_id=p226 cos_tel=0.9543
+[pair_check] step=250 utter_id=p362_0041 spk_id=p362 cos_tel=0.9445
+[pair_check] step=250 utter_id=p274_0110 spk_id=p274 cos_tel=0.9491
+[pair_check] step=250 utter_id=p279_0066 spk_id=p279 cos_tel=0.9212
+[pair_check] step=250 utter_id=p294_0005 spk_id=p294 cos_tel=0.9295
+[att_diag] step=250 cos_k16=0.9274 L_att=0.0774 w_att=2.045
+step=260 loss=0.1094 L_spk=0.9382 L_intra=0.5986 L_rank=0.0000 L_ceiling=0.0000 L_kagg=0.0426 L_tgt=0.0000 L_away=0.0000
+step=270 loss=0.2246 L_spk=0.9532 L_intra=0.5801 L_rank=0.0000 L_ceiling=0.0000 L_kagg=0.0958 L_tgt=0.0000 L_away=0.0000
+[att_diag] step=275 cos_k16=0.9006 L_att=0.0506 w_att=2.273
+step=280 loss=0.1399 L_spk=0.9476 L_intra=0.6349 L_rank=0.0000 L_ceiling=0.0000 L_kagg=0.0556 L_tgt=0.0000 L_away=0.0000
+step=290 loss=0.0332 L_spk=0.9411 L_intra=0.6315 L_rank=0.0000 L_ceiling=0.0000 L_kagg=0.0093 L_tgt=0.0000 L_away=0.0000
+step=300 loss=0.1312 L_spk=0.9411 L_intra=0.5882 L_rank=0.0000 L_ceiling=0.0000 L_kagg=0.0466 L_tgt=0.0000 L_away=0.0000 L_rec=0.0146 L_energy=0.0021 w_spk=0.000 w_intra=0.000 w_rank=0.000 w_ceiling=0.000 w_kagg=2.500 w_tgt=0.000 w_away=0.000 cos_tel=0.9411 nwin=8 rank_k=16
+[pair_check] step=300 utter_id=p275_0054 spk_id=p275 cos_tel=0.9280
+[pair_check] step=300 utter_id=p271_0047 spk_id=p271 cos_tel=0.9232
+[pair_check] step=300 utter_id=p236_0113 spk_id=p236 cos_tel=0.9574
+[pair_check] step=300 utter_id=p261_0080 spk_id=p261 cos_tel=0.9365
+[pair_check] step=300 utter_id=p302_0029 spk_id=p302 cos_tel=0.9392
+[att_diag] step=300 cos_k16=0.8966 L_att=0.0466 w_att=2.500
+[val] step=300 speaker_sim_tel=0.9509
+[val_proxy] step=300 k16_proxy=0.9008
+[ckpt] saved best checkpoint at step=300 to /root/autodl-tmp/projects/CloneBlock_RT/checkpoints/defense/realistic_a0p18_best.pt

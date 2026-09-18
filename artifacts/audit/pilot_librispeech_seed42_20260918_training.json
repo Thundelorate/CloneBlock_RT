@@ -1,0 +1,11 @@
+{
+  "ok": true,
+  "run_name": "pilot_librispeech_seed42_20260918",
+  "steps": 50,
+  "dataset": "librispeech",
+  "best_step": 50,
+  "best_val_speaker_sim_tel": 0.9984825551509857,
+  "final_loss": 3.139371156692505,
+  "checkpoint": "/root/autodl-tmp/projects/CloneBlock_RT/checkpoints/defense/pilot_librispeech_seed42_20260918_best.pt",
+  "scope": "Numerical and artifact integrity only; not a defense-efficacy claim."
+}

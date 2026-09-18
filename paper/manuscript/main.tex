@@ -1,0 +1,97 @@
+\documentclass{article}
+\usepackage{../official_template/spconf,amsmath,graphicx,booktabs}
+\usepackage{url}
+
+\title{CloneBlock: Session-Level Aggregation-Aware Defense against\\
+Realistic Zero-Shot Voice Cloning}
+
+% AUTHOR TODO: Replace every placeholder and add ORCIDs in the submission system.
+\name{Anonymous Author List Pending Confirmation}
+\address{Affiliations Pending Confirmation}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+% AUTHOR TODO (100--150 words): problem, realistic protocol, method change,
+% principal security result, speech-quality qualification, and XTTS finding.
+% Do not present the clean-information oracle as a certified upper bound.
+This submission draft intentionally leaves the abstract for author approval.
+\end{abstract}
+
+\begin{keywords}
+voice cloning, adversarial defense, speaker verification, telephony, speech security
+\end{keywords}
+
+\section{Introduction}
+\label{sec:introduction}
+% AUTHOR TODO: Motivate multi-utterance/session-level enrollment attacks.
+% Distinguish the revised contribution from the prior Interspeech submission.
+% Keep the contribution list to three auditable claims:
+% (1) realistic aggregation-aware protocol,
+% (2) channel-aware training/evaluation and uncertainty,
+% (3) cross-encoder plus small-scale end-to-end cloning evidence.
+
+\section{Threat Model and Method}
+\label{sec:method}
+
+\subsection{Session-level aggregation-aware protocol}
+% AUTHOR TODO: Define attacker knowledge, candidate budget K, aggregation rule,
+% enrollment boundary, and whether the target speaker contributes any clean
+% reference information. Explain why repeated utterances form one session.
+
+Let $x$ denote clean speech, $D(x)$ the defended waveform, and
+$T(\cdot;\theta)$ a sampled telephone channel. We use
+$x_{\mathrm{tele}}=T(x;\theta)$ and
+$x_{\mathrm{tele\_def}}=T(D(x);\theta)$. The primary protocol computes attack
+selection evidence from $x_{\mathrm{tele\_def}}$; selection from $D(x)$ is an
+easier pre-channel diagnostic only.
+
+\subsection{Realistic and information-privileged objectives}
+% AUTHOR TODO: Insert exact equations from src/metrics/session_attack.py after
+% line-by-line author verification. Name the deployed objective
+% `realistic_selected` and the diagnostic objective `reference_v0p2`.
+The realistic view uses only observations available after defense and channel
+processing. A separate clean-information oracle is reported as an
+information-privileged reference, not as a guaranteed numerical upper bound.
+
+\subsection{Training objective and perturbation budget}
+% AUTHOR TODO: Explain the realistic-objective retraining, validation sweep,
+% selected checkpoint, norm/budget convention, and causal streaming boundary.
+
+\section{Experimental Protocol}
+\label{sec:experiments}
+% AUTHOR TODO: Add exact VCTK release, speaker split, utterance counts, sample
+% rate, seeds, codecs, ASR model, ECAPA/x-vector model IDs, and XTTS version.
+
+We report $K{=}16$ success and AUCK. AUCK is the normalized mean (equivalently,
+the normalized discrete area) across the prespecified $K$ curve; the exact
+$K$ grid must be stated in the final text. Session-bootstrap 95\% confidence
+intervals use the frozen split and seed recorded in the evidence manifest.
+EER denotes equal error rate, and target--impostor margin is the target-speaker
+score minus the strongest impostor score.
+
+\section{Results}
+\label{sec:results}
+
+\input{tables/main_security}
+\input{tables/channel_robustness}
+\input{tables/quality_and_cloning}
+
+% AUTHOR TODO: Interpret, rather than merely repeat, the tables. Required
+% qualifications: defended-source selection is diagnostic; absolute ASR WER is
+% weak even on original clean speech; quality deltas cross zero; XTTS effects
+% are encoder-dependent; no unaudited ClearMask/Enkidu numbers may be reused.
+
+\section{Limitations and Conclusion}
+\label{sec:conclusion}
+% AUTHOR TODO: Discuss one corpus, small XTTS subset, two speaker encoders,
+% missing auditable baseline reruns, and the distinction between speaker-score
+% displacement and practical clone rejection. End with the narrow supported
+% conclusion, not a universal prevention claim.
+
+\clearpage
+\bibliographystyle{../official_template/IEEEbib}
+\bibliography{refs}
+
+\end{document}

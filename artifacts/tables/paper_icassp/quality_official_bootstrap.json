@@ -1,0 +1,12 @@
+{
+  "protocol": "speaker_cluster_bootstrap_quality_v1",
+  "confidence": 0.95,
+  "draws": 2000,
+  "seed": 42,
+  "inputs": [
+    "artifacts/tables/quality_official/vctk_quality_none_20260919.csv",
+    "artifacts/tables/quality_official/vctk_quality_opus16k_20260919.csv",
+    "artifacts/tables/quality_official/vctk_quality_g711_20260919.csv"
+  ],
+  "clean_input": "artifacts/tables/quality_official/vctk_quality_original_clean_20260919.csv"
+}

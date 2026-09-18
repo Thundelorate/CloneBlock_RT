@@ -1,0 +1,11 @@
+model,method,strategy,attacker_view,selection_source,K,cos_mean,cos_std,count
+no_defense,no_defense,random_K,realistic,none,1,0.5510239601135254,0.09823641926050186,12
+no_defense,no_defense,random_K,realistic,none,2,0.7078272700309753,0.07053487747907639,12
+no_defense,no_defense,random_K,realistic,none,4,0.8101863861083984,0.04479869455099106,12
+no_defense,no_defense,random_K,realistic,none,8,0.8867924809455872,0.029724154621362686,12
+no_defense,no_defense,random_K,realistic,none,16,0.9433253407478333,0.022763820365071297,12
+no_defense,no_defense,bestK_by_self_consistency,realistic,tele_defended,1,0.7263912558555603,0.051467347890138626,12
+no_defense,no_defense,bestK_by_self_consistency,realistic,tele_defended,2,0.8371581435203552,0.03469569608569145,12
+no_defense,no_defense,bestK_by_self_consistency,realistic,tele_defended,4,0.9173343777656555,0.022799650207161903,12
+no_defense,no_defense,bestK_by_self_consistency,realistic,tele_defended,8,0.9630573391914368,0.01076754741370678,12
+no_defense,no_defense,bestK_by_self_consistency,realistic,tele_defended,16,0.9861698150634766,0.004868299700319767,12

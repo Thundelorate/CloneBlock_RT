@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import copy
 import csv
 import json
 import random
@@ -28,7 +29,7 @@ from src.transforms.telephony import TelephonyTransform
 
 
 def parse_args() -> argparse.Namespace:
-    p = argparse.ArgumentParser(description="Compute ASV EER for baseline/v0p1_B on v3 targeted tele-defended setting.")
+    p = argparse.ArgumentParser(description="Compute independent-session ASV EER and target-impostor margin.")
     p.add_argument("--dataset", type=str, default="vctk", choices=["vctk", "librispeech"])
     p.add_argument("--session_pool_csv", type=str, required=True)
     p.add_argument(
@@ -41,14 +42,30 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--speaker_checkpoint_dir", type=str, default="")
     p.add_argument("--speaker_checkpoint_dir_xvector", type=str, default="")
     p.add_argument("--telephony_config", type=str, default=str(REPO_ROOT / "configs" / "telephony.yaml"))
+    p.add_argument("--telephony_codec", type=str, default="none", choices=["none", "opus", "g711"])
+    p.add_argument("--telephony_codec_bitrate", type=str, default="16k")
     p.add_argument("--group_key", type=str, default="session_id", choices=["session_id", "utter_id"])
     p.add_argument("--selection_source", type=str, default="tele_defended", choices=["clean", "defended", "tele_defended"])
+    p.add_argument("--selection_strategy", choices=["self_consistency", "oracle_clean"], default="self_consistency")
     p.add_argument("--k", type=int, default=16)
     p.add_argument("--impostors_per_target", type=int, default=10)
     p.add_argument("--seed", type=int, default=42)
     p.add_argument("--output_csv", type=str, required=True)
     p.add_argument("--output_margin_csv", type=str, default="")
+    p.add_argument("--output_trials_csv", type=str, default="")
     return p.parse_args()
+
+
+def configure_telephony_codec(config: Dict, codec: str, bitrate: str) -> Dict:
+    """Return an isolated telephony config with the requested codec condition."""
+    configured = copy.deepcopy(config)
+    configured.setdefault("codec", {})
+    configured["codec"]["enabled"] = codec != "none"
+    if codec != "none":
+        configured["codec"]["name"] = codec
+        if codec == "opus":
+            configured["codec"]["bitrate"] = bitrate
+    return configured
 
 
 def load_wav(path: Path) -> Tuple[np.ndarray, int]:
@@ -85,13 +102,15 @@ def load_defense(ckpt: str, device: str) -> STFTMaskDefense | None:
 
 def main() -> int:
     args = parse_args()
-    rng = random.Random(int(args.seed))
-
     with open(args.telephony_config, "r", encoding="utf-8") as f:
         import yaml
 
-        tp_cfg = yaml.safe_load(f) or {}
-    telephony = TelephonyTransform(tp_cfg)
+        raw_tp_cfg = yaml.safe_load(f) or {}
+    tp_cfg = configure_telephony_codec(
+        raw_tp_cfg.get("telephony", raw_tp_cfg),
+        str(args.telephony_codec),
+        str(args.telephony_codec_bitrate),
+    )
 
     spk_cfg: Dict[str, str] = {"encoder_name": str(args.speaker_encoder_name), "device": "cuda" if torch.cuda.is_available() else "cpu"}
     if args.speaker_checkpoint_dir:
@@ -111,8 +130,11 @@ def main() -> int:
     method_specs = parse_method_specs(args.method_specs)
     out_rows: List[Dict[str, str]] = []
     margin_rows: List[Dict[str, str]] = []
+    trial_rows: List[Dict[str, str]] = []
 
     for method_name, ckpt in method_specs:
+        rng = random.Random(int(args.seed))
+        telephony = TelephonyTransform(tp_cfg, seed=int(args.seed))
         defense_model = load_defense(ckpt, str(speaker_metric.device))
         reps: List[Dict[str, object]] = []
         for spk, gid, rel_path in keys:
@@ -162,10 +184,13 @@ def main() -> int:
             else:
                 sel_z = def_z
 
-            idx = pick_indices("bestK_by_ref_similarity", clean_z, int(args.k), rng, selection_z=sel_z)
+            if args.selection_strategy == "self_consistency":
+                idx = pick_indices("bestK_by_self_consistency", clean_z, int(args.k), rng, selection_z=sel_z)
+            else:
+                idx = pick_indices("bestK_by_clean_consistency", clean_z, int(args.k), rng)
             e_def = F.normalize(def_z[idx].mean(dim=0), dim=0)
             e_ref = F.normalize(clean_z.mean(dim=0), dim=0)
-            reps.append({"speaker_id": spk, "e_ref": e_ref, "e_def": e_def})
+            reps.append({"speaker_id": spk, "session_id": gid, "e_ref": e_ref, "e_def": e_def})
 
         if not reps:
             out_rows.append(
@@ -186,24 +211,44 @@ def main() -> int:
         for i, rr in enumerate(reps):
             by_spk_idx[str(rr["speaker_id"])].append(i)
 
-        all_idx = list(range(len(reps)))
-        for i, rr in enumerate(reps):
-            e_ref = rr["e_ref"]
-            e_def = rr["e_def"]
-            target_scores.append(float(torch.dot(e_ref, e_def).item()))
-
-            candidates = [j for j in all_idx if str(reps[j]["speaker_id"]) != str(rr["speaker_id"])]
-            if not candidates:
+        attacks = []
+        for speaker, indices in sorted(by_spk_idx.items()):
+            ordered = sorted(indices, key=lambda index: str(reps[index]["session_id"]))
+            if len(ordered) < 2:
                 continue
+            enrollment = reps[ordered[0]]
+            for attack_index in ordered[1:]:
+                attack = reps[attack_index]
+                attacks.append((speaker, enrollment, attack))
+        if not attacks:
+            raise ValueError("Independent-session EER requires at least two sessions per speaker")
+
+        for speaker, enrollment, attack in attacks:
+            e_ref = enrollment["e_ref"]
+            e_def = attack["e_def"]
+            target_score = float(torch.dot(e_ref, e_def).item())
+            target_scores.append(target_score)
+            trial_rows.append({
+                "encoder": args.speaker_encoder_name, "method": method_name, "label": "target",
+                "enrollment_speaker": speaker, "enrollment_session": enrollment["session_id"],
+                "test_speaker": speaker, "test_session": attack["session_id"], "score": target_score,
+            })
+
+            candidates = [entry for entry in attacks if entry[0] != speaker]
             k_imp = min(len(candidates), int(args.impostors_per_target))
-            picked = rng.sample(candidates, k=k_imp) if len(candidates) >= k_imp else candidates
+            picked = rng.sample(candidates, k=k_imp) if len(candidates) > k_imp else candidates
             local_imp: List[float] = []
-            for j in picked:
-                s_imp = float(torch.dot(e_ref, reps[j]["e_def"]).item())
-                impostor_scores.append(s_imp)
-                local_imp.append(s_imp)
+            for impostor_speaker, _, impostor_attack in picked:
+                score = float(torch.dot(e_ref, impostor_attack["e_def"]).item())
+                impostor_scores.append(score)
+                local_imp.append(score)
+                trial_rows.append({
+                    "encoder": args.speaker_encoder_name, "method": method_name, "label": "impostor",
+                    "enrollment_speaker": speaker, "enrollment_session": enrollment["session_id"],
+                    "test_speaker": impostor_speaker, "test_session": impostor_attack["session_id"], "score": score,
+                })
             if local_imp:
-                margins.append(float(target_scores[-1] - max(local_imp)))
+                margins.append(target_score - max(local_imp))
 
         scores = np.asarray(target_scores + impostor_scores, dtype=np.float32)
         labels = np.asarray([1] * len(target_scores) + [0] * len(impostor_scores), dtype=np.int32)
@@ -243,7 +288,32 @@ def main() -> int:
             w.writeheader()
             w.writerows(margin_rows)
 
-    print(json.dumps({"output_csv": str(out_csv), "rows": out_rows, "output_margin_csv": str(margin_csv) if margin_csv else ""}, ensure_ascii=False, indent=2))
+    trials_csv = None
+    if str(args.output_trials_csv).strip():
+        trials_csv = Path(args.output_trials_csv)
+        trials_csv.parent.mkdir(parents=True, exist_ok=True)
+        with trials_csv.open("w", newline="", encoding="utf-8") as f:
+            fields = ["encoder", "method", "label", "enrollment_speaker", "enrollment_session",
+                      "test_speaker", "test_session", "score"]
+            w = csv.DictWriter(f, fieldnames=fields)
+            w.writeheader()
+            w.writerows(trial_rows)
+
+    metadata = {
+        "protocol": "independent_session_enrollment",
+        "selection_strategy": args.selection_strategy,
+        "selection_source": args.selection_source,
+        "telephony_codec": args.telephony_codec,
+        "telephony_codec_bitrate": args.telephony_codec_bitrate,
+        "k": args.k,
+        "seed": args.seed,
+        "output_csv": str(out_csv),
+        "output_margin_csv": str(margin_csv) if margin_csv else "",
+        "output_trials_csv": str(trials_csv) if trials_csv else "",
+        "rows": out_rows,
+    }
+    out_csv.with_suffix(".json").write_text(json.dumps(metadata, indent=2, allow_nan=False) + "\n", encoding="utf-8")
+    print(json.dumps(metadata, ensure_ascii=False, indent=2))
     return 0
 
 

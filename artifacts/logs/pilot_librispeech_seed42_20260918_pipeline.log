@@ -1,0 +1,66 @@
+[archive] verified data/raw/dev-clean.tar.gz, sha256=76f87d090650617fca0cac8f88b9416e0ebf80350acb97b343a85fa903728ab3
+[archive] extracted data/raw/LibriSpeech
+[prepare_data] 共 40 个 speaker，原始文件数 2703
+[prepare_data] 已写 /root/autodl-tmp/projects/CloneBlock_RT/data/processed/librispeech/metadata.csv，片段数 3480
+[prepare_data] 已写 /root/autodl-tmp/projects/CloneBlock_RT/data/splits/librispeech/train.csv (2783 条)
+[prepare_data] 已写 /root/autodl-tmp/projects/CloneBlock_RT/data/splits/librispeech/val.csv (344 条)
+[prepare_data] 已写 /root/autodl-tmp/projects/CloneBlock_RT/data/splits/librispeech/test.csv (353 条)
+[prepare_data] 已写 /root/autodl-tmp/projects/CloneBlock_RT/data/splits/librispeech/split_stats.csv
+
+========== 数据规模 ==========
+  speaker 数:     40
+  片段数:        3480
+  总时长 (s):    12094.89
+
+========== split 统计表 ==========
+  train  speakers=  32  utterances= 2783  duration_sec=9680.04
+  val    speakers=   4  utterances=  344  duration_sec=1207.36
+  test   speakers=   4  utterances=  353  duration_sec=1207.49
+{"ok": true, "error_count": 0, "output": "artifacts/audit/librispeech_data_audit.json"}
+/root/autodl-tmp/projects/CloneBlock_RT/.venv-main/lib/python3.10/site-packages/speechbrain/utils/autocast.py:188: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  wrapped_fwd = torch.cuda.amp.custom_fwd(fwd, cast_inputs=cast_inputs)
+/root/autodl-tmp/projects/CloneBlock_RT/.venv-main/lib/python3.10/site-packages/speechbrain/utils/checkpoints.py:200: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state_dict = torch.load(path, map_location=device)
+/root/autodl-tmp/projects/CloneBlock_RT/.venv-main/lib/python3.10/site-packages/speechbrain/processing/features.py:1529: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  stats = torch.load(path, map_location=device)
+step=1 loss=0.0065 L_spk=0.9980 L_intra=0.5116 L_rank=0.8043 L_ceiling=0.1987 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000 L_rec=0.0063 L_energy=0.0017 w_spk=0.000 w_intra=0.000 w_rank=0.000 w_ceiling=0.000 w_kagg=0.000 w_tgt=0.000 w_away=0.000 cos_tel=0.9980 nwin=8 rank_k=16
+[pair_check] step=1 utter_id=7850_0061 spk_id=7850 cos_tel=0.9973
+[pair_check] step=1 utter_id=6319_0075 spk_id=6319 cos_tel=0.9970
+[pair_check] step=1 utter_id=1272_0036 spk_id=1272 cos_tel=0.9986
+[pair_check] step=1 utter_id=3000_0074 spk_id=3000 cos_tel=0.9983
+[pair_check] step=1 utter_id=251_0026 spk_id=251 cos_tel=0.9975
+step=10 loss=0.0026 L_spk=0.9998 L_intra=0.6175 L_rank=0.7111 L_ceiling=0.1999 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=20 loss=0.7680 L_spk=1.0000 L_intra=0.5675 L_rank=0.9500 L_ceiling=0.2000 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+[val] step=25 speaker_sim_tel=1.0000
+[ckpt] saved best checkpoint at step=25 to /root/autodl-tmp/projects/CloneBlock_RT/checkpoints/defense/pilot_librispeech_seed42_20260918_best.pt
+step=30 loss=1.5517 L_spk=1.0000 L_intra=0.6017 L_rank=0.7891 L_ceiling=0.2000 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=40 loss=2.3406 L_spk=0.9997 L_intra=0.6203 L_rank=0.7336 L_ceiling=0.1997 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=50 loss=3.1394 L_spk=0.9992 L_intra=0.6383 L_rank=0.8375 L_ceiling=0.1991 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000 L_rec=0.0030 L_energy=0.0002 w_spk=2.500 w_intra=1.000 w_rank=0.000 w_ceiling=0.000 w_kagg=0.000 w_tgt=0.000 w_away=0.000 cos_tel=0.9992 nwin=8 rank_k=2
+[pair_check] step=50 utter_id=84_0041 spk_id=84 cos_tel=0.9993
+[pair_check] step=50 utter_id=3752_0086 spk_id=3752 cos_tel=0.9993
+[pair_check] step=50 utter_id=84_0080 spk_id=84 cos_tel=0.9993
+[pair_check] step=50 utter_id=5895_0064 spk_id=5895 cos_tel=0.9994
+[pair_check] step=50 utter_id=5338_0038 spk_id=5338 cos_tel=0.9994
+[val] step=50 speaker_sim_tel=0.9985
+[ckpt] saved best checkpoint at step=50 to /root/autodl-tmp/projects/CloneBlock_RT/checkpoints/defense/pilot_librispeech_seed42_20260918_best.pt
+{
+  "dataset": "librispeech",
+  "steps": 50,
+  "batch_size": 8,
+  "train_rows": 256,
+  "val_rows": 32,
+  "run_name": "pilot_librispeech_seed42_20260918",
+  "best_step": 50,
+  "best_val_speaker_sim_tel": 0.9984825551509857,
+  "best_val_k16_proxy": Infinity,
+  "best_metric": "speaker_sim_tel",
+  "best_metric_value": 0.9984825551509857,
+  "elapsed_sec": 16.87338161468506,
+  "device": "cuda",
+  "peak_gpu_mem_mb": 6219.833984375,
+  "outputs": {
+    "checkpoint": "/root/autodl-tmp/projects/CloneBlock_RT/checkpoints/defense/pilot_librispeech_seed42_20260918_best.pt",
+    "curve_csv": "/root/autodl-tmp/projects/CloneBlock_RT/artifacts/tables/train_pilot_librispeech_seed42_20260918_curve.csv",
+    "log_file": "/root/autodl-tmp/projects/CloneBlock_RT/artifacts/logs/train_pilot_librispeech_seed42_20260918.log"
+  }
+}

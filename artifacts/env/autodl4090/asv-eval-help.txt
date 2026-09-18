@@ -1,0 +1,34 @@
+usage: run_asv_eer_eval.py [-h] [--dataset {vctk,librispeech}]
+                           --session_pool_csv SESSION_POOL_CSV --method_specs
+                           METHOD_SPECS
+                           [--speaker_encoder_name SPEAKER_ENCODER_NAME]
+                           [--speaker_checkpoint_dir SPEAKER_CHECKPOINT_DIR]
+                           [--speaker_checkpoint_dir_xvector SPEAKER_CHECKPOINT_DIR_XVECTOR]
+                           [--telephony_config TELEPHONY_CONFIG]
+                           [--group_key {session_id,utter_id}]
+                           [--selection_source {clean,defended,tele_defended}]
+                           [--k K]
+                           [--impostors_per_target IMPOSTORS_PER_TARGET]
+                           [--seed SEED] --output_csv OUTPUT_CSV
+                           [--output_margin_csv OUTPUT_MARGIN_CSV]
+
+Compute ASV EER for baseline/v0p1_B on v3 targeted tele-defended setting.
+
+options:
+  -h, --help            show this help message and exit
+  --dataset {vctk,librispeech}
+  --session_pool_csv SESSION_POOL_CSV
+  --method_specs METHOD_SPECS
+                        Comma-separated name:checkpoint, use empty checkpoint
+                        for baseline, e.g. baseline:,v0p1_B:/abs/path.pt
+  --speaker_encoder_name SPEAKER_ENCODER_NAME
+  --speaker_checkpoint_dir SPEAKER_CHECKPOINT_DIR
+  --speaker_checkpoint_dir_xvector SPEAKER_CHECKPOINT_DIR_XVECTOR
+  --telephony_config TELEPHONY_CONFIG
+  --group_key {session_id,utter_id}
+  --selection_source {clean,defended,tele_defended}
+  --k K
+  --impostors_per_target IMPOSTORS_PER_TARGET
+  --seed SEED
+  --output_csv OUTPUT_CSV
+  --output_margin_csv OUTPUT_MARGIN_CSV

@@ -1,0 +1,13 @@
+{
+  "protocol": "vctk_official_full_utterance_quality_v1",
+  "telephony_codec": "g711",
+  "telephony_codec_bitrate": "16k",
+  "reference_source": "vctk_official_transcript",
+  "stoi_primary_pair": "tele_clean_vs_tele_defended",
+  "shared_channel_draws": true,
+  "manifest_sha256": "33acf97ff90cd643d0b2d50f007f04e29a629a8f0d2743cbe847411ad056d426",
+  "defense_checkpoint_sha256": "ac8aab10681c8c64f663e1c7dc8d9864e939e492dd5abc58a2465b8190ae3379",
+  "n_utterances": 200,
+  "n_speakers": 11,
+  "output_sha256": "0cb3d24dd9bda06c6e13d42d683a326d6fd0dca16a510c35ef3c16c9017dd93b"
+}

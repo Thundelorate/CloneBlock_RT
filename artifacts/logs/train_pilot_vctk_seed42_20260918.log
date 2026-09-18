@@ -1,0 +1,20 @@
+step=1 loss=0.0055 L_spk=0.9979 L_intra=0.5753 L_rank=0.9172 L_ceiling=0.1989 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000 L_rec=0.0054 L_energy=0.0017 w_spk=0.000 w_intra=0.000 w_rank=0.000 w_ceiling=0.000 w_kagg=0.000 w_tgt=0.000 w_away=0.000 cos_tel=0.9979 nwin=8 rank_k=2
+[pair_check] step=1 utter_id=p263_0019 spk_id=p263 cos_tel=0.9982
+[pair_check] step=1 utter_id=p305_0029 spk_id=p305 cos_tel=0.9975
+[pair_check] step=1 utter_id=p341_0044 spk_id=p341 cos_tel=0.9979
+[pair_check] step=1 utter_id=p300_0023 spk_id=p300 cos_tel=0.9974
+[pair_check] step=1 utter_id=p231_0026 spk_id=p231 cos_tel=0.9986
+step=10 loss=0.0017 L_spk=0.9997 L_intra=0.5631 L_rank=0.7278 L_ceiling=0.1998 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=20 loss=0.7804 L_spk=0.9999 L_intra=0.6187 L_rank=0.8242 L_ceiling=0.1999 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+[val] step=25 speaker_sim_tel=0.9999
+[ckpt] saved best checkpoint at step=25 to /root/autodl-tmp/projects/CloneBlock_RT/checkpoints/defense/pilot_vctk_seed42_20260918_best.pt
+step=30 loss=1.5351 L_spk=0.9999 L_intra=0.5694 L_rank=0.9469 L_ceiling=0.1999 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=40 loss=2.3302 L_spk=0.9993 L_intra=0.6073 L_rank=0.7581 L_ceiling=0.1991 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000
+step=50 loss=3.1389 L_spk=0.9947 L_intra=0.6479 L_rank=0.9114 L_ceiling=0.1966 L_kagg=0.0000 L_tgt=0.0000 L_away=0.0000 L_rec=0.0041 L_energy=0.0005 w_spk=2.500 w_intra=1.000 w_rank=0.000 w_ceiling=0.000 w_kagg=0.000 w_tgt=0.000 w_away=0.000 cos_tel=0.9947 nwin=8 rank_k=16
+[pair_check] step=50 utter_id=p347_0090 spk_id=p347 cos_tel=0.9924
+[pair_check] step=50 utter_id=p241_0035 spk_id=p241 cos_tel=0.9964
+[pair_check] step=50 utter_id=p263_0060 spk_id=p263 cos_tel=0.9957
+[pair_check] step=50 utter_id=p230_0034 spk_id=p230 cos_tel=0.9927
+[pair_check] step=50 utter_id=p264_0011 spk_id=p264 cos_tel=0.9934
+[val] step=50 speaker_sim_tel=0.9943
+[ckpt] saved best checkpoint at step=50 to /root/autodl-tmp/projects/CloneBlock_RT/checkpoints/defense/pilot_vctk_seed42_20260918_best.pt

@@ -8,6 +8,9 @@ from __future__ import annotations
 
 import argparse
 import csv
+import hashlib
+import json
+import math
 import random
 from pathlib import Path
 from typing import Any
@@ -22,6 +25,9 @@ TARGET_SR = 16000
 MIN_DUR = 2.0
 MAX_DUR = 6.0
 TARGET_DURATION_PER_SPEAKER = 300.0  # ~5 min per speaker
+MANIFEST_FIELDS = ["utter_id", "speaker_id", "path", "duration", "source_path",
+                   "source_utter_id", "source_start_sample", "source_end_sample",
+                   "sample_rate", "is_full_utterance", "microphone"]
 
 
 def _set_seed(seed: int) -> None:
@@ -46,11 +52,11 @@ def discover_librispeech(raw_dir: Path) -> list[tuple[str, Path]]:
         if not speaker_dir.is_dir():
             continue
         speaker_id = speaker_dir.name
-        for chapter_dir in speaker_dir.iterdir():
+        for chapter_dir in sorted(speaker_dir.iterdir()):
             if not chapter_dir.is_dir():
                 continue
             for ext in ("*.flac", "*.wav"):
-                for f in chapter_dir.glob(ext):
+                for f in sorted(chapter_dir.glob(ext)):
                     out.append((speaker_id, f))
     return out
 
@@ -79,13 +85,13 @@ def create_demo_librispeech(raw_dir: Path, num_speakers: int, sec_per_speaker: f
             fi += 1
     print(f"[prepare_data] 已生成 demo 数据: {num_speakers} speakers, ~{num_speakers * sec_per_speaker:.0f}s, 位于 {base}")
 
-def discover_vctk(raw_dir: Path) -> list[tuple[str, Path]]:
+def discover_vctk(raw_dir: Path, microphone: str = "mic2") -> list[tuple[str, Path]]:
     """(speaker_id, wav_path) 列表。支持: VCTK-Corpus/wav48, VCTK-Corpus-0.92/wav48_silence_trimmed 或 wav48（含 .wav 或 .flac）"""
     raw_dir = Path(raw_dir)
     candidates = [
-        raw_dir / "VCTK-Corpus" / "wav48",
         raw_dir / "VCTK-Corpus-0.92" / "wav48_silence_trimmed",
         raw_dir / "VCTK-Corpus-0.92" / "wav48",
+        raw_dir / "VCTK-Corpus" / "wav48",
         raw_dir / "wav48",
     ]
     wav48 = None
@@ -102,6 +108,8 @@ def discover_vctk(raw_dir: Path) -> list[tuple[str, Path]]:
         speaker_id = speaker_dir.name
         for ext in ("*.wav", "*.flac"):
             for f in sorted(speaker_dir.glob(ext)):
+                if f.stem.endswith(("_mic1", "_mic2")) and not f.stem.endswith("_" + microphone):
+                    continue
                 out.append((speaker_id, f))
     return out
 
@@ -128,11 +136,14 @@ def slice_speaker_segments(
     max_dur: float,
     sr: int,
     rng: random.Random,
-) -> list[tuple[str, str, float]]:
+    raw_dir: Path | None = None,
+) -> list[dict]:
     """
     对该 speaker 的所有文件随机裁 2–6s 片段，直到总时长约 target_duration。
-    返回 [(utter_id, relative_path, duration), ...]
+    Return crop records with original-file identity and 16 kHz sample offsets.
     """
+    if not all(math.isfinite(v) and v > 0 for v in (target_duration, min_dur, max_dur)) or max_dur < min_dur:
+        raise ValueError("Durations must be finite, positive, and min_dur <= max_dur")
     # 先收集所有文件的时长
     file_durations: list[tuple[Path, float]] = []
     for f in file_list:
@@ -148,16 +159,14 @@ def slice_speaker_segments(
     if not file_durations:
         return []
 
-    segments: list[tuple[str, str, float]] = []
+    segments: list[dict] = []
     total_dur = 0.0
     seg_idx = 0
 
     while total_dur < target_duration:
         # 随机选一个文件
         f, fdur = rng.choice(file_durations)
-        seg_len = rng.uniform(min_dur, max_dur)
-        if fdur < seg_len:
-            continue
+        seg_len = rng.uniform(min_dur, min(max_dur, fdur))
         start = rng.uniform(0.0, fdur - seg_len)
         try:
             y, _ = load_audio(f, sr)
@@ -169,11 +178,25 @@ def slice_speaker_segments(
             out_path = out_root / rel_path
             write_wav(out_path, clip, sr)
             actual_dur = len(clip) / sr
-            segments.append((utter_id, rel_path, actual_dur))
+            stem = f.stem
+            mic = stem.rsplit("_", 1)[-1] if stem.endswith(("_mic1", "_mic2")) else "unspecified"
+            source_utter = stem.rsplit("_", 1)[0] if mic != "unspecified" else stem
+            segments.append({
+                "utter_id": utter_id, "speaker_id": speaker_id, "path": rel_path,
+                "duration": f"{actual_dur:.6f}",
+                "source_path": f.resolve().relative_to(raw_dir.resolve()).as_posix() if raw_dir is not None else str(f.resolve()),
+                "source_utter_id": source_utter,
+                "source_start_sample": st_sample, "source_end_sample": min(end_sample, len(y)),
+                "sample_rate": sr, "is_full_utterance": int(st_sample == 0 and end_sample >= len(y)),
+                "microphone": mic,
+            })
             total_dur += actual_dur
             seg_idx += 1
         except Exception as e:
             print(f"  [slice skip] {f}: {e}")
+            file_durations.remove((f, fdur))
+            if not file_durations:
+                raise RuntimeError(f"All source recordings failed for {speaker_id}") from e
             continue
 
     return segments
@@ -186,6 +209,7 @@ def run_prepare(
     splits_dir: Path,
     target_duration_per_speaker: float,
     seed: int,
+    microphone: str = "mic2",
 ) -> None:
     _set_seed(seed)
     rng = random.Random(seed)
@@ -198,7 +222,7 @@ def run_prepare(
     if dataset == "librispeech":
         pairs = discover_librispeech(raw_dir)
     elif dataset == "vctk":
-        pairs = discover_vctk(raw_dir)
+        pairs = discover_vctk(raw_dir, microphone=microphone)
     else:
         raise ValueError(f"未知 dataset: {dataset}，支持 librispeech | vctk")
 
@@ -221,26 +245,24 @@ def run_prepare(
             MAX_DUR,
             TARGET_SR,
             rng,
+            raw_dir=raw_dir,
         )
-        for utter_id, rel_path, dur in segs:
-            all_rows.append({
-                "utter_id": utter_id,
-                "speaker_id": speaker_id,
-                "path": rel_path,
-                "duration": f"{dur:.3f}",
-            })
+        all_rows.extend(segs)
+
+    if not all_rows:
+        raise ValueError("No usable real audio segments were prepared")
 
     # metadata.csv（与 wav16k 同级的 processed/<dataset>/ 下）
     meta_path = out_wav_dir.parent / "metadata.csv"
     with open(meta_path, "w", newline="", encoding="utf-8") as f:
-        w = csv.DictWriter(f, fieldnames=["utter_id", "speaker_id", "path", "duration"])
+        w = csv.DictWriter(f, fieldnames=MANIFEST_FIELDS)
         w.writeheader()
         w.writerows(all_rows)
     print(f"[prepare_data] 已写 {meta_path}，片段数 {len(all_rows)}")
 
     # Speaker-disjoint 80/10/10
-    speakers = sorted(speaker_files.keys())
-    rng.shuffle(speakers)
+    speakers = sorted({row["speaker_id"] for row in all_rows})
+    random.Random(seed).shuffle(speakers)
     n = len(speakers)
     n_train = int(round(n * 0.8))
     n_val = int(round(n * 0.1))
@@ -259,7 +281,7 @@ def run_prepare(
     for name, rows in [("train", train_rows), ("val", val_rows), ("test", test_rows)]:
         path = splits_dir / f"{name}.csv"
         with open(path, "w", newline="", encoding="utf-8") as f:
-            w = csv.DictWriter(f, fieldnames=["utter_id", "speaker_id", "path", "duration"])
+            w = csv.DictWriter(f, fieldnames=MANIFEST_FIELDS)
             w.writeheader()
             w.writerows(rows)
         print(f"[prepare_data] 已写 {path} ({len(rows)} 条)")
@@ -279,6 +301,21 @@ def run_prepare(
         w.writeheader()
         w.writerows(stats)
     print(f"[prepare_data] 已写 {stats_path}")
+
+    preparation = {
+        "protocol_version": "source_tracked_v1", "dataset": dataset, "seed": seed,
+        "raw_root": str(raw_dir.resolve()), "sample_rate": TARGET_SR,
+        "microphone": microphone if dataset == "vctk" else "not_applicable",
+        "target_duration_per_speaker": target_duration_per_speaker,
+        "crop_duration_sec": [MIN_DUR, MAX_DUR],
+        "split_rng": "Independent random.Random(seed); split after filtering unusable speakers",
+        "source_offset_unit": "Samples in mono audio resampled to sample_rate, before PCM output quantization",
+        "transcript_policy": "Crops do not have aligned transcripts. Use original complete utterances for official-reference WER.",
+        "split_sha256": {name: hashlib.sha256((splits_dir / f"{name}.csv").read_bytes()).hexdigest()
+                         for name in ("train", "val", "test")},
+        "metadata_sha256": hashlib.sha256(meta_path.read_bytes()).hexdigest(),
+    }
+    (splits_dir / "preparation.json").write_text(json.dumps(preparation, indent=2) + "\n", encoding="utf-8")
 
     # 控制台汇总（用于回传）
     total_dur = sum_dur(all_rows)
@@ -304,6 +341,7 @@ def main():
     p.add_argument("--target_duration_per_speaker", type=float, default=TARGET_DURATION_PER_SPEAKER,
                    help=f"每 speaker 目标总时长（秒），默认 {TARGET_DURATION_PER_SPEAKER}")
     p.add_argument("--seed", type=int, default=DEFAULT_SEED, help="随机种子")
+    p.add_argument("--microphone", choices=["mic1", "mic2"], default="mic2", help="Use one VCTK microphone; default matches torchaudio VCTK_092")
     p.add_argument("--demo", action="store_true", help="无真实数据时生成 demo 数据并跑通流程")
     p.add_argument("--demo_speakers", type=int, default=30, help="demo 时生成的 speaker 数")
     p.add_argument("--demo_sec_per_speaker", type=float, default=60.0, help="demo 时每 speaker 约多少秒原始音频")
@@ -328,6 +366,7 @@ def main():
         splits_dir=splits_dir,
         target_duration_per_speaker=args.target_duration_per_speaker,
         seed=args.seed,
+        microphone=args.microphone,
     )
 
 

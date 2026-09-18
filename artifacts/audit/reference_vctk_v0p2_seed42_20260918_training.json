@@ -1,0 +1,11 @@
+{
+  "ok": true,
+  "run_name": "reference_vctk_v0p2_seed42_20260918",
+  "steps": 1000,
+  "dataset": "vctk",
+  "best_step": 800,
+  "best_val_speaker_sim_tel": 0.9489393591880798,
+  "final_loss": 3.004964828491211,
+  "checkpoint": "/root/autodl-tmp/projects/CloneBlock_RT/checkpoints/defense/reference_vctk_v0p2_seed42_20260918_best.pt",
+  "scope": "Numerical and artifact integrity only; not a defense-efficacy claim."
+}

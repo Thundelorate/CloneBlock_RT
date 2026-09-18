@@ -1,0 +1,9 @@
+{
+  "protocol": "xtts_small_scale_v1",
+  "selection_uses_scores": false,
+  "n_sessions": 20,
+  "n_speakers": 11,
+  "seed": 42,
+  "session_pool_sha256": "10065ec0de91c281636af5e23e08251eeff5eb1510ccc32fee382e9a7b273e51",
+  "manifest_sha256": "cb7a63a0f4ff717e71546002b8c30b086d6cece708b60bd5e5149ab0a89b60b8"
+}

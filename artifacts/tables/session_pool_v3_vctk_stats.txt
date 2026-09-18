@@ -1,0 +1,3 @@
+[train] sessions=255 windows_total=22203 windows/session(min,mean,max)=(65,87.07,105)
+[val] sessions=33 windows_total=2724 windows/session(min,mean,max)=(66,82.55,96)
+[test] sessions=33 windows_total=2901 windows/session(min,mean,max)=(73,87.91,102)

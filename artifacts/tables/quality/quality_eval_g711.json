@@ -1,0 +1,4002 @@
+[
+  {
+    "utt_id": "p240_0002",
+    "spk_id": "p240",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.6,
+    "wer_clean": 0.6,
+    "stoi": 0.9999999999999986,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p228_0051",
+    "spk_id": "p228",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 1.1111111111111112,
+    "wer_clean": 1.1111111111111112,
+    "stoi": 0.9999999999999998,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p255_0101",
+    "spk_id": "p255",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.2,
+    "wer_clean": 0.2,
+    "stoi": 1.0,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p255_0039",
+    "spk_id": "p255",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.6,
+    "wer_clean": 0.6,
+    "stoi": 0.9999999999999956,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p244_0117",
+    "spk_id": "p244",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 1.0,
+    "wer_clean": 1.0,
+    "stoi": 0.9999999999999991,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p240_0059",
+    "spk_id": "p240",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.8,
+    "wer_clean": 0.8,
+    "stoi": 0.9999999999999998,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p239_0103",
+    "spk_id": "p239",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.6,
+    "wer_clean": 0.6,
+    "stoi": 0.9999999999999976,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p340_0086",
+    "spk_id": "p340",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.6666666666666666,
+    "wer_clean": 0.6666666666666666,
+    "stoi": 0.9999999999999991,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p239_0072",
+    "spk_id": "p239",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.2,
+    "wer_clean": 0.2,
+    "stoi": 0.9999999999999982,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p364_0048",
+    "spk_id": "p364",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.2,
+    "wer_clean": 0.2,
+    "stoi": 0.9999999999999981,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p314_0063",
+    "spk_id": "p314",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.2,
+    "wer_clean": 0.2,
+    "stoi": 0.9999999999999963,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p228_0065",
+    "spk_id": "p228",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.5,
+    "wer_clean": 0.5,
+    "stoi": 0.9999999999999987,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p228_0061",
+    "spk_id": "p228",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.8888888888888888,
+    "wer_clean": 0.8888888888888888,
+    "stoi": 0.9999999999999998,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p239_0085",
+    "spk_id": "p239",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.2,
+    "wer_clean": 0.2,
+    "stoi": 0.999999999999998,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p244_0107",
+    "spk_id": "p244",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.8333333333333334,
+    "wer_clean": 0.8333333333333334,
+    "stoi": 0.9999999999999988,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p255_0014",
+    "spk_id": "p255",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.25,
+    "wer_clean": 0.25,
+    "stoi": 0.999999999999999,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p340_0004",
+    "spk_id": "p340",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.6666666666666666,
+    "wer_clean": 0.6666666666666666,
+    "stoi": 0.9999999999999964,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p364_0071",
+    "spk_id": "p364",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.25,
+    "wer_clean": 0.25,
+    "stoi": 0.99999999999999,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p228_0054",
+    "spk_id": "p228",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 1.0,
+    "wer_clean": 1.0,
+    "stoi": 0.9999999999999996,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p340_0119",
+    "spk_id": "p340",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.5,
+    "wer_clean": 0.5,
+    "stoi": 0.9999999999999962,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p244_0067",
+    "spk_id": "p244",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.6666666666666666,
+    "wer_clean": 0.6666666666666666,
+    "stoi": 0.9999999999999982,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p314_0058",
+    "spk_id": "p314",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.4,
+    "wer_clean": 0.4,
+    "stoi": 0.9999999999999994,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p244_0111",
+    "spk_id": "p244",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.4,
+    "wer_clean": 0.4,
+    "stoi": 0.9999999999999989,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p326_0005",
+    "spk_id": "p326",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.6666666666666666,
+    "wer_clean": 0.6666666666666666,
+    "stoi": 0.9999999999999893,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p364_0045",
+    "spk_id": "p364",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.5,
+    "wer_clean": 0.5,
+    "stoi": 0.9999999999999941,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p255_0107",
+    "spk_id": "p255",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.6666666666666666,
+    "wer_clean": 0.6666666666666666,
+    "stoi": 1.0,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p228_0013",
+    "spk_id": "p228",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.75,
+    "wer_clean": 0.75,
+    "stoi": 0.9999999999999992,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p240_0100",
+    "spk_id": "p240",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.3,
+    "wer_clean": 0.3,
+    "stoi": 0.9999999999999971,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p314_0064",
+    "spk_id": "p314",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.4,
+    "wer_clean": 0.4,
+    "stoi": 0.9999999999999971,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p262_0006",
+    "spk_id": "p262",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.2727272727272727,
+    "wer_clean": 0.2727272727272727,
+    "stoi": 0.9999999999999984,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p240_0092",
+    "spk_id": "p240",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.42857142857142855,
+    "wer_clean": 0.42857142857142855,
+    "stoi": 0.9999999999999981,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p244_0100",
+    "spk_id": "p244",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.4,
+    "wer_clean": 0.4,
+    "stoi": 0.9999999999999996,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p258_0116",
+    "spk_id": "p258",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.8,
+    "wer_clean": 0.8,
+    "stoi": 0.9999999999999984,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p239_0083",
+    "spk_id": "p239",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.6666666666666666,
+    "wer_clean": 0.6666666666666666,
+    "stoi": 0.9999999999999992,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p262_0088",
+    "spk_id": "p262",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.14285714285714285,
+    "wer_clean": 0.14285714285714285,
+    "stoi": 0.9999999999999992,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p239_0092",
+    "spk_id": "p239",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.16666666666666666,
+    "wer_clean": 0.16666666666666666,
+    "stoi": 0.9999999999999962,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p262_0045",
+    "spk_id": "p262",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.6,
+    "wer_clean": 0.6,
+    "stoi": 0.999999999999999,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p262_0014",
+    "spk_id": "p262",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.2857142857142857,
+    "wer_clean": 0.2857142857142857,
+    "stoi": 0.9999999999999969,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p364_0075",
+    "spk_id": "p364",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.6666666666666666,
+    "wer_clean": 0.6666666666666666,
+    "stoi": 0.9999999999999933,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p255_0079",
+    "spk_id": "p255",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.3333333333333333,
+    "wer_clean": 0.3333333333333333,
+    "stoi": 0.9999999999999973,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p228_0088",
+    "spk_id": "p228",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.7,
+    "wer_clean": 0.7,
+    "stoi": 0.9999999999999998,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p326_0026",
+    "spk_id": "p326",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 1.0,
+    "wer_clean": 1.0,
+    "stoi": 0.9999999999999983,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p340_0068",
+    "spk_id": "p340",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.5,
+    "wer_clean": 0.5,
+    "stoi": 0.9999999999999978,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p240_0029",
+    "spk_id": "p240",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.5,
+    "wer_clean": 0.5,
+    "stoi": 0.9999999999999984,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p262_0085",
+    "spk_id": "p262",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.5454545454545454,
+    "wer_clean": 0.5454545454545454,
+    "stoi": 0.9999999999999994,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p239_0055",
+    "spk_id": "p239",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 1.0,
+    "wer_clean": 1.0,
+    "stoi": 0.9999999999999981,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p340_0100",
+    "spk_id": "p340",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.3333333333333333,
+    "wer_clean": 0.3333333333333333,
+    "stoi": 0.9999999999999994,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p258_0027",
+    "spk_id": "p258",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.2222222222222222,
+    "wer_clean": 0.2222222222222222,
+    "stoi": 0.9999999999999987,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p364_0105",
+    "spk_id": "p364",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.25,
+    "wer_clean": 0.25,
+    "stoi": 0.9999999999999898,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p262_0050",
+    "spk_id": "p262",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.0,
+    "wer_clean": 0.0,
+    "stoi": 0.9999999999999987,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p364_0021",
+    "spk_id": "p364",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.8,
+    "wer_clean": 0.8,
+    "stoi": 0.9999999999999923,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p244_0053",
+    "spk_id": "p244",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.36363636363636365,
+    "wer_clean": 0.36363636363636365,
+    "stoi": 0.999999999999998,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p239_0036",
+    "spk_id": "p239",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.8571428571428571,
+    "wer_clean": 0.8571428571428571,
+    "stoi": 0.9999999999999976,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p228_0093",
+    "spk_id": "p228",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.6,
+    "wer_clean": 0.6,
+    "stoi": 0.9999999999999992,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p255_0004",
+    "spk_id": "p255",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.75,
+    "wer_clean": 0.75,
+    "stoi": 0.9999999999999991,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p258_0019",
+    "spk_id": "p258",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.36363636363636365,
+    "wer_clean": 0.36363636363636365,
+    "stoi": 0.9999999999999993,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p239_0057",
+    "spk_id": "p239",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.5,
+    "wer_clean": 0.5,
+    "stoi": 0.9999999999999974,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p239_0100",
+    "spk_id": "p239",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.875,
+    "wer_clean": 0.875,
+    "stoi": 0.9999999999999994,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p326_0014",
+    "spk_id": "p326",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.625,
+    "wer_clean": 0.625,
+    "stoi": 0.9999999999999957,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p262_0057",
+    "spk_id": "p262",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.6153846153846154,
+    "wer_clean": 0.6153846153846154,
+    "stoi": 0.9999999999999982,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p240_0107",
+    "spk_id": "p240",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.2727272727272727,
+    "wer_clean": 0.2727272727272727,
+    "stoi": 0.9999999999999996,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p262_0068",
+    "spk_id": "p262",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.5714285714285714,
+    "wer_clean": 0.5714285714285714,
+    "stoi": 0.9999999999999992,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p262_0037",
+    "spk_id": "p262",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.5454545454545454,
+    "wer_clean": 0.5454545454545454,
+    "stoi": 0.9999999999999992,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p244_0089",
+    "spk_id": "p244",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.8333333333333334,
+    "wer_clean": 0.8333333333333334,
+    "stoi": 0.9999999999999996,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p255_0084",
+    "spk_id": "p255",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.1111111111111111,
+    "wer_clean": 0.1111111111111111,
+    "stoi": 0.9999999999999982,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p239_0040",
+    "spk_id": "p239",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.2,
+    "wer_clean": 0.2,
+    "stoi": 0.999999999999997,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p364_0086",
+    "spk_id": "p364",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.5,
+    "wer_clean": 0.5,
+    "stoi": 0.9999999999999941,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p244_0010",
+    "spk_id": "p244",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 1.0,
+    "wer_clean": 1.0,
+    "stoi": 0.999999999999999,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p340_0063",
+    "spk_id": "p340",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.5,
+    "wer_clean": 0.5,
+    "stoi": 0.9999999999999946,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p240_0108",
+    "spk_id": "p240",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.125,
+    "wer_clean": 0.125,
+    "stoi": 0.999999999999999,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p326_0032",
+    "spk_id": "p326",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.8571428571428571,
+    "wer_clean": 0.8571428571428571,
+    "stoi": 0.9999999999999919,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p262_0087",
+    "spk_id": "p262",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.6,
+    "wer_clean": 0.6,
+    "stoi": 0.9999999999999999,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p255_0090",
+    "spk_id": "p255",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.42857142857142855,
+    "wer_clean": 0.42857142857142855,
+    "stoi": 0.9999999999999997,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p340_0110",
+    "spk_id": "p340",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.5714285714285714,
+    "wer_clean": 0.5714285714285714,
+    "stoi": 0.9999999999999989,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p244_0109",
+    "spk_id": "p244",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.6,
+    "wer_clean": 0.6,
+    "stoi": 0.9999999999999981,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p258_0091",
+    "spk_id": "p258",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.5,
+    "wer_clean": 0.5,
+    "stoi": 0.9999999999999991,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p239_0008",
+    "spk_id": "p239",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.6,
+    "wer_clean": 0.6,
+    "stoi": 0.9999999999999989,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p255_0007",
+    "spk_id": "p255",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.875,
+    "wer_clean": 0.875,
+    "stoi": 0.9999999999999997,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p258_0073",
+    "spk_id": "p258",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 1.0,
+    "wer_clean": 1.0,
+    "stoi": 0.9999999999999994,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p314_0020",
+    "spk_id": "p314",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.8,
+    "wer_clean": 0.8,
+    "stoi": 0.9999999999999958,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p255_0086",
+    "spk_id": "p255",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.75,
+    "wer_clean": 0.75,
+    "stoi": 0.9999999999999999,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p239_0029",
+    "spk_id": "p239",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.42857142857142855,
+    "wer_clean": 0.42857142857142855,
+    "stoi": 0.9999999999999982,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p244_0092",
+    "spk_id": "p244",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.7777777777777778,
+    "wer_clean": 0.7777777777777778,
+    "stoi": 0.9999999999999994,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p364_0000",
+    "spk_id": "p364",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.16666666666666666,
+    "wer_clean": 0.16666666666666666,
+    "stoi": 0.9999999999999858,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p258_0071",
+    "spk_id": "p258",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 1.0,
+    "wer_clean": 1.0,
+    "stoi": 0.9999999999999999,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p244_0095",
+    "spk_id": "p244",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.5,
+    "wer_clean": 0.5,
+    "stoi": 0.9999999999999991,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p326_0108",
+    "spk_id": "p326",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 1.0,
+    "wer_clean": 1.0,
+    "stoi": 0.9999999999999969,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p314_0009",
+    "spk_id": "p314",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 1.0,
+    "wer_clean": 1.0,
+    "stoi": 0.9999999999999986,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p326_0025",
+    "spk_id": "p326",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.75,
+    "wer_clean": 0.75,
+    "stoi": 0.9999999999999928,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p240_0066",
+    "spk_id": "p240",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.5714285714285714,
+    "wer_clean": 0.5714285714285714,
+    "stoi": 0.9999999999999996,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p255_0080",
+    "spk_id": "p255",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.3333333333333333,
+    "wer_clean": 0.3333333333333333,
+    "stoi": 0.9999999999999996,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p255_0043",
+    "spk_id": "p255",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.8,
+    "wer_clean": 0.8,
+    "stoi": 0.9999999999999987,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p340_0073",
+    "spk_id": "p340",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.45454545454545453,
+    "wer_clean": 0.45454545454545453,
+    "stoi": 0.9999999999999963,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p255_0076",
+    "spk_id": "p255",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.5,
+    "wer_clean": 0.5,
+    "stoi": 1.0,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p364_0036",
+    "spk_id": "p364",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.8333333333333334,
+    "wer_clean": 0.8333333333333334,
+    "stoi": 0.9999999999999971,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p314_0076",
+    "spk_id": "p314",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.5,
+    "wer_clean": 0.5,
+    "stoi": 0.9999999999999982,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p364_0034",
+    "spk_id": "p364",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.6,
+    "wer_clean": 0.6,
+    "stoi": 0.9999999999999967,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p314_0016",
+    "spk_id": "p314",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.5,
+    "wer_clean": 0.5,
+    "stoi": 0.9999999999999996,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p262_0051",
+    "spk_id": "p262",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.3333333333333333,
+    "wer_clean": 0.3333333333333333,
+    "stoi": 0.9999999999999987,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p240_0057",
+    "spk_id": "p240",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.7272727272727273,
+    "wer_clean": 0.7272727272727273,
+    "stoi": 0.9999999999999978,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p340_0013",
+    "spk_id": "p340",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 1.3333333333333333,
+    "wer_clean": 1.3333333333333333,
+    "stoi": 0.9999999999999984,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p326_0096",
+    "spk_id": "p326",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.5,
+    "wer_clean": 0.5,
+    "stoi": 0.9999999999999871,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p239_0080",
+    "spk_id": "p239",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.23076923076923078,
+    "wer_clean": 0.23076923076923078,
+    "stoi": 0.9999999999999997,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p228_0096",
+    "spk_id": "p228",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.6,
+    "wer_clean": 0.6,
+    "stoi": 0.9999999999999978,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p239_0118",
+    "spk_id": "p239",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.5,
+    "wer_clean": 0.5,
+    "stoi": 0.9999999999999981,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p240_0087",
+    "spk_id": "p240",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.5,
+    "wer_clean": 0.5,
+    "stoi": 0.9999999999999991,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p240_0101",
+    "spk_id": "p240",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.6666666666666666,
+    "wer_clean": 0.6666666666666666,
+    "stoi": 0.9999999999999973,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p364_0060",
+    "spk_id": "p364",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 1.25,
+    "wer_clean": 1.25,
+    "stoi": 0.9999999999999942,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p239_0024",
+    "spk_id": "p239",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.6,
+    "wer_clean": 0.6,
+    "stoi": 0.9999999999999981,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p262_0098",
+    "spk_id": "p262",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.6,
+    "wer_clean": 0.6,
+    "stoi": 1.0,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p262_0091",
+    "spk_id": "p262",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.08333333333333333,
+    "wer_clean": 0.08333333333333333,
+    "stoi": 0.9999999999999989,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p364_0059",
+    "spk_id": "p364",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.75,
+    "wer_clean": 0.75,
+    "stoi": 0.9999999999999988,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p326_0044",
+    "spk_id": "p326",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.8571428571428571,
+    "wer_clean": 0.8571428571428571,
+    "stoi": 0.9999999999999902,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p340_0053",
+    "spk_id": "p340",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.8333333333333334,
+    "wer_clean": 0.8333333333333334,
+    "stoi": 0.9999999999999967,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p255_0052",
+    "spk_id": "p255",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.6,
+    "wer_clean": 0.6,
+    "stoi": 0.9999999999999977,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p340_0103",
+    "spk_id": "p340",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.25,
+    "wer_clean": 0.25,
+    "stoi": 0.9999999999999979,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p228_0023",
+    "spk_id": "p228",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 1.5,
+    "wer_clean": 1.5,
+    "stoi": 0.999999999999999,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p240_0008",
+    "spk_id": "p240",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.5,
+    "wer_clean": 0.5,
+    "stoi": 0.9999999999999984,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p340_0069",
+    "spk_id": "p340",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.8571428571428571,
+    "wer_clean": 0.8571428571428571,
+    "stoi": 0.9999999999999994,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p258_0028",
+    "spk_id": "p258",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.3333333333333333,
+    "wer_clean": 0.3333333333333333,
+    "stoi": 0.9999999999999998,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p314_0089",
+    "spk_id": "p314",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.2,
+    "wer_clean": 0.2,
+    "stoi": 0.9999999999999986,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p240_0097",
+    "spk_id": "p240",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.625,
+    "wer_clean": 0.625,
+    "stoi": 0.9999999999999993,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p326_0015",
+    "spk_id": "p326",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.8571428571428571,
+    "wer_clean": 0.8571428571428571,
+    "stoi": 0.999999999999994,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p228_0006",
+    "spk_id": "p228",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.5,
+    "wer_clean": 0.5,
+    "stoi": 0.9999999999999984,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p255_0077",
+    "spk_id": "p255",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.5,
+    "wer_clean": 0.5,
+    "stoi": 0.9999999999999989,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p326_0111",
+    "spk_id": "p326",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.5,
+    "wer_clean": 0.5,
+    "stoi": 0.9999999999999952,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p244_0025",
+    "spk_id": "p244",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.3333333333333333,
+    "wer_clean": 0.3333333333333333,
+    "stoi": 0.9999999999999992,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p340_0009",
+    "spk_id": "p340",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.8333333333333334,
+    "wer_clean": 0.8333333333333334,
+    "stoi": 0.9999999999999977,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p239_0111",
+    "spk_id": "p239",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.9090909090909091,
+    "wer_clean": 0.9090909090909091,
+    "stoi": 0.9999999999999996,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p258_0038",
+    "spk_id": "p258",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.5,
+    "wer_clean": 0.5,
+    "stoi": 0.9999999999999996,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p262_0075",
+    "spk_id": "p262",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.14285714285714285,
+    "wer_clean": 0.14285714285714285,
+    "stoi": 0.9999999999999998,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p240_0104",
+    "spk_id": "p240",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 1.0,
+    "wer_clean": 1.0,
+    "stoi": 0.9999999999999996,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p340_0074",
+    "spk_id": "p340",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.6,
+    "wer_clean": 0.6,
+    "stoi": 0.9999999999999979,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p340_0056",
+    "spk_id": "p340",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.8333333333333334,
+    "wer_clean": 0.8333333333333334,
+    "stoi": 0.9999999999999988,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p228_0001",
+    "spk_id": "p228",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.6666666666666666,
+    "wer_clean": 0.6666666666666666,
+    "stoi": 0.9999999999999986,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p364_0065",
+    "spk_id": "p364",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.5,
+    "wer_clean": 0.5,
+    "stoi": 0.9999999999999857,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p258_0090",
+    "spk_id": "p258",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.5555555555555556,
+    "wer_clean": 0.5555555555555556,
+    "stoi": 0.9999999999999989,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p326_0086",
+    "spk_id": "p326",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 1.0,
+    "wer_clean": 1.0,
+    "stoi": 0.9999999999999953,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p228_0039",
+    "spk_id": "p228",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.5,
+    "wer_clean": 0.5,
+    "stoi": 0.9999999999999996,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p240_0003",
+    "spk_id": "p240",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 1.25,
+    "wer_clean": 1.25,
+    "stoi": 0.999999999999999,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p262_0053",
+    "spk_id": "p262",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.5,
+    "wer_clean": 0.5,
+    "stoi": 0.9999999999999991,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p258_0056",
+    "spk_id": "p258",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.6666666666666666,
+    "wer_clean": 0.6666666666666666,
+    "stoi": 0.9999999999999982,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p255_0028",
+    "spk_id": "p255",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.45454545454545453,
+    "wer_clean": 0.45454545454545453,
+    "stoi": 0.9999999999999999,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p239_0012",
+    "spk_id": "p239",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.6,
+    "wer_clean": 0.6,
+    "stoi": 0.9999999999999991,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p255_0031",
+    "spk_id": "p255",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.2727272727272727,
+    "wer_clean": 0.2727272727272727,
+    "stoi": 0.9999999999999998,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p239_0069",
+    "spk_id": "p239",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.5714285714285714,
+    "wer_clean": 0.5714285714285714,
+    "stoi": 0.9999999999999984,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p326_0081",
+    "spk_id": "p326",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.8,
+    "wer_clean": 0.8,
+    "stoi": 0.9999999999999966,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p239_0035",
+    "spk_id": "p239",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.7142857142857143,
+    "wer_clean": 0.7142857142857143,
+    "stoi": 0.9999999999999997,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p340_0060",
+    "spk_id": "p340",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.2857142857142857,
+    "wer_clean": 0.2857142857142857,
+    "stoi": 0.9999999999999982,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p240_0031",
+    "spk_id": "p240",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.25,
+    "wer_clean": 0.25,
+    "stoi": 0.9999999999999971,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p240_0036",
+    "spk_id": "p240",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.4444444444444444,
+    "wer_clean": 0.4444444444444444,
+    "stoi": 0.9999999999999986,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p326_0059",
+    "spk_id": "p326",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.6111111111111112,
+    "wer_clean": 0.6111111111111112,
+    "stoi": 0.9999999999999971,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p340_0095",
+    "spk_id": "p340",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.16666666666666666,
+    "wer_clean": 0.16666666666666666,
+    "stoi": 0.9999999999999994,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p240_0112",
+    "spk_id": "p240",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.125,
+    "wer_clean": 0.125,
+    "stoi": 0.9999999999999989,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p340_0050",
+    "spk_id": "p340",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.8,
+    "wer_clean": 0.8,
+    "stoi": 0.999999999999999,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p364_0081",
+    "spk_id": "p364",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.5,
+    "wer_clean": 0.5,
+    "stoi": 0.9999999999999918,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p314_0065",
+    "spk_id": "p314",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.3,
+    "wer_clean": 0.3,
+    "stoi": 0.9999999999999987,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p244_0093",
+    "spk_id": "p244",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.8888888888888888,
+    "wer_clean": 0.8888888888888888,
+    "stoi": 0.999999999999999,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p244_0071",
+    "spk_id": "p244",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.5,
+    "wer_clean": 0.5,
+    "stoi": 0.9999999999999989,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p258_0065",
+    "spk_id": "p258",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 1.0,
+    "wer_clean": 1.0,
+    "stoi": 0.9999999999999996,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p262_0074",
+    "spk_id": "p262",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.2727272727272727,
+    "wer_clean": 0.2727272727272727,
+    "stoi": 0.9999999999999997,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p314_0096",
+    "spk_id": "p314",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.25,
+    "wer_clean": 0.25,
+    "stoi": 0.9999999999999986,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p340_0029",
+    "spk_id": "p340",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.8,
+    "wer_clean": 0.8,
+    "stoi": 0.9999999999999986,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p326_0010",
+    "spk_id": "p326",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.25,
+    "wer_clean": 0.25,
+    "stoi": 0.9999999999999918,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p240_0021",
+    "spk_id": "p240",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 1.0,
+    "wer_clean": 1.0,
+    "stoi": 0.9999999999999997,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p255_0045",
+    "spk_id": "p255",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.4,
+    "wer_clean": 0.4,
+    "stoi": 0.9999999999999988,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p244_0120",
+    "spk_id": "p244",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.5714285714285714,
+    "wer_clean": 0.5714285714285714,
+    "stoi": 0.9999999999999986,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p239_0025",
+    "spk_id": "p239",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.4,
+    "wer_clean": 0.4,
+    "stoi": 0.9999999999999992,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p262_0002",
+    "spk_id": "p262",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.5555555555555556,
+    "wer_clean": 0.5555555555555556,
+    "stoi": 0.9999999999999991,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p228_0043",
+    "spk_id": "p228",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.42857142857142855,
+    "wer_clean": 0.42857142857142855,
+    "stoi": 0.999999999999998,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p364_0043",
+    "spk_id": "p364",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.5,
+    "wer_clean": 0.5,
+    "stoi": 0.9999999999999964,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p340_0104",
+    "spk_id": "p340",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.4,
+    "wer_clean": 0.4,
+    "stoi": 0.9999999999999959,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p255_0009",
+    "spk_id": "p255",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.6666666666666666,
+    "wer_clean": 0.6666666666666666,
+    "stoi": 0.9999999999999998,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p364_0044",
+    "spk_id": "p364",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.8333333333333334,
+    "wer_clean": 0.8333333333333334,
+    "stoi": 0.9999999999999963,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p228_0014",
+    "spk_id": "p228",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.375,
+    "wer_clean": 0.375,
+    "stoi": 0.9999999999999989,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p239_0039",
+    "spk_id": "p239",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.1111111111111111,
+    "wer_clean": 0.1111111111111111,
+    "stoi": 0.9999999999999997,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p239_0014",
+    "spk_id": "p239",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 1.0,
+    "wer_clean": 1.0,
+    "stoi": 0.9999999999999986,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p255_0006",
+    "spk_id": "p255",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.5454545454545454,
+    "wer_clean": 0.5454545454545454,
+    "stoi": 0.9999999999999993,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p239_0032",
+    "spk_id": "p239",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 1.2,
+    "wer_clean": 1.2,
+    "stoi": 0.9999999999999998,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p228_0064",
+    "spk_id": "p228",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.2857142857142857,
+    "wer_clean": 0.2857142857142857,
+    "stoi": 0.999999999999998,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p258_0103",
+    "spk_id": "p258",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.2857142857142857,
+    "wer_clean": 0.2857142857142857,
+    "stoi": 0.9999999999999989,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p340_0022",
+    "spk_id": "p340",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.7142857142857143,
+    "wer_clean": 0.7142857142857143,
+    "stoi": 0.9999999999999967,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p255_0025",
+    "spk_id": "p255",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.6666666666666666,
+    "wer_clean": 0.6666666666666666,
+    "stoi": 0.9999999999999994,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p255_0108",
+    "spk_id": "p255",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.5833333333333334,
+    "wer_clean": 0.5833333333333334,
+    "stoi": 0.9999999999999996,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p326_0080",
+    "spk_id": "p326",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.5,
+    "wer_clean": 0.5,
+    "stoi": 0.9999999999999951,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p244_0098",
+    "spk_id": "p244",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.8,
+    "wer_clean": 0.8,
+    "stoi": 0.999999999999999,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p240_0044",
+    "spk_id": "p240",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.6,
+    "wer_clean": 0.6,
+    "stoi": 0.9999999999999996,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p364_0008",
+    "spk_id": "p364",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.0,
+    "wer_clean": 0.0,
+    "stoi": 0.9999999999999835,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p364_0019",
+    "spk_id": "p364",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.2,
+    "wer_clean": 0.2,
+    "stoi": 0.9999999999999903,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p326_0054",
+    "spk_id": "p326",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.5,
+    "wer_clean": 0.5,
+    "stoi": 0.9999999999999861,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p255_0035",
+    "spk_id": "p255",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.6666666666666666,
+    "wer_clean": 0.6666666666666666,
+    "stoi": 0.9999999999999976,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p314_0032",
+    "spk_id": "p314",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.3333333333333333,
+    "wer_clean": 0.3333333333333333,
+    "stoi": 0.9999999999999994,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p244_0049",
+    "spk_id": "p244",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.75,
+    "wer_clean": 0.75,
+    "stoi": 0.9999999999999979,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p239_0087",
+    "spk_id": "p239",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 1.0,
+    "wer_clean": 1.0,
+    "stoi": 0.9999999999999979,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p314_0081",
+    "spk_id": "p314",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.42857142857142855,
+    "wer_clean": 0.42857142857142855,
+    "stoi": 0.9999999999999989,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p262_0035",
+    "spk_id": "p262",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 1.0,
+    "wer_clean": 1.0,
+    "stoi": 0.9999999999999983,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p314_0066",
+    "spk_id": "p314",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.16666666666666666,
+    "wer_clean": 0.16666666666666666,
+    "stoi": 0.9999999999999998,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p314_0040",
+    "spk_id": "p314",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 1.0,
+    "wer_clean": 1.0,
+    "stoi": 0.9999999999999996,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p326_0042",
+    "spk_id": "p326",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 1.0,
+    "wer_clean": 1.0,
+    "stoi": 0.999999999999994,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p239_0004",
+    "spk_id": "p239",
+    "telephony": "g711",
+    "defense": "baseline",
+    "wer": 0.7272727272727273,
+    "wer_clean": 0.7272727272727273,
+    "stoi": 0.9999999999999972,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p240_0002",
+    "spk_id": "p240",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.6,
+    "wer_clean": 0.6,
+    "stoi": 0.983381281353203,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p228_0051",
+    "spk_id": "p228",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 1.0,
+    "wer_clean": 1.1111111111111112,
+    "stoi": 0.9819759745062064,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p255_0101",
+    "spk_id": "p255",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.4,
+    "wer_clean": 0.2,
+    "stoi": 0.9789359341725857,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p255_0039",
+    "spk_id": "p255",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.6,
+    "wer_clean": 0.6,
+    "stoi": 0.9871993790687776,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p244_0117",
+    "spk_id": "p244",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 1.0,
+    "wer_clean": 1.0,
+    "stoi": 0.9737972092214323,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p240_0059",
+    "spk_id": "p240",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 1.0,
+    "wer_clean": 0.8,
+    "stoi": 0.9859975671785379,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p239_0103",
+    "spk_id": "p239",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.6,
+    "wer_clean": 0.6,
+    "stoi": 0.9795105860496572,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p340_0086",
+    "spk_id": "p340",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.3333333333333333,
+    "wer_clean": 0.6666666666666666,
+    "stoi": 0.9814367688772563,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p239_0072",
+    "spk_id": "p239",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.2,
+    "wer_clean": 0.2,
+    "stoi": 0.988076624454903,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p364_0048",
+    "spk_id": "p364",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.2,
+    "wer_clean": 0.2,
+    "stoi": 0.9735649137311825,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p314_0063",
+    "spk_id": "p314",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.2,
+    "wer_clean": 0.2,
+    "stoi": 0.9789694587270222,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p228_0065",
+    "spk_id": "p228",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.5,
+    "wer_clean": 0.5,
+    "stoi": 0.9717602040250714,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p228_0061",
+    "spk_id": "p228",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.8888888888888888,
+    "wer_clean": 0.8888888888888888,
+    "stoi": 0.976975944406498,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p239_0085",
+    "spk_id": "p239",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.6,
+    "wer_clean": 0.2,
+    "stoi": 0.9779580942383646,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p244_0107",
+    "spk_id": "p244",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.75,
+    "wer_clean": 0.8333333333333334,
+    "stoi": 0.9723333404709925,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p255_0014",
+    "spk_id": "p255",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.5,
+    "wer_clean": 0.25,
+    "stoi": 0.969684985000686,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p340_0004",
+    "spk_id": "p340",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.6666666666666666,
+    "wer_clean": 0.6666666666666666,
+    "stoi": 0.9545861116977776,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p364_0071",
+    "spk_id": "p364",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.25,
+    "wer_clean": 0.25,
+    "stoi": 0.9550529600103224,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p228_0054",
+    "spk_id": "p228",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 1.0,
+    "wer_clean": 1.0,
+    "stoi": 0.9849845620971329,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p340_0119",
+    "spk_id": "p340",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.3333333333333333,
+    "wer_clean": 0.5,
+    "stoi": 0.982561122163706,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p244_0067",
+    "spk_id": "p244",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.8333333333333334,
+    "wer_clean": 0.6666666666666666,
+    "stoi": 0.9765314891158572,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p314_0058",
+    "spk_id": "p314",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.6,
+    "wer_clean": 0.4,
+    "stoi": 0.9813603799768086,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p244_0111",
+    "spk_id": "p244",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.7,
+    "wer_clean": 0.4,
+    "stoi": 0.9831617496637335,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p326_0005",
+    "spk_id": "p326",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 1.0,
+    "wer_clean": 0.6666666666666666,
+    "stoi": 0.9769459085082641,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p364_0045",
+    "spk_id": "p364",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.5,
+    "wer_clean": 0.5,
+    "stoi": 0.9724848189744031,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p255_0107",
+    "spk_id": "p255",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.3333333333333333,
+    "wer_clean": 0.6666666666666666,
+    "stoi": 0.984826737743032,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p228_0013",
+    "spk_id": "p228",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.75,
+    "wer_clean": 0.75,
+    "stoi": 0.9760869088775688,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p240_0100",
+    "spk_id": "p240",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.3,
+    "wer_clean": 0.3,
+    "stoi": 0.9743211418199844,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p314_0064",
+    "spk_id": "p314",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.4,
+    "wer_clean": 0.4,
+    "stoi": 0.9838219290426192,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p262_0006",
+    "spk_id": "p262",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.2727272727272727,
+    "wer_clean": 0.2727272727272727,
+    "stoi": 0.9874915239876766,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p240_0092",
+    "spk_id": "p240",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.2857142857142857,
+    "wer_clean": 0.42857142857142855,
+    "stoi": 0.9857659832266393,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p244_0100",
+    "spk_id": "p244",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.6,
+    "wer_clean": 0.4,
+    "stoi": 0.9786830479539925,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p258_0116",
+    "spk_id": "p258",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.6,
+    "wer_clean": 0.8,
+    "stoi": 0.9763684592968254,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p239_0083",
+    "spk_id": "p239",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.6666666666666666,
+    "wer_clean": 0.6666666666666666,
+    "stoi": 0.9811491268385267,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p262_0088",
+    "spk_id": "p262",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.14285714285714285,
+    "wer_clean": 0.14285714285714285,
+    "stoi": 0.9872562302543673,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p239_0092",
+    "spk_id": "p239",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.3333333333333333,
+    "wer_clean": 0.16666666666666666,
+    "stoi": 0.9802891581919901,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p262_0045",
+    "spk_id": "p262",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.6,
+    "wer_clean": 0.6,
+    "stoi": 0.9866679977544409,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p262_0014",
+    "spk_id": "p262",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.2857142857142857,
+    "wer_clean": 0.2857142857142857,
+    "stoi": 0.9886964646382568,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p364_0075",
+    "spk_id": "p364",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.5,
+    "wer_clean": 0.6666666666666666,
+    "stoi": 0.9657399928900665,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p255_0079",
+    "spk_id": "p255",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.3333333333333333,
+    "wer_clean": 0.3333333333333333,
+    "stoi": 0.9777110347869319,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p228_0088",
+    "spk_id": "p228",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.7,
+    "wer_clean": 0.7,
+    "stoi": 0.9788116138591468,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p326_0026",
+    "spk_id": "p326",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.75,
+    "wer_clean": 1.0,
+    "stoi": 0.96039257442441,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p340_0068",
+    "spk_id": "p340",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.5,
+    "wer_clean": 0.5,
+    "stoi": 0.9773108807717573,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p240_0029",
+    "spk_id": "p240",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.5,
+    "wer_clean": 0.5,
+    "stoi": 0.9721091329152728,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p262_0085",
+    "spk_id": "p262",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.5454545454545454,
+    "wer_clean": 0.5454545454545454,
+    "stoi": 0.9874833184553906,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p239_0055",
+    "spk_id": "p239",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 1.0,
+    "wer_clean": 1.0,
+    "stoi": 0.9882740768526468,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p340_0100",
+    "spk_id": "p340",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.3333333333333333,
+    "wer_clean": 0.3333333333333333,
+    "stoi": 0.9785751496722414,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p258_0027",
+    "spk_id": "p258",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.2222222222222222,
+    "wer_clean": 0.2222222222222222,
+    "stoi": 0.9791332930219381,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p364_0105",
+    "spk_id": "p364",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.25,
+    "wer_clean": 0.25,
+    "stoi": 0.9572979827537234,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p262_0050",
+    "spk_id": "p262",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.0,
+    "wer_clean": 0.0,
+    "stoi": 0.9887711788969447,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p364_0021",
+    "spk_id": "p364",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.8,
+    "wer_clean": 0.8,
+    "stoi": 0.9693862030046946,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p244_0053",
+    "spk_id": "p244",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.7272727272727273,
+    "wer_clean": 0.36363636363636365,
+    "stoi": 0.960247776642361,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p239_0036",
+    "spk_id": "p239",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.7142857142857143,
+    "wer_clean": 0.8571428571428571,
+    "stoi": 0.967032225957118,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p228_0093",
+    "spk_id": "p228",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.6,
+    "wer_clean": 0.6,
+    "stoi": 0.9732112623478095,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p255_0004",
+    "spk_id": "p255",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.75,
+    "wer_clean": 0.75,
+    "stoi": 0.9847601890857234,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p258_0019",
+    "spk_id": "p258",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.2727272727272727,
+    "wer_clean": 0.36363636363636365,
+    "stoi": 0.9808189271745127,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p239_0057",
+    "spk_id": "p239",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.625,
+    "wer_clean": 0.5,
+    "stoi": 0.9881603308287484,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p239_0100",
+    "spk_id": "p239",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.875,
+    "wer_clean": 0.875,
+    "stoi": 0.9869788596805857,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p326_0014",
+    "spk_id": "p326",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.625,
+    "wer_clean": 0.625,
+    "stoi": 0.9809371671606855,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p262_0057",
+    "spk_id": "p262",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.6153846153846154,
+    "wer_clean": 0.6153846153846154,
+    "stoi": 0.9866728546909432,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p240_0107",
+    "spk_id": "p240",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.5454545454545454,
+    "wer_clean": 0.2727272727272727,
+    "stoi": 0.9739384750044456,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p262_0068",
+    "spk_id": "p262",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.7142857142857143,
+    "wer_clean": 0.5714285714285714,
+    "stoi": 0.9839476675904891,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p262_0037",
+    "spk_id": "p262",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.45454545454545453,
+    "wer_clean": 0.5454545454545454,
+    "stoi": 0.9826505293885571,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p244_0089",
+    "spk_id": "p244",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.8333333333333334,
+    "wer_clean": 0.8333333333333334,
+    "stoi": 0.9802227007655043,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p255_0084",
+    "spk_id": "p255",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.1111111111111111,
+    "wer_clean": 0.1111111111111111,
+    "stoi": 0.9729001003108335,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p239_0040",
+    "spk_id": "p239",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.2,
+    "wer_clean": 0.2,
+    "stoi": 0.9681548230767149,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p364_0086",
+    "spk_id": "p364",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.5,
+    "wer_clean": 0.5,
+    "stoi": 0.9663970864107818,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p244_0010",
+    "spk_id": "p244",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 1.0,
+    "wer_clean": 1.0,
+    "stoi": 0.9732663181428632,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p340_0063",
+    "spk_id": "p340",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.5,
+    "wer_clean": 0.5,
+    "stoi": 0.9759975902974507,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p240_0108",
+    "spk_id": "p240",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.25,
+    "wer_clean": 0.125,
+    "stoi": 0.9819909274558198,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p326_0032",
+    "spk_id": "p326",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.8571428571428571,
+    "wer_clean": 0.8571428571428571,
+    "stoi": 0.9626852546059809,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p262_0087",
+    "spk_id": "p262",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.4,
+    "wer_clean": 0.6,
+    "stoi": 0.9868992687000268,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p255_0090",
+    "spk_id": "p255",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.5714285714285714,
+    "wer_clean": 0.42857142857142855,
+    "stoi": 0.9795880940845652,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p340_0110",
+    "spk_id": "p340",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.7142857142857143,
+    "wer_clean": 0.5714285714285714,
+    "stoi": 0.9770521862484075,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p244_0109",
+    "spk_id": "p244",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.6,
+    "wer_clean": 0.6,
+    "stoi": 0.9868188994233165,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p258_0091",
+    "spk_id": "p258",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.5,
+    "wer_clean": 0.5,
+    "stoi": 0.9820428878515003,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p239_0008",
+    "spk_id": "p239",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.6,
+    "wer_clean": 0.6,
+    "stoi": 0.9880759219498939,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p255_0007",
+    "spk_id": "p255",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.875,
+    "wer_clean": 0.875,
+    "stoi": 0.9817476683422512,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p258_0073",
+    "spk_id": "p258",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.8571428571428571,
+    "wer_clean": 1.0,
+    "stoi": 0.9832790676063665,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p314_0020",
+    "spk_id": "p314",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.8,
+    "wer_clean": 0.8,
+    "stoi": 0.9872941282917446,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p255_0086",
+    "spk_id": "p255",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.75,
+    "wer_clean": 0.75,
+    "stoi": 0.9794419904984802,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p239_0029",
+    "spk_id": "p239",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.5714285714285714,
+    "wer_clean": 0.42857142857142855,
+    "stoi": 0.9827484500484835,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p244_0092",
+    "spk_id": "p244",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.6666666666666666,
+    "wer_clean": 0.7777777777777778,
+    "stoi": 0.9809291641156433,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p364_0000",
+    "spk_id": "p364",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.16666666666666666,
+    "wer_clean": 0.16666666666666666,
+    "stoi": 0.9509527271660749,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p258_0071",
+    "spk_id": "p258",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 1.0,
+    "wer_clean": 1.0,
+    "stoi": 0.9785499592281486,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p244_0095",
+    "spk_id": "p244",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.5,
+    "wer_clean": 0.5,
+    "stoi": 0.9762414095790029,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p326_0108",
+    "spk_id": "p326",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.8333333333333334,
+    "wer_clean": 1.0,
+    "stoi": 0.9825947353424692,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p314_0009",
+    "spk_id": "p314",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 1.0,
+    "wer_clean": 1.0,
+    "stoi": 0.9858119800115273,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p326_0025",
+    "spk_id": "p326",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.875,
+    "wer_clean": 0.75,
+    "stoi": 0.9659330612160794,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p240_0066",
+    "spk_id": "p240",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.5714285714285714,
+    "wer_clean": 0.5714285714285714,
+    "stoi": 0.9847388023485864,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p255_0080",
+    "spk_id": "p255",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.2222222222222222,
+    "wer_clean": 0.3333333333333333,
+    "stoi": 0.9834196671438163,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p255_0043",
+    "spk_id": "p255",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 1.0,
+    "wer_clean": 0.8,
+    "stoi": 0.9881987100127626,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p340_0073",
+    "spk_id": "p340",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.45454545454545453,
+    "wer_clean": 0.45454545454545453,
+    "stoi": 0.9754034829499212,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p255_0076",
+    "spk_id": "p255",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.5,
+    "wer_clean": 0.5,
+    "stoi": 0.9796346348940442,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p364_0036",
+    "spk_id": "p364",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.8333333333333334,
+    "wer_clean": 0.8333333333333334,
+    "stoi": 0.9674376627479142,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p314_0076",
+    "spk_id": "p314",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.6666666666666666,
+    "wer_clean": 0.5,
+    "stoi": 0.9838447892350939,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p364_0034",
+    "spk_id": "p364",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.8,
+    "wer_clean": 0.6,
+    "stoi": 0.9487518784072957,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p314_0016",
+    "spk_id": "p314",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.5,
+    "wer_clean": 0.5,
+    "stoi": 0.9814747009042936,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p262_0051",
+    "spk_id": "p262",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.3333333333333333,
+    "wer_clean": 0.3333333333333333,
+    "stoi": 0.9842065291451336,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p240_0057",
+    "spk_id": "p240",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.8181818181818182,
+    "wer_clean": 0.7272727272727273,
+    "stoi": 0.9745290233255193,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p340_0013",
+    "spk_id": "p340",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 1.3333333333333333,
+    "wer_clean": 1.3333333333333333,
+    "stoi": 0.9762676495166998,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p326_0096",
+    "spk_id": "p326",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.5,
+    "wer_clean": 0.5,
+    "stoi": 0.9720299998073818,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p239_0080",
+    "spk_id": "p239",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.23076923076923078,
+    "wer_clean": 0.23076923076923078,
+    "stoi": 0.9801034240803216,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p228_0096",
+    "spk_id": "p228",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.6,
+    "wer_clean": 0.6,
+    "stoi": 0.9685780861901059,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p239_0118",
+    "spk_id": "p239",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.6666666666666666,
+    "wer_clean": 0.5,
+    "stoi": 0.9712571274479299,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p240_0087",
+    "spk_id": "p240",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.25,
+    "wer_clean": 0.5,
+    "stoi": 0.9835067820887318,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p240_0101",
+    "spk_id": "p240",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.6666666666666666,
+    "wer_clean": 0.6666666666666666,
+    "stoi": 0.9825935419882043,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p364_0060",
+    "spk_id": "p364",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.5,
+    "wer_clean": 1.25,
+    "stoi": 0.9760586782243813,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p239_0024",
+    "spk_id": "p239",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.6,
+    "wer_clean": 0.6,
+    "stoi": 0.979451014554388,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p262_0098",
+    "spk_id": "p262",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.6,
+    "wer_clean": 0.6,
+    "stoi": 0.9897803926910376,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p262_0091",
+    "spk_id": "p262",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.3333333333333333,
+    "wer_clean": 0.08333333333333333,
+    "stoi": 0.9846868517835184,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p364_0059",
+    "spk_id": "p364",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.75,
+    "wer_clean": 0.75,
+    "stoi": 0.9640791575322782,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p326_0044",
+    "spk_id": "p326",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.8571428571428571,
+    "wer_clean": 0.8571428571428571,
+    "stoi": 0.9693667488450821,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p340_0053",
+    "spk_id": "p340",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.8333333333333334,
+    "wer_clean": 0.8333333333333334,
+    "stoi": 0.976703072047452,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p255_0052",
+    "spk_id": "p255",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.8,
+    "wer_clean": 0.6,
+    "stoi": 0.9869726430805325,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p340_0103",
+    "spk_id": "p340",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.25,
+    "wer_clean": 0.25,
+    "stoi": 0.9816926292324359,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p228_0023",
+    "spk_id": "p228",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 1.75,
+    "wer_clean": 1.5,
+    "stoi": 0.9832140079384472,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p240_0008",
+    "spk_id": "p240",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.5,
+    "wer_clean": 0.5,
+    "stoi": 0.9751156357728997,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p340_0069",
+    "spk_id": "p340",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.7142857142857143,
+    "wer_clean": 0.8571428571428571,
+    "stoi": 0.9826129562194588,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p258_0028",
+    "spk_id": "p258",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.3333333333333333,
+    "wer_clean": 0.3333333333333333,
+    "stoi": 0.9757553144910257,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p314_0089",
+    "spk_id": "p314",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.2,
+    "wer_clean": 0.2,
+    "stoi": 0.9858634045773186,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p240_0097",
+    "spk_id": "p240",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.5,
+    "wer_clean": 0.625,
+    "stoi": 0.9803745468264513,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p326_0015",
+    "spk_id": "p326",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.8571428571428571,
+    "wer_clean": 0.8571428571428571,
+    "stoi": 0.9705451587079025,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p228_0006",
+    "spk_id": "p228",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.6666666666666666,
+    "wer_clean": 0.5,
+    "stoi": 0.9808331573939306,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p255_0077",
+    "spk_id": "p255",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.5,
+    "wer_clean": 0.5,
+    "stoi": 0.9877515749790968,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p326_0111",
+    "spk_id": "p326",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.5,
+    "wer_clean": 0.5,
+    "stoi": 0.9730809383435081,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p244_0025",
+    "spk_id": "p244",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.5555555555555556,
+    "wer_clean": 0.3333333333333333,
+    "stoi": 0.9757254016657199,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p340_0009",
+    "spk_id": "p340",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.6666666666666666,
+    "wer_clean": 0.8333333333333334,
+    "stoi": 0.9645594569172721,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p239_0111",
+    "spk_id": "p239",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.8181818181818182,
+    "wer_clean": 0.9090909090909091,
+    "stoi": 0.9815510170749887,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p258_0038",
+    "spk_id": "p258",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.5,
+    "wer_clean": 0.5,
+    "stoi": 0.9778545768793309,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p262_0075",
+    "spk_id": "p262",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.42857142857142855,
+    "wer_clean": 0.14285714285714285,
+    "stoi": 0.9883803304169971,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p240_0104",
+    "spk_id": "p240",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 1.3333333333333333,
+    "wer_clean": 1.0,
+    "stoi": 0.9837455391278198,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p340_0074",
+    "spk_id": "p340",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.6,
+    "wer_clean": 0.6,
+    "stoi": 0.98446831823173,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p340_0056",
+    "spk_id": "p340",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.6666666666666666,
+    "wer_clean": 0.8333333333333334,
+    "stoi": 0.9822815164579707,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p228_0001",
+    "spk_id": "p228",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.5,
+    "wer_clean": 0.6666666666666666,
+    "stoi": 0.9846996497475013,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p364_0065",
+    "spk_id": "p364",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.375,
+    "wer_clean": 0.5,
+    "stoi": 0.9383914913427257,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p258_0090",
+    "spk_id": "p258",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.6666666666666666,
+    "wer_clean": 0.5555555555555556,
+    "stoi": 0.9680378423117368,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p326_0086",
+    "spk_id": "p326",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 1.0,
+    "wer_clean": 1.0,
+    "stoi": 0.9565798596571597,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p228_0039",
+    "spk_id": "p228",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.25,
+    "wer_clean": 0.5,
+    "stoi": 0.9808298341431537,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p240_0003",
+    "spk_id": "p240",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 1.25,
+    "wer_clean": 1.25,
+    "stoi": 0.9827854293353924,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p262_0053",
+    "spk_id": "p262",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.5,
+    "wer_clean": 0.5,
+    "stoi": 0.9880195077668317,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p258_0056",
+    "spk_id": "p258",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.8333333333333334,
+    "wer_clean": 0.6666666666666666,
+    "stoi": 0.986689904585721,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p255_0028",
+    "spk_id": "p255",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.45454545454545453,
+    "wer_clean": 0.45454545454545453,
+    "stoi": 0.9835782044661437,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p239_0012",
+    "spk_id": "p239",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.4,
+    "wer_clean": 0.6,
+    "stoi": 0.9753750687263308,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p255_0031",
+    "spk_id": "p255",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.18181818181818182,
+    "wer_clean": 0.2727272727272727,
+    "stoi": 0.9746286967971111,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p239_0069",
+    "spk_id": "p239",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.5714285714285714,
+    "wer_clean": 0.5714285714285714,
+    "stoi": 0.9646811484037626,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p326_0081",
+    "spk_id": "p326",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.8,
+    "wer_clean": 0.8,
+    "stoi": 0.95202614166482,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p239_0035",
+    "spk_id": "p239",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.7142857142857143,
+    "wer_clean": 0.7142857142857143,
+    "stoi": 0.9859906318759913,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p340_0060",
+    "spk_id": "p340",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.42857142857142855,
+    "wer_clean": 0.2857142857142857,
+    "stoi": 0.9840157489199062,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p240_0031",
+    "spk_id": "p240",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.25,
+    "wer_clean": 0.25,
+    "stoi": 0.9879561207305431,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p240_0036",
+    "spk_id": "p240",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.3333333333333333,
+    "wer_clean": 0.4444444444444444,
+    "stoi": 0.9749976536335341,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p326_0059",
+    "spk_id": "p326",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.5555555555555556,
+    "wer_clean": 0.6111111111111112,
+    "stoi": 0.9662913449766436,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p340_0095",
+    "spk_id": "p340",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.3333333333333333,
+    "wer_clean": 0.16666666666666666,
+    "stoi": 0.9856180101364725,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p240_0112",
+    "spk_id": "p240",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.25,
+    "wer_clean": 0.125,
+    "stoi": 0.9711650634448732,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p340_0050",
+    "spk_id": "p340",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.8,
+    "wer_clean": 0.8,
+    "stoi": 0.9811142277044087,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p364_0081",
+    "spk_id": "p364",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.5,
+    "wer_clean": 0.5,
+    "stoi": 0.9377795094979131,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p314_0065",
+    "spk_id": "p314",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.5,
+    "wer_clean": 0.3,
+    "stoi": 0.9871471763319173,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p244_0093",
+    "spk_id": "p244",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 1.0,
+    "wer_clean": 0.8888888888888888,
+    "stoi": 0.9808957343148819,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p244_0071",
+    "spk_id": "p244",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.5,
+    "wer_clean": 0.5,
+    "stoi": 0.964113354911999,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p258_0065",
+    "spk_id": "p258",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.6666666666666666,
+    "wer_clean": 1.0,
+    "stoi": 0.9807564096355594,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p262_0074",
+    "spk_id": "p262",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.36363636363636365,
+    "wer_clean": 0.2727272727272727,
+    "stoi": 0.9860477417975285,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p314_0096",
+    "spk_id": "p314",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.25,
+    "wer_clean": 0.25,
+    "stoi": 0.9531102024960901,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p340_0029",
+    "spk_id": "p340",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.6,
+    "wer_clean": 0.8,
+    "stoi": 0.9799461406357443,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p326_0010",
+    "spk_id": "p326",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.125,
+    "wer_clean": 0.25,
+    "stoi": 0.9382585599964036,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p240_0021",
+    "spk_id": "p240",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 1.0,
+    "wer_clean": 1.0,
+    "stoi": 0.9852157332494019,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p255_0045",
+    "spk_id": "p255",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.4,
+    "wer_clean": 0.4,
+    "stoi": 0.9880826262312056,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p244_0120",
+    "spk_id": "p244",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.8571428571428571,
+    "wer_clean": 0.5714285714285714,
+    "stoi": 0.9800135922157096,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p239_0025",
+    "spk_id": "p239",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.4,
+    "wer_clean": 0.4,
+    "stoi": 0.9791395042132626,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p262_0002",
+    "spk_id": "p262",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.4444444444444444,
+    "wer_clean": 0.5555555555555556,
+    "stoi": 0.9868866657977567,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p228_0043",
+    "spk_id": "p228",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.5714285714285714,
+    "wer_clean": 0.42857142857142855,
+    "stoi": 0.9659225663203701,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p364_0043",
+    "spk_id": "p364",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.75,
+    "wer_clean": 0.5,
+    "stoi": 0.97831555253908,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p340_0104",
+    "spk_id": "p340",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.4,
+    "wer_clean": 0.4,
+    "stoi": 0.9608725212661151,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p255_0009",
+    "spk_id": "p255",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.6666666666666666,
+    "wer_clean": 0.6666666666666666,
+    "stoi": 0.9808009311442554,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p364_0044",
+    "spk_id": "p364",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.8333333333333334,
+    "wer_clean": 0.8333333333333334,
+    "stoi": 0.9763642073487137,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p228_0014",
+    "spk_id": "p228",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.375,
+    "wer_clean": 0.375,
+    "stoi": 0.9818401683705683,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p239_0039",
+    "spk_id": "p239",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.2222222222222222,
+    "wer_clean": 0.1111111111111111,
+    "stoi": 0.9794797904599042,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p239_0014",
+    "spk_id": "p239",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.75,
+    "wer_clean": 1.0,
+    "stoi": 0.9885677526283979,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p255_0006",
+    "spk_id": "p255",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.45454545454545453,
+    "wer_clean": 0.5454545454545454,
+    "stoi": 0.9806888779037464,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p239_0032",
+    "spk_id": "p239",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 1.2,
+    "wer_clean": 1.2,
+    "stoi": 0.984108190612233,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p228_0064",
+    "spk_id": "p228",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.2857142857142857,
+    "wer_clean": 0.2857142857142857,
+    "stoi": 0.9708771684908842,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p258_0103",
+    "spk_id": "p258",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.2857142857142857,
+    "wer_clean": 0.2857142857142857,
+    "stoi": 0.9786949465033857,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p340_0022",
+    "spk_id": "p340",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.7142857142857143,
+    "wer_clean": 0.7142857142857143,
+    "stoi": 0.9847811576808553,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p255_0025",
+    "spk_id": "p255",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.6666666666666666,
+    "wer_clean": 0.6666666666666666,
+    "stoi": 0.9848639517699597,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p255_0108",
+    "spk_id": "p255",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.5833333333333334,
+    "wer_clean": 0.5833333333333334,
+    "stoi": 0.9852223602167405,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p326_0080",
+    "spk_id": "p326",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.3333333333333333,
+    "wer_clean": 0.5,
+    "stoi": 0.9764381574930665,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p244_0098",
+    "spk_id": "p244",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.9,
+    "wer_clean": 0.8,
+    "stoi": 0.9755647905877592,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p240_0044",
+    "spk_id": "p240",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.5,
+    "wer_clean": 0.6,
+    "stoi": 0.9856089307447761,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p364_0008",
+    "spk_id": "p364",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.0,
+    "wer_clean": 0.0,
+    "stoi": 0.9429091223555798,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p364_0019",
+    "spk_id": "p364",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.2,
+    "wer_clean": 0.2,
+    "stoi": 0.9700227807944799,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p326_0054",
+    "spk_id": "p326",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.75,
+    "wer_clean": 0.5,
+    "stoi": 0.9640689286293309,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p255_0035",
+    "spk_id": "p255",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.6666666666666666,
+    "wer_clean": 0.6666666666666666,
+    "stoi": 0.9864908019319297,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p314_0032",
+    "spk_id": "p314",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.6666666666666666,
+    "wer_clean": 0.3333333333333333,
+    "stoi": 0.980388847397169,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p244_0049",
+    "spk_id": "p244",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 1.0,
+    "wer_clean": 0.75,
+    "stoi": 0.9794293086914901,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p239_0087",
+    "spk_id": "p239",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 1.0,
+    "wer_clean": 1.0,
+    "stoi": 0.9873401393063749,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p314_0081",
+    "spk_id": "p314",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.42857142857142855,
+    "wer_clean": 0.42857142857142855,
+    "stoi": 0.9834344031061146,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p262_0035",
+    "spk_id": "p262",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.75,
+    "wer_clean": 1.0,
+    "stoi": 0.988462883799043,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p314_0066",
+    "spk_id": "p314",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.16666666666666666,
+    "wer_clean": 0.16666666666666666,
+    "stoi": 0.984322917554535,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p314_0040",
+    "spk_id": "p314",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 1.0,
+    "wer_clean": 1.0,
+    "stoi": 0.9841726684812848,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p326_0042",
+    "spk_id": "p326",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 1.4,
+    "wer_clean": 1.0,
+    "stoi": 0.9762061326780167,
+    "gt_source": "pseudo_asr_clean"
+  },
+  {
+    "utt_id": "p239_0004",
+    "spk_id": "p239",
+    "telephony": "g711",
+    "defense": "realistic_selected",
+    "wer": 0.7272727272727273,
+    "wer_clean": 0.7272727272727273,
+    "stoi": 0.9813933018140789,
+    "gt_source": "pseudo_asr_clean"
+  }
+]

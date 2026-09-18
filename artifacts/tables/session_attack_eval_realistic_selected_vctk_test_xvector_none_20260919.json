@@ -1,0 +1,52 @@
+{
+  "method": "realistic_selected",
+  "n_utters": 33,
+  "quality_utters": 33,
+  "stoi_abs": NaN,
+  "wer_abs": NaN,
+  "curve_csv": "/root/autodl-tmp/projects/CloneBlock_RT/artifacts/tables/session_attack_curve_abs_realistic_selected_vctk_test_xvector_none_20260919.csv",
+  "per_session_csv": "/root/autodl-tmp/projects/CloneBlock_RT/artifacts/tables/session_attack_per_session_realistic_selected_vctk_test_xvector_none_20260919.csv",
+  "n_skipped_insufficient_windows": 0,
+  "n_evaluated": 33,
+  "summary_csv": "/root/autodl-tmp/projects/CloneBlock_RT/artifacts/tables/session_attack_summary_abs_realistic_selected_vctk_test_xvector_none_20260919.csv",
+  "metadata": {
+    "protocol_version": "realistic_v1",
+    "session_pool_sha256": "10065ec0de91c281636af5e23e08251eeff5eb1510ccc32fee382e9a7b273e51",
+    "eval_config_sha256": "a8864c0a2db64051e81bdc0ab216a1e5efc0362b6b83277724c09fbbb8724338",
+    "telephony_config_sha256": "5f0fc5f62c738e0d5d8289b49b830279776b56087a6ef46c1e8b3b5c6be7864f",
+    "selection_protocols": {
+      "random_K": {
+        "attacker_view": "realistic",
+        "selection_source": "none"
+      },
+      "bestK_by_self_consistency": {
+        "attacker_view": "realistic",
+        "selection_source": "tele_defended"
+      },
+      "bestK_by_clean_consistency": {
+        "attacker_view": "oracle_reference",
+        "selection_source": "clean"
+      }
+    },
+    "k_list": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "seed": 42,
+    "AUCK_definition": "Equal-weight arithmetic mean of MeanSim@K over the listed K values; not linear-K trapezoidal area. AUC is a legacy alias.",
+    "reference_role": "Clean session centroid is evaluator-only for realistic strategies; this is a same-session recovery metric, not independent ASV enrollment.",
+    "oracle_caveat": "Legacy clean-reference greedy selection is an oracle reference, not a certified numerical upper bound.",
+    "speaker_encoder_name": "speechbrain_xvector",
+    "targeted_selection_source": "tele_defended",
+    "telephony_codec": "none",
+    "telephony_codec_bitrate": "16k",
+    "strategies": [
+      "random_K",
+      "bestK_by_self_consistency",
+      "bestK_by_clean_consistency"
+    ]
+  }
+}

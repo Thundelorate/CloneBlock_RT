@@ -92,7 +92,8 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--seed", type=int, default=42)
     p.add_argument("--telephony_config", type=str, default=str(REPO_ROOT / "configs" / "telephony.yaml"))
     p.add_argument("--eval_config", type=str, default=str(REPO_ROOT / "configs" / "eval.yaml"))
-    p.add_argument("--defense_checkpoint", type=str, default="", help="v0p1_B checkpoint; empty = baseline only in one run")
+    p.add_argument("--defense_checkpoint", type=str, default="", help="Defense checkpoint; empty runs baseline only")
+    p.add_argument("--defense_name", type=str, default="v0p1_B", help="Method label written for the defense checkpoint")
     return p.parse_args()
 
 
@@ -242,13 +243,13 @@ def main() -> int:
         out_rows,
         "vctk_txt",
     )
-    # v0p1_B if checkpoint provided
+    # Named defense condition, if a checkpoint was provided.
     if defense_model is not None:
         run_one_condition(
             all_rows,
             defense_model,
-            "v0p1_B",
-            telephony,
+            args.defense_name,
+            TelephonyTransform(tp_cfg, seed=args.seed),
             asr_metric,
             device,
             sr,

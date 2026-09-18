@@ -1,0 +1,61 @@
+ M scripts/build_session_pool_v3.py
+ M scripts/download_models.py
+ M scripts/prepare_data.py
+ M scripts/run_asv_eer_eval.py
+ M scripts/run_quality_eval.py
+ M scripts/run_session_pool_eval.py
+ M scripts/run_train.py
+ M src/metrics/session_attack.py
+?? .gitignore
+?? .venv-xtts/
+?? AUTODL_DEPLOYMENT.md
+?? EXPERIMENT_EVIDENCE_LEDGER.md
+?? ICASSP_FIVE_DAY_PLAN.md
+?? OVERNIGHT_HANDOFF.md
+?? REVIEW_RESPONSE_MATRIX.md
+?? artifacts/
+?? configs/train_realistic_full.yaml
+?? configs/train_realistic_sweep.yaml
+?? configs/train_server_pilot.yaml
+?? paper/
+?? requirements-server.txt
+?? requirements-xtts.txt
+?? scripts/activate_autodl.sh
+?? scripts/activate_xtts.sh
+?? scripts/audit_experiment_data.py
+?? scripts/audit_session_pool.py
+?? scripts/bootstrap_quality_ci.py
+?? scripts/bootstrap_session_ci.py
+?? scripts/build_vctk_quality_manifest.py
+?? scripts/build_xtts_manifest.py
+?? scripts/calibrate_asv_threshold.py
+?? scripts/check_training_run.py
+?? scripts/check_xtts_env.py
+?? scripts/download_xtts_model.py
+?? scripts/eval_perturbation_budget.py
+?? scripts/export_icassp_evidence.py
+?? scripts/prepare_xtts_references.py
+?? scripts/resume_vctk_download.sh
+?? scripts/run_autodl_data_pilot.sh
+?? scripts/run_autodl_validation_pilot.sh
+?? scripts/run_quality_clean_asr.py
+?? scripts/run_quality_eval_official.py
+?? scripts/run_vctk_final_test.sh
+?? scripts/run_vctk_next_stage.sh
+?? scripts/run_vctk_quality_clean_original.sh
+?? scripts/run_vctk_quality_official.sh
+?? scripts/run_vctk_selection_ablation.sh
+?? scripts/run_xtts_after_license.sh
+?? scripts/run_xtts_authorized_pipeline.sh
+?? scripts/run_xtts_margin_rescore.sh
+?? scripts/run_xtts_model_download.sh
+?? scripts/run_xtts_prepare_after_final.sh
+?? scripts/run_xtts_synthesis.py
+?? scripts/score_xtts_outputs.py
+?? scripts/select_realistic_sweep.py
+?? scripts/server_preflight.py
+?? scripts/server_smoke.py
+?? scripts/setup_autodl.sh
+?? scripts/setup_xtts.sh
+?? scripts/verify_extract_corpus.py
+?? tests/

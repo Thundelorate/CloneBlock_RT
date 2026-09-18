@@ -1,0 +1,23 @@
+{
+  "protocol": "vctk_full_utterance_official_transcript_v1",
+  "seed": 42,
+  "max_utts": 200,
+  "n_utts": 200,
+  "n_speakers": 11,
+  "speaker_counts": {
+    "p228": 19,
+    "p239": 19,
+    "p240": 18,
+    "p244": 18,
+    "p255": 18,
+    "p258": 18,
+    "p262": 18,
+    "p314": 18,
+    "p326": 18,
+    "p340": 18,
+    "p364": 18
+  },
+  "source_split": "/root/autodl-tmp/projects/CloneBlock_RT/data/splits/vctk/test.csv",
+  "source_split_sha256": "f919971a686a0ad9158e74450617efb5f3b89ab7d92f4810b013cc591f239548",
+  "manifest_sha256": "33acf97ff90cd643d0b2d50f007f04e29a629a8f0d2743cbe847411ad056d426"
+}

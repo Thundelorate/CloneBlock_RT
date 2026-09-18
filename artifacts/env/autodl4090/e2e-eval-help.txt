@@ -1,0 +1,29 @@
+usage: run_e2e_cloning_eval.py [-h] [--dataset DATASET]
+                               [--session_pool_csv SESSION_POOL_CSV]
+                               [--model {xtts,yourtts}]
+                               [--max_sessions MAX_SESSIONS] [--Ks KS]
+                               [--seed SEED] [--device DEVICE]
+                               [--defense_checkpoint DEFENSE_CHECKPOINT]
+                               [--telephony_config TELEPHONY_CONFIG]
+                               [--eval_config EVAL_CONFIG]
+                               [--speaker_encoder_name SPEAKER_ENCODER_NAME]
+                               [--speaker_checkpoint_dir SPEAKER_CHECKPOINT_DIR]
+                               [--speaker_checkpoint_dir_xvector SPEAKER_CHECKPOINT_DIR_XVECTOR]
+
+E2E cloning eval: baseline_ref vs defended_ref, K=1,16,64.
+
+options:
+  -h, --help            show this help message and exit
+  --dataset DATASET
+  --session_pool_csv SESSION_POOL_CSV
+  --model {xtts,yourtts}
+  --max_sessions MAX_SESSIONS
+  --Ks KS
+  --seed SEED
+  --device DEVICE
+  --defense_checkpoint DEFENSE_CHECKPOINT
+  --telephony_config TELEPHONY_CONFIG
+  --eval_config EVAL_CONFIG
+  --speaker_encoder_name SPEAKER_ENCODER_NAME
+  --speaker_checkpoint_dir SPEAKER_CHECKPOINT_DIR
+  --speaker_checkpoint_dir_xvector SPEAKER_CHECKPOINT_DIR_XVECTOR

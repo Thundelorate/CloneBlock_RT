@@ -1,0 +1,7 @@
+{
+  "protocol": "vctk_official_original_clean_asr_v1",
+  "manifest_sha256": "33acf97ff90cd643d0b2d50f007f04e29a629a8f0d2743cbe847411ad056d426",
+  "n_utterances": 200,
+  "n_speakers": 11,
+  "output_sha256": "baaf4dc0726ccb3f70ad14d3b540b6b9a92079ed1d036bec6f90f6a3f74d9631"
+}

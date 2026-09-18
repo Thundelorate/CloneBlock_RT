@@ -1,0 +1,10 @@
+{
+  "archive": "VCTK-Corpus-0.92.zip",
+  "size": 11747302977,
+  "md5": "8a6ba2946b36fcbef0212cad601f4bfa",
+  "expected_sha256": "f96258be9fdc2cbff6559541aae7ea4f59df3fcaf5cf963aae5ca647357e359c",
+  "directory": "VCTK-Corpus-0.92",
+  "source": "https://datashare.ed.ac.uk/server/api/core/bitstreams/535f4286-e54c-4038-838c-a02285e32cb2/content",
+  "sha256": "f96258be9fdc2cbff6559541aae7ea4f59df3fcaf5cf963aae5ca647357e359c",
+  "verified": true
+}

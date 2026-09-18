@@ -1,0 +1,11 @@
+{
+  "ok": true,
+  "run_name": "realistic_a0p18",
+  "steps": 300,
+  "dataset": "vctk",
+  "best_step": 300,
+  "best_val_speaker_sim_tel": 0.9509221116701762,
+  "final_loss": 0.13122761249542236,
+  "checkpoint": "/root/autodl-tmp/projects/CloneBlock_RT/checkpoints/defense/realistic_a0p18_best.pt",
+  "scope": "Numerical and artifact integrity only; not a defense-efficacy claim."
+}

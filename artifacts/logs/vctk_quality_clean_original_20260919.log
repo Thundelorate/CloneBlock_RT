@@ -1,0 +1,9 @@
+{
+  "rows": 200,
+  "output": "artifacts/tables/quality_official/vctk_quality_original_clean_20260919.csv"
+}
+{
+  "rows": 25,
+  "output": "artifacts/tables/paper_icassp/quality_official_bootstrap.csv"
+}
+Original-clean WER and augmented quality bootstrap complete.

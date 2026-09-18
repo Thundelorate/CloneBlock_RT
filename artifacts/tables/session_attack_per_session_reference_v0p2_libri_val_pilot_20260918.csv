@@ -1,0 +1,121 @@
+method,speaker_id,session_id,path,strategy,attacker_view,selection_source,K,cos,candidate_count,selected_indices,seed
+reference_v0p2,1988,1988_s000,data/processed/sessions_v3/librispeech/val/session_1988_s000.wav,random_K,realistic,none,1,0.5820247530937195,100,[81],42
+reference_v0p2,1988,1988_s000,data/processed/sessions_v3/librispeech/val/session_1988_s000.wav,random_K,realistic,none,2,0.5728790163993835,100,"[14, 3]",42
+reference_v0p2,1988,1988_s000,data/processed/sessions_v3/librispeech/val/session_1988_s000.wav,random_K,realistic,none,4,0.7397876381874084,100,"[94, 35, 31, 28]",42
+reference_v0p2,1988,1988_s000,data/processed/sessions_v3/librispeech/val/session_1988_s000.wav,random_K,realistic,none,8,0.7925339341163635,100,"[17, 94, 13, 86, 69, 11, 75, 54]",42
+reference_v0p2,1988,1988_s000,data/processed/sessions_v3/librispeech/val/session_1988_s000.wav,random_K,realistic,none,16,0.8687676787376404,100,"[4, 3, 11, 27, 29, 64, 77, 71, 25, 91, 83, 89, 69, 53, 28, 57]",42
+reference_v0p2,1988,1988_s000,data/processed/sessions_v3/librispeech/val/session_1988_s000.wav,bestK_by_self_consistency,realistic,tele_defended,1,0.6576520204544067,100,[55],42
+reference_v0p2,1988,1988_s000,data/processed/sessions_v3/librispeech/val/session_1988_s000.wav,bestK_by_self_consistency,realistic,tele_defended,2,0.7640439867973328,100,"[55, 25]",42
+reference_v0p2,1988,1988_s000,data/processed/sessions_v3/librispeech/val/session_1988_s000.wav,bestK_by_self_consistency,realistic,tele_defended,4,0.834023118019104,100,"[55, 25, 73, 13]",42
+reference_v0p2,1988,1988_s000,data/processed/sessions_v3/librispeech/val/session_1988_s000.wav,bestK_by_self_consistency,realistic,tele_defended,8,0.8860974311828613,100,"[55, 25, 73, 13, 46, 66, 81, 39]",42
+reference_v0p2,1988,1988_s000,data/processed/sessions_v3/librispeech/val/session_1988_s000.wav,bestK_by_self_consistency,realistic,tele_defended,16,0.9251357913017273,100,"[55, 25, 73, 13, 46, 66, 81, 39, 75, 61, 10, 89, 30, 4, 68, 33]",42
+reference_v0p2,1988,1988_s001,data/processed/sessions_v3/librispeech/val/session_1988_s001.wav,random_K,realistic,none,1,0.43516480922698975,97,[75],42
+reference_v0p2,1988,1988_s001,data/processed/sessions_v3/librispeech/val/session_1988_s001.wav,random_K,realistic,none,2,0.5578780174255371,97,"[35, 0]",42
+reference_v0p2,1988,1988_s001,data/processed/sessions_v3/librispeech/val/session_1988_s001.wav,random_K,realistic,none,4,0.7811015844345093,97,"[20, 89, 54, 43]",42
+reference_v0p2,1988,1988_s001,data/processed/sessions_v3/librispeech/val/session_1988_s001.wav,random_K,realistic,none,8,0.8164447546005249,97,"[35, 19, 27, 43, 13, 11, 48, 12]",42
+reference_v0p2,1988,1988_s001,data/processed/sessions_v3/librispeech/val/session_1988_s001.wav,random_K,realistic,none,16,0.8873682618141174,97,"[45, 44, 77, 33, 5, 93, 58, 68, 15, 48, 10, 70, 37, 80, 79, 46]",42
+reference_v0p2,1988,1988_s001,data/processed/sessions_v3/librispeech/val/session_1988_s001.wav,bestK_by_self_consistency,realistic,tele_defended,1,0.5603170394897461,97,[12],42
+reference_v0p2,1988,1988_s001,data/processed/sessions_v3/librispeech/val/session_1988_s001.wav,bestK_by_self_consistency,realistic,tele_defended,2,0.7378368973731995,97,"[12, 53]",42
+reference_v0p2,1988,1988_s001,data/processed/sessions_v3/librispeech/val/session_1988_s001.wav,bestK_by_self_consistency,realistic,tele_defended,4,0.8674215078353882,97,"[12, 53, 45, 91]",42
+reference_v0p2,1988,1988_s001,data/processed/sessions_v3/librispeech/val/session_1988_s001.wav,bestK_by_self_consistency,realistic,tele_defended,8,0.9100481271743774,97,"[12, 53, 45, 91, 37, 72, 95, 6]",42
+reference_v0p2,1988,1988_s001,data/processed/sessions_v3/librispeech/val/session_1988_s001.wav,bestK_by_self_consistency,realistic,tele_defended,16,0.9332864284515381,97,"[12, 53, 45, 91, 37, 72, 95, 6, 64, 22, 83, 30, 2, 86, 17, 9]",42
+reference_v0p2,1988,1988_s002,data/processed/sessions_v3/librispeech/val/session_1988_s002.wav,random_K,realistic,none,1,0.5522457361221313,102,[73],42
+reference_v0p2,1988,1988_s002,data/processed/sessions_v3/librispeech/val/session_1988_s002.wav,random_K,realistic,none,2,0.5708770751953125,102,"[24, 90]",42
+reference_v0p2,1988,1988_s002,data/processed/sessions_v3/librispeech/val/session_1988_s002.wav,random_K,realistic,none,4,0.7126163244247437,102,"[8, 5, 84, 29]",42
+reference_v0p2,1988,1988_s002,data/processed/sessions_v3/librispeech/val/session_1988_s002.wav,random_K,realistic,none,8,0.8854868412017822,102,"[98, 37, 10, 29, 12, 48, 35, 58]",42
+reference_v0p2,1988,1988_s002,data/processed/sessions_v3/librispeech/val/session_1988_s002.wav,random_K,realistic,none,16,0.8673430681228638,102,"[81, 46, 20, 47, 45, 26, 85, 34, 89, 87, 82, 9, 77, 21, 68, 93]",42
+reference_v0p2,1988,1988_s002,data/processed/sessions_v3/librispeech/val/session_1988_s002.wav,bestK_by_self_consistency,realistic,tele_defended,1,0.6079944968223572,102,[17],42
+reference_v0p2,1988,1988_s002,data/processed/sessions_v3/librispeech/val/session_1988_s002.wav,bestK_by_self_consistency,realistic,tele_defended,2,0.7726025581359863,102,"[17, 0]",42
+reference_v0p2,1988,1988_s002,data/processed/sessions_v3/librispeech/val/session_1988_s002.wav,bestK_by_self_consistency,realistic,tele_defended,4,0.8652448058128357,102,"[17, 0, 93, 98]",42
+reference_v0p2,1988,1988_s002,data/processed/sessions_v3/librispeech/val/session_1988_s002.wav,bestK_by_self_consistency,realistic,tele_defended,8,0.8933841586112976,102,"[17, 0, 93, 98, 40, 89, 4, 66]",42
+reference_v0p2,1988,1988_s002,data/processed/sessions_v3/librispeech/val/session_1988_s002.wav,bestK_by_self_consistency,realistic,tele_defended,16,0.9357507228851318,102,"[17, 0, 93, 98, 40, 89, 4, 66, 74, 35, 64, 77, 30, 16, 53, 58]",42
+reference_v0p2,1993,1993_s000,data/processed/sessions_v3/librispeech/val/session_1993_s000.wav,random_K,realistic,none,1,0.514504611492157,101,[31],42
+reference_v0p2,1993,1993_s000,data/processed/sessions_v3/librispeech/val/session_1993_s000.wav,random_K,realistic,none,2,0.7499227523803711,101,"[20, 59]",42
+reference_v0p2,1993,1993_s000,data/processed/sessions_v3/librispeech/val/session_1993_s000.wav,random_K,realistic,none,4,0.8093212842941284,101,"[48, 34, 81, 88]",42
+reference_v0p2,1993,1993_s000,data/processed/sessions_v3/librispeech/val/session_1993_s000.wav,random_K,realistic,none,8,0.8252984285354614,101,"[71, 28, 87, 41, 98, 99, 7, 29]",42
+reference_v0p2,1993,1993_s000,data/processed/sessions_v3/librispeech/val/session_1993_s000.wav,random_K,realistic,none,16,0.890713095664978,101,"[4, 40, 51, 34, 8, 27, 72, 91, 83, 63, 50, 82, 58, 18, 33, 17]",42
+reference_v0p2,1993,1993_s000,data/processed/sessions_v3/librispeech/val/session_1993_s000.wav,bestK_by_self_consistency,realistic,tele_defended,1,0.6955912113189697,101,[85],42
+reference_v0p2,1993,1993_s000,data/processed/sessions_v3/librispeech/val/session_1993_s000.wav,bestK_by_self_consistency,realistic,tele_defended,2,0.782473087310791,101,"[85, 6]",42
+reference_v0p2,1993,1993_s000,data/processed/sessions_v3/librispeech/val/session_1993_s000.wav,bestK_by_self_consistency,realistic,tele_defended,4,0.8830726742744446,101,"[85, 6, 57, 76]",42
+reference_v0p2,1993,1993_s000,data/processed/sessions_v3/librispeech/val/session_1993_s000.wav,bestK_by_self_consistency,realistic,tele_defended,8,0.9323400259017944,101,"[85, 6, 57, 76, 16, 67, 50, 30]",42
+reference_v0p2,1993,1993_s000,data/processed/sessions_v3/librispeech/val/session_1993_s000.wav,bestK_by_self_consistency,realistic,tele_defended,16,0.9367700815200806,101,"[85, 6, 57, 76, 16, 67, 50, 30, 46, 36, 19, 89, 9, 24, 79, 51]",42
+reference_v0p2,1993,1993_s001,data/processed/sessions_v3/librispeech/val/session_1993_s001.wav,random_K,realistic,none,1,0.6809536218643188,91,[31],42
+reference_v0p2,1993,1993_s001,data/processed/sessions_v3/librispeech/val/session_1993_s001.wav,random_K,realistic,none,2,0.6005741953849792,91,"[71, 68]",42
+reference_v0p2,1993,1993_s001,data/processed/sessions_v3/librispeech/val/session_1993_s001.wav,random_K,realistic,none,4,0.8319480419158936,91,"[33, 74, 54, 51]",42
+reference_v0p2,1993,1993_s001,data/processed/sessions_v3/librispeech/val/session_1993_s001.wav,random_K,realistic,none,8,0.8358876705169678,91,"[46, 28, 17, 65, 63, 11, 6, 14]",42
+reference_v0p2,1993,1993_s001,data/processed/sessions_v3/librispeech/val/session_1993_s001.wav,random_K,realistic,none,16,0.9277692437171936,91,"[19, 80, 20, 87, 54, 76, 8, 49, 48, 59, 67, 32, 70, 1, 14, 68]",42
+reference_v0p2,1993,1993_s001,data/processed/sessions_v3/librispeech/val/session_1993_s001.wav,bestK_by_self_consistency,realistic,tele_defended,1,0.7779874801635742,91,[22],42
+reference_v0p2,1993,1993_s001,data/processed/sessions_v3/librispeech/val/session_1993_s001.wav,bestK_by_self_consistency,realistic,tele_defended,2,0.852843165397644,91,"[22, 86]",42
+reference_v0p2,1993,1993_s001,data/processed/sessions_v3/librispeech/val/session_1993_s001.wav,bestK_by_self_consistency,realistic,tele_defended,4,0.8807852864265442,91,"[22, 86, 38, 82]",42
+reference_v0p2,1993,1993_s001,data/processed/sessions_v3/librispeech/val/session_1993_s001.wav,bestK_by_self_consistency,realistic,tele_defended,8,0.9145916104316711,91,"[22, 86, 38, 82, 74, 36, 15, 78]",42
+reference_v0p2,1993,1993_s001,data/processed/sessions_v3/librispeech/val/session_1993_s001.wav,bestK_by_self_consistency,realistic,tele_defended,16,0.9463573098182678,91,"[22, 86, 38, 82, 74, 36, 15, 78, 30, 19, 25, 65, 44, 69, 17, 9]",42
+reference_v0p2,1993,1993_s002,data/processed/sessions_v3/librispeech/val/session_1993_s002.wav,random_K,realistic,none,1,0.5505415797233582,91,[34],42
+reference_v0p2,1993,1993_s002,data/processed/sessions_v3/librispeech/val/session_1993_s002.wav,random_K,realistic,none,2,0.6891546249389648,91,"[82, 43]",42
+reference_v0p2,1993,1993_s002,data/processed/sessions_v3/librispeech/val/session_1993_s002.wav,random_K,realistic,none,4,0.706792414188385,91,"[14, 37, 55, 20]",42
+reference_v0p2,1993,1993_s002,data/processed/sessions_v3/librispeech/val/session_1993_s002.wav,random_K,realistic,none,8,0.8840426802635193,91,"[58, 0, 33, 64, 22, 13, 80, 38]",42
+reference_v0p2,1993,1993_s002,data/processed/sessions_v3/librispeech/val/session_1993_s002.wav,random_K,realistic,none,16,0.9218305945396423,91,"[81, 64, 77, 25, 19, 47, 20, 69, 67, 0, 76, 41, 62, 2, 14, 46]",42
+reference_v0p2,1993,1993_s002,data/processed/sessions_v3/librispeech/val/session_1993_s002.wav,bestK_by_self_consistency,realistic,tele_defended,1,0.7043027281761169,91,[61],42
+reference_v0p2,1993,1993_s002,data/processed/sessions_v3/librispeech/val/session_1993_s002.wav,bestK_by_self_consistency,realistic,tele_defended,2,0.8129130601882935,91,"[61, 27]",42
+reference_v0p2,1993,1993_s002,data/processed/sessions_v3/librispeech/val/session_1993_s002.wav,bestK_by_self_consistency,realistic,tele_defended,4,0.8978800177574158,91,"[61, 27, 14, 34]",42
+reference_v0p2,1993,1993_s002,data/processed/sessions_v3/librispeech/val/session_1993_s002.wav,bestK_by_self_consistency,realistic,tele_defended,8,0.9322030544281006,91,"[61, 27, 14, 34, 45, 78, 49, 2]",42
+reference_v0p2,1993,1993_s002,data/processed/sessions_v3/librispeech/val/session_1993_s002.wav,bestK_by_self_consistency,realistic,tele_defended,16,0.9460989832878113,91,"[61, 27, 14, 34, 45, 78, 49, 2, 22, 86, 68, 39, 9, 53, 76, 5]",42
+reference_v0p2,2078,2078_s000,data/processed/sessions_v3/librispeech/val/session_2078_s000.wav,random_K,realistic,none,1,0.5829377770423889,110,[106],42
+reference_v0p2,2078,2078_s000,data/processed/sessions_v3/librispeech/val/session_2078_s000.wav,random_K,realistic,none,2,0.7211476564407349,110,"[103, 39]",42
+reference_v0p2,2078,2078_s000,data/processed/sessions_v3/librispeech/val/session_2078_s000.wav,random_K,realistic,none,4,0.7876698970794678,110,"[30, 7, 72, 10]",42
+reference_v0p2,2078,2078_s000,data/processed/sessions_v3/librispeech/val/session_2078_s000.wav,random_K,realistic,none,8,0.8060041069984436,110,"[10, 93, 62, 104, 8, 97, 68, 98]",42
+reference_v0p2,2078,2078_s000,data/processed/sessions_v3/librispeech/val/session_2078_s000.wav,random_K,realistic,none,16,0.9297915697097778,110,"[16, 84, 60, 70, 21, 33, 67, 77, 54, 27, 69, 96, 93, 88, 25, 91]",42
+reference_v0p2,2078,2078_s000,data/processed/sessions_v3/librispeech/val/session_2078_s000.wav,bestK_by_self_consistency,realistic,tele_defended,1,0.6913403272628784,110,[46],42
+reference_v0p2,2078,2078_s000,data/processed/sessions_v3/librispeech/val/session_2078_s000.wav,bestK_by_self_consistency,realistic,tele_defended,2,0.7961199283599854,110,"[46, 75]",42
+reference_v0p2,2078,2078_s000,data/processed/sessions_v3/librispeech/val/session_2078_s000.wav,bestK_by_self_consistency,realistic,tele_defended,4,0.8835114240646362,110,"[46, 75, 90, 79]",42
+reference_v0p2,2078,2078_s000,data/processed/sessions_v3/librispeech/val/session_2078_s000.wav,bestK_by_self_consistency,realistic,tele_defended,8,0.914239764213562,110,"[46, 75, 90, 79, 6, 67, 3, 101]",42
+reference_v0p2,2078,2078_s000,data/processed/sessions_v3/librispeech/val/session_2078_s000.wav,bestK_by_self_consistency,realistic,tele_defended,16,0.9497434496879578,110,"[46, 75, 90, 79, 6, 67, 3, 101, 51, 94, 62, 43, 27, 58, 11, 36]",42
+reference_v0p2,2078,2078_s001,data/processed/sessions_v3/librispeech/val/session_2078_s001.wav,random_K,realistic,none,1,0.6388304233551025,96,[39],42
+reference_v0p2,2078,2078_s001,data/processed/sessions_v3/librispeech/val/session_2078_s001.wav,random_K,realistic,none,2,0.6436255574226379,96,"[51, 85]",42
+reference_v0p2,2078,2078_s001,data/processed/sessions_v3/librispeech/val/session_2078_s001.wav,random_K,realistic,none,4,0.815166711807251,96,"[83, 47, 56, 66]",42
+reference_v0p2,2078,2078_s001,data/processed/sessions_v3/librispeech/val/session_2078_s001.wav,random_K,realistic,none,8,0.8826985359191895,96,"[57, 15, 31, 28, 8, 43, 2, 75]",42
+reference_v0p2,2078,2078_s001,data/processed/sessions_v3/librispeech/val/session_2078_s001.wav,random_K,realistic,none,16,0.9052667617797852,96,"[70, 29, 75, 28, 0, 9, 90, 80, 7, 8, 4, 42, 65, 30, 35, 85]",42
+reference_v0p2,2078,2078_s001,data/processed/sessions_v3/librispeech/val/session_2078_s001.wav,bestK_by_self_consistency,realistic,tele_defended,1,0.6884489059448242,96,[41],42
+reference_v0p2,2078,2078_s001,data/processed/sessions_v3/librispeech/val/session_2078_s001.wav,bestK_by_self_consistency,realistic,tele_defended,2,0.7914001941680908,96,"[41, 77]",42
+reference_v0p2,2078,2078_s001,data/processed/sessions_v3/librispeech/val/session_2078_s001.wav,bestK_by_self_consistency,realistic,tele_defended,4,0.8960476517677307,96,"[41, 77, 25, 65]",42
+reference_v0p2,2078,2078_s001,data/processed/sessions_v3/librispeech/val/session_2078_s001.wav,bestK_by_self_consistency,realistic,tele_defended,8,0.9462155103683472,96,"[41, 77, 25, 65, 81, 93, 29, 18]",42
+reference_v0p2,2078,2078_s001,data/processed/sessions_v3/librispeech/val/session_2078_s001.wav,bestK_by_self_consistency,realistic,tele_defended,16,0.9511821269989014,96,"[41, 77, 25, 65, 81, 93, 29, 18, 5, 49, 44, 85, 75, 23, 69, 78]",42
+reference_v0p2,2078,2078_s002,data/processed/sessions_v3/librispeech/val/session_2078_s002.wav,random_K,realistic,none,1,0.6090280413627625,111,[62],42
+reference_v0p2,2078,2078_s002,data/processed/sessions_v3/librispeech/val/session_2078_s002.wav,random_K,realistic,none,2,0.7610395550727844,111,"[27, 69]",42
+reference_v0p2,2078,2078_s002,data/processed/sessions_v3/librispeech/val/session_2078_s002.wav,random_K,realistic,none,4,0.7189055681228638,111,"[16, 92, 73, 60]",42
+reference_v0p2,2078,2078_s002,data/processed/sessions_v3/librispeech/val/session_2078_s002.wav,random_K,realistic,none,8,0.8816194534301758,111,"[31, 100, 60, 103, 52, 24, 12, 84]",42
+reference_v0p2,2078,2078_s002,data/processed/sessions_v3/librispeech/val/session_2078_s002.wav,random_K,realistic,none,16,0.890024721622467,111,"[55, 45, 54, 52, 59, 110, 93, 6, 86, 83, 82, 12, 7, 51, 43, 102]",42
+reference_v0p2,2078,2078_s002,data/processed/sessions_v3/librispeech/val/session_2078_s002.wav,bestK_by_self_consistency,realistic,tele_defended,1,0.7293764352798462,111,[52],42
+reference_v0p2,2078,2078_s002,data/processed/sessions_v3/librispeech/val/session_2078_s002.wav,bestK_by_self_consistency,realistic,tele_defended,2,0.8372807502746582,111,"[52, 19]",42
+reference_v0p2,2078,2078_s002,data/processed/sessions_v3/librispeech/val/session_2078_s002.wav,bestK_by_self_consistency,realistic,tele_defended,4,0.9091885089874268,111,"[52, 19, 43, 23]",42
+reference_v0p2,2078,2078_s002,data/processed/sessions_v3/librispeech/val/session_2078_s002.wav,bestK_by_self_consistency,realistic,tele_defended,8,0.9425292015075684,111,"[52, 19, 43, 23, 69, 90, 86, 98]",42
+reference_v0p2,2078,2078_s002,data/processed/sessions_v3/librispeech/val/session_2078_s002.wav,bestK_by_self_consistency,realistic,tele_defended,16,0.9657387733459473,111,"[52, 19, 43, 23, 69, 90, 86, 98, 3, 82, 10, 66, 31, 62, 89, 14]",42
+reference_v0p2,2803,2803_s000,data/processed/sessions_v3/librispeech/val/session_2803_s000.wav,random_K,realistic,none,1,0.4243089556694031,97,[13],42
+reference_v0p2,2803,2803_s000,data/processed/sessions_v3/librispeech/val/session_2803_s000.wav,random_K,realistic,none,2,0.6990940570831299,97,"[31, 24]",42
+reference_v0p2,2803,2803_s000,data/processed/sessions_v3/librispeech/val/session_2803_s000.wav,random_K,realistic,none,4,0.8083078861236572,97,"[24, 68, 57, 17]",42
+reference_v0p2,2803,2803_s000,data/processed/sessions_v3/librispeech/val/session_2803_s000.wav,random_K,realistic,none,8,0.9002612233161926,97,"[54, 23, 35, 59, 31, 9, 56, 70]",42
+reference_v0p2,2803,2803_s000,data/processed/sessions_v3/librispeech/val/session_2803_s000.wav,random_K,realistic,none,16,0.9356604814529419,97,"[12, 6, 83, 69, 1, 11, 96, 30, 21, 52, 62, 61, 27, 51, 7, 48]",42
+reference_v0p2,2803,2803_s000,data/processed/sessions_v3/librispeech/val/session_2803_s000.wav,bestK_by_self_consistency,realistic,tele_defended,1,0.7371479272842407,97,[68],42
+reference_v0p2,2803,2803_s000,data/processed/sessions_v3/librispeech/val/session_2803_s000.wav,bestK_by_self_consistency,realistic,tele_defended,2,0.8306115865707397,97,"[68, 25]",42
+reference_v0p2,2803,2803_s000,data/processed/sessions_v3/librispeech/val/session_2803_s000.wav,bestK_by_self_consistency,realistic,tele_defended,4,0.8949790596961975,97,"[68, 25, 1, 33]",42
+reference_v0p2,2803,2803_s000,data/processed/sessions_v3/librispeech/val/session_2803_s000.wav,bestK_by_self_consistency,realistic,tele_defended,8,0.9425153732299805,97,"[68, 25, 1, 33, 19, 71, 95, 26]",42
+reference_v0p2,2803,2803_s000,data/processed/sessions_v3/librispeech/val/session_2803_s000.wav,bestK_by_self_consistency,realistic,tele_defended,16,0.9553285241127014,97,"[68, 25, 1, 33, 19, 71, 95, 26, 93, 64, 79, 88, 12, 52, 57, 75]",42
+reference_v0p2,2803,2803_s001,data/processed/sessions_v3/librispeech/val/session_2803_s001.wav,random_K,realistic,none,1,0.3955366611480713,101,[0],42
+reference_v0p2,2803,2803_s001,data/processed/sessions_v3/librispeech/val/session_2803_s001.wav,random_K,realistic,none,2,0.7521094679832458,101,"[49, 33]",42
+reference_v0p2,2803,2803_s001,data/processed/sessions_v3/librispeech/val/session_2803_s001.wav,random_K,realistic,none,4,0.8332889676094055,101,"[100, 58, 36, 54]",42
+reference_v0p2,2803,2803_s001,data/processed/sessions_v3/librispeech/val/session_2803_s001.wav,random_K,realistic,none,8,0.8759304285049438,101,"[89, 93, 100, 71, 84, 91, 62, 19]",42
+reference_v0p2,2803,2803_s001,data/processed/sessions_v3/librispeech/val/session_2803_s001.wav,random_K,realistic,none,16,0.9092779159545898,101,"[24, 37, 27, 7, 74, 94, 69, 95, 40, 6, 61, 64, 67, 20, 65, 10]",42
+reference_v0p2,2803,2803_s001,data/processed/sessions_v3/librispeech/val/session_2803_s001.wav,bestK_by_self_consistency,realistic,tele_defended,1,0.7464146614074707,101,[35],42
+reference_v0p2,2803,2803_s001,data/processed/sessions_v3/librispeech/val/session_2803_s001.wav,bestK_by_self_consistency,realistic,tele_defended,2,0.8339981436729431,101,"[35, 12]",42
+reference_v0p2,2803,2803_s001,data/processed/sessions_v3/librispeech/val/session_2803_s001.wav,bestK_by_self_consistency,realistic,tele_defended,4,0.9085214734077454,101,"[35, 12, 95, 61]",42
+reference_v0p2,2803,2803_s001,data/processed/sessions_v3/librispeech/val/session_2803_s001.wav,bestK_by_self_consistency,realistic,tele_defended,8,0.9456475973129272,101,"[35, 12, 95, 61, 77, 85, 98, 53]",42
+reference_v0p2,2803,2803_s001,data/processed/sessions_v3/librispeech/val/session_2803_s001.wav,bestK_by_self_consistency,realistic,tele_defended,16,0.9634174108505249,101,"[35, 12, 95, 61, 77, 85, 98, 53, 69, 90, 30, 39, 20, 8, 46, 74]",42
+reference_v0p2,2803,2803_s002,data/processed/sessions_v3/librispeech/val/session_2803_s002.wav,random_K,realistic,none,1,0.3531929552555084,108,[23],42
+reference_v0p2,2803,2803_s002,data/processed/sessions_v3/librispeech/val/session_2803_s002.wav,random_K,realistic,none,2,0.7462527751922607,108,"[8, 76]",42
+reference_v0p2,2803,2803_s002,data/processed/sessions_v3/librispeech/val/session_2803_s002.wav,random_K,realistic,none,4,0.7748584151268005,108,"[8, 86, 30, 51]",42
+reference_v0p2,2803,2803_s002,data/processed/sessions_v3/librispeech/val/session_2803_s002.wav,random_K,realistic,none,8,0.8761452436447144,108,"[15, 72, 31, 74, 76, 5, 79, 10]",42
+reference_v0p2,2803,2803_s002,data/processed/sessions_v3/librispeech/val/session_2803_s002.wav,random_K,realistic,none,16,0.9507420659065247,108,"[53, 84, 74, 72, 66, 40, 33, 26, 85, 91, 30, 50, 16, 82, 38, 58]",42
+reference_v0p2,2803,2803_s002,data/processed/sessions_v3/librispeech/val/session_2803_s002.wav,bestK_by_self_consistency,realistic,tele_defended,1,0.7509185671806335,108,[82],42
+reference_v0p2,2803,2803_s002,data/processed/sessions_v3/librispeech/val/session_2803_s002.wav,bestK_by_self_consistency,realistic,tele_defended,2,0.8667377829551697,108,"[82, 66]",42
+reference_v0p2,2803,2803_s002,data/processed/sessions_v3/librispeech/val/session_2803_s002.wav,bestK_by_self_consistency,realistic,tele_defended,4,0.9214021563529968,108,"[82, 66, 95, 17]",42
+reference_v0p2,2803,2803_s002,data/processed/sessions_v3/librispeech/val/session_2803_s002.wav,bestK_by_self_consistency,realistic,tele_defended,8,0.952822744846344,108,"[82, 66, 95, 17, 39, 4, 27, 77]",42
+reference_v0p2,2803,2803_s002,data/processed/sessions_v3/librispeech/val/session_2803_s002.wav,bestK_by_self_consistency,realistic,tele_defended,16,0.969091534614563,108,"[82, 66, 95, 17, 39, 4, 27, 77, 104, 12, 34, 69, 98, 52, 73, 8]",42

@@ -1,0 +1,19 @@
+{
+  "protocol": "independent_session_enrollment",
+  "selection_strategy": "self_consistency",
+  "selection_source": "tele_defended",
+  "k": 16,
+  "seed": 42,
+  "output_csv": "artifacts/tables/smoke_independent_ecapa_eer_20260918.csv",
+  "output_margin_csv": "artifacts/tables/smoke_independent_ecapa_margin_20260918.csv",
+  "output_trials_csv": "artifacts/tables/smoke_independent_ecapa_trials_20260918.csv",
+  "rows": [
+    {
+      "encoder": "speechbrain_ecapa",
+      "method": "no_defense",
+      "eer": "0.000000",
+      "n_target": "8",
+      "n_impostor": "48"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "recorded_at_utc": "2026-09-18T18:10:24.920988+00:00",
+  "model_name": "tts_models/multilingual/multi-dataset/xtts_v2",
+  "model_path": "/root/autodl-tmp/cache/xtts/models/tts/tts_models--multilingual--multi-dataset--xtts_v2",
+  "config_path": "/root/autodl-tmp/cache/xtts/models/tts/tts_models--multilingual--multi-dataset--xtts_v2/config.json",
+  "license": "CPML",
+  "tos_required": true,
+  "commit": "480a6cdf7",
+  "model_hash": "10f92b55c512af7a8d39d650547a15a7",
+  "files": [
+    {
+      "path": "/root/autodl-tmp/cache/xtts/models/tts/tts_models--multilingual--multi-dataset--xtts_v2/config.json",
+      "size_bytes": 4368,
+      "sha256": "ef262b1454dd2a77e1461b0b2cd53e19b8a7624cc131b837d36df67356bc75e8"
+    },
+    {
+      "path": "/root/autodl-tmp/cache/xtts/models/tts/tts_models--multilingual--multi-dataset--xtts_v2/hash.md5",
+      "size_bytes": 32,
+      "sha256": "ef2e25fc4639bb81c6c5048740c1ee8268606a160548abaa2e2fe03b12278c54"
+    },
+    {
+      "path": "/root/autodl-tmp/cache/xtts/models/tts/tts_models--multilingual--multi-dataset--xtts_v2/model.pth",
+      "size_bytes": 1867929118,
+      "sha256": "c7ea20001c6a0a841c77e252d8409f6a74fb423e79b3206a0771ba5989776187"
+    },
+    {
+      "path": "/root/autodl-tmp/cache/xtts/models/tts/tts_models--multilingual--multi-dataset--xtts_v2/speakers_xtts.pth",
+      "size_bytes": 7754818,
+      "sha256": "f0f6137c19a4eab0cbbe4c99b5babacf68b1746e50da90807708c10e645b943b"
+    },
+    {
+      "path": "/root/autodl-tmp/cache/xtts/models/tts/tts_models--multilingual--multi-dataset--xtts_v2/vocab.json",
+      "size_bytes": 361219,
+      "sha256": "928260878a59da8a72a2a5b7687fea29d5106137669d90945430fe17e415304a"
+    }
+  ],
+  "total_size_bytes": 1876049555
+}

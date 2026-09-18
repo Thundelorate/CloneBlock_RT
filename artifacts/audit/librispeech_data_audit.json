@@ -1,0 +1,31 @@
+{
+  "ok": true,
+  "splits": {
+    "train": {
+      "speakers": 32,
+      "crops": 2783,
+      "duration_sec": 9680.044624999984,
+      "manifest_sha256": "a355ad1a2591ba2e90bb424e6f3a8485f4f226e37095900733679fca103c753b",
+      "source_utterances_without_transcript": []
+    },
+    "val": {
+      "speakers": 4,
+      "crops": 344,
+      "duration_sec": 1207.3636875000004,
+      "manifest_sha256": "5af39d59ca9a1bdca6eb827501ab547c431c1cf2764855f9d6ea80aaac7c8a46",
+      "source_utterances_without_transcript": []
+    },
+    "test": {
+      "speakers": 4,
+      "crops": 353,
+      "duration_sec": 1207.4861250000004,
+      "manifest_sha256": "4c364ef074e877f6b9583fdac23bdabb8894c2b097a61b8f9d6198a3b45a4d47",
+      "source_utterances_without_transcript": []
+    }
+  },
+  "errors": [],
+  "limitations": [
+    "Source audio content is not hashed by this audit; preserve the downloaded archive checksum.",
+    "Crop provenance does not align words. Official-reference WER must use complete source utterances or verified word alignment."
+  ]
+}

@@ -1,0 +1,496 @@
+method,speaker_id,session_id,path,strategy,attacker_view,selection_source,K,cos,candidate_count,selected_indices,seed
+realistic_selected,p228,p228_s000,data/processed/sessions_v3/vctk/test/session_p228_s000.wav,random_K,realistic,none,1,0.4569516181945801,78,[14],42
+realistic_selected,p228,p228_s000,data/processed/sessions_v3/vctk/test/session_p228_s000.wav,random_K,realistic,none,2,0.742496132850647,78,"[3, 35]",42
+realistic_selected,p228,p228_s000,data/processed/sessions_v3/vctk/test/session_p228_s000.wav,random_K,realistic,none,4,0.6680921316146851,78,"[31, 28, 17, 13]",42
+realistic_selected,p228,p228_s000,data/processed/sessions_v3/vctk/test/session_p228_s000.wav,random_K,realistic,none,8,0.8195384740829468,78,"[69, 11, 75, 54, 4, 3, 76, 27]",42
+realistic_selected,p228,p228_s000,data/processed/sessions_v3/vctk/test/session_p228_s000.wav,random_K,realistic,none,16,0.9205488562583923,78,"[29, 64, 3, 71, 25, 69, 53, 28, 57, 35, 0, 20, 54, 43, 68, 9]",42
+realistic_selected,p228,p228_s000,data/processed/sessions_v3/vctk/test/session_p228_s000.wav,bestK_by_self_consistency,realistic,tele_defended,1,0.704094409942627,78,[53],42
+realistic_selected,p228,p228_s000,data/processed/sessions_v3/vctk/test/session_p228_s000.wav,bestK_by_self_consistency,realistic,tele_defended,2,0.8036379814147949,78,"[53, 45]",42
+realistic_selected,p228,p228_s000,data/processed/sessions_v3/vctk/test/session_p228_s000.wav,bestK_by_self_consistency,realistic,tele_defended,4,0.8726657032966614,78,"[53, 45, 49, 63]",42
+realistic_selected,p228,p228_s000,data/processed/sessions_v3/vctk/test/session_p228_s000.wav,bestK_by_self_consistency,realistic,tele_defended,8,0.9231777787208557,78,"[53, 45, 49, 63, 32, 21, 19, 10]",42
+realistic_selected,p228,p228_s000,data/processed/sessions_v3/vctk/test/session_p228_s000.wav,bestK_by_self_consistency,realistic,tele_defended,16,0.9447112083435059,78,"[53, 45, 49, 63, 32, 21, 19, 10, 41, 71, 75, 55, 7, 25, 67, 3]",42
+realistic_selected,p228,p228_s000,data/processed/sessions_v3/vctk/test/session_p228_s000.wav,bestK_by_clean_consistency,oracle_reference,clean,1,0.704094409942627,78,[53],42
+realistic_selected,p228,p228_s000,data/processed/sessions_v3/vctk/test/session_p228_s000.wav,bestK_by_clean_consistency,oracle_reference,clean,2,0.7749642729759216,78,"[53, 32]",42
+realistic_selected,p228,p228_s000,data/processed/sessions_v3/vctk/test/session_p228_s000.wav,bestK_by_clean_consistency,oracle_reference,clean,4,0.840019702911377,78,"[53, 42, 32, 63]",42
+realistic_selected,p228,p228_s000,data/processed/sessions_v3/vctk/test/session_p228_s000.wav,bestK_by_clean_consistency,oracle_reference,clean,8,0.9036086201667786,78,"[53, 42, 9, 32, 15, 66, 3, 7]",42
+realistic_selected,p228,p228_s000,data/processed/sessions_v3/vctk/test/session_p228_s000.wav,bestK_by_clean_consistency,oracle_reference,clean,16,0.9277276992797852,78,"[53, 42, 9, 31, 69, 51, 4, 64, 8, 35, 76, 48, 59, 15, 49, 44]",42
+realistic_selected,p228,p228_s001,data/processed/sessions_v3/vctk/test/session_p228_s001.wav,random_K,realistic,none,1,0.5347927808761597,83,[27],42
+realistic_selected,p228,p228_s001,data/processed/sessions_v3/vctk/test/session_p228_s001.wav,random_K,realistic,none,2,0.6929707527160645,83,"[43, 13]",42
+realistic_selected,p228,p228_s001,data/processed/sessions_v3/vctk/test/session_p228_s001.wav,random_K,realistic,none,4,0.722958505153656,83,"[11, 48, 12, 45]",42
+realistic_selected,p228,p228_s001,data/processed/sessions_v3/vctk/test/session_p228_s001.wav,random_K,realistic,none,8,0.8694150447845459,83,"[44, 77, 33, 5, 58, 68, 15, 48]",42
+realistic_selected,p228,p228_s001,data/processed/sessions_v3/vctk/test/session_p228_s001.wav,random_K,realistic,none,16,0.8882668018341064,83,"[10, 70, 37, 79, 46, 73, 24, 8, 5, 29, 80, 82, 77, 12, 48, 35]",42
+realistic_selected,p228,p228_s001,data/processed/sessions_v3/vctk/test/session_p228_s001.wav,bestK_by_self_consistency,realistic,tele_defended,1,0.6338095664978027,83,[33],42
+realistic_selected,p228,p228_s001,data/processed/sessions_v3/vctk/test/session_p228_s001.wav,bestK_by_self_consistency,realistic,tele_defended,2,0.7631397247314453,83,"[33, 64]",42
+realistic_selected,p228,p228_s001,data/processed/sessions_v3/vctk/test/session_p228_s001.wav,bestK_by_self_consistency,realistic,tele_defended,4,0.8545547127723694,83,"[33, 64, 38, 42]",42
+realistic_selected,p228,p228_s001,data/processed/sessions_v3/vctk/test/session_p228_s001.wav,bestK_by_self_consistency,realistic,tele_defended,8,0.8906965851783752,83,"[33, 64, 38, 42, 78, 31, 24, 82]",42
+realistic_selected,p228,p228_s001,data/processed/sessions_v3/vctk/test/session_p228_s001.wav,bestK_by_self_consistency,realistic,tele_defended,16,0.9280506372451782,83,"[33, 64, 38, 42, 78, 31, 24, 82, 53, 15, 47, 62, 68, 50, 27, 10]",42
+realistic_selected,p228,p228_s001,data/processed/sessions_v3/vctk/test/session_p228_s001.wav,bestK_by_clean_consistency,oracle_reference,clean,1,0.6286853551864624,83,[68],42
+realistic_selected,p228,p228_s001,data/processed/sessions_v3/vctk/test/session_p228_s001.wav,bestK_by_clean_consistency,oracle_reference,clean,2,0.7027240991592407,83,"[68, 80]",42
+realistic_selected,p228,p228_s001,data/processed/sessions_v3/vctk/test/session_p228_s001.wav,bestK_by_clean_consistency,oracle_reference,clean,4,0.780814528465271,83,"[68, 80, 31, 49]",42
+realistic_selected,p228,p228_s001,data/processed/sessions_v3/vctk/test/session_p228_s001.wav,bestK_by_clean_consistency,oracle_reference,clean,8,0.8703986406326294,83,"[68, 79, 31, 43, 49, 57, 64, 22]",42
+realistic_selected,p228,p228_s001,data/processed/sessions_v3/vctk/test/session_p228_s001.wav,bestK_by_clean_consistency,oracle_reference,clean,16,0.9037384986877441,83,"[68, 79, 31, 42, 27, 64, 13, 82, 23, 49, 36, 71, 53, 46, 14, 20]",42
+realistic_selected,p228,p228_s002,data/processed/sessions_v3/vctk/test/session_p228_s002.wav,random_K,realistic,none,1,0.5342311859130859,85,[58],42
+realistic_selected,p228,p228_s002,data/processed/sessions_v3/vctk/test/session_p228_s002.wav,random_K,realistic,none,2,0.5743996500968933,85,"[81, 46]",42
+realistic_selected,p228,p228_s002,data/processed/sessions_v3/vctk/test/session_p228_s002.wav,random_K,realistic,none,4,0.8091612458229065,85,"[20, 47, 45, 26]",42
+realistic_selected,p228,p228_s002,data/processed/sessions_v3/vctk/test/session_p228_s002.wav,random_K,realistic,none,8,0.7841070890426636,85,"[34, 82, 9, 77, 21, 68, 31, 20]",42
+realistic_selected,p228,p228_s002,data/processed/sessions_v3/vctk/test/session_p228_s002.wav,random_K,realistic,none,16,0.8855841159820557,85,"[59, 48, 34, 81, 71, 28, 41, 7, 29, 4, 40, 51, 82, 8, 27, 74]",42
+realistic_selected,p228,p228_s002,data/processed/sessions_v3/vctk/test/session_p228_s002.wav,bestK_by_self_consistency,realistic,tele_defended,1,0.6664160490036011,85,[83],42
+realistic_selected,p228,p228_s002,data/processed/sessions_v3/vctk/test/session_p228_s002.wav,bestK_by_self_consistency,realistic,tele_defended,2,0.7960149049758911,85,"[83, 26]",42
+realistic_selected,p228,p228_s002,data/processed/sessions_v3/vctk/test/session_p228_s002.wav,bestK_by_self_consistency,realistic,tele_defended,4,0.8486864566802979,85,"[83, 26, 20, 32]",42
+realistic_selected,p228,p228_s002,data/processed/sessions_v3/vctk/test/session_p228_s002.wav,bestK_by_self_consistency,realistic,tele_defended,8,0.9003426432609558,85,"[83, 26, 20, 32, 62, 53, 13, 72]",42
+realistic_selected,p228,p228_s002,data/processed/sessions_v3/vctk/test/session_p228_s002.wav,bestK_by_self_consistency,realistic,tele_defended,16,0.920504093170166,85,"[83, 26, 20, 32, 62, 53, 13, 72, 0, 77, 68, 4, 45, 49, 10, 36]",42
+realistic_selected,p228,p228_s002,data/processed/sessions_v3/vctk/test/session_p228_s002.wav,bestK_by_clean_consistency,oracle_reference,clean,1,0.6319310665130615,85,[19],42
+realistic_selected,p228,p228_s002,data/processed/sessions_v3/vctk/test/session_p228_s002.wav,bestK_by_clean_consistency,oracle_reference,clean,2,0.731913685798645,85,"[19, 27]",42
+realistic_selected,p228,p228_s002,data/processed/sessions_v3/vctk/test/session_p228_s002.wav,bestK_by_clean_consistency,oracle_reference,clean,4,0.7998584508895874,85,"[19, 48, 64, 29]",42
+realistic_selected,p228,p228_s002,data/processed/sessions_v3/vctk/test/session_p228_s002.wav,bestK_by_clean_consistency,oracle_reference,clean,8,0.87171471118927,85,"[19, 62, 46, 29, 3, 53, 26, 82]",42
+realistic_selected,p228,p228_s002,data/processed/sessions_v3/vctk/test/session_p228_s002.wav,bestK_by_clean_consistency,oracle_reference,clean,16,0.9132509231567383,85,"[19, 62, 46, 29, 52, 11, 71, 32, 25, 10, 59, 17, 66, 48, 3, 54]",42
+realistic_selected,p239,p239_s000,data/processed/sessions_v3/vctk/test/session_p239_s000.wav,random_K,realistic,none,1,0.4276203513145447,87,[27],42
+realistic_selected,p239,p239_s000,data/processed/sessions_v3/vctk/test/session_p239_s000.wav,random_K,realistic,none,2,0.7771955728530884,87,"[83, 63]",42
+realistic_selected,p239,p239_s000,data/processed/sessions_v3/vctk/test/session_p239_s000.wav,random_K,realistic,none,4,0.8435266017913818,87,"[50, 82, 58, 18]",42
+realistic_selected,p239,p239_s000,data/processed/sessions_v3/vctk/test/session_p239_s000.wav,random_K,realistic,none,8,0.8367383480072021,87,"[33, 17, 31, 71, 68, 74, 54, 51]",42
+realistic_selected,p239,p239_s000,data/processed/sessions_v3/vctk/test/session_p239_s000.wav,random_K,realistic,none,16,0.8918196558952332,87,"[46, 28, 17, 65, 63, 11, 6, 14, 19, 80, 20, 54, 76, 8, 49, 48]",42
+realistic_selected,p239,p239_s000,data/processed/sessions_v3/vctk/test/session_p239_s000.wav,bestK_by_self_consistency,realistic,tele_defended,1,0.6918996572494507,87,[48],42
+realistic_selected,p239,p239_s000,data/processed/sessions_v3/vctk/test/session_p239_s000.wav,bestK_by_self_consistency,realistic,tele_defended,2,0.7940346002578735,87,"[48, 63]",42
+realistic_selected,p239,p239_s000,data/processed/sessions_v3/vctk/test/session_p239_s000.wav,bestK_by_self_consistency,realistic,tele_defended,4,0.846286416053772,87,"[48, 63, 84, 67]",42
+realistic_selected,p239,p239_s000,data/processed/sessions_v3/vctk/test/session_p239_s000.wav,bestK_by_self_consistency,realistic,tele_defended,8,0.8977347612380981,87,"[48, 63, 84, 67, 8, 13, 5, 35]",42
+realistic_selected,p239,p239_s000,data/processed/sessions_v3/vctk/test/session_p239_s000.wav,bestK_by_self_consistency,realistic,tele_defended,16,0.9099431037902832,87,"[48, 63, 84, 67, 8, 13, 5, 35, 24, 75, 27, 71, 45, 57, 19, 52]",42
+realistic_selected,p239,p239_s000,data/processed/sessions_v3/vctk/test/session_p239_s000.wav,bestK_by_clean_consistency,oracle_reference,clean,1,0.6861637830734253,87,[85],42
+realistic_selected,p239,p239_s000,data/processed/sessions_v3/vctk/test/session_p239_s000.wav,bestK_by_clean_consistency,oracle_reference,clean,2,0.7900062799453735,87,"[85, 48]",42
+realistic_selected,p239,p239_s000,data/processed/sessions_v3/vctk/test/session_p239_s000.wav,bestK_by_clean_consistency,oracle_reference,clean,4,0.8421136140823364,87,"[85, 48, 63, 74]",42
+realistic_selected,p239,p239_s000,data/processed/sessions_v3/vctk/test/session_p239_s000.wav,bestK_by_clean_consistency,oracle_reference,clean,8,0.8905414342880249,87,"[85, 48, 63, 74, 31, 23, 56, 8]",42
+realistic_selected,p239,p239_s000,data/processed/sessions_v3/vctk/test/session_p239_s000.wav,bestK_by_clean_consistency,oracle_reference,clean,16,0.9048517346382141,87,"[85, 48, 63, 14, 23, 31, 6, 75, 19, 40, 47, 82, 59, 30, 71, 67]",42
+realistic_selected,p239,p239_s001,data/processed/sessions_v3/vctk/test/session_p239_s001.wav,random_K,realistic,none,1,0.5743716955184937,91,[76],42
+realistic_selected,p239,p239_s001,data/processed/sessions_v3/vctk/test/session_p239_s001.wav,random_K,realistic,none,2,0.6691944003105164,91,"[59, 67]",42
+realistic_selected,p239,p239_s001,data/processed/sessions_v3/vctk/test/session_p239_s001.wav,random_K,realistic,none,4,0.7712526321411133,91,"[32, 70, 1, 87]",42
+realistic_selected,p239,p239_s001,data/processed/sessions_v3/vctk/test/session_p239_s001.wav,random_K,realistic,none,8,0.8375078439712524,91,"[14, 87, 68, 34, 82, 43, 37, 55]",42
+realistic_selected,p239,p239_s001,data/processed/sessions_v3/vctk/test/session_p239_s001.wav,random_K,realistic,none,16,0.8903228044509888,91,"[20, 58, 0, 33, 64, 22, 13, 80, 38, 81, 77, 25, 19, 47, 69, 67]",42
+realistic_selected,p239,p239_s001,data/processed/sessions_v3/vctk/test/session_p239_s001.wav,bestK_by_self_consistency,realistic,tele_defended,1,0.6890864968299866,91,[37],42
+realistic_selected,p239,p239_s001,data/processed/sessions_v3/vctk/test/session_p239_s001.wav,bestK_by_self_consistency,realistic,tele_defended,2,0.8038762807846069,91,"[37, 78]",42
+realistic_selected,p239,p239_s001,data/processed/sessions_v3/vctk/test/session_p239_s001.wav,bestK_by_self_consistency,realistic,tele_defended,4,0.8788343667984009,91,"[37, 78, 17, 64]",42
+realistic_selected,p239,p239_s001,data/processed/sessions_v3/vctk/test/session_p239_s001.wav,bestK_by_self_consistency,realistic,tele_defended,8,0.8976852297782898,91,"[37, 78, 17, 64, 50, 69, 28, 84]",42
+realistic_selected,p239,p239_s001,data/processed/sessions_v3/vctk/test/session_p239_s001.wav,bestK_by_self_consistency,realistic,tele_defended,16,0.9188763499259949,91,"[37, 78, 17, 64, 50, 69, 28, 84, 62, 1, 44, 57, 15, 72, 36, 14]",42
+realistic_selected,p239,p239_s001,data/processed/sessions_v3/vctk/test/session_p239_s001.wav,bestK_by_clean_consistency,oracle_reference,clean,1,0.7139837741851807,91,[39],42
+realistic_selected,p239,p239_s001,data/processed/sessions_v3/vctk/test/session_p239_s001.wav,bestK_by_clean_consistency,oracle_reference,clean,2,0.8050560355186462,91,"[39, 11]",42
+realistic_selected,p239,p239_s001,data/processed/sessions_v3/vctk/test/session_p239_s001.wav,bestK_by_clean_consistency,oracle_reference,clean,4,0.8580101728439331,91,"[39, 25, 11, 48]",42
+realistic_selected,p239,p239_s001,data/processed/sessions_v3/vctk/test/session_p239_s001.wav,bestK_by_clean_consistency,oracle_reference,clean,8,0.8777603507041931,91,"[39, 25, 11, 49, 1, 28, 10, 72]",42
+realistic_selected,p239,p239_s001,data/processed/sessions_v3/vctk/test/session_p239_s001.wav,bestK_by_clean_consistency,oracle_reference,clean,16,0.9098894596099854,91,"[39, 25, 11, 64, 29, 69, 63, 0, 59, 5, 73, 17, 36, 79, 66, 20]",42
+realistic_selected,p239,p239_s002,data/processed/sessions_v3/vctk/test/session_p239_s002.wav,random_K,realistic,none,1,0.2667580842971802,93,[0],42
+realistic_selected,p239,p239_s002,data/processed/sessions_v3/vctk/test/session_p239_s002.wav,random_K,realistic,none,2,0.7174372673034668,93,"[76, 41]",42
+realistic_selected,p239,p239_s002,data/processed/sessions_v3/vctk/test/session_p239_s002.wav,random_K,realistic,none,4,0.7408770322799683,93,"[62, 2, 14, 46]",42
+realistic_selected,p239,p239_s002,data/processed/sessions_v3/vctk/test/session_p239_s002.wav,random_K,realistic,none,8,0.8487846851348877,93,"[39, 30, 7, 72, 10, 62, 8, 68]",42
+realistic_selected,p239,p239_s002,data/processed/sessions_v3/vctk/test/session_p239_s002.wav,random_K,realistic,none,16,0.8724609613418579,93,"[16, 84, 60, 70, 21, 33, 67, 77, 54, 27, 69, 88, 25, 91, 39, 51]",42
+realistic_selected,p239,p239_s002,data/processed/sessions_v3/vctk/test/session_p239_s002.wav,bestK_by_self_consistency,realistic,tele_defended,1,0.7548736333847046,93,[85],42
+realistic_selected,p239,p239_s002,data/processed/sessions_v3/vctk/test/session_p239_s002.wav,bestK_by_self_consistency,realistic,tele_defended,2,0.8245880603790283,93,"[85, 52]",42
+realistic_selected,p239,p239_s002,data/processed/sessions_v3/vctk/test/session_p239_s002.wav,bestK_by_self_consistency,realistic,tele_defended,4,0.8607239127159119,93,"[85, 52, 9, 18]",42
+realistic_selected,p239,p239_s002,data/processed/sessions_v3/vctk/test/session_p239_s002.wav,bestK_by_self_consistency,realistic,tele_defended,8,0.8890355229377747,93,"[85, 52, 9, 18, 47, 34, 27, 78]",42
+realistic_selected,p239,p239_s002,data/processed/sessions_v3/vctk/test/session_p239_s002.wav,bestK_by_self_consistency,realistic,tele_defended,16,0.9104868173599243,93,"[85, 52, 9, 18, 47, 34, 27, 78, 37, 71, 75, 10, 63, 58, 92, 25]",42
+realistic_selected,p239,p239_s002,data/processed/sessions_v3/vctk/test/session_p239_s002.wav,bestK_by_clean_consistency,oracle_reference,clean,1,0.7548736333847046,93,[85],42
+realistic_selected,p239,p239_s002,data/processed/sessions_v3/vctk/test/session_p239_s002.wav,bestK_by_clean_consistency,oracle_reference,clean,2,0.8058394193649292,93,"[85, 17]",42
+realistic_selected,p239,p239_s002,data/processed/sessions_v3/vctk/test/session_p239_s002.wav,bestK_by_clean_consistency,oracle_reference,clean,4,0.8606153726577759,93,"[85, 52, 16, 37]",42
+realistic_selected,p239,p239_s002,data/processed/sessions_v3/vctk/test/session_p239_s002.wav,bestK_by_clean_consistency,oracle_reference,clean,8,0.8984360694885254,93,"[85, 52, 9, 18, 37, 72, 77, 60]",42
+realistic_selected,p239,p239_s002,data/processed/sessions_v3/vctk/test/session_p239_s002.wav,bestK_by_clean_consistency,oracle_reference,clean,16,0.9137778878211975,93,"[85, 52, 9, 78, 34, 60, 67, 3, 37, 17, 26, 68, 7, 75, 47, 79]",42
+realistic_selected,p240,p240_s000,data/processed/sessions_v3/vctk/test/session_p240_s000.wav,random_K,realistic,none,1,0.6586583852767944,91,[85],42
+realistic_selected,p240,p240_s000,data/processed/sessions_v3/vctk/test/session_p240_s000.wav,random_K,realistic,none,2,0.6934410929679871,91,"[83, 47]",42
+realistic_selected,p240,p240_s000,data/processed/sessions_v3/vctk/test/session_p240_s000.wav,random_K,realistic,none,4,0.7500616312026978,91,"[56, 66, 57, 15]",42
+realistic_selected,p240,p240_s000,data/processed/sessions_v3/vctk/test/session_p240_s000.wav,random_K,realistic,none,8,0.8408971428871155,91,"[31, 28, 8, 43, 2, 75, 70, 29]",42
+realistic_selected,p240,p240_s000,data/processed/sessions_v3/vctk/test/session_p240_s000.wav,random_K,realistic,none,16,0.8854210376739502,91,"[75, 28, 0, 9, 90, 80, 7, 29, 8, 4, 42, 65, 30, 35, 85, 62]",42
+realistic_selected,p240,p240_s000,data/processed/sessions_v3/vctk/test/session_p240_s000.wav,bestK_by_self_consistency,realistic,tele_defended,1,0.6851261854171753,91,[88],42
+realistic_selected,p240,p240_s000,data/processed/sessions_v3/vctk/test/session_p240_s000.wav,bestK_by_self_consistency,realistic,tele_defended,2,0.7630531191825867,91,"[88, 39]",42
+realistic_selected,p240,p240_s000,data/processed/sessions_v3/vctk/test/session_p240_s000.wav,bestK_by_self_consistency,realistic,tele_defended,4,0.8572609424591064,91,"[88, 39, 70, 78]",42
+realistic_selected,p240,p240_s000,data/processed/sessions_v3/vctk/test/session_p240_s000.wav,bestK_by_self_consistency,realistic,tele_defended,8,0.9123575687408447,91,"[88, 39, 70, 78, 62, 11, 50, 17]",42
+realistic_selected,p240,p240_s000,data/processed/sessions_v3/vctk/test/session_p240_s000.wav,bestK_by_self_consistency,realistic,tele_defended,16,0.9280339479446411,91,"[88, 39, 70, 78, 62, 11, 50, 17, 25, 8, 35, 55, 72, 46, 84, 0]",42
+realistic_selected,p240,p240_s000,data/processed/sessions_v3/vctk/test/session_p240_s000.wav,bestK_by_clean_consistency,oracle_reference,clean,1,0.6851261854171753,91,[88],42
+realistic_selected,p240,p240_s000,data/processed/sessions_v3/vctk/test/session_p240_s000.wav,bestK_by_clean_consistency,oracle_reference,clean,2,0.8031492233276367,91,"[88, 60]",42
+realistic_selected,p240,p240_s000,data/processed/sessions_v3/vctk/test/session_p240_s000.wav,bestK_by_clean_consistency,oracle_reference,clean,4,0.8450783491134644,91,"[88, 66, 60, 69]",42
+realistic_selected,p240,p240_s000,data/processed/sessions_v3/vctk/test/session_p240_s000.wav,bestK_by_clean_consistency,oracle_reference,clean,8,0.8876550197601318,91,"[88, 66, 60, 54, 69, 39, 83, 50]",42
+realistic_selected,p240,p240_s000,data/processed/sessions_v3/vctk/test/session_p240_s000.wav,bestK_by_clean_consistency,oracle_reference,clean,16,0.9178959131240845,91,"[88, 66, 60, 5, 51, 74, 65, 0, 25, 34, 55, 82, 38, 48, 12, 7]",42
+realistic_selected,p240,p240_s001,data/processed/sessions_v3/vctk/test/session_p240_s001.wav,random_K,realistic,none,1,0.2807386815547943,95,[27],42
+realistic_selected,p240,p240_s001,data/processed/sessions_v3/vctk/test/session_p240_s001.wav,random_K,realistic,none,2,0.7679359912872314,95,"[69, 16]",42
+realistic_selected,p240,p240_s001,data/processed/sessions_v3/vctk/test/session_p240_s001.wav,random_K,realistic,none,4,0.829418420791626,95,"[92, 73, 60, 31]",42
+realistic_selected,p240,p240_s001,data/processed/sessions_v3/vctk/test/session_p240_s001.wav,random_K,realistic,none,8,0.8197465538978577,95,"[60, 52, 24, 12, 84, 55, 45, 54]",42
+realistic_selected,p240,p240_s001,data/processed/sessions_v3/vctk/test/session_p240_s001.wav,random_K,realistic,none,16,0.9041092991828918,95,"[52, 59, 93, 6, 86, 83, 82, 12, 7, 51, 43, 13, 31, 24, 68, 57]",42
+realistic_selected,p240,p240_s001,data/processed/sessions_v3/vctk/test/session_p240_s001.wav,bestK_by_self_consistency,realistic,tele_defended,1,0.7061183452606201,95,[91],42
+realistic_selected,p240,p240_s001,data/processed/sessions_v3/vctk/test/session_p240_s001.wav,bestK_by_self_consistency,realistic,tele_defended,2,0.8339917063713074,95,"[91, 71]",42
+realistic_selected,p240,p240_s001,data/processed/sessions_v3/vctk/test/session_p240_s001.wav,bestK_by_self_consistency,realistic,tele_defended,4,0.8847662210464478,95,"[91, 71, 25, 76]",42
+realistic_selected,p240,p240_s001,data/processed/sessions_v3/vctk/test/session_p240_s001.wav,bestK_by_self_consistency,realistic,tele_defended,8,0.9175910949707031,95,"[91, 71, 25, 76, 54, 6, 36, 68]",42
+realistic_selected,p240,p240_s001,data/processed/sessions_v3/vctk/test/session_p240_s001.wav,bestK_by_self_consistency,realistic,tele_defended,16,0.9389335513114929,95,"[91, 71, 25, 76, 54, 6, 36, 68, 11, 74, 2, 89, 65, 57, 51, 40]",42
+realistic_selected,p240,p240_s001,data/processed/sessions_v3/vctk/test/session_p240_s001.wav,bestK_by_clean_consistency,oracle_reference,clean,1,0.7061183452606201,95,[91],42
+realistic_selected,p240,p240_s001,data/processed/sessions_v3/vctk/test/session_p240_s001.wav,bestK_by_clean_consistency,oracle_reference,clean,2,0.8188976049423218,95,"[91, 81]",42
+realistic_selected,p240,p240_s001,data/processed/sessions_v3/vctk/test/session_p240_s001.wav,bestK_by_clean_consistency,oracle_reference,clean,4,0.8808153867721558,95,"[91, 71, 24, 36]",42
+realistic_selected,p240,p240_s001,data/processed/sessions_v3/vctk/test/session_p240_s001.wav,bestK_by_clean_consistency,oracle_reference,clean,8,0.9075698852539062,95,"[91, 71, 24, 85, 6, 36, 65, 90]",42
+realistic_selected,p240,p240_s001,data/processed/sessions_v3/vctk/test/session_p240_s001.wav,bestK_by_clean_consistency,oracle_reference,clean,16,0.9329243898391724,95,"[91, 71, 24, 85, 4, 10, 38, 0, 57, 65, 89, 7, 43, 79, 35, 83]",42
+realistic_selected,p240,p240_s002,data/processed/sessions_v3/vctk/test/session_p240_s002.wav,random_K,realistic,none,1,0.5542794466018677,102,[17],42
+realistic_selected,p240,p240_s002,data/processed/sessions_v3/vctk/test/session_p240_s002.wav,random_K,realistic,none,2,0.6993425488471985,102,"[54, 23]",42
+realistic_selected,p240,p240_s002,data/processed/sessions_v3/vctk/test/session_p240_s002.wav,random_K,realistic,none,4,0.7512309551239014,102,"[35, 59, 31, 9]",42
+realistic_selected,p240,p240_s002,data/processed/sessions_v3/vctk/test/session_p240_s002.wav,random_K,realistic,none,8,0.8057932257652283,102,"[56, 70, 12, 6, 83, 69, 1, 11]",42
+realistic_selected,p240,p240_s002,data/processed/sessions_v3/vctk/test/session_p240_s002.wav,random_K,realistic,none,16,0.9086734056472778,102,"[96, 30, 21, 52, 62, 61, 27, 51, 7, 48, 0, 49, 33, 100, 58, 36]",42
+realistic_selected,p240,p240_s002,data/processed/sessions_v3/vctk/test/session_p240_s002.wav,bestK_by_self_consistency,realistic,tele_defended,1,0.7156370878219604,102,[1],42
+realistic_selected,p240,p240_s002,data/processed/sessions_v3/vctk/test/session_p240_s002.wav,bestK_by_self_consistency,realistic,tele_defended,2,0.8362967371940613,102,"[1, 98]",42
+realistic_selected,p240,p240_s002,data/processed/sessions_v3/vctk/test/session_p240_s002.wav,bestK_by_self_consistency,realistic,tele_defended,4,0.8865602016448975,102,"[1, 98, 75, 48]",42
+realistic_selected,p240,p240_s002,data/processed/sessions_v3/vctk/test/session_p240_s002.wav,bestK_by_self_consistency,realistic,tele_defended,8,0.9202768802642822,102,"[1, 98, 75, 48, 93, 71, 35, 52]",42
+realistic_selected,p240,p240_s002,data/processed/sessions_v3/vctk/test/session_p240_s002.wav,bestK_by_self_consistency,realistic,tele_defended,16,0.9413907527923584,102,"[1, 98, 75, 48, 93, 71, 35, 52, 84, 13, 29, 95, 45, 9, 65, 57]",42
+realistic_selected,p240,p240_s002,data/processed/sessions_v3/vctk/test/session_p240_s002.wav,bestK_by_clean_consistency,oracle_reference,clean,1,0.7156370878219604,102,[1],42
+realistic_selected,p240,p240_s002,data/processed/sessions_v3/vctk/test/session_p240_s002.wav,bestK_by_clean_consistency,oracle_reference,clean,2,0.8362967371940613,102,"[1, 98]",42
+realistic_selected,p240,p240_s002,data/processed/sessions_v3/vctk/test/session_p240_s002.wav,bestK_by_clean_consistency,oracle_reference,clean,4,0.8670679330825806,102,"[1, 98, 48, 36]",42
+realistic_selected,p240,p240_s002,data/processed/sessions_v3/vctk/test/session_p240_s002.wav,bestK_by_clean_consistency,oracle_reference,clean,8,0.9166821241378784,102,"[1, 98, 93, 36, 48, 13, 94, 5]",42
+realistic_selected,p240,p240_s002,data/processed/sessions_v3/vctk/test/session_p240_s002.wav,bestK_by_clean_consistency,oracle_reference,clean,16,0.9339102506637573,102,"[1, 98, 93, 36, 48, 13, 75, 4, 94, 26, 81, 89, 16, 49, 35, 43]",42
+realistic_selected,p244,p244_s000,data/processed/sessions_v3/vctk/test/session_p244_s000.wav,random_K,realistic,none,1,0.6498441696166992,92,[54],42
+realistic_selected,p244,p244_s000,data/processed/sessions_v3/vctk/test/session_p244_s000.wav,random_K,realistic,none,2,0.6379758715629578,92,"[89, 71]",42
+realistic_selected,p244,p244_s000,data/processed/sessions_v3/vctk/test/session_p244_s000.wav,random_K,realistic,none,4,0.7407798171043396,92,"[84, 91, 62, 19]",42
+realistic_selected,p244,p244_s000,data/processed/sessions_v3/vctk/test/session_p244_s000.wav,random_K,realistic,none,8,0.7944437265396118,92,"[24, 37, 27, 7, 74, 69, 40, 6]",42
+realistic_selected,p244,p244_s000,data/processed/sessions_v3/vctk/test/session_p244_s000.wav,random_K,realistic,none,16,0.8443965315818787,92,"[74, 61, 64, 67, 20, 7, 65, 10, 23, 8, 76, 86, 30, 51, 15, 72]",42
+realistic_selected,p244,p244_s000,data/processed/sessions_v3/vctk/test/session_p244_s000.wav,bestK_by_self_consistency,realistic,tele_defended,1,0.7193753123283386,92,[53],42
+realistic_selected,p244,p244_s000,data/processed/sessions_v3/vctk/test/session_p244_s000.wav,bestK_by_self_consistency,realistic,tele_defended,2,0.8133809566497803,92,"[53, 67]",42
+realistic_selected,p244,p244_s000,data/processed/sessions_v3/vctk/test/session_p244_s000.wav,bestK_by_self_consistency,realistic,tele_defended,4,0.8535932302474976,92,"[53, 67, 30, 5]",42
+realistic_selected,p244,p244_s000,data/processed/sessions_v3/vctk/test/session_p244_s000.wav,bestK_by_self_consistency,realistic,tele_defended,8,0.9042525887489319,92,"[53, 67, 30, 5, 15, 9, 72, 34]",42
+realistic_selected,p244,p244_s000,data/processed/sessions_v3/vctk/test/session_p244_s000.wav,bestK_by_self_consistency,realistic,tele_defended,16,0.9315419793128967,92,"[53, 67, 30, 5, 15, 9, 72, 34, 63, 28, 42, 78, 56, 75, 83, 21]",42
+realistic_selected,p244,p244_s000,data/processed/sessions_v3/vctk/test/session_p244_s000.wav,bestK_by_clean_consistency,oracle_reference,clean,1,0.6325897574424744,92,[57],42
+realistic_selected,p244,p244_s000,data/processed/sessions_v3/vctk/test/session_p244_s000.wav,bestK_by_clean_consistency,oracle_reference,clean,2,0.7832311987876892,92,"[57, 53]",42
+realistic_selected,p244,p244_s000,data/processed/sessions_v3/vctk/test/session_p244_s000.wav,bestK_by_clean_consistency,oracle_reference,clean,4,0.8309025168418884,92,"[57, 84, 54, 14]",42
+realistic_selected,p244,p244_s000,data/processed/sessions_v3/vctk/test/session_p244_s000.wav,bestK_by_clean_consistency,oracle_reference,clean,8,0.884801983833313,92,"[57, 84, 54, 72, 2, 33, 68, 14]",42
+realistic_selected,p244,p244_s000,data/processed/sessions_v3/vctk/test/session_p244_s000.wav,bestK_by_clean_consistency,oracle_reference,clean,16,0.9193461537361145,92,"[57, 84, 54, 30, 72, 42, 63, 6, 14, 20, 33, 68, 1, 16, 79, 3]",42
+realistic_selected,p244,p244_s001,data/processed/sessions_v3/vctk/test/session_p244_s001.wav,random_K,realistic,none,1,0.686328649520874,94,[31],42
+realistic_selected,p244,p244_s001,data/processed/sessions_v3/vctk/test/session_p244_s001.wav,random_K,realistic,none,2,0.5474411249160767,94,"[74, 76]",42
+realistic_selected,p244,p244_s001,data/processed/sessions_v3/vctk/test/session_p244_s001.wav,random_K,realistic,none,4,0.7579971551895142,94,"[5, 79, 10, 53]",42
+realistic_selected,p244,p244_s001,data/processed/sessions_v3/vctk/test/session_p244_s001.wav,random_K,realistic,none,8,0.8407025933265686,94,"[84, 74, 72, 66, 40, 33, 26, 85]",42
+realistic_selected,p244,p244_s001,data/processed/sessions_v3/vctk/test/session_p244_s001.wav,random_K,realistic,none,16,0.8968444466590881,94,"[91, 40, 30, 33, 50, 16, 85, 82, 38, 58, 9, 1, 79, 72, 12, 68]",42
+realistic_selected,p244,p244_s001,data/processed/sessions_v3/vctk/test/session_p244_s001.wav,bestK_by_self_consistency,realistic,tele_defended,1,0.6580869555473328,94,[43],42
+realistic_selected,p244,p244_s001,data/processed/sessions_v3/vctk/test/session_p244_s001.wav,bestK_by_self_consistency,realistic,tele_defended,2,0.7769447565078735,94,"[43, 39]",42
+realistic_selected,p244,p244_s001,data/processed/sessions_v3/vctk/test/session_p244_s001.wav,bestK_by_self_consistency,realistic,tele_defended,4,0.8563454747200012,94,"[43, 39, 13, 54]",42
+realistic_selected,p244,p244_s001,data/processed/sessions_v3/vctk/test/session_p244_s001.wav,bestK_by_self_consistency,realistic,tele_defended,8,0.8968517780303955,94,"[43, 39, 13, 54, 65, 2, 73, 36]",42
+realistic_selected,p244,p244_s001,data/processed/sessions_v3/vctk/test/session_p244_s001.wav,bestK_by_self_consistency,realistic,tele_defended,16,0.915755033493042,94,"[43, 39, 13, 54, 65, 2, 73, 36, 68, 24, 17, 50, 9, 87, 77, 33]",42
+realistic_selected,p244,p244_s001,data/processed/sessions_v3/vctk/test/session_p244_s001.wav,bestK_by_clean_consistency,oracle_reference,clean,1,0.679520845413208,94,[32],42
+realistic_selected,p244,p244_s001,data/processed/sessions_v3/vctk/test/session_p244_s001.wav,bestK_by_clean_consistency,oracle_reference,clean,2,0.7661900520324707,94,"[32, 43]",42
+realistic_selected,p244,p244_s001,data/processed/sessions_v3/vctk/test/session_p244_s001.wav,bestK_by_clean_consistency,oracle_reference,clean,4,0.8159545660018921,94,"[32, 43, 15, 11]",42
+realistic_selected,p244,p244_s001,data/processed/sessions_v3/vctk/test/session_p244_s001.wav,bestK_by_clean_consistency,oracle_reference,clean,8,0.8969377875328064,94,"[32, 43, 15, 54, 11, 39, 73, 68]",42
+realistic_selected,p244,p244_s001,data/processed/sessions_v3/vctk/test/session_p244_s001.wav,bestK_by_clean_consistency,oracle_reference,clean,16,0.8970661163330078,94,"[32, 43, 15, 54, 11, 3, 92, 80, 66, 87, 70, 25, 74, 39, 44, 62]",42
+realistic_selected,p244,p244_s002,data/processed/sessions_v3/vctk/test/session_p244_s002.wav,random_K,realistic,none,1,0.6941785216331482,88,[27],42
+realistic_selected,p244,p244_s002,data/processed/sessions_v3/vctk/test/session_p244_s002.wav,random_K,realistic,none,2,0.5972356796264648,88,"[64, 33]",42
+realistic_selected,p244,p244_s002,data/processed/sessions_v3/vctk/test/session_p244_s002.wav,random_K,realistic,none,4,0.6970348358154297,88,"[16, 44, 8, 31]",42
+realistic_selected,p244,p244_s002,data/processed/sessions_v3/vctk/test/session_p244_s002.wav,random_K,realistic,none,8,0.7776917219161987,88,"[47, 36, 20, 56, 69, 38, 78, 83]",42
+realistic_selected,p244,p244_s002,data/processed/sessions_v3/vctk/test/session_p244_s002.wav,random_K,realistic,none,16,0.8233034610748291,88,"[67, 1, 85, 70, 38, 84, 13, 17, 33, 14, 19, 34, 36, 77, 26, 43]",42
+realistic_selected,p244,p244_s002,data/processed/sessions_v3/vctk/test/session_p244_s002.wav,bestK_by_self_consistency,realistic,tele_defended,1,0.6617994904518127,88,[77],42
+realistic_selected,p244,p244_s002,data/processed/sessions_v3/vctk/test/session_p244_s002.wav,bestK_by_self_consistency,realistic,tele_defended,2,0.7675381302833557,88,"[77, 32]",42
+realistic_selected,p244,p244_s002,data/processed/sessions_v3/vctk/test/session_p244_s002.wav,bestK_by_self_consistency,realistic,tele_defended,4,0.8162251710891724,88,"[77, 32, 66, 12]",42
+realistic_selected,p244,p244_s002,data/processed/sessions_v3/vctk/test/session_p244_s002.wav,bestK_by_self_consistency,realistic,tele_defended,8,0.8628518581390381,88,"[77, 32, 66, 12, 26, 18, 38, 28]",42
+realistic_selected,p244,p244_s002,data/processed/sessions_v3/vctk/test/session_p244_s002.wav,bestK_by_self_consistency,realistic,tele_defended,16,0.887441873550415,88,"[77, 32, 66, 12, 26, 18, 38, 28, 83, 74, 49, 8, 87, 80, 23, 70]",42
+realistic_selected,p244,p244_s002,data/processed/sessions_v3/vctk/test/session_p244_s002.wav,bestK_by_clean_consistency,oracle_reference,clean,1,0.6577370762825012,88,[31],42
+realistic_selected,p244,p244_s002,data/processed/sessions_v3/vctk/test/session_p244_s002.wav,bestK_by_clean_consistency,oracle_reference,clean,2,0.7699604034423828,88,"[31, 52]",42
+realistic_selected,p244,p244_s002,data/processed/sessions_v3/vctk/test/session_p244_s002.wav,bestK_by_clean_consistency,oracle_reference,clean,4,0.8274700045585632,88,"[31, 52, 13, 73]",42
+realistic_selected,p244,p244_s002,data/processed/sessions_v3/vctk/test/session_p244_s002.wav,bestK_by_clean_consistency,oracle_reference,clean,8,0.8662755489349365,88,"[31, 52, 13, 34, 72, 27, 39, 78]",42
+realistic_selected,p244,p244_s002,data/processed/sessions_v3/vctk/test/session_p244_s002.wav,bestK_by_clean_consistency,oracle_reference,clean,16,0.8897371292114258,88,"[31, 52, 10, 71, 27, 39, 18, 83, 13, 25, 78, 50, 87, 82, 34, 11]",42
+realistic_selected,p255,p255_s000,data/processed/sessions_v3/vctk/test/session_p255_s000.wav,random_K,realistic,none,1,0.5789142847061157,93,[26],42
+realistic_selected,p255,p255_s000,data/processed/sessions_v3/vctk/test/session_p255_s000.wav,random_K,realistic,none,2,0.6251992583274841,93,"[87, 81]",42
+realistic_selected,p255,p255_s000,data/processed/sessions_v3/vctk/test/session_p255_s000.wav,random_K,realistic,none,4,0.705482006072998,93,"[33, 64, 62, 32]",42
+realistic_selected,p255,p255_s000,data/processed/sessions_v3/vctk/test/session_p255_s000.wav,random_K,realistic,none,8,0.822282075881958,93,"[6, 11, 81, 54, 35, 5, 0, 42]",42
+realistic_selected,p255,p255_s000,data/processed/sessions_v3/vctk/test/session_p255_s000.wav,random_K,realistic,none,16,0.8728211522102356,93,"[16, 81, 33, 20, 56, 70, 90, 54, 71, 1, 14, 9, 88, 19, 69, 4]",42
+realistic_selected,p255,p255_s000,data/processed/sessions_v3/vctk/test/session_p255_s000.wav,bestK_by_self_consistency,realistic,tele_defended,1,0.6408896446228027,93,[90],42
+realistic_selected,p255,p255_s000,data/processed/sessions_v3/vctk/test/session_p255_s000.wav,bestK_by_self_consistency,realistic,tele_defended,2,0.7497711181640625,93,"[90, 69]",42
+realistic_selected,p255,p255_s000,data/processed/sessions_v3/vctk/test/session_p255_s000.wav,bestK_by_self_consistency,realistic,tele_defended,4,0.8054234981536865,93,"[90, 69, 57, 18]",42
+realistic_selected,p255,p255_s000,data/processed/sessions_v3/vctk/test/session_p255_s000.wav,bestK_by_self_consistency,realistic,tele_defended,8,0.855891764163971,93,"[90, 69, 57, 18, 48, 22, 4, 27]",42
+realistic_selected,p255,p255_s000,data/processed/sessions_v3/vctk/test/session_p255_s000.wav,bestK_by_self_consistency,realistic,tele_defended,16,0.8828529119491577,93,"[90, 69, 57, 18, 48, 22, 4, 27, 78, 63, 41, 5, 67, 52, 73, 37]",42
+realistic_selected,p255,p255_s000,data/processed/sessions_v3/vctk/test/session_p255_s000.wav,bestK_by_clean_consistency,oracle_reference,clean,1,0.6251115798950195,93,[69],42
+realistic_selected,p255,p255_s000,data/processed/sessions_v3/vctk/test/session_p255_s000.wav,bestK_by_clean_consistency,oracle_reference,clean,2,0.7497711181640625,93,"[69, 90]",42
+realistic_selected,p255,p255_s000,data/processed/sessions_v3/vctk/test/session_p255_s000.wav,bestK_by_clean_consistency,oracle_reference,clean,4,0.819955587387085,93,"[69, 90, 58, 39]",42
+realistic_selected,p255,p255_s000,data/processed/sessions_v3/vctk/test/session_p255_s000.wav,bestK_by_clean_consistency,oracle_reference,clean,8,0.868584394454956,93,"[69, 90, 58, 39, 24, 8, 68, 15]",42
+realistic_selected,p255,p255_s000,data/processed/sessions_v3/vctk/test/session_p255_s000.wav,bestK_by_clean_consistency,oracle_reference,clean,16,0.8910958170890808,93,"[69, 90, 58, 9, 24, 38, 15, 74, 80, 68, 52, 40, 91, 27, 6, 32]",42
+realistic_selected,p255,p255_s001,data/processed/sessions_v3/vctk/test/session_p255_s001.wav,random_K,realistic,none,1,0.4197556972503662,92,[47],42
+realistic_selected,p255,p255_s001,data/processed/sessions_v3/vctk/test/session_p255_s001.wav,random_K,realistic,none,2,0.5981557369232178,92,"[74, 70]",42
+realistic_selected,p255,p255_s001,data/processed/sessions_v3/vctk/test/session_p255_s001.wav,random_K,realistic,none,4,0.7631590962409973,92,"[18, 55, 16, 5]",42
+realistic_selected,p255,p255_s001,data/processed/sessions_v3/vctk/test/session_p255_s001.wav,random_K,realistic,none,8,0.7484217882156372,92,"[39, 46, 5, 45, 26, 87, 31, 85]",42
+realistic_selected,p255,p255_s001,data/processed/sessions_v3/vctk/test/session_p255_s001.wav,random_K,realistic,none,16,0.8387078046798706,92,"[13, 45, 71, 52, 79, 19, 30, 20, 22, 3, 42, 85, 31, 34, 89, 48]",42
+realistic_selected,p255,p255_s001,data/processed/sessions_v3/vctk/test/session_p255_s001.wav,bestK_by_self_consistency,realistic,tele_defended,1,0.5926240682601929,92,[85],42
+realistic_selected,p255,p255_s001,data/processed/sessions_v3/vctk/test/session_p255_s001.wav,bestK_by_self_consistency,realistic,tele_defended,2,0.729394257068634,92,"[85, 17]",42
+realistic_selected,p255,p255_s001,data/processed/sessions_v3/vctk/test/session_p255_s001.wav,bestK_by_self_consistency,realistic,tele_defended,4,0.8302252292633057,92,"[85, 17, 57, 11]",42
+realistic_selected,p255,p255_s001,data/processed/sessions_v3/vctk/test/session_p255_s001.wav,bestK_by_self_consistency,realistic,tele_defended,8,0.8650634288787842,92,"[85, 17, 57, 11, 35, 49, 54, 60]",42
+realistic_selected,p255,p255_s001,data/processed/sessions_v3/vctk/test/session_p255_s001.wav,bestK_by_self_consistency,realistic,tele_defended,16,0.8805767297744751,92,"[85, 17, 57, 11, 35, 49, 54, 60, 73, 26, 7, 66, 72, 30, 80, 20]",42
+realistic_selected,p255,p255_s001,data/processed/sessions_v3/vctk/test/session_p255_s001.wav,bestK_by_clean_consistency,oracle_reference,clean,1,0.5962262153625488,92,[59],42
+realistic_selected,p255,p255_s001,data/processed/sessions_v3/vctk/test/session_p255_s001.wav,bestK_by_clean_consistency,oracle_reference,clean,2,0.6883523464202881,92,"[59, 33]",42
+realistic_selected,p255,p255_s001,data/processed/sessions_v3/vctk/test/session_p255_s001.wav,bestK_by_clean_consistency,oracle_reference,clean,4,0.7726887464523315,92,"[59, 33, 65, 85]",42
+realistic_selected,p255,p255_s001,data/processed/sessions_v3/vctk/test/session_p255_s001.wav,bestK_by_clean_consistency,oracle_reference,clean,8,0.840764045715332,92,"[59, 33, 48, 66, 84, 71, 11, 27]",42
+realistic_selected,p255,p255_s001,data/processed/sessions_v3/vctk/test/session_p255_s001.wav,bestK_by_clean_consistency,oracle_reference,clean,16,0.8721848130226135,92,"[59, 33, 48, 66, 84, 71, 19, 55, 11, 34, 4, 25, 52, 80, 30, 64]",42
+realistic_selected,p255,p255_s002,data/processed/sessions_v3/vctk/test/session_p255_s002.wav,random_K,realistic,none,1,0.5615823864936829,94,[4],42
+realistic_selected,p255,p255_s002,data/processed/sessions_v3/vctk/test/session_p255_s002.wav,random_K,realistic,none,2,0.6809421181678772,94,"[60, 28]",42
+realistic_selected,p255,p255_s002,data/processed/sessions_v3/vctk/test/session_p255_s002.wav,random_K,realistic,none,4,0.7325645685195923,94,"[25, 58, 44, 39]",42
+realistic_selected,p255,p255_s002,data/processed/sessions_v3/vctk/test/session_p255_s002.wav,random_K,realistic,none,8,0.8190688490867615,94,"[29, 28, 3, 84, 24, 51, 42, 35]",42
+realistic_selected,p255,p255_s002,data/processed/sessions_v3/vctk/test/session_p255_s002.wav,random_K,realistic,none,16,0.8604700565338135,94,"[8, 35, 44, 82, 65, 51, 86, 68, 42, 3, 14, 33, 22, 74, 4, 13]",42
+realistic_selected,p255,p255_s002,data/processed/sessions_v3/vctk/test/session_p255_s002.wav,bestK_by_self_consistency,realistic,tele_defended,1,0.60247802734375,94,[50],42
+realistic_selected,p255,p255_s002,data/processed/sessions_v3/vctk/test/session_p255_s002.wav,bestK_by_self_consistency,realistic,tele_defended,2,0.7576549053192139,94,"[50, 56]",42
+realistic_selected,p255,p255_s002,data/processed/sessions_v3/vctk/test/session_p255_s002.wav,bestK_by_self_consistency,realistic,tele_defended,4,0.8218997716903687,94,"[50, 56, 19, 79]",42
+realistic_selected,p255,p255_s002,data/processed/sessions_v3/vctk/test/session_p255_s002.wav,bestK_by_self_consistency,realistic,tele_defended,8,0.861994206905365,94,"[50, 56, 19, 79, 33, 61, 23, 1]",42
+realistic_selected,p255,p255_s002,data/processed/sessions_v3/vctk/test/session_p255_s002.wav,bestK_by_self_consistency,realistic,tele_defended,16,0.8887465000152588,94,"[50, 56, 19, 79, 33, 61, 23, 1, 10, 84, 16, 86, 41, 91, 68, 29]",42
+realistic_selected,p255,p255_s002,data/processed/sessions_v3/vctk/test/session_p255_s002.wav,bestK_by_clean_consistency,oracle_reference,clean,1,0.5600769519805908,94,[39],42
+realistic_selected,p255,p255_s002,data/processed/sessions_v3/vctk/test/session_p255_s002.wav,bestK_by_clean_consistency,oracle_reference,clean,2,0.7237422466278076,94,"[39, 56]",42
+realistic_selected,p255,p255_s002,data/processed/sessions_v3/vctk/test/session_p255_s002.wav,bestK_by_clean_consistency,oracle_reference,clean,4,0.8268980979919434,94,"[39, 56, 80, 50]",42
+realistic_selected,p255,p255_s002,data/processed/sessions_v3/vctk/test/session_p255_s002.wav,bestK_by_clean_consistency,oracle_reference,clean,8,0.8571890592575073,94,"[39, 56, 80, 50, 33, 17, 57, 81]",42
+realistic_selected,p255,p255_s002,data/processed/sessions_v3/vctk/test/session_p255_s002.wav,bestK_by_clean_consistency,oracle_reference,clean,16,0.8906038999557495,94,"[39, 28, 62, 87, 33, 80, 89, 51, 4, 23, 93, 18, 74, 53, 13, 90]",42
+realistic_selected,p258,p258_s000,data/processed/sessions_v3/vctk/test/session_p258_s000.wav,random_K,realistic,none,1,0.5754408836364746,89,[76],42
+realistic_selected,p258,p258_s000,data/processed/sessions_v3/vctk/test/session_p258_s000.wav,random_K,realistic,none,2,0.7160288691520691,89,"[55, 44]",42
+realistic_selected,p258,p258_s000,data/processed/sessions_v3/vctk/test/session_p258_s000.wav,random_K,realistic,none,4,0.8522356748580933,89,"[40, 55, 77, 65]",42
+realistic_selected,p258,p258_s000,data/processed/sessions_v3/vctk/test/session_p258_s000.wav,random_K,realistic,none,8,0.8721667528152466,89,"[14, 49, 73, 24, 32, 5, 55, 0]",42
+realistic_selected,p258,p258_s000,data/processed/sessions_v3/vctk/test/session_p258_s000.wav,random_K,realistic,none,16,0.8984140157699585,89,"[66, 68, 87, 85, 25, 46, 55, 8, 42, 79, 40, 84, 15, 38, 64, 39]",42
+realistic_selected,p258,p258_s000,data/processed/sessions_v3/vctk/test/session_p258_s000.wav,bestK_by_self_consistency,realistic,tele_defended,1,0.6971756815910339,89,[5],42
+realistic_selected,p258,p258_s000,data/processed/sessions_v3/vctk/test/session_p258_s000.wav,bestK_by_self_consistency,realistic,tele_defended,2,0.7856156826019287,89,"[5, 44]",42
+realistic_selected,p258,p258_s000,data/processed/sessions_v3/vctk/test/session_p258_s000.wav,bestK_by_self_consistency,realistic,tele_defended,4,0.8519988656044006,89,"[5, 44, 51, 40]",42
+realistic_selected,p258,p258_s000,data/processed/sessions_v3/vctk/test/session_p258_s000.wav,bestK_by_self_consistency,realistic,tele_defended,8,0.9073135852813721,89,"[5, 44, 51, 40, 62, 15, 76, 37]",42
+realistic_selected,p258,p258_s000,data/processed/sessions_v3/vctk/test/session_p258_s000.wav,bestK_by_self_consistency,realistic,tele_defended,16,0.9229297637939453,89,"[5, 44, 51, 40, 62, 15, 76, 37, 79, 86, 56, 71, 27, 23, 65, 53]",42
+realistic_selected,p258,p258_s000,data/processed/sessions_v3/vctk/test/session_p258_s000.wav,bestK_by_clean_consistency,oracle_reference,clean,1,0.6971756815910339,89,[5],42
+realistic_selected,p258,p258_s000,data/processed/sessions_v3/vctk/test/session_p258_s000.wav,bestK_by_clean_consistency,oracle_reference,clean,2,0.7933192849159241,89,"[5, 15]",42
+realistic_selected,p258,p258_s000,data/processed/sessions_v3/vctk/test/session_p258_s000.wav,bestK_by_clean_consistency,oracle_reference,clean,4,0.8419145345687866,89,"[5, 42, 63, 85]",42
+realistic_selected,p258,p258_s000,data/processed/sessions_v3/vctk/test/session_p258_s000.wav,bestK_by_clean_consistency,oracle_reference,clean,8,0.8898090124130249,89,"[5, 44, 85, 16, 63, 40, 70, 88]",42
+realistic_selected,p258,p258_s000,data/processed/sessions_v3/vctk/test/session_p258_s000.wav,bestK_by_clean_consistency,oracle_reference,clean,16,0.9131076335906982,89,"[5, 44, 85, 16, 77, 63, 40, 71, 49, 57, 88, 32, 67, 2, 76, 79]",42
+realistic_selected,p258,p258_s001,data/processed/sessions_v3/vctk/test/session_p258_s001.wav,random_K,realistic,none,1,0.5337309837341309,98,[85],42
+realistic_selected,p258,p258_s001,data/processed/sessions_v3/vctk/test/session_p258_s001.wav,random_K,realistic,none,2,0.7732027769088745,98,"[52, 41]",42
+realistic_selected,p258,p258_s001,data/processed/sessions_v3/vctk/test/session_p258_s001.wav,random_K,realistic,none,4,0.799849808216095,98,"[51, 89, 37, 70]",42
+realistic_selected,p258,p258_s001,data/processed/sessions_v3/vctk/test/session_p258_s001.wav,random_K,realistic,none,8,0.8636155128479004,98,"[16, 24, 53, 85, 48, 86, 95, 22]",42
+realistic_selected,p258,p258_s001,data/processed/sessions_v3/vctk/test/session_p258_s001.wav,random_K,realistic,none,16,0.9043751955032349,98,"[78, 72, 38, 51, 70, 0, 36, 26, 55, 74, 77, 83, 41, 59, 56, 86]",42
+realistic_selected,p258,p258_s001,data/processed/sessions_v3/vctk/test/session_p258_s001.wav,bestK_by_self_consistency,realistic,tele_defended,1,0.6978650093078613,98,[73],42
+realistic_selected,p258,p258_s001,data/processed/sessions_v3/vctk/test/session_p258_s001.wav,bestK_by_self_consistency,realistic,tele_defended,2,0.8066674470901489,98,"[73, 60]",42
+realistic_selected,p258,p258_s001,data/processed/sessions_v3/vctk/test/session_p258_s001.wav,bestK_by_self_consistency,realistic,tele_defended,4,0.8411571979522705,98,"[73, 60, 90, 34]",42
+realistic_selected,p258,p258_s001,data/processed/sessions_v3/vctk/test/session_p258_s001.wav,bestK_by_self_consistency,realistic,tele_defended,8,0.8810067176818848,98,"[73, 60, 90, 34, 93, 12, 19, 42]",42
+realistic_selected,p258,p258_s001,data/processed/sessions_v3/vctk/test/session_p258_s001.wav,bestK_by_self_consistency,realistic,tele_defended,16,0.8997441530227661,98,"[73, 60, 90, 34, 93, 12, 19, 42, 25, 69, 16, 58, 52, 81, 2, 39]",42
+realistic_selected,p258,p258_s001,data/processed/sessions_v3/vctk/test/session_p258_s001.wav,bestK_by_clean_consistency,oracle_reference,clean,1,0.7112740278244019,98,[55],42
+realistic_selected,p258,p258_s001,data/processed/sessions_v3/vctk/test/session_p258_s001.wav,bestK_by_clean_consistency,oracle_reference,clean,2,0.7627472877502441,98,"[55, 88]",42
+realistic_selected,p258,p258_s001,data/processed/sessions_v3/vctk/test/session_p258_s001.wav,bestK_by_clean_consistency,oracle_reference,clean,4,0.8583977222442627,98,"[55, 88, 24, 6]",42
+realistic_selected,p258,p258_s001,data/processed/sessions_v3/vctk/test/session_p258_s001.wav,bestK_by_clean_consistency,oracle_reference,clean,8,0.8969781994819641,98,"[55, 39, 90, 14, 6, 24, 95, 69]",42
+realistic_selected,p258,p258_s001,data/processed/sessions_v3/vctk/test/session_p258_s001.wav,bestK_by_clean_consistency,oracle_reference,clean,16,0.8836963772773743,98,"[55, 39, 3, 69, 97, 32, 6, 44, 21, 87, 59, 13, 17, 40, 92, 90]",42
+realistic_selected,p258,p258_s002,data/processed/sessions_v3/vctk/test/session_p258_s002.wav,random_K,realistic,none,1,0.5842632055282593,97,[27],42
+realistic_selected,p258,p258_s002,data/processed/sessions_v3/vctk/test/session_p258_s002.wav,random_K,realistic,none,2,0.698672890663147,97,"[65, 60]",42
+realistic_selected,p258,p258_s002,data/processed/sessions_v3/vctk/test/session_p258_s002.wav,random_K,realistic,none,4,0.8187364339828491,97,"[94, 21, 84, 10]",42
+realistic_selected,p258,p258_s002,data/processed/sessions_v3/vctk/test/session_p258_s002.wav,random_K,realistic,none,8,0.8296160697937012,97,"[36, 65, 84, 81, 79, 42, 11, 96]",42
+realistic_selected,p258,p258_s002,data/processed/sessions_v3/vctk/test/session_p258_s002.wav,random_K,realistic,none,16,0.8984003663063049,97,"[30, 86, 39, 28, 25, 18, 3, 5, 31, 60, 78, 9, 58, 53, 80, 73]",42
+realistic_selected,p258,p258_s002,data/processed/sessions_v3/vctk/test/session_p258_s002.wav,bestK_by_self_consistency,realistic,tele_defended,1,0.7332457304000854,97,[52],42
+realistic_selected,p258,p258_s002,data/processed/sessions_v3/vctk/test/session_p258_s002.wav,bestK_by_self_consistency,realistic,tele_defended,2,0.8239881992340088,97,"[52, 67]",42
+realistic_selected,p258,p258_s002,data/processed/sessions_v3/vctk/test/session_p258_s002.wav,bestK_by_self_consistency,realistic,tele_defended,4,0.8817358016967773,97,"[52, 67, 10, 63]",42
+realistic_selected,p258,p258_s002,data/processed/sessions_v3/vctk/test/session_p258_s002.wav,bestK_by_self_consistency,realistic,tele_defended,8,0.9187363386154175,97,"[52, 67, 10, 63, 39, 78, 27, 17]",42
+realistic_selected,p258,p258_s002,data/processed/sessions_v3/vctk/test/session_p258_s002.wav,bestK_by_self_consistency,realistic,tele_defended,16,0.914241373538971,97,"[52, 67, 10, 63, 39, 78, 27, 17, 49, 85, 4, 46, 71, 24, 20, 57]",42
+realistic_selected,p258,p258_s002,data/processed/sessions_v3/vctk/test/session_p258_s002.wav,bestK_by_clean_consistency,oracle_reference,clean,1,0.7195313572883606,97,[10],42
+realistic_selected,p258,p258_s002,data/processed/sessions_v3/vctk/test/session_p258_s002.wav,bestK_by_clean_consistency,oracle_reference,clean,2,0.8085963726043701,97,"[10, 96]",42
+realistic_selected,p258,p258_s002,data/processed/sessions_v3/vctk/test/session_p258_s002.wav,bestK_by_clean_consistency,oracle_reference,clean,4,0.8636659383773804,97,"[10, 68, 52, 8]",42
+realistic_selected,p258,p258_s002,data/processed/sessions_v3/vctk/test/session_p258_s002.wav,bestK_by_clean_consistency,oracle_reference,clean,8,0.9054697751998901,97,"[10, 68, 84, 52, 41, 72, 66, 7]",42
+realistic_selected,p258,p258_s002,data/processed/sessions_v3/vctk/test/session_p258_s002.wav,bestK_by_clean_consistency,oracle_reference,clean,16,0.9070388078689575,97,"[10, 68, 84, 52, 79, 73, 8, 66, 30, 93, 0, 39, 36, 25, 14, 53]",42
+realistic_selected,p262,p262_s000,data/processed/sessions_v3/vctk/test/session_p262_s000.wav,random_K,realistic,none,1,0.4653935432434082,91,[24],42
+realistic_selected,p262,p262_s000,data/processed/sessions_v3/vctk/test/session_p262_s000.wav,random_K,realistic,none,2,0.6972755193710327,91,"[89, 49]",42
+realistic_selected,p262,p262_s000,data/processed/sessions_v3/vctk/test/session_p262_s000.wav,random_K,realistic,none,4,0.7493377923965454,91,"[63, 51, 31, 18]",42
+realistic_selected,p262,p262_s000,data/processed/sessions_v3/vctk/test/session_p262_s000.wav,random_K,realistic,none,8,0.8190960884094238,91,"[83, 88, 0, 13, 54, 28, 22, 89]",42
+realistic_selected,p262,p262_s000,data/processed/sessions_v3/vctk/test/session_p262_s000.wav,random_K,realistic,none,16,0.8194043636322021,91,"[66, 59, 6, 71, 31, 15, 58, 17, 85, 67, 76, 40, 56, 78, 64, 54]",42
+realistic_selected,p262,p262_s000,data/processed/sessions_v3/vctk/test/session_p262_s000.wav,bestK_by_self_consistency,realistic,tele_defended,1,0.6601147651672363,91,[72],42
+realistic_selected,p262,p262_s000,data/processed/sessions_v3/vctk/test/session_p262_s000.wav,bestK_by_self_consistency,realistic,tele_defended,2,0.7373878359794617,91,"[72, 50]",42
+realistic_selected,p262,p262_s000,data/processed/sessions_v3/vctk/test/session_p262_s000.wav,bestK_by_self_consistency,realistic,tele_defended,4,0.83479905128479,91,"[72, 50, 36, 14]",42
+realistic_selected,p262,p262_s000,data/processed/sessions_v3/vctk/test/session_p262_s000.wav,bestK_by_self_consistency,realistic,tele_defended,8,0.8679982423782349,91,"[72, 50, 36, 14, 0, 88, 27, 9]",42
+realistic_selected,p262,p262_s000,data/processed/sessions_v3/vctk/test/session_p262_s000.wav,bestK_by_self_consistency,realistic,tele_defended,16,0.892553448677063,91,"[72, 50, 36, 14, 0, 88, 27, 9, 57, 82, 5, 59, 34, 68, 43, 26]",42
+realistic_selected,p262,p262_s000,data/processed/sessions_v3/vctk/test/session_p262_s000.wav,bestK_by_clean_consistency,oracle_reference,clean,1,0.6614992022514343,91,[8],42
+realistic_selected,p262,p262_s000,data/processed/sessions_v3/vctk/test/session_p262_s000.wav,bestK_by_clean_consistency,oracle_reference,clean,2,0.7607388496398926,91,"[8, 50]",42
+realistic_selected,p262,p262_s000,data/processed/sessions_v3/vctk/test/session_p262_s000.wav,bestK_by_clean_consistency,oracle_reference,clean,4,0.7841998934745789,91,"[8, 50, 72, 56]",42
+realistic_selected,p262,p262_s000,data/processed/sessions_v3/vctk/test/session_p262_s000.wav,bestK_by_clean_consistency,oracle_reference,clean,8,0.8633841276168823,91,"[8, 50, 57, 27, 13, 90, 36, 72]",42
+realistic_selected,p262,p262_s000,data/processed/sessions_v3/vctk/test/session_p262_s000.wav,bestK_by_clean_consistency,oracle_reference,clean,16,0.8826612830162048,91,"[8, 50, 78, 71, 13, 27, 6, 57, 81, 35, 69, 23, 85, 30, 14, 9]",42
+realistic_selected,p262,p262_s001,data/processed/sessions_v3/vctk/test/session_p262_s001.wav,random_K,realistic,none,1,0.34721583127975464,89,[70],42
+realistic_selected,p262,p262_s001,data/processed/sessions_v3/vctk/test/session_p262_s001.wav,random_K,realistic,none,2,0.6603784561157227,89,"[57, 20]",42
+realistic_selected,p262,p262_s001,data/processed/sessions_v3/vctk/test/session_p262_s001.wav,random_K,realistic,none,4,0.7343647480010986,89,"[60, 57, 33, 31]",42
+realistic_selected,p262,p262_s001,data/processed/sessions_v3/vctk/test/session_p262_s001.wav,random_K,realistic,none,8,0.7984368205070496,89,"[81, 35, 66, 62, 80, 30, 56, 9]",42
+realistic_selected,p262,p262_s001,data/processed/sessions_v3/vctk/test/session_p262_s001.wav,random_K,realistic,none,16,0.8372377157211304,89,"[36, 30, 34, 42, 40, 69, 10, 17, 19, 29, 49, 88, 27, 8, 53, 52]",42
+realistic_selected,p262,p262_s001,data/processed/sessions_v3/vctk/test/session_p262_s001.wav,bestK_by_self_consistency,realistic,tele_defended,1,0.6050074100494385,89,[52],42
+realistic_selected,p262,p262_s001,data/processed/sessions_v3/vctk/test/session_p262_s001.wav,bestK_by_self_consistency,realistic,tele_defended,2,0.7445457577705383,89,"[52, 59]",42
+realistic_selected,p262,p262_s001,data/processed/sessions_v3/vctk/test/session_p262_s001.wav,bestK_by_self_consistency,realistic,tele_defended,4,0.7871056795120239,89,"[52, 59, 74, 34]",42
+realistic_selected,p262,p262_s001,data/processed/sessions_v3/vctk/test/session_p262_s001.wav,bestK_by_self_consistency,realistic,tele_defended,8,0.8555024862289429,89,"[52, 59, 74, 34, 44, 17, 28, 0]",42
+realistic_selected,p262,p262_s001,data/processed/sessions_v3/vctk/test/session_p262_s001.wav,bestK_by_self_consistency,realistic,tele_defended,16,0.8833401203155518,89,"[52, 59, 74, 34, 44, 17, 28, 0, 83, 8, 82, 12, 62, 47, 22, 87]",42
+realistic_selected,p262,p262_s001,data/processed/sessions_v3/vctk/test/session_p262_s001.wav,bestK_by_clean_consistency,oracle_reference,clean,1,0.5482087731361389,89,[7],42
+realistic_selected,p262,p262_s001,data/processed/sessions_v3/vctk/test/session_p262_s001.wav,bestK_by_clean_consistency,oracle_reference,clean,2,0.7129172086715698,89,"[7, 86]",42
+realistic_selected,p262,p262_s001,data/processed/sessions_v3/vctk/test/session_p262_s001.wav,bestK_by_clean_consistency,oracle_reference,clean,4,0.8395258784294128,89,"[7, 67, 53, 59]",42
+realistic_selected,p262,p262_s001,data/processed/sessions_v3/vctk/test/session_p262_s001.wav,bestK_by_clean_consistency,oracle_reference,clean,8,0.8849005103111267,89,"[7, 67, 53, 59, 44, 34, 51, 85]",42
+realistic_selected,p262,p262_s001,data/processed/sessions_v3/vctk/test/session_p262_s001.wav,bestK_by_clean_consistency,oracle_reference,clean,16,0.9044719338417053,89,"[7, 67, 53, 21, 34, 44, 80, 13, 57, 62, 86, 51, 47, 54, 8, 83]",42
+realistic_selected,p262,p262_s002,data/processed/sessions_v3/vctk/test/session_p262_s002.wav,random_K,realistic,none,1,0.5205228328704834,91,[42],42
+realistic_selected,p262,p262_s002,data/processed/sessions_v3/vctk/test/session_p262_s002.wav,random_K,realistic,none,2,0.6091969013214111,91,"[69, 59]",42
+realistic_selected,p262,p262_s002,data/processed/sessions_v3/vctk/test/session_p262_s002.wav,random_K,realistic,none,4,0.7228261828422546,91,"[53, 7, 26, 49]",42
+realistic_selected,p262,p262_s002,data/processed/sessions_v3/vctk/test/session_p262_s002.wav,random_K,realistic,none,8,0.6888643503189087,91,"[74, 89, 2, 73, 48, 61, 0, 45]",42
+realistic_selected,p262,p262_s002,data/processed/sessions_v3/vctk/test/session_p262_s002.wav,random_K,realistic,none,16,0.8369193077087402,91,"[38, 49, 53, 68, 69, 77, 28, 62, 34, 55, 3, 43, 85, 86, 51, 21]",42
+realistic_selected,p262,p262_s002,data/processed/sessions_v3/vctk/test/session_p262_s002.wav,bestK_by_self_consistency,realistic,tele_defended,1,0.6181162595748901,91,[71],42
+realistic_selected,p262,p262_s002,data/processed/sessions_v3/vctk/test/session_p262_s002.wav,bestK_by_self_consistency,realistic,tele_defended,2,0.7260366678237915,91,"[71, 56]",42
+realistic_selected,p262,p262_s002,data/processed/sessions_v3/vctk/test/session_p262_s002.wav,bestK_by_self_consistency,realistic,tele_defended,4,0.8101441860198975,91,"[71, 56, 17, 5]",42
+realistic_selected,p262,p262_s002,data/processed/sessions_v3/vctk/test/session_p262_s002.wav,bestK_by_self_consistency,realistic,tele_defended,8,0.8426694869995117,91,"[71, 56, 17, 5, 45, 84, 22, 10]",42
+realistic_selected,p262,p262_s002,data/processed/sessions_v3/vctk/test/session_p262_s002.wav,bestK_by_self_consistency,realistic,tele_defended,16,0.8656281232833862,91,"[71, 56, 17, 5, 45, 84, 22, 10, 61, 75, 48, 36, 2, 54, 30, 72]",42
+realistic_selected,p262,p262_s002,data/processed/sessions_v3/vctk/test/session_p262_s002.wav,bestK_by_clean_consistency,oracle_reference,clean,1,0.5928082466125488,91,[20],42
+realistic_selected,p262,p262_s002,data/processed/sessions_v3/vctk/test/session_p262_s002.wav,bestK_by_clean_consistency,oracle_reference,clean,2,0.69591224193573,91,"[20, 72]",42
+realistic_selected,p262,p262_s002,data/processed/sessions_v3/vctk/test/session_p262_s002.wav,bestK_by_clean_consistency,oracle_reference,clean,4,0.7906177043914795,91,"[20, 84, 72, 11]",42
+realistic_selected,p262,p262_s002,data/processed/sessions_v3/vctk/test/session_p262_s002.wav,bestK_by_clean_consistency,oracle_reference,clean,8,0.8383500576019287,91,"[20, 84, 72, 11, 22, 35, 75, 54]",42
+realistic_selected,p262,p262_s002,data/processed/sessions_v3/vctk/test/session_p262_s002.wav,bestK_by_clean_consistency,oracle_reference,clean,16,0.8754640221595764,91,"[20, 34, 59, 84, 11, 22, 29, 42, 54, 75, 71, 56, 80, 88, 17, 49]",42
+realistic_selected,p314,p314_s000,data/processed/sessions_v3/vctk/test/session_p314_s000.wav,random_K,realistic,none,1,0.42254719138145447,82,[59],42
+realistic_selected,p314,p314_s000,data/processed/sessions_v3/vctk/test/session_p314_s000.wav,random_K,realistic,none,2,0.5821651220321655,82,"[16, 79]",42
+realistic_selected,p314,p314_s000,data/processed/sessions_v3/vctk/test/session_p314_s000.wav,random_K,realistic,none,4,0.6332828402519226,82,"[68, 3, 50, 75]",42
+realistic_selected,p314,p314_s000,data/processed/sessions_v3/vctk/test/session_p314_s000.wav,random_K,realistic,none,8,0.7474201917648315,82,"[72, 3, 10, 54, 17, 59, 23, 6]",42
+realistic_selected,p314,p314_s000,data/processed/sessions_v3/vctk/test/session_p314_s000.wav,random_K,realistic,none,16,0.8273532390594482,82,"[33, 48, 41, 27, 58, 79, 43, 80, 35, 53, 32, 10, 60, 2, 6, 44]",42
+realistic_selected,p314,p314_s000,data/processed/sessions_v3/vctk/test/session_p314_s000.wav,bestK_by_self_consistency,realistic,tele_defended,1,0.5790680646896362,82,[58],42
+realistic_selected,p314,p314_s000,data/processed/sessions_v3/vctk/test/session_p314_s000.wav,bestK_by_self_consistency,realistic,tele_defended,2,0.6797366738319397,82,"[58, 7]",42
+realistic_selected,p314,p314_s000,data/processed/sessions_v3/vctk/test/session_p314_s000.wav,bestK_by_self_consistency,realistic,tele_defended,4,0.7573891282081604,82,"[58, 7, 39, 48]",42
+realistic_selected,p314,p314_s000,data/processed/sessions_v3/vctk/test/session_p314_s000.wav,bestK_by_self_consistency,realistic,tele_defended,8,0.8479800224304199,82,"[58, 7, 39, 48, 79, 73, 23, 68]",42
+realistic_selected,p314,p314_s000,data/processed/sessions_v3/vctk/test/session_p314_s000.wav,bestK_by_self_consistency,realistic,tele_defended,16,0.890941858291626,82,"[58, 7, 39, 48, 79, 73, 23, 68, 30, 34, 15, 4, 62, 57, 69, 26]",42
+realistic_selected,p314,p314_s000,data/processed/sessions_v3/vctk/test/session_p314_s000.wav,bestK_by_clean_consistency,oracle_reference,clean,1,0.5934258699417114,82,[57],42
+realistic_selected,p314,p314_s000,data/processed/sessions_v3/vctk/test/session_p314_s000.wav,bestK_by_clean_consistency,oracle_reference,clean,2,0.687930703163147,82,"[57, 7]",42
+realistic_selected,p314,p314_s000,data/processed/sessions_v3/vctk/test/session_p314_s000.wav,bestK_by_clean_consistency,oracle_reference,clean,4,0.7976807355880737,82,"[57, 7, 39, 14]",42
+realistic_selected,p314,p314_s000,data/processed/sessions_v3/vctk/test/session_p314_s000.wav,bestK_by_clean_consistency,oracle_reference,clean,8,0.8524873852729797,82,"[57, 7, 39, 14, 51, 27, 69, 12]",42
+realistic_selected,p314,p314_s000,data/processed/sessions_v3/vctk/test/session_p314_s000.wav,bestK_by_clean_consistency,oracle_reference,clean,16,0.9086767435073853,82,"[57, 7, 39, 79, 11, 26, 68, 62, 51, 35, 20, 15, 30, 69, 61, 6]",42
+realistic_selected,p314,p314_s001,data/processed/sessions_v3/vctk/test/session_p314_s001.wav,random_K,realistic,none,1,0.3943597674369812,99,[28],42
+realistic_selected,p314,p314_s001,data/processed/sessions_v3/vctk/test/session_p314_s001.wav,random_K,realistic,none,2,0.5508326292037964,99,"[83, 8]",42
+realistic_selected,p314,p314_s001,data/processed/sessions_v3/vctk/test/session_p314_s001.wav,random_K,realistic,none,4,0.668949544429779,99,"[83, 5, 96, 3]",42
+realistic_selected,p314,p314_s001,data/processed/sessions_v3/vctk/test/session_p314_s001.wav,random_K,realistic,none,8,0.7797244787216187,99,"[31, 25, 2, 79, 19, 30, 16, 60]",42
+realistic_selected,p314,p314_s001,data/processed/sessions_v3/vctk/test/session_p314_s001.wav,random_K,realistic,none,16,0.8239519000053406,99,"[85, 14, 72, 27, 59, 89, 32, 98, 47, 21, 77, 95, 91, 20, 39, 13]",42
+realistic_selected,p314,p314_s001,data/processed/sessions_v3/vctk/test/session_p314_s001.wav,bestK_by_self_consistency,realistic,tele_defended,1,0.5204312205314636,99,[84],42
+realistic_selected,p314,p314_s001,data/processed/sessions_v3/vctk/test/session_p314_s001.wav,bestK_by_self_consistency,realistic,tele_defended,2,0.6808754205703735,99,"[84, 62]",42
+realistic_selected,p314,p314_s001,data/processed/sessions_v3/vctk/test/session_p314_s001.wav,bestK_by_self_consistency,realistic,tele_defended,4,0.7874600291252136,99,"[84, 62, 37, 75]",42
+realistic_selected,p314,p314_s001,data/processed/sessions_v3/vctk/test/session_p314_s001.wav,bestK_by_self_consistency,realistic,tele_defended,8,0.8292262554168701,99,"[84, 62, 37, 75, 82, 57, 2, 87]",42
+realistic_selected,p314,p314_s001,data/processed/sessions_v3/vctk/test/session_p314_s001.wav,bestK_by_self_consistency,realistic,tele_defended,16,0.8672463893890381,99,"[84, 62, 37, 75, 82, 57, 2, 87, 46, 41, 12, 72, 66, 16, 23, 27]",42
+realistic_selected,p314,p314_s001,data/processed/sessions_v3/vctk/test/session_p314_s001.wav,bestK_by_clean_consistency,oracle_reference,clean,1,0.543810248374939,99,[83],42
+realistic_selected,p314,p314_s001,data/processed/sessions_v3/vctk/test/session_p314_s001.wav,bestK_by_clean_consistency,oracle_reference,clean,2,0.6852166652679443,99,"[83, 75]",42
+realistic_selected,p314,p314_s001,data/processed/sessions_v3/vctk/test/session_p314_s001.wav,bestK_by_clean_consistency,oracle_reference,clean,4,0.7513090372085571,99,"[83, 75, 41, 13]",42
+realistic_selected,p314,p314_s001,data/processed/sessions_v3/vctk/test/session_p314_s001.wav,bestK_by_clean_consistency,oracle_reference,clean,8,0.8173383474349976,99,"[83, 75, 41, 13, 22, 38, 60, 56]",42
+realistic_selected,p314,p314_s001,data/processed/sessions_v3/vctk/test/session_p314_s001.wav,bestK_by_clean_consistency,oracle_reference,clean,16,0.8406904339790344,99,"[83, 75, 88, 41, 22, 17, 59, 98, 13, 30, 85, 38, 5, 96, 74, 48]",42
+realistic_selected,p314,p314_s002,data/processed/sessions_v3/vctk/test/session_p314_s002.wav,random_K,realistic,none,1,0.4972853660583496,83,[74],42
+realistic_selected,p314,p314_s002,data/processed/sessions_v3/vctk/test/session_p314_s002.wav,random_K,realistic,none,2,0.7083790302276611,83,"[3, 39]",42
+realistic_selected,p314,p314_s002,data/processed/sessions_v3/vctk/test/session_p314_s002.wav,random_K,realistic,none,4,0.7728300094604492,83,"[73, 48, 50, 25]",42
+realistic_selected,p314,p314_s002,data/processed/sessions_v3/vctk/test/session_p314_s002.wav,random_K,realistic,none,8,0.8220407962799072,83,"[9, 75, 80, 31, 13, 38, 76, 15]",42
+realistic_selected,p314,p314_s002,data/processed/sessions_v3/vctk/test/session_p314_s002.wav,random_K,realistic,none,16,0.8535184860229492,83,"[72, 5, 44, 68, 54, 47, 8, 64, 43, 1, 53, 62, 13, 55, 46, 58]",42
+realistic_selected,p314,p314_s002,data/processed/sessions_v3/vctk/test/session_p314_s002.wav,bestK_by_self_consistency,realistic,tele_defended,1,0.643568754196167,83,[80],42
+realistic_selected,p314,p314_s002,data/processed/sessions_v3/vctk/test/session_p314_s002.wav,bestK_by_self_consistency,realistic,tele_defended,2,0.7356784343719482,83,"[80, 12]",42
+realistic_selected,p314,p314_s002,data/processed/sessions_v3/vctk/test/session_p314_s002.wav,bestK_by_self_consistency,realistic,tele_defended,4,0.8324903249740601,83,"[80, 12, 57, 3]",42
+realistic_selected,p314,p314_s002,data/processed/sessions_v3/vctk/test/session_p314_s002.wav,bestK_by_self_consistency,realistic,tele_defended,8,0.8667578101158142,83,"[80, 12, 57, 3, 61, 70, 0, 76]",42
+realistic_selected,p314,p314_s002,data/processed/sessions_v3/vctk/test/session_p314_s002.wav,bestK_by_self_consistency,realistic,tele_defended,16,0.8947547674179077,83,"[80, 12, 57, 3, 61, 70, 0, 76, 31, 15, 56, 42, 35, 38, 51, 55]",42
+realistic_selected,p314,p314_s002,data/processed/sessions_v3/vctk/test/session_p314_s002.wav,bestK_by_clean_consistency,oracle_reference,clean,1,0.6454759240150452,83,[3],42
+realistic_selected,p314,p314_s002,data/processed/sessions_v3/vctk/test/session_p314_s002.wav,bestK_by_clean_consistency,oracle_reference,clean,2,0.7561129331588745,83,"[3, 82]",42
+realistic_selected,p314,p314_s002,data/processed/sessions_v3/vctk/test/session_p314_s002.wav,bestK_by_clean_consistency,oracle_reference,clean,4,0.8187048435211182,83,"[3, 82, 51, 14]",42
+realistic_selected,p314,p314_s002,data/processed/sessions_v3/vctk/test/session_p314_s002.wav,bestK_by_clean_consistency,oracle_reference,clean,8,0.8361606597900391,83,"[3, 82, 51, 15, 67, 24, 0, 78]",42
+realistic_selected,p314,p314_s002,data/processed/sessions_v3/vctk/test/session_p314_s002.wav,bestK_by_clean_consistency,oracle_reference,clean,16,0.8966410160064697,83,"[3, 60, 82, 77, 14, 46, 67, 80, 57, 23, 0, 10, 5, 39, 25, 7]",42
+realistic_selected,p326,p326_s000,data/processed/sessions_v3/vctk/test/session_p326_s000.wav,random_K,realistic,none,1,0.6032944321632385,81,[19],42
+realistic_selected,p326,p326_s000,data/processed/sessions_v3/vctk/test/session_p326_s000.wav,random_K,realistic,none,2,0.7717550992965698,81,"[55, 22]",42
+realistic_selected,p326,p326_s000,data/processed/sessions_v3/vctk/test/session_p326_s000.wav,random_K,realistic,none,4,0.8324272632598877,81,"[66, 34, 78, 68]",42
+realistic_selected,p326,p326_s000,data/processed/sessions_v3/vctk/test/session_p326_s000.wav,random_K,realistic,none,8,0.8847489356994629,81,"[61, 59, 55, 75, 34, 41, 31, 11]",42
+realistic_selected,p326,p326_s000,data/processed/sessions_v3/vctk/test/session_p326_s000.wav,random_K,realistic,none,16,0.9199864864349365,81,"[35, 57, 31, 59, 72, 48, 43, 3, 63, 41, 23, 62, 27, 45, 33, 74]",42
+realistic_selected,p326,p326_s000,data/processed/sessions_v3/vctk/test/session_p326_s000.wav,bestK_by_self_consistency,realistic,tele_defended,1,0.7212101221084595,81,[54],42
+realistic_selected,p326,p326_s000,data/processed/sessions_v3/vctk/test/session_p326_s000.wav,bestK_by_self_consistency,realistic,tele_defended,2,0.8100627660751343,81,"[54, 74]",42
+realistic_selected,p326,p326_s000,data/processed/sessions_v3/vctk/test/session_p326_s000.wav,bestK_by_self_consistency,realistic,tele_defended,4,0.8740900754928589,81,"[54, 74, 28, 14]",42
+realistic_selected,p326,p326_s000,data/processed/sessions_v3/vctk/test/session_p326_s000.wav,bestK_by_self_consistency,realistic,tele_defended,8,0.9244834184646606,81,"[54, 74, 28, 14, 18, 56, 2, 34]",42
+realistic_selected,p326,p326_s000,data/processed/sessions_v3/vctk/test/session_p326_s000.wav,bestK_by_self_consistency,realistic,tele_defended,16,0.9498050212860107,81,"[54, 74, 28, 14, 18, 56, 2, 34, 24, 61, 78, 10, 43, 59, 8, 65]",42
+realistic_selected,p326,p326_s000,data/processed/sessions_v3/vctk/test/session_p326_s000.wav,bestK_by_clean_consistency,oracle_reference,clean,1,0.7202925086021423,81,[16],42
+realistic_selected,p326,p326_s000,data/processed/sessions_v3/vctk/test/session_p326_s000.wav,bestK_by_clean_consistency,oracle_reference,clean,2,0.8055394887924194,81,"[16, 63]",42
+realistic_selected,p326,p326_s000,data/processed/sessions_v3/vctk/test/session_p326_s000.wav,bestK_by_clean_consistency,oracle_reference,clean,4,0.8772222399711609,81,"[16, 2, 68, 75]",42
+realistic_selected,p326,p326_s000,data/processed/sessions_v3/vctk/test/session_p326_s000.wav,bestK_by_clean_consistency,oracle_reference,clean,8,0.9193319082260132,81,"[16, 2, 68, 75, 26, 58, 5, 23]",42
+realistic_selected,p326,p326_s000,data/processed/sessions_v3/vctk/test/session_p326_s000.wav,bestK_by_clean_consistency,oracle_reference,clean,16,0.9424403309822083,81,"[16, 18, 55, 75, 28, 69, 2, 13, 26, 58, 9, 46, 24, 62, 78, 6]",42
+realistic_selected,p326,p326_s001,data/processed/sessions_v3/vctk/test/session_p326_s001.wav,random_K,realistic,none,1,0.5775642395019531,73,[35],42
+realistic_selected,p326,p326_s001,data/processed/sessions_v3/vctk/test/session_p326_s001.wav,random_K,realistic,none,2,0.7074762582778931,73,"[35, 71]",42
+realistic_selected,p326,p326_s001,data/processed/sessions_v3/vctk/test/session_p326_s001.wav,random_K,realistic,none,4,0.712726891040802,73,"[1, 66, 24, 10]",42
+realistic_selected,p326,p326_s001,data/processed/sessions_v3/vctk/test/session_p326_s001.wav,random_K,realistic,none,8,0.8658280372619629,73,"[30, 52, 62, 72, 60, 70, 57, 2]",42
+realistic_selected,p326,p326_s001,data/processed/sessions_v3/vctk/test/session_p326_s001.wav,random_K,realistic,none,16,0.9083498120307922,73,"[11, 37, 28, 51, 31, 39, 47, 60, 44, 54, 66, 35, 21, 22, 64, 29]",42
+realistic_selected,p326,p326_s001,data/processed/sessions_v3/vctk/test/session_p326_s001.wav,bestK_by_self_consistency,realistic,tele_defended,1,0.6487988233566284,73,[1],42
+realistic_selected,p326,p326_s001,data/processed/sessions_v3/vctk/test/session_p326_s001.wav,bestK_by_self_consistency,realistic,tele_defended,2,0.7747154831886292,73,"[1, 68]",42
+realistic_selected,p326,p326_s001,data/processed/sessions_v3/vctk/test/session_p326_s001.wav,bestK_by_self_consistency,realistic,tele_defended,4,0.8661397695541382,73,"[1, 68, 5, 40]",42
+realistic_selected,p326,p326_s001,data/processed/sessions_v3/vctk/test/session_p326_s001.wav,bestK_by_self_consistency,realistic,tele_defended,8,0.9093400239944458,73,"[1, 68, 5, 40, 61, 16, 44, 11]",42
+realistic_selected,p326,p326_s001,data/processed/sessions_v3/vctk/test/session_p326_s001.wav,bestK_by_self_consistency,realistic,tele_defended,16,0.9284331798553467,73,"[1, 68, 5, 40, 61, 16, 44, 11, 56, 36, 30, 53, 58, 26, 47, 65]",42
+realistic_selected,p326,p326_s001,data/processed/sessions_v3/vctk/test/session_p326_s001.wav,bestK_by_clean_consistency,oracle_reference,clean,1,0.6863133311271667,73,[21],42
+realistic_selected,p326,p326_s001,data/processed/sessions_v3/vctk/test/session_p326_s001.wav,bestK_by_clean_consistency,oracle_reference,clean,2,0.7881489396095276,73,"[21, 53]",42
+realistic_selected,p326,p326_s001,data/processed/sessions_v3/vctk/test/session_p326_s001.wav,bestK_by_clean_consistency,oracle_reference,clean,4,0.8216246366500854,73,"[21, 53, 1, 60]",42
+realistic_selected,p326,p326_s001,data/processed/sessions_v3/vctk/test/session_p326_s001.wav,bestK_by_clean_consistency,oracle_reference,clean,8,0.9098023772239685,73,"[21, 53, 43, 11, 56, 4, 17, 51]",42
+realistic_selected,p326,p326_s001,data/processed/sessions_v3/vctk/test/session_p326_s001.wav,bestK_by_clean_consistency,oracle_reference,clean,16,0.9310173988342285,73,"[21, 53, 43, 11, 16, 47, 6, 50, 56, 40, 68, 3, 59, 64, 69, 35]",42
+realistic_selected,p326,p326_s002,data/processed/sessions_v3/vctk/test/session_p326_s002.wav,random_K,realistic,none,1,0.6774161458015442,79,[34],42
+realistic_selected,p326,p326_s002,data/processed/sessions_v3/vctk/test/session_p326_s002.wav,random_K,realistic,none,2,0.6235681176185608,79,"[39, 32]",42
+realistic_selected,p326,p326_s002,data/processed/sessions_v3/vctk/test/session_p326_s002.wav,random_K,realistic,none,4,0.8186073303222656,79,"[29, 15, 24, 40]",42
+realistic_selected,p326,p326_s002,data/processed/sessions_v3/vctk/test/session_p326_s002.wav,random_K,realistic,none,8,0.8867073059082031,79,"[15, 68, 23, 24, 27, 61, 35, 67]",42
+realistic_selected,p326,p326_s002,data/processed/sessions_v3/vctk/test/session_p326_s002.wav,random_K,realistic,none,16,0.8817319869995117,79,"[76, 36, 12, 24, 37, 29, 46, 22, 38, 1, 68, 16, 35, 5, 6, 74]",42
+realistic_selected,p326,p326_s002,data/processed/sessions_v3/vctk/test/session_p326_s002.wav,bestK_by_self_consistency,realistic,tele_defended,1,0.7434366941452026,79,[25],42
+realistic_selected,p326,p326_s002,data/processed/sessions_v3/vctk/test/session_p326_s002.wav,bestK_by_self_consistency,realistic,tele_defended,2,0.8271065950393677,79,"[25, 77]",42
+realistic_selected,p326,p326_s002,data/processed/sessions_v3/vctk/test/session_p326_s002.wav,bestK_by_self_consistency,realistic,tele_defended,4,0.8839386701583862,79,"[25, 77, 20, 12]",42
+realistic_selected,p326,p326_s002,data/processed/sessions_v3/vctk/test/session_p326_s002.wav,bestK_by_self_consistency,realistic,tele_defended,8,0.902724027633667,79,"[25, 77, 20, 12, 2, 36, 55, 10]",42
+realistic_selected,p326,p326_s002,data/processed/sessions_v3/vctk/test/session_p326_s002.wav,bestK_by_self_consistency,realistic,tele_defended,16,0.927868127822876,79,"[25, 77, 20, 12, 2, 36, 55, 10, 73, 60, 65, 16, 32, 52, 28, 48]",42
+realistic_selected,p326,p326_s002,data/processed/sessions_v3/vctk/test/session_p326_s002.wav,bestK_by_clean_consistency,oracle_reference,clean,1,0.7434366941452026,79,[25],42
+realistic_selected,p326,p326_s002,data/processed/sessions_v3/vctk/test/session_p326_s002.wav,bestK_by_clean_consistency,oracle_reference,clean,2,0.8158695697784424,79,"[25, 55]",42
+realistic_selected,p326,p326_s002,data/processed/sessions_v3/vctk/test/session_p326_s002.wav,bestK_by_clean_consistency,oracle_reference,clean,4,0.881698489189148,79,"[25, 55, 34, 12]",42
+realistic_selected,p326,p326_s002,data/processed/sessions_v3/vctk/test/session_p326_s002.wav,bestK_by_clean_consistency,oracle_reference,clean,8,0.907777726650238,79,"[25, 55, 34, 12, 18, 76, 8, 23]",42
+realistic_selected,p326,p326_s002,data/processed/sessions_v3/vctk/test/session_p326_s002.wav,bestK_by_clean_consistency,oracle_reference,clean,16,0.9238314628601074,79,"[25, 55, 34, 42, 12, 18, 7, 74, 28, 65, 78, 2, 60, 9, 16, 47]",42
+realistic_selected,p340,p340_s000,data/processed/sessions_v3/vctk/test/session_p340_s000.wav,random_K,realistic,none,1,0.7752205729484558,84,[16],42
+realistic_selected,p340,p340_s000,data/processed/sessions_v3/vctk/test/session_p340_s000.wav,random_K,realistic,none,2,0.739132285118103,84,"[81, 62]",42
+realistic_selected,p340,p340_s000,data/processed/sessions_v3/vctk/test/session_p340_s000.wav,random_K,realistic,none,4,0.7846217751502991,84,"[13, 1, 73, 36]",42
+realistic_selected,p340,p340_s000,data/processed/sessions_v3/vctk/test/session_p340_s000.wav,random_K,realistic,none,8,0.8506932854652405,84,"[60, 61, 56, 43, 23, 6, 32, 82]",42
+realistic_selected,p340,p340_s000,data/processed/sessions_v3/vctk/test/session_p340_s000.wav,random_K,realistic,none,16,0.8934715986251831,84,"[14, 8, 51, 62, 9, 73, 6, 19, 76, 72, 38, 10, 31, 15, 53, 28]",42
+realistic_selected,p340,p340_s000,data/processed/sessions_v3/vctk/test/session_p340_s000.wav,bestK_by_self_consistency,realistic,tele_defended,1,0.7468122243881226,84,[80],42
+realistic_selected,p340,p340_s000,data/processed/sessions_v3/vctk/test/session_p340_s000.wav,bestK_by_self_consistency,realistic,tele_defended,2,0.8066080212593079,84,"[80, 75]",42
+realistic_selected,p340,p340_s000,data/processed/sessions_v3/vctk/test/session_p340_s000.wav,bestK_by_self_consistency,realistic,tele_defended,4,0.866745114326477,84,"[80, 75, 67, 10]",42
+realistic_selected,p340,p340_s000,data/processed/sessions_v3/vctk/test/session_p340_s000.wav,bestK_by_self_consistency,realistic,tele_defended,8,0.9044172763824463,84,"[80, 75, 67, 10, 16, 28, 39, 32]",42
+realistic_selected,p340,p340_s000,data/processed/sessions_v3/vctk/test/session_p340_s000.wav,bestK_by_self_consistency,realistic,tele_defended,16,0.9222294092178345,84,"[80, 75, 67, 10, 16, 28, 39, 32, 54, 65, 46, 83, 20, 51, 71, 60]",42
+realistic_selected,p340,p340_s000,data/processed/sessions_v3/vctk/test/session_p340_s000.wav,bestK_by_clean_consistency,oracle_reference,clean,1,0.7468122243881226,84,[80],42
+realistic_selected,p340,p340_s000,data/processed/sessions_v3/vctk/test/session_p340_s000.wav,bestK_by_clean_consistency,oracle_reference,clean,2,0.784308671951294,84,"[80, 54]",42
+realistic_selected,p340,p340_s000,data/processed/sessions_v3/vctk/test/session_p340_s000.wav,bestK_by_clean_consistency,oracle_reference,clean,4,0.8853809237480164,84,"[80, 54, 16, 45]",42
+realistic_selected,p340,p340_s000,data/processed/sessions_v3/vctk/test/session_p340_s000.wav,bestK_by_clean_consistency,oracle_reference,clean,8,0.8977315425872803,84,"[80, 54, 16, 46, 67, 75, 9, 83]",42
+realistic_selected,p340,p340_s000,data/processed/sessions_v3/vctk/test/session_p340_s000.wav,bestK_by_clean_consistency,oracle_reference,clean,16,0.9188361763954163,84,"[80, 54, 16, 46, 35, 8, 27, 67, 63, 57, 32, 40, 52, 82, 23, 12]",42
+realistic_selected,p340,p340_s001,data/processed/sessions_v3/vctk/test/session_p340_s001.wav,random_K,realistic,none,1,0.6057310104370117,87,[66],42
+realistic_selected,p340,p340_s001,data/processed/sessions_v3/vctk/test/session_p340_s001.wav,random_K,realistic,none,2,0.7214634418487549,87,"[48, 57]",42
+realistic_selected,p340,p340_s001,data/processed/sessions_v3/vctk/test/session_p340_s001.wav,random_K,realistic,none,4,0.8108354806900024,87,"[56, 38, 75, 54]",42
+realistic_selected,p340,p340_s001,data/processed/sessions_v3/vctk/test/session_p340_s001.wav,random_K,realistic,none,8,0.8410550951957703,87,"[39, 72, 79, 7, 78, 12, 26, 80]",42
+realistic_selected,p340,p340_s001,data/processed/sessions_v3/vctk/test/session_p340_s001.wav,random_K,realistic,none,16,0.8883157968521118,87,"[27, 33, 84, 10, 20, 30, 22, 70, 9, 0, 52, 57, 76, 60, 37, 4]",42
+realistic_selected,p340,p340_s001,data/processed/sessions_v3/vctk/test/session_p340_s001.wav,bestK_by_self_consistency,realistic,tele_defended,1,0.7170876264572144,87,[26],42
+realistic_selected,p340,p340_s001,data/processed/sessions_v3/vctk/test/session_p340_s001.wav,bestK_by_self_consistency,realistic,tele_defended,2,0.7987095713615417,87,"[26, 59]",42
+realistic_selected,p340,p340_s001,data/processed/sessions_v3/vctk/test/session_p340_s001.wav,bestK_by_self_consistency,realistic,tele_defended,4,0.8808103799819946,87,"[26, 59, 32, 73]",42
+realistic_selected,p340,p340_s001,data/processed/sessions_v3/vctk/test/session_p340_s001.wav,bestK_by_self_consistency,realistic,tele_defended,8,0.9173831343650818,87,"[26, 59, 32, 73, 79, 10, 16, 40]",42
+realistic_selected,p340,p340_s001,data/processed/sessions_v3/vctk/test/session_p340_s001.wav,bestK_by_self_consistency,realistic,tele_defended,16,0.9333357810974121,87,"[26, 59, 32, 73, 79, 10, 16, 40, 14, 56, 1, 68, 62, 20, 28, 5]",42
+realistic_selected,p340,p340_s001,data/processed/sessions_v3/vctk/test/session_p340_s001.wav,bestK_by_clean_consistency,oracle_reference,clean,1,0.6990029215812683,87,[59],42
+realistic_selected,p340,p340_s001,data/processed/sessions_v3/vctk/test/session_p340_s001.wav,bestK_by_clean_consistency,oracle_reference,clean,2,0.8302382230758667,87,"[59, 32]",42
+realistic_selected,p340,p340_s001,data/processed/sessions_v3/vctk/test/session_p340_s001.wav,bestK_by_clean_consistency,oracle_reference,clean,4,0.8491208553314209,87,"[59, 32, 26, 9]",42
+realistic_selected,p340,p340_s001,data/processed/sessions_v3/vctk/test/session_p340_s001.wav,bestK_by_clean_consistency,oracle_reference,clean,8,0.909133791923523,87,"[59, 25, 2, 12, 17, 68, 56, 21]",42
+realistic_selected,p340,p340_s001,data/processed/sessions_v3/vctk/test/session_p340_s001.wav,bestK_by_clean_consistency,oracle_reference,clean,16,0.926689863204956,87,"[59, 25, 2, 12, 82, 47, 5, 54, 68, 21, 31, 18, 40, 76, 28, 53]",42
+realistic_selected,p340,p340_s002,data/processed/sessions_v3/vctk/test/session_p340_s002.wav,random_K,realistic,none,1,0.7288281917572021,81,[29],42
+realistic_selected,p340,p340_s002,data/processed/sessions_v3/vctk/test/session_p340_s002.wav,random_K,realistic,none,2,0.6283029317855835,81,"[36, 58]",42
+realistic_selected,p340,p340_s002,data/processed/sessions_v3/vctk/test/session_p340_s002.wav,random_K,realistic,none,4,0.8414212465286255,81,"[9, 29, 33, 80]",42
+realistic_selected,p340,p340_s002,data/processed/sessions_v3/vctk/test/session_p340_s002.wav,random_K,realistic,none,8,0.916060209274292,81,"[75, 25, 54, 14, 69, 28, 19, 34]",42
+realistic_selected,p340,p340_s002,data/processed/sessions_v3/vctk/test/session_p340_s002.wav,random_K,realistic,none,16,0.9056690335273743,81,"[18, 9, 7, 21, 39, 72, 36, 56, 15, 59, 38, 51, 34, 64, 63, 73]",42
+realistic_selected,p340,p340_s002,data/processed/sessions_v3/vctk/test/session_p340_s002.wav,bestK_by_self_consistency,realistic,tele_defended,1,0.7276114225387573,81,[64],42
+realistic_selected,p340,p340_s002,data/processed/sessions_v3/vctk/test/session_p340_s002.wav,bestK_by_self_consistency,realistic,tele_defended,2,0.8300174474716187,81,"[64, 44]",42
+realistic_selected,p340,p340_s002,data/processed/sessions_v3/vctk/test/session_p340_s002.wav,bestK_by_self_consistency,realistic,tele_defended,4,0.8866341710090637,81,"[64, 44, 49, 41]",42
+realistic_selected,p340,p340_s002,data/processed/sessions_v3/vctk/test/session_p340_s002.wav,bestK_by_self_consistency,realistic,tele_defended,8,0.9351398348808289,81,"[64, 44, 49, 41, 8, 55, 21, 75]",42
+realistic_selected,p340,p340_s002,data/processed/sessions_v3/vctk/test/session_p340_s002.wav,bestK_by_self_consistency,realistic,tele_defended,16,0.9452580213546753,81,"[64, 44, 49, 41, 8, 55, 21, 75, 58, 18, 33, 2, 12, 15, 69, 62]",42
+realistic_selected,p340,p340_s002,data/processed/sessions_v3/vctk/test/session_p340_s002.wav,bestK_by_clean_consistency,oracle_reference,clean,1,0.7427449226379395,81,[46],42
+realistic_selected,p340,p340_s002,data/processed/sessions_v3/vctk/test/session_p340_s002.wav,bestK_by_clean_consistency,oracle_reference,clean,2,0.827654242515564,81,"[46, 29]",42
+realistic_selected,p340,p340_s002,data/processed/sessions_v3/vctk/test/session_p340_s002.wav,bestK_by_clean_consistency,oracle_reference,clean,4,0.8855419158935547,81,"[46, 29, 64, 48]",42
+realistic_selected,p340,p340_s002,data/processed/sessions_v3/vctk/test/session_p340_s002.wav,bestK_by_clean_consistency,oracle_reference,clean,8,0.9148963689804077,81,"[46, 29, 64, 48, 15, 21, 18, 38]",42
+realistic_selected,p340,p340_s002,data/processed/sessions_v3/vctk/test/session_p340_s002.wav,bestK_by_clean_consistency,oracle_reference,clean,16,0.9398985505104065,81,"[46, 65, 29, 8, 41, 62, 50, 22, 75, 54, 38, 18, 72, 15, 31, 48]",42
+realistic_selected,p364,p364_s000,data/processed/sessions_v3/vctk/test/session_p364_s000.wav,random_K,realistic,none,1,0.5520553588867188,79,[10],42
+realistic_selected,p364,p364_s000,data/processed/sessions_v3/vctk/test/session_p364_s000.wav,random_K,realistic,none,2,0.5411502718925476,79,"[76, 5]",42
+realistic_selected,p364,p364_s000,data/processed/sessions_v3/vctk/test/session_p364_s000.wav,random_K,realistic,none,4,0.7463886737823486,79,"[55, 41, 77, 32]",42
+realistic_selected,p364,p364_s000,data/processed/sessions_v3/vctk/test/session_p364_s000.wav,random_K,realistic,none,8,0.814917266368866,79,"[3, 11, 29, 73, 2, 34, 5, 22]",42
+realistic_selected,p364,p364_s000,data/processed/sessions_v3/vctk/test/session_p364_s000.wav,random_K,realistic,none,16,0.8873742818832397,79,"[60, 66, 56, 35, 23, 55, 62, 11, 78, 44, 52, 42, 41, 13, 20, 67]",42
+realistic_selected,p364,p364_s000,data/processed/sessions_v3/vctk/test/session_p364_s000.wav,bestK_by_self_consistency,realistic,tele_defended,1,0.7401306629180908,79,[64],42
+realistic_selected,p364,p364_s000,data/processed/sessions_v3/vctk/test/session_p364_s000.wav,bestK_by_self_consistency,realistic,tele_defended,2,0.7719306349754333,79,"[64, 3]",42
+realistic_selected,p364,p364_s000,data/processed/sessions_v3/vctk/test/session_p364_s000.wav,bestK_by_self_consistency,realistic,tele_defended,4,0.8562805652618408,79,"[64, 3, 25, 62]",42
+realistic_selected,p364,p364_s000,data/processed/sessions_v3/vctk/test/session_p364_s000.wav,bestK_by_self_consistency,realistic,tele_defended,8,0.8936165571212769,79,"[64, 3, 25, 62, 74, 9, 13, 6]",42
+realistic_selected,p364,p364_s000,data/processed/sessions_v3/vctk/test/session_p364_s000.wav,bestK_by_self_consistency,realistic,tele_defended,16,0.9142992496490479,79,"[64, 3, 25, 62, 74, 9, 13, 6, 71, 35, 47, 30, 54, 20, 15, 58]",42
+realistic_selected,p364,p364_s000,data/processed/sessions_v3/vctk/test/session_p364_s000.wav,bestK_by_clean_consistency,oracle_reference,clean,1,0.7401306629180908,79,[64],42
+realistic_selected,p364,p364_s000,data/processed/sessions_v3/vctk/test/session_p364_s000.wav,bestK_by_clean_consistency,oracle_reference,clean,2,0.7889629602432251,79,"[64, 38]",42
+realistic_selected,p364,p364_s000,data/processed/sessions_v3/vctk/test/session_p364_s000.wav,bestK_by_clean_consistency,oracle_reference,clean,4,0.8755106925964355,79,"[64, 38, 18, 11]",42
+realistic_selected,p364,p364_s000,data/processed/sessions_v3/vctk/test/session_p364_s000.wav,bestK_by_clean_consistency,oracle_reference,clean,8,0.8856426477432251,79,"[64, 3, 11, 18, 57, 48, 38, 70]",42
+realistic_selected,p364,p364_s000,data/processed/sessions_v3/vctk/test/session_p364_s000.wav,bestK_by_clean_consistency,oracle_reference,clean,16,0.9328567981719971,79,"[64, 3, 11, 18, 55, 48, 61, 41, 38, 75, 16, 59, 20, 53, 30, 0]",42
+realistic_selected,p364,p364_s001,data/processed/sessions_v3/vctk/test/session_p364_s001.wav,random_K,realistic,none,1,0.6221075654029846,86,[52],42
+realistic_selected,p364,p364_s001,data/processed/sessions_v3/vctk/test/session_p364_s001.wav,random_K,realistic,none,2,0.5895047783851624,86,"[63, 36]",42
+realistic_selected,p364,p364_s001,data/processed/sessions_v3/vctk/test/session_p364_s001.wav,random_K,realistic,none,4,0.8143684267997742,86,"[84, 51, 70, 4]",42
+realistic_selected,p364,p364_s001,data/processed/sessions_v3/vctk/test/session_p364_s001.wav,random_K,realistic,none,8,0.8316504955291748,86,"[58, 11, 40, 32, 41, 14, 51, 65]",42
+realistic_selected,p364,p364_s001,data/processed/sessions_v3/vctk/test/session_p364_s001.wav,random_K,realistic,none,16,0.8912826776504517,86,"[0, 84, 69, 59, 52, 6, 24, 66, 46, 79, 63, 80, 56, 26, 34, 70]",42
+realistic_selected,p364,p364_s001,data/processed/sessions_v3/vctk/test/session_p364_s001.wav,bestK_by_self_consistency,realistic,tele_defended,1,0.7307020425796509,86,[9],42
+realistic_selected,p364,p364_s001,data/processed/sessions_v3/vctk/test/session_p364_s001.wav,bestK_by_self_consistency,realistic,tele_defended,2,0.7747477293014526,86,"[9, 22]",42
+realistic_selected,p364,p364_s001,data/processed/sessions_v3/vctk/test/session_p364_s001.wav,bestK_by_self_consistency,realistic,tele_defended,4,0.854415237903595,86,"[9, 22, 5, 55]",42
+realistic_selected,p364,p364_s001,data/processed/sessions_v3/vctk/test/session_p364_s001.wav,bestK_by_self_consistency,realistic,tele_defended,8,0.8585238456726074,86,"[9, 22, 5, 55, 44, 82, 17, 8]",42
+realistic_selected,p364,p364_s001,data/processed/sessions_v3/vctk/test/session_p364_s001.wav,bestK_by_self_consistency,realistic,tele_defended,16,0.888687789440155,86,"[9, 22, 5, 55, 44, 82, 17, 8, 63, 72, 4, 31, 50, 77, 36, 13]",42
+realistic_selected,p364,p364_s001,data/processed/sessions_v3/vctk/test/session_p364_s001.wav,bestK_by_clean_consistency,oracle_reference,clean,1,0.7307020425796509,86,[9],42
+realistic_selected,p364,p364_s001,data/processed/sessions_v3/vctk/test/session_p364_s001.wav,bestK_by_clean_consistency,oracle_reference,clean,2,0.7747477293014526,86,"[9, 22]",42
+realistic_selected,p364,p364_s001,data/processed/sessions_v3/vctk/test/session_p364_s001.wav,bestK_by_clean_consistency,oracle_reference,clean,4,0.8400331735610962,86,"[9, 22, 5, 43]",42
+realistic_selected,p364,p364_s001,data/processed/sessions_v3/vctk/test/session_p364_s001.wav,bestK_by_clean_consistency,oracle_reference,clean,8,0.8718429207801819,86,"[9, 22, 5, 43, 83, 0, 50, 14]",42
+realistic_selected,p364,p364_s001,data/processed/sessions_v3/vctk/test/session_p364_s001.wav,bestK_by_clean_consistency,oracle_reference,clean,16,0.8905810117721558,86,"[9, 22, 5, 55, 45, 68, 0, 43, 85, 73, 24, 49, 30, 80, 20, 8]",42
+realistic_selected,p364,p364_s002,data/processed/sessions_v3/vctk/test/session_p364_s002.wav,random_K,realistic,none,1,0.5441691279411316,74,[16],42
+realistic_selected,p364,p364_s002,data/processed/sessions_v3/vctk/test/session_p364_s002.wav,random_K,realistic,none,2,0.7088809013366699,74,"[36, 56]",42
+realistic_selected,p364,p364_s002,data/processed/sessions_v3/vctk/test/session_p364_s002.wav,random_K,realistic,none,4,0.7640726566314697,74,"[62, 15, 3, 30]",42
+realistic_selected,p364,p364_s002,data/processed/sessions_v3/vctk/test/session_p364_s002.wav,random_K,realistic,none,8,0.871103048324585,74,"[20, 39, 70, 1, 52, 11, 28, 14]",42
+realistic_selected,p364,p364_s002,data/processed/sessions_v3/vctk/test/session_p364_s002.wav,random_K,realistic,none,16,0.8651272058486938,74,"[59, 15, 19, 63, 37, 65, 34, 53, 61, 60, 31, 29, 35, 9, 24, 12]",42
+realistic_selected,p364,p364_s002,data/processed/sessions_v3/vctk/test/session_p364_s002.wav,bestK_by_self_consistency,realistic,tele_defended,1,0.6703334450721741,74,[70],42
+realistic_selected,p364,p364_s002,data/processed/sessions_v3/vctk/test/session_p364_s002.wav,bestK_by_self_consistency,realistic,tele_defended,2,0.7626240253448486,74,"[70, 40]",42
+realistic_selected,p364,p364_s002,data/processed/sessions_v3/vctk/test/session_p364_s002.wav,bestK_by_self_consistency,realistic,tele_defended,4,0.8342369198799133,74,"[70, 40, 58, 47]",42
+realistic_selected,p364,p364_s002,data/processed/sessions_v3/vctk/test/session_p364_s002.wav,bestK_by_self_consistency,realistic,tele_defended,8,0.9025582075119019,74,"[70, 40, 58, 47, 31, 12, 36, 8]",42
+realistic_selected,p364,p364_s002,data/processed/sessions_v3/vctk/test/session_p364_s002.wav,bestK_by_self_consistency,realistic,tele_defended,16,0.8976839184761047,74,"[70, 40, 58, 47, 31, 12, 36, 8, 1, 19, 16, 39, 66, 53, 27, 62]",42
+realistic_selected,p364,p364_s002,data/processed/sessions_v3/vctk/test/session_p364_s002.wav,bestK_by_clean_consistency,oracle_reference,clean,1,0.680432915687561,74,[1],42
+realistic_selected,p364,p364_s002,data/processed/sessions_v3/vctk/test/session_p364_s002.wav,bestK_by_clean_consistency,oracle_reference,clean,2,0.8235597610473633,74,"[1, 6]",42
+realistic_selected,p364,p364_s002,data/processed/sessions_v3/vctk/test/session_p364_s002.wav,bestK_by_clean_consistency,oracle_reference,clean,4,0.8482962846755981,74,"[1, 6, 69, 40]",42
+realistic_selected,p364,p364_s002,data/processed/sessions_v3/vctk/test/session_p364_s002.wav,bestK_by_clean_consistency,oracle_reference,clean,8,0.8847643733024597,74,"[1, 36, 69, 41, 7, 20, 12, 58]",42
+realistic_selected,p364,p364_s002,data/processed/sessions_v3/vctk/test/session_p364_s002.wav,bestK_by_clean_consistency,oracle_reference,clean,16,0.9106346368789673,74,"[1, 36, 69, 46, 12, 19, 41, 62, 7, 31, 57, 3, 26, 16, 39, 8]",42

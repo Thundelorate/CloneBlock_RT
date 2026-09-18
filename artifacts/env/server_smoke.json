@@ -1,0 +1,21 @@
+{
+  "ok": true,
+  "scope": "Synthetic GPU/codec checks, not speech experiments or quality evidence.",
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "defense_shape": [
+    2,
+    16000
+  ],
+  "optimizer_update": true,
+  "peak_allocated_mib": 5.85400390625,
+  "codecs": {
+    "opus": {
+      "ffmpeg_operations": 2,
+      "samples": 16000
+    },
+    "g711": {
+      "ffmpeg_operations": 2,
+      "samples": 16000
+    }
+  }
+}

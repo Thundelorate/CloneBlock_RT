@@ -25,6 +25,11 @@ def parse_args() -> argparse.Namespace:
         help="Local cache dir for speechbrain ECAPA model",
     )
     p.add_argument("--device", type=str, default="cpu", help="cpu/cuda")
+    p.add_argument(
+        "--speaker_encoder",
+        choices=["speechbrain_ecapa", "speechbrain_xvector"],
+        default="speechbrain_ecapa",
+    )
     return p.parse_args()
 
 
@@ -33,17 +38,16 @@ def main() -> int:
     savedir = Path(args.speaker_savedir)
     savedir.mkdir(parents=True, exist_ok=True)
 
-    speaker = SpeakerMetric(
-        {
-            "encoder_name": "speechbrain_ecapa",
-            "device": args.device,
-            "checkpoint_dir": str(savedir),
-        }
-    )
+    config = {"encoder_name": args.speaker_encoder, "device": args.device}
+    if args.speaker_encoder == "speechbrain_xvector":
+        config["checkpoint_dir_xvector"] = str(savedir)
+    else:
+        config["checkpoint_dir"] = str(savedir)
+    speaker = SpeakerMetric(config)
 
     wav = torch.randn(16000, dtype=torch.float32)
     emb = speaker.embed(wav, sample_rate=16000)
-    print(f"[download_models] speechbrain_ecapa cache={savedir}")
+    print(f"[download_models] {args.speaker_encoder} cache={savedir}")
     print(f"[download_models] embedding shape={tuple(emb.shape)}")
     return 0
 

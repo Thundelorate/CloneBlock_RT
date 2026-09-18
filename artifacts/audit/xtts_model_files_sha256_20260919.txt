@@ -1,0 +1,5 @@
+ef262b1454dd2a77e1461b0b2cd53e19b8a7624cc131b837d36df67356bc75e8  /root/autodl-tmp/cache/xtts/models/tts/tts_models--multilingual--multi-dataset--xtts_v2/config.json
+ef2e25fc4639bb81c6c5048740c1ee8268606a160548abaa2e2fe03b12278c54  /root/autodl-tmp/cache/xtts/models/tts/tts_models--multilingual--multi-dataset--xtts_v2/hash.md5
+c7ea20001c6a0a841c77e252d8409f6a74fb423e79b3206a0771ba5989776187  /root/autodl-tmp/cache/xtts/models/tts/tts_models--multilingual--multi-dataset--xtts_v2/model.pth
+f0f6137c19a4eab0cbbe4c99b5babacf68b1746e50da90807708c10e645b943b  /root/autodl-tmp/cache/xtts/models/tts/tts_models--multilingual--multi-dataset--xtts_v2/speakers_xtts.pth
+928260878a59da8a72a2a5b7687fea29d5106137669d90945430fe17e415304a  /root/autodl-tmp/cache/xtts/models/tts/tts_models--multilingual--multi-dataset--xtts_v2/vocab.json

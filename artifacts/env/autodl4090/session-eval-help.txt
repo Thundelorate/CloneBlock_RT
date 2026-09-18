@@ -1,0 +1,59 @@
+usage: run_session_pool_eval.py [-h] [--dataset {vctk,librispeech}]
+                                --session_pool_csv SESSION_POOL_CSV
+                                --method_name METHOD_NAME
+                                [--defense_checkpoint DEFENSE_CHECKPOINT]
+                                [--max_utters MAX_UTTERS]
+                                [--quality_max_utters QUALITY_MAX_UTTERS]
+                                [--group_key {auto,utter_id,session_id}]
+                                [--compute_quality]
+                                [--sanity_output SANITY_OUTPUT]
+                                [--sanity_stats_output SANITY_STATS_OUTPUT]
+                                [--sanity_n_sessions SANITY_N_SESSIONS]
+                                [--sanity_random_trials SANITY_RANDOM_TRIALS]
+                                [--seed SEED] [--k_list K_LIST]
+                                [--strategies STRATEGIES]
+                                [--targeted_selection_source {clean,defended,tele_defended}]
+                                [--telephony_config TELEPHONY_CONFIG]
+                                [--eval_config EVAL_CONFIG]
+                                [--speaker_encoder_name SPEAKER_ENCODER_NAME]
+                                [--speaker_checkpoint_dir SPEAKER_CHECKPOINT_DIR]
+                                [--speaker_checkpoint_dir_xvector SPEAKER_CHECKPOINT_DIR_XVECTOR]
+                                [--telephony_codec {none,opus,g711}]
+                                [--telephony_codec_bitrate TELEPHONY_CODEC_BITRATE]
+                                [--output_tag OUTPUT_TAG]
+
+Session-pool eval (random_K + bestK).
+
+options:
+  -h, --help            show this help message and exit
+  --dataset {vctk,librispeech}
+  --session_pool_csv SESSION_POOL_CSV
+  --method_name METHOD_NAME
+  --defense_checkpoint DEFENSE_CHECKPOINT
+  --max_utters MAX_UTTERS
+  --quality_max_utters QUALITY_MAX_UTTERS
+  --group_key {auto,utter_id,session_id}
+  --compute_quality
+  --sanity_output SANITY_OUTPUT
+  --sanity_stats_output SANITY_STATS_OUTPUT
+  --sanity_n_sessions SANITY_N_SESSIONS
+  --sanity_random_trials SANITY_RANDOM_TRIALS
+  --seed SEED
+  --k_list K_LIST
+  --strategies STRATEGIES
+                        Main: random_K,bestK_by_self_consistency. Legacy
+                        oracle:
+                        bestK_by_clean_consistency,bestK_by_ref_similarity
+                        with source clean.
+  --targeted_selection_source {clean,defended,tele_defended}
+                        Selection observations: tele_defended (main), defended
+                        (pre-channel ablation), clean (oracle reference). Also
+                        applies to self-consistency.
+  --telephony_config TELEPHONY_CONFIG
+  --eval_config EVAL_CONFIG
+  --speaker_encoder_name SPEAKER_ENCODER_NAME
+  --speaker_checkpoint_dir SPEAKER_CHECKPOINT_DIR
+  --speaker_checkpoint_dir_xvector SPEAKER_CHECKPOINT_DIR_XVECTOR
+  --telephony_codec {none,opus,g711}
+  --telephony_codec_bitrate TELEPHONY_CODEC_BITRATE
+  --output_tag OUTPUT_TAG

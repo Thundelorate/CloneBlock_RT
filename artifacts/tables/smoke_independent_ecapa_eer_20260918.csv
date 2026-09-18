@@ -1,0 +1,2 @@
+encoder,method,eer,n_target,n_impostor
+speechbrain_ecapa,no_defense,0.000000,8,48

@@ -1,0 +1,16 @@
+* text=auto
+*.sh text eol=lf
+*.py text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+*.md text eol=lf
+*.tex text eol=lf
+*.bib text eol=lf
+*.csv text eol=lf
+*.json text eol=lf
+*.pt binary
+*.wav binary
+
+/artifacts/** -text -diff -merge !eol
+/checkpoints/** -text -diff -merge !eol
+/paper/official_template/** -text -diff -merge !eol

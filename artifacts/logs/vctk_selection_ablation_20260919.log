@@ -1,0 +1,531 @@
+/root/autodl-tmp/projects/CloneBlock_RT/.venv-main/lib/python3.10/site-packages/speechbrain/utils/autocast.py:188: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  wrapped_fwd = torch.cuda.amp.custom_fwd(fwd, cast_inputs=cast_inputs)
+/root/autodl-tmp/projects/CloneBlock_RT/.venv-main/lib/python3.10/site-packages/speechbrain/utils/checkpoints.py:200: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state_dict = torch.load(path, map_location=device)
+/root/autodl-tmp/projects/CloneBlock_RT/.venv-main/lib/python3.10/site-packages/speechbrain/processing/features.py:1529: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  stats = torch.load(path, map_location=device)
+{
+  "method": "no_defense",
+  "n_utters": 33,
+  "quality_utters": 33,
+  "stoi_abs": NaN,
+  "wer_abs": NaN,
+  "curve_csv": "/root/autodl-tmp/projects/CloneBlock_RT/artifacts/tables/session_attack_curve_abs_no_defense_vctk_ablation_ecapa_defended_20260919.csv",
+  "per_session_csv": "/root/autodl-tmp/projects/CloneBlock_RT/artifacts/tables/session_attack_per_session_no_defense_vctk_ablation_ecapa_defended_20260919.csv",
+  "n_skipped_insufficient_windows": 0,
+  "n_evaluated": 33,
+  "summary_csv": "/root/autodl-tmp/projects/CloneBlock_RT/artifacts/tables/session_attack_summary_abs_no_defense_vctk_ablation_ecapa_defended_20260919.csv",
+  "metadata": {
+    "protocol_version": "realistic_v1",
+    "session_pool_sha256": "10065ec0de91c281636af5e23e08251eeff5eb1510ccc32fee382e9a7b273e51",
+    "eval_config_sha256": "a8864c0a2db64051e81bdc0ab216a1e5efc0362b6b83277724c09fbbb8724338",
+    "telephony_config_sha256": "5f0fc5f62c738e0d5d8289b49b830279776b56087a6ef46c1e8b3b5c6be7864f",
+    "selection_protocols": {
+      "random_K": {
+        "attacker_view": "realistic",
+        "selection_source": "none"
+      },
+      "bestK_by_self_consistency": {
+        "attacker_view": "pre_channel_ablation",
+        "selection_source": "defended"
+      },
+      "bestK_by_clean_consistency": {
+        "attacker_view": "oracle_reference",
+        "selection_source": "clean"
+      }
+    },
+    "k_list": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "seed": 42,
+    "AUCK_definition": "Equal-weight arithmetic mean of MeanSim@K over the listed K values; not linear-K trapezoidal area. AUC is a legacy alias.",
+    "reference_role": "Clean session centroid is evaluator-only for realistic strategies; this is a same-session recovery metric, not independent ASV enrollment.",
+    "oracle_caveat": "Legacy clean-reference greedy selection is an oracle reference, not a certified numerical upper bound.",
+    "speaker_encoder_name": "speechbrain_ecapa",
+    "targeted_selection_source": "defended",
+    "telephony_codec": "none",
+    "telephony_codec_bitrate": "16k",
+    "strategies": [
+      "random_K",
+      "bestK_by_self_consistency",
+      "bestK_by_clean_consistency"
+    ]
+  }
+}
+/root/autodl-tmp/projects/CloneBlock_RT/.venv-main/lib/python3.10/site-packages/speechbrain/utils/autocast.py:188: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  wrapped_fwd = torch.cuda.amp.custom_fwd(fwd, cast_inputs=cast_inputs)
+/root/autodl-tmp/projects/CloneBlock_RT/.venv-main/lib/python3.10/site-packages/speechbrain/utils/checkpoints.py:200: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state_dict = torch.load(path, map_location=device)
+/root/autodl-tmp/projects/CloneBlock_RT/.venv-main/lib/python3.10/site-packages/speechbrain/processing/features.py:1529: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  stats = torch.load(path, map_location=device)
+/root/autodl-tmp/projects/CloneBlock_RT/scripts/run_session_pool_eval.py:174: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  payload = torch.load(args.defense_checkpoint, map_location=device)
+{
+  "method": "reference_v0p2",
+  "n_utters": 33,
+  "quality_utters": 33,
+  "stoi_abs": NaN,
+  "wer_abs": NaN,
+  "curve_csv": "/root/autodl-tmp/projects/CloneBlock_RT/artifacts/tables/session_attack_curve_abs_reference_v0p2_vctk_ablation_ecapa_defended_20260919.csv",
+  "per_session_csv": "/root/autodl-tmp/projects/CloneBlock_RT/artifacts/tables/session_attack_per_session_reference_v0p2_vctk_ablation_ecapa_defended_20260919.csv",
+  "n_skipped_insufficient_windows": 0,
+  "n_evaluated": 33,
+  "summary_csv": "/root/autodl-tmp/projects/CloneBlock_RT/artifacts/tables/session_attack_summary_abs_reference_v0p2_vctk_ablation_ecapa_defended_20260919.csv",
+  "metadata": {
+    "protocol_version": "realistic_v1",
+    "session_pool_sha256": "10065ec0de91c281636af5e23e08251eeff5eb1510ccc32fee382e9a7b273e51",
+    "eval_config_sha256": "a8864c0a2db64051e81bdc0ab216a1e5efc0362b6b83277724c09fbbb8724338",
+    "telephony_config_sha256": "5f0fc5f62c738e0d5d8289b49b830279776b56087a6ef46c1e8b3b5c6be7864f",
+    "selection_protocols": {
+      "random_K": {
+        "attacker_view": "realistic",
+        "selection_source": "none"
+      },
+      "bestK_by_self_consistency": {
+        "attacker_view": "pre_channel_ablation",
+        "selection_source": "defended"
+      },
+      "bestK_by_clean_consistency": {
+        "attacker_view": "oracle_reference",
+        "selection_source": "clean"
+      }
+    },
+    "k_list": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "seed": 42,
+    "AUCK_definition": "Equal-weight arithmetic mean of MeanSim@K over the listed K values; not linear-K trapezoidal area. AUC is a legacy alias.",
+    "reference_role": "Clean session centroid is evaluator-only for realistic strategies; this is a same-session recovery metric, not independent ASV enrollment.",
+    "oracle_caveat": "Legacy clean-reference greedy selection is an oracle reference, not a certified numerical upper bound.",
+    "speaker_encoder_name": "speechbrain_ecapa",
+    "targeted_selection_source": "defended",
+    "telephony_codec": "none",
+    "telephony_codec_bitrate": "16k",
+    "strategies": [
+      "random_K",
+      "bestK_by_self_consistency",
+      "bestK_by_clean_consistency"
+    ]
+  }
+}
+/root/autodl-tmp/projects/CloneBlock_RT/.venv-main/lib/python3.10/site-packages/speechbrain/utils/autocast.py:188: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  wrapped_fwd = torch.cuda.amp.custom_fwd(fwd, cast_inputs=cast_inputs)
+/root/autodl-tmp/projects/CloneBlock_RT/.venv-main/lib/python3.10/site-packages/speechbrain/utils/checkpoints.py:200: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state_dict = torch.load(path, map_location=device)
+/root/autodl-tmp/projects/CloneBlock_RT/.venv-main/lib/python3.10/site-packages/speechbrain/processing/features.py:1529: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  stats = torch.load(path, map_location=device)
+/root/autodl-tmp/projects/CloneBlock_RT/scripts/run_session_pool_eval.py:174: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  payload = torch.load(args.defense_checkpoint, map_location=device)
+{
+  "method": "realistic_selected",
+  "n_utters": 33,
+  "quality_utters": 33,
+  "stoi_abs": NaN,
+  "wer_abs": NaN,
+  "curve_csv": "/root/autodl-tmp/projects/CloneBlock_RT/artifacts/tables/session_attack_curve_abs_realistic_selected_vctk_ablation_ecapa_defended_20260919.csv",
+  "per_session_csv": "/root/autodl-tmp/projects/CloneBlock_RT/artifacts/tables/session_attack_per_session_realistic_selected_vctk_ablation_ecapa_defended_20260919.csv",
+  "n_skipped_insufficient_windows": 0,
+  "n_evaluated": 33,
+  "summary_csv": "/root/autodl-tmp/projects/CloneBlock_RT/artifacts/tables/session_attack_summary_abs_realistic_selected_vctk_ablation_ecapa_defended_20260919.csv",
+  "metadata": {
+    "protocol_version": "realistic_v1",
+    "session_pool_sha256": "10065ec0de91c281636af5e23e08251eeff5eb1510ccc32fee382e9a7b273e51",
+    "eval_config_sha256": "a8864c0a2db64051e81bdc0ab216a1e5efc0362b6b83277724c09fbbb8724338",
+    "telephony_config_sha256": "5f0fc5f62c738e0d5d8289b49b830279776b56087a6ef46c1e8b3b5c6be7864f",
+    "selection_protocols": {
+      "random_K": {
+        "attacker_view": "realistic",
+        "selection_source": "none"
+      },
+      "bestK_by_self_consistency": {
+        "attacker_view": "pre_channel_ablation",
+        "selection_source": "defended"
+      },
+      "bestK_by_clean_consistency": {
+        "attacker_view": "oracle_reference",
+        "selection_source": "clean"
+      }
+    },
+    "k_list": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "seed": 42,
+    "AUCK_definition": "Equal-weight arithmetic mean of MeanSim@K over the listed K values; not linear-K trapezoidal area. AUC is a legacy alias.",
+    "reference_role": "Clean session centroid is evaluator-only for realistic strategies; this is a same-session recovery metric, not independent ASV enrollment.",
+    "oracle_caveat": "Legacy clean-reference greedy selection is an oracle reference, not a certified numerical upper bound.",
+    "speaker_encoder_name": "speechbrain_ecapa",
+    "targeted_selection_source": "defended",
+    "telephony_codec": "none",
+    "telephony_codec_bitrate": "16k",
+    "strategies": [
+      "random_K",
+      "bestK_by_self_consistency",
+      "bestK_by_clean_consistency"
+    ]
+  }
+}
+Wrote 105 metric rows to artifacts/tables/bootstrap_ci_vctk_ablation_ecapa_defended_20260919.csv
+/root/autodl-tmp/projects/CloneBlock_RT/.venv-main/lib/python3.10/site-packages/speechbrain/utils/autocast.py:188: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  wrapped_fwd = torch.cuda.amp.custom_fwd(fwd, cast_inputs=cast_inputs)
+/root/autodl-tmp/projects/CloneBlock_RT/.venv-main/lib/python3.10/site-packages/speechbrain/utils/checkpoints.py:200: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state_dict = torch.load(path, map_location=device)
+/root/autodl-tmp/projects/CloneBlock_RT/.venv-main/lib/python3.10/site-packages/speechbrain/processing/features.py:1529: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  stats = torch.load(path, map_location=device)
+{
+  "method": "no_defense",
+  "n_utters": 33,
+  "quality_utters": 33,
+  "stoi_abs": NaN,
+  "wer_abs": NaN,
+  "curve_csv": "/root/autodl-tmp/projects/CloneBlock_RT/artifacts/tables/session_attack_curve_abs_no_defense_vctk_ablation_xvector_defended_20260919.csv",
+  "per_session_csv": "/root/autodl-tmp/projects/CloneBlock_RT/artifacts/tables/session_attack_per_session_no_defense_vctk_ablation_xvector_defended_20260919.csv",
+  "n_skipped_insufficient_windows": 0,
+  "n_evaluated": 33,
+  "summary_csv": "/root/autodl-tmp/projects/CloneBlock_RT/artifacts/tables/session_attack_summary_abs_no_defense_vctk_ablation_xvector_defended_20260919.csv",
+  "metadata": {
+    "protocol_version": "realistic_v1",
+    "session_pool_sha256": "10065ec0de91c281636af5e23e08251eeff5eb1510ccc32fee382e9a7b273e51",
+    "eval_config_sha256": "a8864c0a2db64051e81bdc0ab216a1e5efc0362b6b83277724c09fbbb8724338",
+    "telephony_config_sha256": "5f0fc5f62c738e0d5d8289b49b830279776b56087a6ef46c1e8b3b5c6be7864f",
+    "selection_protocols": {
+      "random_K": {
+        "attacker_view": "realistic",
+        "selection_source": "none"
+      },
+      "bestK_by_self_consistency": {
+        "attacker_view": "pre_channel_ablation",
+        "selection_source": "defended"
+      },
+      "bestK_by_clean_consistency": {
+        "attacker_view": "oracle_reference",
+        "selection_source": "clean"
+      }
+    },
+    "k_list": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "seed": 42,
+    "AUCK_definition": "Equal-weight arithmetic mean of MeanSim@K over the listed K values; not linear-K trapezoidal area. AUC is a legacy alias.",
+    "reference_role": "Clean session centroid is evaluator-only for realistic strategies; this is a same-session recovery metric, not independent ASV enrollment.",
+    "oracle_caveat": "Legacy clean-reference greedy selection is an oracle reference, not a certified numerical upper bound.",
+    "speaker_encoder_name": "speechbrain_xvector",
+    "targeted_selection_source": "defended",
+    "telephony_codec": "none",
+    "telephony_codec_bitrate": "16k",
+    "strategies": [
+      "random_K",
+      "bestK_by_self_consistency",
+      "bestK_by_clean_consistency"
+    ]
+  }
+}
+/root/autodl-tmp/projects/CloneBlock_RT/.venv-main/lib/python3.10/site-packages/speechbrain/utils/autocast.py:188: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  wrapped_fwd = torch.cuda.amp.custom_fwd(fwd, cast_inputs=cast_inputs)
+/root/autodl-tmp/projects/CloneBlock_RT/.venv-main/lib/python3.10/site-packages/speechbrain/utils/checkpoints.py:200: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state_dict = torch.load(path, map_location=device)
+/root/autodl-tmp/projects/CloneBlock_RT/.venv-main/lib/python3.10/site-packages/speechbrain/processing/features.py:1529: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  stats = torch.load(path, map_location=device)
+/root/autodl-tmp/projects/CloneBlock_RT/scripts/run_session_pool_eval.py:174: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  payload = torch.load(args.defense_checkpoint, map_location=device)
+{
+  "method": "reference_v0p2",
+  "n_utters": 33,
+  "quality_utters": 33,
+  "stoi_abs": NaN,
+  "wer_abs": NaN,
+  "curve_csv": "/root/autodl-tmp/projects/CloneBlock_RT/artifacts/tables/session_attack_curve_abs_reference_v0p2_vctk_ablation_xvector_defended_20260919.csv",
+  "per_session_csv": "/root/autodl-tmp/projects/CloneBlock_RT/artifacts/tables/session_attack_per_session_reference_v0p2_vctk_ablation_xvector_defended_20260919.csv",
+  "n_skipped_insufficient_windows": 0,
+  "n_evaluated": 33,
+  "summary_csv": "/root/autodl-tmp/projects/CloneBlock_RT/artifacts/tables/session_attack_summary_abs_reference_v0p2_vctk_ablation_xvector_defended_20260919.csv",
+  "metadata": {
+    "protocol_version": "realistic_v1",
+    "session_pool_sha256": "10065ec0de91c281636af5e23e08251eeff5eb1510ccc32fee382e9a7b273e51",
+    "eval_config_sha256": "a8864c0a2db64051e81bdc0ab216a1e5efc0362b6b83277724c09fbbb8724338",
+    "telephony_config_sha256": "5f0fc5f62c738e0d5d8289b49b830279776b56087a6ef46c1e8b3b5c6be7864f",
+    "selection_protocols": {
+      "random_K": {
+        "attacker_view": "realistic",
+        "selection_source": "none"
+      },
+      "bestK_by_self_consistency": {
+        "attacker_view": "pre_channel_ablation",
+        "selection_source": "defended"
+      },
+      "bestK_by_clean_consistency": {
+        "attacker_view": "oracle_reference",
+        "selection_source": "clean"
+      }
+    },
+    "k_list": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "seed": 42,
+    "AUCK_definition": "Equal-weight arithmetic mean of MeanSim@K over the listed K values; not linear-K trapezoidal area. AUC is a legacy alias.",
+    "reference_role": "Clean session centroid is evaluator-only for realistic strategies; this is a same-session recovery metric, not independent ASV enrollment.",
+    "oracle_caveat": "Legacy clean-reference greedy selection is an oracle reference, not a certified numerical upper bound.",
+    "speaker_encoder_name": "speechbrain_xvector",
+    "targeted_selection_source": "defended",
+    "telephony_codec": "none",
+    "telephony_codec_bitrate": "16k",
+    "strategies": [
+      "random_K",
+      "bestK_by_self_consistency",
+      "bestK_by_clean_consistency"
+    ]
+  }
+}
+/root/autodl-tmp/projects/CloneBlock_RT/.venv-main/lib/python3.10/site-packages/speechbrain/utils/autocast.py:188: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  wrapped_fwd = torch.cuda.amp.custom_fwd(fwd, cast_inputs=cast_inputs)
+/root/autodl-tmp/projects/CloneBlock_RT/.venv-main/lib/python3.10/site-packages/speechbrain/utils/checkpoints.py:200: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state_dict = torch.load(path, map_location=device)
+/root/autodl-tmp/projects/CloneBlock_RT/.venv-main/lib/python3.10/site-packages/speechbrain/processing/features.py:1529: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  stats = torch.load(path, map_location=device)
+/root/autodl-tmp/projects/CloneBlock_RT/scripts/run_session_pool_eval.py:174: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  payload = torch.load(args.defense_checkpoint, map_location=device)
+{
+  "method": "realistic_selected",
+  "n_utters": 33,
+  "quality_utters": 33,
+  "stoi_abs": NaN,
+  "wer_abs": NaN,
+  "curve_csv": "/root/autodl-tmp/projects/CloneBlock_RT/artifacts/tables/session_attack_curve_abs_realistic_selected_vctk_ablation_xvector_defended_20260919.csv",
+  "per_session_csv": "/root/autodl-tmp/projects/CloneBlock_RT/artifacts/tables/session_attack_per_session_realistic_selected_vctk_ablation_xvector_defended_20260919.csv",
+  "n_skipped_insufficient_windows": 0,
+  "n_evaluated": 33,
+  "summary_csv": "/root/autodl-tmp/projects/CloneBlock_RT/artifacts/tables/session_attack_summary_abs_realistic_selected_vctk_ablation_xvector_defended_20260919.csv",
+  "metadata": {
+    "protocol_version": "realistic_v1",
+    "session_pool_sha256": "10065ec0de91c281636af5e23e08251eeff5eb1510ccc32fee382e9a7b273e51",
+    "eval_config_sha256": "a8864c0a2db64051e81bdc0ab216a1e5efc0362b6b83277724c09fbbb8724338",
+    "telephony_config_sha256": "5f0fc5f62c738e0d5d8289b49b830279776b56087a6ef46c1e8b3b5c6be7864f",
+    "selection_protocols": {
+      "random_K": {
+        "attacker_view": "realistic",
+        "selection_source": "none"
+      },
+      "bestK_by_self_consistency": {
+        "attacker_view": "pre_channel_ablation",
+        "selection_source": "defended"
+      },
+      "bestK_by_clean_consistency": {
+        "attacker_view": "oracle_reference",
+        "selection_source": "clean"
+      }
+    },
+    "k_list": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "seed": 42,
+    "AUCK_definition": "Equal-weight arithmetic mean of MeanSim@K over the listed K values; not linear-K trapezoidal area. AUC is a legacy alias.",
+    "reference_role": "Clean session centroid is evaluator-only for realistic strategies; this is a same-session recovery metric, not independent ASV enrollment.",
+    "oracle_caveat": "Legacy clean-reference greedy selection is an oracle reference, not a certified numerical upper bound.",
+    "speaker_encoder_name": "speechbrain_xvector",
+    "targeted_selection_source": "defended",
+    "telephony_codec": "none",
+    "telephony_codec_bitrate": "16k",
+    "strategies": [
+      "random_K",
+      "bestK_by_self_consistency",
+      "bestK_by_clean_consistency"
+    ]
+  }
+}
+Wrote 105 metric rows to artifacts/tables/bootstrap_ci_vctk_ablation_xvector_defended_20260919.csv
+/root/autodl-tmp/projects/CloneBlock_RT/.venv-main/lib/python3.10/site-packages/speechbrain/utils/autocast.py:188: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  wrapped_fwd = torch.cuda.amp.custom_fwd(fwd, cast_inputs=cast_inputs)
+/root/autodl-tmp/projects/CloneBlock_RT/.venv-main/lib/python3.10/site-packages/speechbrain/utils/checkpoints.py:200: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state_dict = torch.load(path, map_location=device)
+/root/autodl-tmp/projects/CloneBlock_RT/.venv-main/lib/python3.10/site-packages/speechbrain/processing/features.py:1529: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  stats = torch.load(path, map_location=device)
+/root/autodl-tmp/projects/CloneBlock_RT/scripts/run_asv_eer_eval.py:95: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  payload = torch.load(ckpt, map_location=device)
+{
+  "protocol": "independent_session_enrollment",
+  "selection_strategy": "self_consistency",
+  "selection_source": "defended",
+  "telephony_codec": "none",
+  "telephony_codec_bitrate": "16k",
+  "k": 16,
+  "seed": 42,
+  "output_csv": "artifacts/tables/vctk_ablation_ecapa_defended_20260919_eer.csv",
+  "output_margin_csv": "artifacts/tables/vctk_ablation_ecapa_defended_20260919_margin.csv",
+  "output_trials_csv": "artifacts/tables/vctk_ablation_ecapa_defended_20260919_trials.csv",
+  "rows": [
+    {
+      "encoder": "speechbrain_ecapa",
+      "method": "no_defense",
+      "eer": "0.000000",
+      "n_target": "22",
+      "n_impostor": "220"
+    },
+    {
+      "encoder": "speechbrain_ecapa",
+      "method": "reference_v0p2",
+      "eer": "0.000000",
+      "n_target": "22",
+      "n_impostor": "220"
+    },
+    {
+      "encoder": "speechbrain_ecapa",
+      "method": "realistic_selected",
+      "eer": "0.000000",
+      "n_target": "22",
+      "n_impostor": "220"
+    }
+  ]
+}
+/root/autodl-tmp/projects/CloneBlock_RT/.venv-main/lib/python3.10/site-packages/speechbrain/utils/autocast.py:188: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  wrapped_fwd = torch.cuda.amp.custom_fwd(fwd, cast_inputs=cast_inputs)
+/root/autodl-tmp/projects/CloneBlock_RT/.venv-main/lib/python3.10/site-packages/speechbrain/utils/checkpoints.py:200: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state_dict = torch.load(path, map_location=device)
+/root/autodl-tmp/projects/CloneBlock_RT/.venv-main/lib/python3.10/site-packages/speechbrain/processing/features.py:1529: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  stats = torch.load(path, map_location=device)
+/root/autodl-tmp/projects/CloneBlock_RT/scripts/run_asv_eer_eval.py:95: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  payload = torch.load(ckpt, map_location=device)
+{
+  "protocol": "independent_session_enrollment",
+  "selection_strategy": "self_consistency",
+  "selection_source": "defended",
+  "telephony_codec": "none",
+  "telephony_codec_bitrate": "16k",
+  "k": 16,
+  "seed": 42,
+  "output_csv": "artifacts/tables/vctk_ablation_xvector_defended_20260919_eer.csv",
+  "output_margin_csv": "artifacts/tables/vctk_ablation_xvector_defended_20260919_margin.csv",
+  "output_trials_csv": "artifacts/tables/vctk_ablation_xvector_defended_20260919_trials.csv",
+  "rows": [
+    {
+      "encoder": "speechbrain_xvector",
+      "method": "no_defense",
+      "eer": "0.090909",
+      "n_target": "22",
+      "n_impostor": "220"
+    },
+    {
+      "encoder": "speechbrain_xvector",
+      "method": "reference_v0p2",
+      "eer": "0.088636",
+      "n_target": "22",
+      "n_impostor": "220"
+    },
+    {
+      "encoder": "speechbrain_xvector",
+      "method": "realistic_selected",
+      "eer": "0.093182",
+      "n_target": "22",
+      "n_impostor": "220"
+    }
+  ]
+}
+/root/autodl-tmp/projects/CloneBlock_RT/.venv-main/lib/python3.10/site-packages/speechbrain/utils/autocast.py:188: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  wrapped_fwd = torch.cuda.amp.custom_fwd(fwd, cast_inputs=cast_inputs)
+/root/autodl-tmp/projects/CloneBlock_RT/.venv-main/lib/python3.10/site-packages/speechbrain/utils/checkpoints.py:200: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state_dict = torch.load(path, map_location=device)
+/root/autodl-tmp/projects/CloneBlock_RT/.venv-main/lib/python3.10/site-packages/speechbrain/processing/features.py:1529: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  stats = torch.load(path, map_location=device)
+/root/autodl-tmp/projects/CloneBlock_RT/scripts/run_asv_eer_eval.py:95: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  payload = torch.load(ckpt, map_location=device)
+{
+  "protocol": "independent_session_enrollment",
+  "selection_strategy": "oracle_clean",
+  "selection_source": "clean",
+  "telephony_codec": "none",
+  "telephony_codec_bitrate": "16k",
+  "k": 16,
+  "seed": 42,
+  "output_csv": "artifacts/tables/vctk_oracle_ecapa_none_20260919_eer.csv",
+  "output_margin_csv": "artifacts/tables/vctk_oracle_ecapa_none_20260919_margin.csv",
+  "output_trials_csv": "artifacts/tables/vctk_oracle_ecapa_none_20260919_trials.csv",
+  "rows": [
+    {
+      "encoder": "speechbrain_ecapa",
+      "method": "no_defense",
+      "eer": "0.000000",
+      "n_target": "22",
+      "n_impostor": "220"
+    },
+    {
+      "encoder": "speechbrain_ecapa",
+      "method": "reference_v0p2",
+      "eer": "0.000000",
+      "n_target": "22",
+      "n_impostor": "220"
+    },
+    {
+      "encoder": "speechbrain_ecapa",
+      "method": "realistic_selected",
+      "eer": "0.000000",
+      "n_target": "22",
+      "n_impostor": "220"
+    }
+  ]
+}
+/root/autodl-tmp/projects/CloneBlock_RT/.venv-main/lib/python3.10/site-packages/speechbrain/utils/autocast.py:188: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  wrapped_fwd = torch.cuda.amp.custom_fwd(fwd, cast_inputs=cast_inputs)
+/root/autodl-tmp/projects/CloneBlock_RT/.venv-main/lib/python3.10/site-packages/speechbrain/utils/checkpoints.py:200: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state_dict = torch.load(path, map_location=device)
+/root/autodl-tmp/projects/CloneBlock_RT/.venv-main/lib/python3.10/site-packages/speechbrain/processing/features.py:1529: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  stats = torch.load(path, map_location=device)
+/root/autodl-tmp/projects/CloneBlock_RT/scripts/run_asv_eer_eval.py:95: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  payload = torch.load(ckpt, map_location=device)
+{
+  "protocol": "independent_session_enrollment",
+  "selection_strategy": "oracle_clean",
+  "selection_source": "clean",
+  "telephony_codec": "none",
+  "telephony_codec_bitrate": "16k",
+  "k": 16,
+  "seed": 42,
+  "output_csv": "artifacts/tables/vctk_oracle_xvector_none_20260919_eer.csv",
+  "output_margin_csv": "artifacts/tables/vctk_oracle_xvector_none_20260919_margin.csv",
+  "output_trials_csv": "artifacts/tables/vctk_oracle_xvector_none_20260919_trials.csv",
+  "rows": [
+    {
+      "encoder": "speechbrain_xvector",
+      "method": "no_defense",
+      "eer": "0.090909",
+      "n_target": "22",
+      "n_impostor": "220"
+    },
+    {
+      "encoder": "speechbrain_xvector",
+      "method": "reference_v0p2",
+      "eer": "0.090909",
+      "n_target": "22",
+      "n_impostor": "220"
+    },
+    {
+      "encoder": "speechbrain_xvector",
+      "method": "realistic_selected",
+      "eer": "0.090909",
+      "n_target": "22",
+      "n_impostor": "220"
+    }
+  ]
+}
+Pre-channel selection ablation and oracle ASV complete.

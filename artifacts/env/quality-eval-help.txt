@@ -1,0 +1,23 @@
+usage: run_quality_eval.py [-h] [--dataset {vctk,librispeech}]
+                           [--split {train,val,test}]
+                           [--telephony_codec {none,opus,g711}]
+                           [--telephony_codec_bitrate TELEPHONY_CODEC_BITRATE]
+                           [--max_utts MAX_UTTS] [--seed SEED]
+                           [--telephony_config TELEPHONY_CONFIG]
+                           [--eval_config EVAL_CONFIG]
+                           [--defense_checkpoint DEFENSE_CHECKPOINT]
+
+Quality eval: WER + STOI under telephony (utter-level, VCTK test).
+
+options:
+  -h, --help            show this help message and exit
+  --dataset {vctk,librispeech}
+  --split {train,val,test}
+  --telephony_codec {none,opus,g711}
+  --telephony_codec_bitrate TELEPHONY_CODEC_BITRATE
+  --max_utts MAX_UTTS
+  --seed SEED
+  --telephony_config TELEPHONY_CONFIG
+  --eval_config EVAL_CONFIG
+  --defense_checkpoint DEFENSE_CHECKPOINT
+                        v0p1_B checkpoint; empty = baseline only in one run

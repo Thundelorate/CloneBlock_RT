@@ -1,0 +1,39 @@
+{
+  "protocol": "validation_natural_speech_operating_point_v1",
+  "split": "validation",
+  "comparison": "accept if cosine >= threshold",
+  "inputs": [
+    {
+      "path": "artifacts/tables/vctk_val_speechbrain_ecapa_trials_20260918.csv",
+      "sha256": "9a935b06714f092988baec953e8a9a746c39895620bfaf228163dfd4f4fde503"
+    },
+    {
+      "path": "artifacts/tables/vctk_val_speechbrain_xvector_trials_20260918.csv",
+      "sha256": "3ad29df133cef668c3a403cc5795fd107a0dece9f189800fea4ffcd44fb2cb5e"
+    }
+  ],
+  "thresholds": [
+    {
+      "method": "no_defense",
+      "threshold": 0.8135040998458862,
+      "target_far": 0.01,
+      "achieved_far": 0.00909090909090909,
+      "target_accept_rate": 0.9545454545454546,
+      "n_target": 22,
+      "n_impostor": 220,
+      "far_resolution": 0.004545454545454545,
+      "encoder": "speechbrain_ecapa"
+    },
+    {
+      "method": "no_defense",
+      "threshold": 0.9903062582015991,
+      "target_far": 0.01,
+      "achieved_far": 0.004545454545454545,
+      "target_accept_rate": 0.8636363636363636,
+      "n_target": 22,
+      "n_impostor": 220,
+      "far_resolution": 0.004545454545454545,
+      "encoder": "speechbrain_xvector"
+    }
+  ]
+}

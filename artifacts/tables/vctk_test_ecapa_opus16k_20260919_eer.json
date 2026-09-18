@@ -1,0 +1,35 @@
+{
+  "protocol": "independent_session_enrollment",
+  "selection_strategy": "self_consistency",
+  "selection_source": "tele_defended",
+  "telephony_codec": "opus",
+  "telephony_codec_bitrate": "16k",
+  "k": 16,
+  "seed": 42,
+  "output_csv": "artifacts/tables/vctk_test_ecapa_opus16k_20260919_eer.csv",
+  "output_margin_csv": "artifacts/tables/vctk_test_ecapa_opus16k_20260919_margin.csv",
+  "output_trials_csv": "artifacts/tables/vctk_test_ecapa_opus16k_20260919_trials.csv",
+  "rows": [
+    {
+      "encoder": "speechbrain_ecapa",
+      "method": "no_defense",
+      "eer": "0.004545",
+      "n_target": "22",
+      "n_impostor": "220"
+    },
+    {
+      "encoder": "speechbrain_ecapa",
+      "method": "reference_v0p2",
+      "eer": "0.000000",
+      "n_target": "22",
+      "n_impostor": "220"
+    },
+    {
+      "encoder": "speechbrain_ecapa",
+      "method": "realistic_selected",
+      "eer": "0.000000",
+      "n_target": "22",
+      "n_impostor": "220"
+    }
+  ]
+}

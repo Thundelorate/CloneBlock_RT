@@ -1,0 +1,131 @@
+{
+  "input_wav": "/root/autodl-tmp/projects/CloneBlock_RT/artifacts/tmp/benchmark_input_vctk_60s.wav",
+  "sample_rate": 16000,
+  "duration_sec": 60.0,
+  "chunk_ms_list": [
+    20,
+    40
+  ],
+  "results": [
+    {
+      "method": "baseline",
+      "device": "cpu",
+      "chunk_ms": 20,
+      "metrics": {
+        "chunk_ms": 20.0,
+        "avg_ms": 0.00047584837776119425,
+        "p95_ms": 0.0005029141902923584,
+        "rtf": 2.3792418888059712e-05,
+        "peak_mem_mb": 388.12890625,
+        "n_chunks_total": 3000.0,
+        "n_chunks_eval": 2950.0,
+        "warmup_chunks": 50.0
+      }
+    },
+    {
+      "method": "v0p1_B",
+      "device": "cpu",
+      "chunk_ms": 20,
+      "metrics": {
+        "chunk_ms": 20.0,
+        "avg_ms": 0.5603019602723041,
+        "p95_ms": 0.5915792658925056,
+        "rtf": 0.028015098013615205,
+        "peak_mem_mb": 397.50390625,
+        "n_chunks_total": 3000.0,
+        "n_chunks_eval": 2950.0,
+        "warmup_chunks": 50.0
+      }
+    },
+    {
+      "method": "baseline",
+      "device": "cpu",
+      "chunk_ms": 40,
+      "metrics": {
+        "chunk_ms": 40.0,
+        "avg_ms": 0.0005037054933350662,
+        "p95_ms": 0.0005289912223815918,
+        "rtf": 1.2592637333376654e-05,
+        "peak_mem_mb": 397.50390625,
+        "n_chunks_total": 1500.0,
+        "n_chunks_eval": 1450.0,
+        "warmup_chunks": 50.0
+      }
+    },
+    {
+      "method": "v0p1_B",
+      "device": "cpu",
+      "chunk_ms": 40,
+      "metrics": {
+        "chunk_ms": 40.0,
+        "avg_ms": 0.4074549340996249,
+        "p95_ms": 0.43417997658252716,
+        "rtf": 0.010186373352490622,
+        "peak_mem_mb": 397.53515625,
+        "n_chunks_total": 1500.0,
+        "n_chunks_eval": 1450.0,
+        "warmup_chunks": 50.0
+      }
+    },
+    {
+      "method": "baseline",
+      "device": "cuda",
+      "chunk_ms": 20,
+      "metrics": {
+        "chunk_ms": 20.0,
+        "avg_ms": 0.006850219126475059,
+        "p95_ms": 0.007290393114089966,
+        "rtf": 0.00034251095632375296,
+        "peak_mem_mb": 0.69580078125,
+        "n_chunks_total": 3000.0,
+        "n_chunks_eval": 2950.0,
+        "warmup_chunks": 50.0
+      }
+    },
+    {
+      "method": "v0p1_B",
+      "device": "cuda",
+      "chunk_ms": 20,
+      "metrics": {
+        "chunk_ms": 20.0,
+        "avg_ms": 0.7453566183478145,
+        "p95_ms": 0.7630489766597748,
+        "rtf": 0.03726783091739073,
+        "peak_mem_mb": 0.90869140625,
+        "n_chunks_total": 3000.0,
+        "n_chunks_eval": 2950.0,
+        "warmup_chunks": 50.0
+      }
+    },
+    {
+      "method": "baseline",
+      "device": "cuda",
+      "chunk_ms": 40,
+      "metrics": {
+        "chunk_ms": 40.0,
+        "avg_ms": 0.00709748216744127,
+        "p95_ms": 0.007424503564834595,
+        "rtf": 0.00017743705418603174,
+        "peak_mem_mb": 0.69580078125,
+        "n_chunks_total": 1500.0,
+        "n_chunks_eval": 1450.0,
+        "warmup_chunks": 50.0
+      }
+    },
+    {
+      "method": "v0p1_B",
+      "device": "cuda",
+      "chunk_ms": 40,
+      "metrics": {
+        "chunk_ms": 40.0,
+        "avg_ms": 0.7465072721242905,
+        "p95_ms": 0.7672565057873726,
+        "rtf": 0.01866268180310726,
+        "peak_mem_mb": 0.9287109375,
+        "n_chunks_total": 1500.0,
+        "n_chunks_eval": 1450.0,
+        "warmup_chunks": 50.0
+      }
+    }
+  ]
+}

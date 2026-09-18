@@ -1,0 +1,50 @@
+/root/autodl-tmp/projects/CloneBlock_RT/scripts/run_quality_eval_official.py:91: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(args.defense_checkpoint, map_location=device)
+{
+  "protocol": "vctk_official_full_utterance_quality_v1",
+  "telephony_codec": "none",
+  "telephony_codec_bitrate": "16k",
+  "reference_source": "vctk_official_transcript",
+  "stoi_primary_pair": "tele_clean_vs_tele_defended",
+  "shared_channel_draws": true,
+  "manifest_sha256": "33acf97ff90cd643d0b2d50f007f04e29a629a8f0d2743cbe847411ad056d426",
+  "defense_checkpoint_sha256": "ac8aab10681c8c64f663e1c7dc8d9864e939e492dd5abc58a2465b8190ae3379",
+  "n_utterances": 200,
+  "n_speakers": 11,
+  "output_sha256": "aa13d6e838d096ffd237cb5f22b331edcb13af70fe880866bf35519802c54789"
+}
+/root/autodl-tmp/projects/CloneBlock_RT/scripts/run_quality_eval_official.py:91: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(args.defense_checkpoint, map_location=device)
+{
+  "protocol": "vctk_official_full_utterance_quality_v1",
+  "telephony_codec": "opus",
+  "telephony_codec_bitrate": "16k",
+  "reference_source": "vctk_official_transcript",
+  "stoi_primary_pair": "tele_clean_vs_tele_defended",
+  "shared_channel_draws": true,
+  "manifest_sha256": "33acf97ff90cd643d0b2d50f007f04e29a629a8f0d2743cbe847411ad056d426",
+  "defense_checkpoint_sha256": "ac8aab10681c8c64f663e1c7dc8d9864e939e492dd5abc58a2465b8190ae3379",
+  "n_utterances": 200,
+  "n_speakers": 11,
+  "output_sha256": "3a76221154cb1d4c82b0c004d331abecd7658962350cff3be9b464419a5a9bf3"
+}
+/root/autodl-tmp/projects/CloneBlock_RT/scripts/run_quality_eval_official.py:91: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(args.defense_checkpoint, map_location=device)
+{
+  "protocol": "vctk_official_full_utterance_quality_v1",
+  "telephony_codec": "g711",
+  "telephony_codec_bitrate": "16k",
+  "reference_source": "vctk_official_transcript",
+  "stoi_primary_pair": "tele_clean_vs_tele_defended",
+  "shared_channel_draws": true,
+  "manifest_sha256": "33acf97ff90cd643d0b2d50f007f04e29a629a8f0d2743cbe847411ad056d426",
+  "defense_checkpoint_sha256": "ac8aab10681c8c64f663e1c7dc8d9864e939e492dd5abc58a2465b8190ae3379",
+  "n_utterances": 200,
+  "n_speakers": 11,
+  "output_sha256": "0cb3d24dd9bda06c6e13d42d683a326d6fd0dca16a510c35ef3c16c9017dd93b"
+}
+{
+  "rows": 18,
+  "output": "artifacts/tables/paper_icassp/quality_official_bootstrap.csv"
+}
+Official-transcript VCTK quality evaluation complete.

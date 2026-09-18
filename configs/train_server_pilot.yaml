@@ -1,0 +1,30 @@
+data:
+  dataset: librispeech
+  train_subset_size: 256
+  val_subset_size: 32
+model:
+  n_fft: 512
+  hop_length: 128
+  win_length: 512
+  n_bands: 64
+  hidden_channels: 128
+  num_layers: 4
+  kernel_size: 3
+  lookahead: 0
+  alpha: 0.18
+train:
+  seed: 42
+  device: cuda
+  batch_size: 8
+  lr: 0.001
+  max_steps: 50
+  eot_prob: 0.8
+  log_every: 10
+  val_every: 25
+  val_batches: 2
+  stage1_steps: 10
+loss:
+  w_spk: 2.5
+  w_rec: 1.0
+  w_intra: 1.0
+  w_energy: 0.1

@@ -25,7 +25,7 @@ if str(REPO_ROOT) not in sys.path:
     sys.path.insert(0, str(REPO_ROOT))
 
 from src.models.defense_stftmask import STFTMaskDefense
-from src.metrics.session_attack import pick_random_k
+from src.metrics.session_attack import pick_indices, pick_random_k
 
 
 def get_data_paths(repo_root: Path, dataset: str):
@@ -347,6 +347,7 @@ def evaluate_targeted_k16_proxy(
     att_beta: float,
     val_sessions: int,
     selection_source: str = "defended",
+    selection_strategy: str = "oracle_targeted",
 ) -> float:
     if not session_pool:
         return float("nan")
@@ -417,13 +418,25 @@ def evaluate_targeted_k16_proxy(
             else:
                 z_sel = z_sel_def_raw
 
-            beta = float(max(1e-3, att_beta))
-            scores = z_sel @ e_ref
-            if use_full_session:
+            if selection_strategy == "self_consistency":
+                k_eff = min(16, int(z_sel.size(0)))
+                idx_list = pick_indices(
+                    "bestK_by_self_consistency",
+                    clean_z=z_sel,
+                    k=k_eff,
+                    rng=random.Random(0),
+                    selection_z=z_sel,
+                )
+                idx = torch.tensor(idx_list, device=z_sel.device, dtype=torch.long)
+                e_def = F.normalize(z_sel_def_t[idx].mean(dim=0), dim=0)
+            elif use_full_session:
+                scores = z_sel @ e_ref
                 k_eff = min(16, int(z_sel.size(0)))
                 idx = torch.topk(scores, k=k_eff, largest=True).indices
                 e_def = F.normalize(z_sel_def_t[idx].mean(dim=0), dim=0)
             else:
+                beta = float(max(1e-3, att_beta))
+                scores = z_sel @ e_ref
                 w = torch.softmax(beta * scores, dim=0)
                 e_def = F.normalize(torch.sum(z_sel_def_t * w.unsqueeze(1), dim=0), dim=0)
             vals.append(float(torch.dot(e_def, e_ref).item()))
@@ -462,7 +475,7 @@ def parse_args():
     p.add_argument(
         "--train_objective",
         type=str,
-        choices=["rank", "kagg", "targetshift", "kagg_session", "targetedk", "targetedk_soft_def", "targetedk_hard16_margin"],
+        choices=["rank", "kagg", "targetshift", "kagg_session", "targetedk", "targetedk_soft_def", "targetedk_hard16_margin", "selfconsistency_hard16_margin"],
         default="rank",
     )
     p.add_argument("--session_pool_train_csv", type=str, default="")
@@ -633,22 +646,34 @@ def main():
         if args.session_pool_train_csv
         else (
             REPO_ROOT / "data" / "splits" / "session_pool_v3_train.csv"
-            if objective in {"targetedk", "targetedk_soft_def", "targetedk_hard16_margin"}
+            if objective in {"targetedk", "targetedk_soft_def", "targetedk_hard16_margin", "selfconsistency_hard16_margin"}
             else (REPO_ROOT / "data" / "splits" / "session_pool_train.csv")
         )
     )
-    session_pool = load_session_pool(session_pool_train_csv) if objective in {"kagg_session", "targetedk", "targetedk_soft_def", "targetedk_hard16_margin"} else {}
+    session_pool = load_session_pool(session_pool_train_csv) if objective in {"kagg_session", "targetedk", "targetedk_soft_def", "targetedk_hard16_margin", "selfconsistency_hard16_margin"} else {}
     session_pool_keys = [k for k, v in session_pool.items() if len(v) > 0]
     val_session_pool_csv = (
         Path(args.val_session_pool_csv)
         if args.val_session_pool_csv
         else (
             REPO_ROOT / "data" / "splits" / "session_pool_v3_val.csv"
-            if objective in {"targetedk", "targetedk_soft_def", "targetedk_hard16_margin"}
+            if objective in {"targetedk", "targetedk_soft_def", "targetedk_hard16_margin", "selfconsistency_hard16_margin"}
             else (REPO_ROOT / "data" / "splits" / "session_pool_val.csv")
         )
     )
-    val_session_pool = load_session_pool(val_session_pool_csv) if objective in {"targetedk", "targetedk_soft_def", "targetedk_hard16_margin"} else {}
+    val_session_pool = load_session_pool(val_session_pool_csv) if objective in {"targetedk", "targetedk_soft_def", "targetedk_hard16_margin", "selfconsistency_hard16_margin"} else {}
+    session_objectives = {
+        "kagg_session", "targetedk", "targetedk_soft_def",
+        "targetedk_hard16_margin", "selfconsistency_hard16_margin",
+    }
+    if objective in session_objectives:
+        if not session_pool:
+            raise FileNotFoundError(f"Session objective requires a non-empty training pool: {session_pool_train_csv}")
+        short_keys = [key for key, values in session_pool.items() if len(values) < 16]
+        if short_keys:
+            raise ValueError(f"Session objective requires at least 16 distinct windows; short sessions={len(short_keys)}")
+    if str(args.best_metric) == "val_k16_proxy" and not val_session_pool:
+        raise FileNotFoundError(f"val_k16_proxy requires a non-empty validation pool: {val_session_pool_csv}")
 
     ckpt_dir = REPO_ROOT / "checkpoints" / "defense"
     ckpt_dir.mkdir(parents=True, exist_ok=True)
@@ -753,7 +778,7 @@ def main():
             )
 
             rank_k = choose_rank_k(rank_k_set, rank_k_probs)
-            if objective == "targetedk_hard16_margin":
+            if objective in {"targetedk_hard16_margin", "selfconsistency_hard16_margin"}:
                 rank_k = 16
             rank_k_hist[rank_k] = rank_k_hist.get(rank_k, 0) + 1
             loss_kagg = torch.tensor(0.0, device=device)
@@ -902,7 +927,7 @@ def main():
                         k16_proxy = torch.dot(e_def_top, e_ref)
                 loss_rank = torch.tensor(0.0, device=device)
                 loss_ceiling = torch.tensor(0.0, device=device)
-            elif objective == "targetedk_hard16_margin" and session_pool_keys:
+            elif objective in {"targetedk_hard16_margin", "selfconsistency_hard16_margin"} and session_pool_keys:
                 anchor_spk, anchor_unit, anchor_path = random.choice(session_pool_keys)
                 win_rows = session_pool[(anchor_spk, anchor_unit, anchor_path)]
                 wav_full = read_wav(resolve_wav_path(REPO_ROOT, processed_wav_dir, anchor_path))
@@ -962,7 +987,17 @@ def main():
                             z_sel = z_sel_def_t
 
                         k_eff = min(16, int(z_sel.size(0)))
-                        idx_top = torch.topk(z_sel @ e_ref, k=k_eff, largest=True).indices
+                        if objective == "selfconsistency_hard16_margin":
+                            idx_list = pick_indices(
+                                "bestK_by_self_consistency",
+                                clean_z=z_sel.detach(),
+                                k=k_eff,
+                                rng=random.Random(seed + step),
+                                selection_z=z_sel.detach(),
+                            )
+                            idx_top = torch.tensor(idx_list, device=device, dtype=torch.long)
+                        else:
+                            idx_top = torch.topk(z_sel @ e_ref, k=k_eff, largest=True).indices
                         e_def_k16 = F.normalize(z_sel_def_t[idx_top].mean(dim=0), dim=0)
                         cos_k16 = torch.dot(e_def_k16, e_ref)
                         k16_proxy = cos_k16
@@ -970,7 +1005,7 @@ def main():
                         tau = float(args.att_tau)
                         if str(args.att_margin_mode) == "logistic":
                             gamma = float(max(1e-3, args.att_gamma))
-                            loss_kagg = torch.log1p(torch.exp(gamma * (cos_k16 - tau)))
+                            loss_kagg = F.softplus(gamma * (cos_k16 - tau))
                         else:
                             loss_kagg = F.relu(cos_k16 - tau)
                 loss_rank = torch.tensor(0.0, device=device)
@@ -1062,7 +1097,7 @@ def main():
                 denom = max(1, max_steps - stage1_steps)
                 ratio = float(step - stage1_steps) / float(denom)
                 ratio = max(0.0, min(1.0, ratio))
-                if objective in {"kagg", "kagg_session", "targetedk", "targetedk_soft_def", "targetedk_hard16_margin"}:
+                if objective in {"kagg", "kagg_session", "targetedk", "targetedk_soft_def", "targetedk_hard16_margin", "selfconsistency_hard16_margin"}:
                     w_spk_eff = 0.0
                     w_intra_eff = 0.0
                     w_rank_eff = 0.0
@@ -1178,7 +1213,7 @@ def main():
                 lf.write(msg + "\n")
                 lf.flush()
 
-            if objective == "targetedk_hard16_margin" and step % 25 == 0:
+            if objective in {"targetedk_hard16_margin", "selfconsistency_hard16_margin"} and step % 25 == 0:
                 amsg = (
                     f"[att_diag] step={step} "
                     f"cos_k16={row['k16_proxy']:.4f} L_att={row['loss_kagg']:.4f} w_att={w_kagg_eff:.3f}"
@@ -1212,7 +1247,7 @@ def main():
                 print(vmsg)
                 lf.write(vmsg + "\n")
                 val_k16_proxy = float("nan")
-                if objective in {"targetedk_soft_def", "targetedk_hard16_margin"} and val_session_pool:
+                if objective in {"targetedk_soft_def", "targetedk_hard16_margin", "selfconsistency_hard16_margin"} and val_session_pool:
                     val_k16_proxy = evaluate_targeted_k16_proxy(
                         model=model,
                         speaker_model=speaker_model,
@@ -1226,6 +1261,7 @@ def main():
                         att_beta=float(args.att_beta),
                         val_sessions=int(args.val_proxy_sessions),
                         selection_source=str(args.val_proxy_selection_source),
+                        selection_strategy=("self_consistency" if objective == "selfconsistency_hard16_margin" else "oracle_targeted"),
                     )
                     pmsg = f"[val_proxy] step={step} k16_proxy={val_k16_proxy:.4f}"
                     print(pmsg)

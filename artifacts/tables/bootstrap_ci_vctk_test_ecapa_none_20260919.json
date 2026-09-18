@@ -1,0 +1,65 @@
+{
+  "inputs": [
+    {
+      "metadata": "artifacts/tables/session_attack_eval_no_defense_vctk_test_ecapa_none_20260919.json",
+      "csv": "artifacts/tables/session_attack_per_session_no_defense_vctk_test_ecapa_none_20260919.csv",
+      "metadata_sha256": "a8231e54798b90ca15f6d859daa2ca2576fd6b8a245150ec52fd056fcaae8d18",
+      "csv_sha256": "48525952ef64d7c043bcc896bccb8b408b25788cea26231865ba9a254167ee03"
+    },
+    {
+      "metadata": "artifacts/tables/session_attack_eval_reference_v0p2_vctk_test_ecapa_none_20260919.json",
+      "csv": "artifacts/tables/session_attack_per_session_reference_v0p2_vctk_test_ecapa_none_20260919.csv",
+      "metadata_sha256": "c497edd29c596053de03f31daeee886070c12ee57be072df485379190e074498",
+      "csv_sha256": "37e9807a42c512f98790ac6550c294573a7aef478a2d10a9a70643c31a8fab0c"
+    },
+    {
+      "metadata": "artifacts/tables/session_attack_eval_realistic_selected_vctk_test_ecapa_none_20260919.json",
+      "csv": "artifacts/tables/session_attack_per_session_realistic_selected_vctk_test_ecapa_none_20260919.csv",
+      "metadata_sha256": "b09c5a90abd4dc20b87e5944b9f46440b22105e560c6155e7b4565e31fddf882",
+      "csv_sha256": "f0853c07d51672d50812fc6b231cf7afc8c499de1fe0ecdf549a0fd14a43cfc4"
+    }
+  ],
+  "evaluation_metadata": {
+    "protocol_version": "realistic_v1",
+    "k_list": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "seed": 42,
+    "speaker_encoder_name": "speechbrain_ecapa",
+    "telephony_codec": "none",
+    "telephony_codec_bitrate": "16k",
+    "selection_protocols": {
+      "random_K": {
+        "attacker_view": "realistic",
+        "selection_source": "none"
+      },
+      "bestK_by_self_consistency": {
+        "attacker_view": "realistic",
+        "selection_source": "tele_defended"
+      },
+      "bestK_by_clean_consistency": {
+        "attacker_view": "oracle_reference",
+        "selection_source": "clean"
+      }
+    },
+    "session_pool_sha256": "10065ec0de91c281636af5e23e08251eeff5eb1510ccc32fee382e9a7b273e51",
+    "eval_config_sha256": "a8864c0a2db64051e81bdc0ab216a1e5efc0362b6b83277724c09fbbb8724338",
+    "telephony_config_sha256": "5f0fc5f62c738e0d5d8289b49b830279776b56087a6ef46c1e8b3b5c6be7864f"
+  },
+  "bootstrap": {
+    "unit": "speaker",
+    "interval": "percentile",
+    "confidence": 0.95,
+    "draws": 2000,
+    "seed": 42,
+    "paired": true
+  },
+  "estimand": "Session-weighted mean; resample speakers with all their sessions",
+  "AUCK": "Equal-weight mean on exactly the recorded K grid",
+  "delta": "method minus reference; negative recovery similarity means less identity recovery",
+  "limitation": "Conditional on fitted models and fixed evaluation trials; not training-seed uncertainty. Few speakers can give unstable intervals."
+}

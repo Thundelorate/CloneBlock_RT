@@ -1,0 +1,41 @@
+{
+  "split": "validation",
+  "stoi_floor": 0.95,
+  "rule": "minimum validation K16, then AUCK and alpha, among models meeting STOI floor",
+  "candidates": [
+    {
+      "method": "realistic_a0p12",
+      "alpha": 0.12,
+      "k16": 0.9703147411346436,
+      "auck": 0.8831049680709839,
+      "stoi": 0.9957151444865283,
+      "relative_l2": 0.09503577009372421
+    },
+    {
+      "method": "realistic_a0p18",
+      "alpha": 0.18,
+      "k16": 0.946439802646637,
+      "auck": 0.8618736863136292,
+      "stoi": 0.990683579618641,
+      "relative_l2": 0.14324720722674708
+    },
+    {
+      "method": "realistic_a0p24",
+      "alpha": 0.24,
+      "k16": 0.9135646820068359,
+      "auck": 0.8332633018493653,
+      "stoi": 0.9835912900910649,
+      "relative_l2": 0.18870268642020602,
+      "checkpoint": "checkpoints/defense/realistic_a0p24_best.pt"
+    }
+  ],
+  "selected": {
+    "method": "realistic_a0p24",
+    "alpha": 0.24,
+    "k16": 0.9135646820068359,
+    "auck": 0.8332633018493653,
+    "stoi": 0.9835912900910649,
+    "relative_l2": 0.18870268642020602,
+    "checkpoint": "checkpoints/defense/realistic_a0p24_best.pt"
+  }
+}

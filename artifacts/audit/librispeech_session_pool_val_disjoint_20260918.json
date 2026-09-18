@@ -1,0 +1,8 @@
+{
+  "ok": true,
+  "csv": "data/splits/librispeech/session_pool_v3_val.csv",
+  "rows": 1107,
+  "speakers": 4,
+  "sessions": 12,
+  "errors": []
+}

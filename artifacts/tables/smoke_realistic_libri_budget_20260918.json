@@ -1,0 +1,24 @@
+{
+  "dataset": "librispeech",
+  "split": "val",
+  "seed": 42,
+  "telephony_pair": "tele_clean vs tele_defended with shared parameters",
+  "summary_csv": "artifacts/tables/smoke_realistic_libri_budget_20260918_summary.csv",
+  "per_utterance_csv": "artifacts/tables/smoke_realistic_libri_budget_20260918_per_utterance.csv",
+  "summary": [
+    {
+      "method": "smoke_realistic",
+      "n_utterances": 10,
+      "perturb_rms_mean": 0.005954789152807463,
+      "perturb_rms_std": 0.004164771224319234,
+      "snr_db_mean": 16.81259413924108,
+      "snr_db_std": 0.32135645886886477,
+      "relative_l2_mean": 0.144434028656437,
+      "relative_l2_std": 0.005388996636309163,
+      "linf_mean": 0.04736858122050762,
+      "linf_std": 0.03496548364427077,
+      "stoi_tele_clean_vs_tele_defended_mean": 0.9890221351186701,
+      "stoi_tele_clean_vs_tele_defended_std": 0.0032646102021398693
+    }
+  ]
+}

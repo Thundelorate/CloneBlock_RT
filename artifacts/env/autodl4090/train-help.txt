@@ -1,0 +1,68 @@
+usage: run_train.py [-h] [--config CONFIG] [--dataset {librispeech,vctk}]
+                    [--max_steps MAX_STEPS] [--run_name RUN_NAME]
+                    [--alpha ALPHA] [--w_spk W_SPK] [--w_rec W_REC]
+                    [--w_intra W_INTRA] [--w_agg W_AGG] [--w_rank W_RANK]
+                    [--w_ceiling W_CEILING] [--w_kagg W_KAGG] [--w_att W_ATT]
+                    [--w_tgt W_TGT] [--w_away W_AWAY] [--w_energy W_ENERGY]
+                    [--eot_prob EOT_PROB] [--seed SEED]
+                    [--train_subset_size TRAIN_SUBSET_SIZE]
+                    [--stage1_steps STAGE1_STEPS]
+                    [--init_checkpoint INIT_CHECKPOINT]
+                    [--agg_group_size AGG_GROUP_SIZE]
+                    [--rank_margin RANK_MARGIN] [--rank_k_set RANK_K_SET]
+                    [--rank_k_probs RANK_K_PROBS] [--ceiling_tau CEILING_TAU]
+                    [--train_objective {rank,kagg,targetshift,kagg_session,targetedk,targetedk_soft_def,targetedk_hard16_margin}]
+                    [--session_pool_train_csv SESSION_POOL_TRAIN_CSV]
+                    [--att_candidate_windows ATT_CANDIDATE_WINDOWS]
+                    [--att_beta ATT_BETA] [--att_use_full_session]
+                    [--att_tau ATT_TAU] [--att_gamma ATT_GAMMA]
+                    [--att_margin_mode {hinge,logistic}]
+                    [--att_selection_source {clean,defended,tele_defended}]
+                    [--best_metric {speaker_sim_tel,val_k16_proxy}]
+                    [--val_session_pool_csv VAL_SESSION_POOL_CSV]
+                    [--val_proxy_sessions VAL_PROXY_SESSIONS]
+                    [--val_proxy_selection_source {clean,defended,tele_defended}]
+
+CloneBlock-RT training
+
+options:
+  -h, --help            show this help message and exit
+  --config CONFIG
+  --dataset {librispeech,vctk}
+  --max_steps MAX_STEPS
+  --run_name RUN_NAME
+  --alpha ALPHA
+  --w_spk W_SPK
+  --w_rec W_REC
+  --w_intra W_INTRA
+  --w_agg W_AGG
+  --w_rank W_RANK
+  --w_ceiling W_CEILING
+  --w_kagg W_KAGG
+  --w_att W_ATT
+  --w_tgt W_TGT
+  --w_away W_AWAY
+  --w_energy W_ENERGY
+  --eot_prob EOT_PROB
+  --seed SEED
+  --train_subset_size TRAIN_SUBSET_SIZE
+  --stage1_steps STAGE1_STEPS
+  --init_checkpoint INIT_CHECKPOINT
+  --agg_group_size AGG_GROUP_SIZE
+  --rank_margin RANK_MARGIN
+  --rank_k_set RANK_K_SET
+  --rank_k_probs RANK_K_PROBS
+  --ceiling_tau CEILING_TAU
+  --train_objective {rank,kagg,targetshift,kagg_session,targetedk,targetedk_soft_def,targetedk_hard16_margin}
+  --session_pool_train_csv SESSION_POOL_TRAIN_CSV
+  --att_candidate_windows ATT_CANDIDATE_WINDOWS
+  --att_beta ATT_BETA
+  --att_use_full_session
+  --att_tau ATT_TAU
+  --att_gamma ATT_GAMMA
+  --att_margin_mode {hinge,logistic}
+  --att_selection_source {clean,defended,tele_defended}
+  --best_metric {speaker_sim_tel,val_k16_proxy}
+  --val_session_pool_csv VAL_SESSION_POOL_CSV
+  --val_proxy_sessions VAL_PROXY_SESSIONS
+  --val_proxy_selection_source {clean,defended,tele_defended}

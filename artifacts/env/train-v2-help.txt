@@ -1,0 +1,27 @@
+usage: run_train_v2.py [-h] [--config CONFIG] [--dataset {librispeech,vctk}]
+                       [--max_steps MAX_STEPS] [--run_name RUN_NAME]
+                       [--alpha ALPHA] [--w_spk W_SPK] [--w_rec W_REC]
+                       [--w_intra W_INTRA] [--w_energy W_ENERGY]
+                       [--eot_prob EOT_PROB] [--seed SEED]
+                       [--train_subset_size TRAIN_SUBSET_SIZE]
+                       [--stage1_steps STAGE1_STEPS]
+                       [--init_checkpoint INIT_CHECKPOINT]
+
+CloneBlock-RT training
+
+options:
+  -h, --help            show this help message and exit
+  --config CONFIG
+  --dataset {librispeech,vctk}
+  --max_steps MAX_STEPS
+  --run_name RUN_NAME
+  --alpha ALPHA
+  --w_spk W_SPK
+  --w_rec W_REC
+  --w_intra W_INTRA
+  --w_energy W_ENERGY
+  --eot_prob EOT_PROB
+  --seed SEED
+  --train_subset_size TRAIN_SUBSET_SIZE
+  --stage1_steps STAGE1_STEPS
+  --init_checkpoint INIT_CHECKPOINT

@@ -1,0 +1,11 @@
+step=1 loss=0.0202 L_spk=0.9315 L_intra=0.5777 L_rank=0.0000 L_ceiling=0.0000 L_kagg=0.0473 L_tgt=0.0000 L_away=0.0000 L_rec=0.0201 L_energy=0.0007 w_spk=0.000 w_intra=0.000 w_rank=0.000 w_ceiling=0.000 w_kagg=0.000 w_tgt=0.000 w_away=0.000 cos_tel=0.9315 nwin=8 rank_k=16
+[pair_check] step=1 utter_id=3170_0024 spk_id=3170 cos_tel=0.9694
+[pair_check] step=1 utter_id=5895_0038 spk_id=5895 cos_tel=0.9298
+[pair_check] step=1 utter_id=1919_0071 spk_id=1919 cos_tel=0.8941
+[pair_check] step=1 utter_id=84_0048 spk_id=84 cos_tel=0.9129
+[pair_check] step=1 utter_id=3536_0074 spk_id=3536 cos_tel=0.8997
+step=10 loss=0.0935 L_spk=0.9649 L_intra=0.5904 L_rank=0.0000 L_ceiling=0.0000 L_kagg=0.0858 L_tgt=0.0000 L_away=0.0000
+step=20 loss=0.1031 L_spk=0.9428 L_intra=0.5969 L_rank=0.0000 L_ceiling=0.0000 L_kagg=0.0312 L_tgt=0.0000 L_away=0.0000
+[val] step=20 speaker_sim_tel=0.9538
+[val_proxy] step=20 k16_proxy=0.9015
+[ckpt] saved best checkpoint at step=20 to /root/autodl-tmp/projects/CloneBlock_RT/checkpoints/defense/smoke_realistic_libri_20260918_best.pt
