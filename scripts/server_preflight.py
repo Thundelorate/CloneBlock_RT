@@ -68,7 +68,10 @@ def inspect_environment(repo, require_gpu=False):
         errors.append("FFmpeg must expose libopus and pcm_mulaw encoders")
     assets = {"raw_vctk": (repo / "data/raw/VCTK-Corpus-0.92").is_dir(),
               "test_split": (repo / "data/splits/vctk/test.csv").is_file(),
-              "test_session_pool": (repo / "data/splits/session_pool_v3_test.csv").is_file(),
+              "test_session_pool": any(path.is_file() for path in (
+                  repo / "data/splits/vctk/session_pool_v3_test.csv",
+                  repo / "data/splits/session_pool_v3_test.csv",
+              )),
               "defense_checkpoints": [str(p.relative_to(repo)) for p in (repo / "checkpoints/defense").glob("*.pt")]}
     versions = {d.metadata["Name"]: d.version for d in importlib.metadata.distributions() if d.metadata["Name"]}
     return {"ok": not errors, "created_utc": datetime.now(timezone.utc).isoformat(),

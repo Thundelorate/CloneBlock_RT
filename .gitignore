@@ -8,7 +8,12 @@ __pycache__/
 !/checkpoints/defense/*.pt
 /checkpoints/autodl4090/
 /checkpoints/speaker_encoders/
+/models/
 /artifacts/xtts/
 /artifacts/tmp/
+/artifacts/logs/*.log
+/artifacts/logs/*.status
+/artifacts/logs/kaggle_vctk.json
+/artifacts/experiments/aggregation_advantage/cache/
 /artifacts/env/server_snapshot_20260919/data-inventory.txt
 /.server-backups/
