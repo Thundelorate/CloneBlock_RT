@@ -31,7 +31,7 @@ def select(
         "estimate": float(row["estimate"]),
         "ci_low": float(row["ci_low"]),
         "ci_high": float(row["ci_high"]),
-        "n_speakers": int(row["n_speakers"]),
+        "n_speakers": int(row["speakers"]),
     }
 
 

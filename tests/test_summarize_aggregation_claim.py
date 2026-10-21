@@ -16,7 +16,7 @@ def row(contrast, strategy, estimate, low, high):
         "estimate": estimate,
         "ci_low": low,
         "ci_high": high,
-        "n_speakers": 11,
+        "speakers": 11,
     }
 
 
