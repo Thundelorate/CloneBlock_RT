@@ -1,0 +1,30 @@
+{
+  "decision_rule_version": "aggregation-advantage-v1",
+  "scope": "No-defense ECAPA speaker-similarity proxy on held-out test speakers.",
+  "primary_claim": {
+    "description": "Random K=16 aggregation improves target similarity over K=1.",
+    "contrast": {
+      "estimate": 0.2557356667688835,
+      "ci_low": 0.2422149359600684,
+      "ci_high": 0.2666259392216573,
+      "n_speakers": 11
+    },
+    "criterion": "estimate > 0 and bootstrap 95% CI lower bound > 0",
+    "supported": true
+  },
+  "secondary_evidence": {
+    "self_consistency_k16_vs_k1_target_similarity": {
+      "estimate": 0.1475013800337715,
+      "ci_low": 0.1295284491542223,
+      "ci_high": 0.1661754133918811,
+      "n_speakers": 11
+    },
+    "self_consistency_k16_vs_contiguous_k16_target_similarity": {
+      "estimate": 0.012580374158552,
+      "ci_low": -0.0160397785154739,
+      "ci_high": 0.0407596371446814,
+      "n_speakers": 11
+    }
+  },
+  "interpretation_guardrail": "This ASV/speaker-representation result measures identity recovery, not end-to-end cloned-speech quality. Secondary results do not override the predeclared primary decision rule."
+}

@@ -1,0 +1,8 @@
+{
+  "bootstrap_draws": 2000,
+  "seed": 42,
+  "aggregate_rows": 67320,
+  "trial_rows": 740520,
+  "summary_rows": 360,
+  "contrast_rows": 600
+}

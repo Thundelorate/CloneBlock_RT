@@ -1,0 +1,164 @@
+{
+  "dataset": "VCTK-0.92-mic2",
+  "source_kind": "official_archive",
+  "archive": "/root/autodl-tmp/projects/CloneBlock_RT/data/raw/VCTK-Corpus-0.92.zip",
+  "archive_bytes": 11747302977,
+  "archive_md5": "8a6ba2946b36fcbef0212cad601f4bfa",
+  "corpus_root": "/root/autodl-tmp/projects/CloneBlock_RT/data/raw/VCTK-Corpus-0.92",
+  "speakers": [
+    {
+      "split": "validation",
+      "speaker": "p229",
+      "mic2_files": 379,
+      "transcripts": 379,
+      "bytes": 47115226
+    },
+    {
+      "split": "validation",
+      "speaker": "p237",
+      "mic2_files": 339,
+      "transcripts": 339,
+      "bytes": 42193568
+    },
+    {
+      "split": "validation",
+      "speaker": "p254",
+      "mic2_files": 396,
+      "transcripts": 396,
+      "bytes": 47497535
+    },
+    {
+      "split": "validation",
+      "speaker": "p256",
+      "mic2_files": 319,
+      "transcripts": 319,
+      "bytes": 48563973
+    },
+    {
+      "split": "validation",
+      "speaker": "p282",
+      "mic2_files": 366,
+      "transcripts": 366,
+      "bytes": 46490068
+    },
+    {
+      "split": "validation",
+      "speaker": "p295",
+      "mic2_files": 416,
+      "transcripts": 416,
+      "bytes": 49021273
+    },
+    {
+      "split": "validation",
+      "speaker": "p301",
+      "mic2_files": 411,
+      "transcripts": 411,
+      "bytes": 61580757
+    },
+    {
+      "split": "validation",
+      "speaker": "p307",
+      "mic2_files": 420,
+      "transcripts": 420,
+      "bytes": 58205074
+    },
+    {
+      "split": "validation",
+      "speaker": "p343",
+      "mic2_files": 388,
+      "transcripts": 388,
+      "bytes": 43286672
+    },
+    {
+      "split": "validation",
+      "speaker": "p351",
+      "mic2_files": 422,
+      "transcripts": 422,
+      "bytes": 44147755
+    },
+    {
+      "split": "validation",
+      "speaker": "p374",
+      "mic2_files": 424,
+      "transcripts": 424,
+      "bytes": 50008455
+    },
+    {
+      "split": "test",
+      "speaker": "p228",
+      "mic2_files": 366,
+      "transcripts": 366,
+      "bytes": 55684966
+    },
+    {
+      "split": "test",
+      "speaker": "p239",
+      "mic2_files": 502,
+      "transcripts": 502,
+      "bytes": 62737168
+    },
+    {
+      "split": "test",
+      "speaker": "p240",
+      "mic2_files": 377,
+      "transcripts": 377,
+      "bytes": 51031105
+    },
+    {
+      "split": "test",
+      "speaker": "p244",
+      "mic2_files": 420,
+      "transcripts": 420,
+      "bytes": 50834332
+    },
+    {
+      "split": "test",
+      "speaker": "p255",
+      "mic2_files": 379,
+      "transcripts": 379,
+      "bytes": 53064088
+    },
+    {
+      "split": "test",
+      "speaker": "p258",
+      "mic2_files": 413,
+      "transcripts": 413,
+      "bytes": 48701439
+    },
+    {
+      "split": "test",
+      "speaker": "p262",
+      "mic2_files": 394,
+      "transcripts": 394,
+      "bytes": 57932635
+    },
+    {
+      "split": "test",
+      "speaker": "p314",
+      "mic2_files": 423,
+      "transcripts": 423,
+      "bytes": 55027069
+    },
+    {
+      "split": "test",
+      "speaker": "p326",
+      "mic2_files": 399,
+      "transcripts": 399,
+      "bytes": 40188712
+    },
+    {
+      "split": "test",
+      "speaker": "p340",
+      "mic2_files": 423,
+      "transcripts": 423,
+      "bytes": 38546066
+    },
+    {
+      "split": "test",
+      "speaker": "p364",
+      "mic2_files": 301,
+      "transcripts": 301,
+      "bytes": 29544093
+    }
+  ]
+}

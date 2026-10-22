@@ -1,0 +1,27 @@
+\begin{tabular}{lllrrr}
+\toprule
+System & Encoder & Attack & $\Delta$ target sim. & $\Delta$ margin & $\Delta$ EER (pp) \\
+\midrule
+No defense & ECAPA & Random & 0.256 [0.242, 0.267] & 0.143 [0.130, 0.159] & -19.44 [-22.17, -16.54] \\
+No defense & ECAPA & Self-consistency & 0.148 [0.130, 0.166] & 0.097 [0.076, 0.118] & -4.55 [-8.64, 0.00] \\
+No defense & ECAPA & Contiguous & 0.135 [0.110, 0.159] & 0.101 [0.057, 0.145] & -4.55 [-8.64, 0.00] \\
+No defense & XVECTOR & Random & 0.042 [0.041, 0.043] & 0.004 [0.002, 0.005] & -9.72 [-14.10, -2.89] \\
+No defense & XVECTOR & Self-consistency & 0.024 [0.022, 0.026] & 0.002 [0.000, 0.005] & 0.00 [-11.14, 4.32] \\
+No defense & XVECTOR & Contiguous & 0.032 [0.029, 0.034] & 0.003 [-0.001, 0.007] & -5.23 [-17.95, 2.73] \\
+\addlinespace
+Reference defense & ECAPA & Random & 0.242 [0.231, 0.252] & 0.130 [0.118, 0.146] & -20.34 [-22.84, -17.69] \\
+Reference defense & ECAPA & Self-consistency & 0.158 [0.141, 0.176] & 0.106 [0.069, 0.141] & -3.64 [-6.82, -0.23] \\
+Reference defense & ECAPA & Contiguous & 0.140 [0.115, 0.167] & 0.097 [0.057, 0.138] & -3.64 [-5.71, -0.23] \\
+Reference defense & XVECTOR & Random & 0.042 [0.041, 0.043] & 0.004 [0.002, 0.005] & -10.05 [-14.53, -3.61] \\
+Reference defense & XVECTOR & Self-consistency & 0.023 [0.021, 0.026] & 0.000 [-0.002, 0.003] & -4.55 [-12.27, 7.50] \\
+Reference defense & XVECTOR & Contiguous & 0.030 [0.028, 0.033] & 0.001 [-0.003, 0.005] & -4.55 [-17.95, 9.32] \\
+\addlinespace
+Realistic defense & ECAPA & Random & 0.246 [0.236, 0.257] & 0.132 [0.119, 0.148] & -19.95 [-22.62, -17.20] \\
+Realistic defense & ECAPA & Self-consistency & 0.166 [0.149, 0.181] & 0.115 [0.088, 0.147] & -4.32 [-8.41, -0.45] \\
+Realistic defense & ECAPA & Contiguous & 0.133 [0.107, 0.158] & 0.105 [0.066, 0.147] & -4.09 [-8.18, -0.45] \\
+Realistic defense & XVECTOR & Random & 0.042 [0.041, 0.043] & 0.004 [0.002, 0.005] & -9.93 [-13.97, -3.17] \\
+Realistic defense & XVECTOR & Self-consistency & 0.024 [0.021, 0.026] & 0.003 [0.000, 0.005] & -0.45 [-12.73, 3.64] \\
+Realistic defense & XVECTOR & Contiguous & 0.030 [0.027, 0.032] & 0.003 [-0.001, 0.006] & -5.00 [-18.18, 3.64] \\
+\addlinespace
+\bottomrule
+\end{tabular}

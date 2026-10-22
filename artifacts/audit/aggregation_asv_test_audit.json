@@ -1,0 +1,24 @@
+{
+  "ok": true,
+  "errors": [],
+  "warnings": [],
+  "rows": 67320,
+  "speakers": 11,
+  "methods": [
+    "none",
+    "realistic",
+    "reference"
+  ],
+  "encoders": [
+    "ecapa",
+    "xvector"
+  ],
+  "strategies": [
+    "contiguous_K",
+    "random_K",
+    "self_consistency_K"
+  ],
+  "manifest_sha256": "3476d23197b2ed5001463880c8decedb2cb8e931aeb827cbb181d125fbf10692",
+  "rows_sha256": "0f9604a00f24842bd49621989511de2f668bf1746c4d666d0a430594fed0b081",
+  "trials_sha256": "47fac0054a7efd850d2cd855219af387e40bde9cf8577a3aa4b95d5f2c145d34"
+}
