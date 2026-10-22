@@ -48,14 +48,15 @@ For each attack session and `K in {1, 2, 4, 8, 16}`:
   with the attacker-visible session centroid. This is the realistic targeted
   aggregation strategy.
 - `contiguous_K`: select a chronological K-window block using the same
-  self-consistency score, concatenate those windows into one `K`-second
-  waveform, and invoke the speaker encoder once. It matches total speech
-  duration while removing both cross-session selection and fragment-embedding
-  averaging from the control condition.
+  self-consistency score, concatenate the exact same telephony-transformed
+  window samples into one `K`-second waveform, and invoke the speaker encoder
+  once. It matches both speech duration and input samples, isolating the effect
+  of separate fragment encoding plus embedding averaging.
 
 `K=1` is evaluated separately for every strategy. Therefore the experiment
 does not compare a hand-picked multi-fragment attack only against a random
-single fragment.
+single fragment. The self-consistency and contiguous K=1 controls reuse one
+paired single-window embedding and must agree exactly.
 
 ## Speaker encoders
 

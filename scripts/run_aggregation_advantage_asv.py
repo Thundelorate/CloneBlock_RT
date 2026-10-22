@@ -559,30 +559,34 @@ def main() -> None:
                         session.session,
                     )
                     selections.extend(("random_K", repeat, indices) for repeat, indices in enumerate(random_draws))
-                    selections.append(("self_consistency_K", 0, self_consistency_indices(embeddings, k)))
-                    selections.append(
-                        (
-                            "contiguous_K",
-                            0,
-                            contiguous_self_consistency_indices(
-                                embeddings, session.starts, session.ends, k
-                            ),
-                        )
+                    self_consistency = self_consistency_indices(embeddings, k)
+                    contiguous = contiguous_self_consistency_indices(
+                        embeddings, session.starts, session.ends, k
                     )
+                    if k == 1 and not np.array_equal(self_consistency, contiguous):
+                        raise AssertionError("K=1 controls must select the same window")
+                    selections.append(("self_consistency_K", 0, self_consistency))
+                    selections.append(
+                        ("contiguous_K", 0, contiguous)
+                    )
+                    paired_k1_embedding: np.ndarray | None = None
                     for strategy, repeat, indices in selections:
-                        if strategy == "contiguous_K":
-                            contiguous_clean = concatenate_selected_windows(
-                                session.waveforms, indices
+                        if k == 1 and strategy in {
+                            "self_consistency_K", "contiguous_K"
+                        }:
+                            if paired_k1_embedding is None:
+                                paired_k1_embedding = encode(
+                                    encoder, query_waveforms[indices], device
+                                )[0]
+                            attack_embedding = paired_k1_embedding.copy()
+                            representation = (
+                                "single_contiguous_waveform"
+                                if strategy == "contiguous_K"
+                                else "fragment_embedding_mean"
                             )
-                            contiguous_query = transform_queries(
-                                contiguous_clean,
-                                defense,
-                                TelephonyTransform(telephony_config, seed=channel_seed),
-                                args.sample_rate,
-                                device,
-                                telephony_params=[
-                                    window_telephony_params[int(indices[0])]
-                                ],
+                        elif strategy == "contiguous_K":
+                            contiguous_query = concatenate_selected_windows(
+                                query_waveforms, indices
                             )
                             attack_embedding = encode(
                                 encoder, contiguous_query, device
@@ -741,11 +745,12 @@ def main() -> None:
             "non_overlapping_attack_windows": True,
             "same_total_duration_control": True,
             "same_total_duration_control_representation": (
-                "single encoder pass over one contiguous K-second waveform"
+                "single encoder pass over the exact concatenation of the same "
+                "telephony-transformed selected windows"
             ),
             "telephony_pairing": (
                 "deterministic per-session/per-window parameters shared across systems; "
-                "contiguous control reuses its first selected window parameters"
+                "fragmented and contiguous representations reuse identical transformed samples"
             ),
             "validation_threshold_frozen_before_test": args.split == "test",
             "enrollment_rule": "first deterministically sorted session",

@@ -21,7 +21,12 @@ def valid_manifest():
             "non_overlapping_attack_windows": True,
             "same_total_duration_control": True,
             "same_total_duration_control_representation": (
-                "single encoder pass over one contiguous K-second waveform"
+                "single encoder pass over the exact concatenation of the same "
+                "telephony-transformed selected windows"
+            ),
+            "telephony_pairing": (
+                "deterministic per-session/per-window parameters shared across systems; "
+                "fragmented and contiguous representations reuse identical transformed samples"
             ),
             "validation_threshold_frozen_before_test": True,
         },

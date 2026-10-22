@@ -223,9 +223,17 @@ def audit(manifest: dict, rows: list[dict[str, str]]) -> dict:
         if protocol.get(flag) is not True:
             errors.append(f"Manifest protocol flag must be true: {flag}")
     if protocol.get("same_total_duration_control_representation") != (
-        "single encoder pass over one contiguous K-second waveform"
+        "single encoder pass over the exact concatenation of the same "
+        "telephony-transformed selected windows"
     ):
-        errors.append("Contiguous control must use one encoder pass over a K-second waveform")
+        errors.append(
+            "Contiguous control must encode the exact paired transformed samples once"
+        )
+    if protocol.get("telephony_pairing") != (
+        "deterministic per-session/per-window parameters shared across systems; "
+        "fragmented and contiguous representations reuse identical transformed samples"
+    ):
+        errors.append("Telephony samples are not exactly paired across representations")
 
     methods = {row.get("method", "") for row in rows}
     encoders = {row.get("encoder", "") for row in rows}
